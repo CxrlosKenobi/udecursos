@@ -4,9 +4,12 @@ import { Droppable } from 'react-beautiful-dnd';
 import Task from './task';
 
 const Container = styled.div`
+  font-family: "Apercu Pro", sans-serif black;
+  font-color: #10162F;
+
   margin-top: 5px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 110px;
 
   display: flex;

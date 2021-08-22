@@ -1,16 +1,16 @@
 const initialData = {
     tasks: {
-      'task-1': { id: 'task-1', content: 'Física I' },
-      'task-2': { id: 'task-2', content: 'Álgebra I' },
-      'task-3': { id: 'task-3', content: 'Cálculo I' },
-      'task-4': { id: 'task-4', content: 'Química General I' },
-      'task-5': { id: 'task-5', content: 'Intro. a la Ingeniería Informática' },
+      'task-1': { id: 'task-1', content: 'Física I', color: "#FFD300" },
+      'task-2': { id: 'task-2', content: 'Álgebra I', color: "#FFD300" },
+      'task-3': { id: 'task-3', content: 'Cálculo I', color: "#FFD300" },
+      'task-4': { id: 'task-4', content: 'Química General I', color: "#FFD300" },
+      'task-5': { id: 'task-5', content: 'Intro. Ingeniería Informática', color: "#FFD300" },
       
-      'task-6': { id: 'task-6', content: 'Física II' },
+      'task-6': { id: 'task-6', content: 'Física II', color: "#FFD300" },
       'task-7': { id: 'task-7', content: 'Álgebra II' },
       'task-8': { id: 'task-8', content: 'Cálculo II' },
-      'task-9': { id: 'task-9', content: 'Intro. al Desarrollo de Soluciones Informáticas' },
-      'task-10': { id: 'task-10', content: 'Intro. a la Innovación en Ingeniería' },
+      'task-9': { id: 'task-9', content: 'Intro. Desarrollo Soluciones Informáticas' },
+      'task-10': { id: 'task-10', content: 'Intro. Innovación Ingeniería' },
 
       'task-11': { id: 'task-11', content: 'Cálculo III' },
       'task-12': { id: 'task-12', content: 'Ecuaciones Diferenciales Ordinarias' },
