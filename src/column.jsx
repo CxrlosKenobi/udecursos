@@ -4,17 +4,17 @@ import { Droppable } from 'react-beautiful-dnd';
 import Task from './task';
 
 const Container = styled.div`
-  margin: 8px;
-  border: 1px solid lightgrey;
+  margin-top: 5px;
   background-color: white;
-  border-radius: 2px;
-  width: 220px;
-  justify-content: center;
-  text-align: center;
+  border-radius: 5px;
+  width: 110px;
 
   display: flex;
   flex-direction: column;
-`;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  `;
 const Title = styled.h3`
   padding: 8px;
 `;

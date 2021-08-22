@@ -18,7 +18,7 @@ const initialData = {
       'task-14': { id: 'task-14', content: 'Programación I' },
 
       'task-15': { id: 'task-15', content: 'Cálculo Numérico' },
-      'task-16': { id: 'task-16', content: 'Electromagnetismo Aplicado' },
+      'task-16': { id: 'task-16', content: 'Electro-magnetismo Aplicado' },
       'task-17': { id: 'task-17', content: 'Matemáticas Discretas' },
       'task-18': { id: 'task-18', content: 'Programación II' },
       'task-19': { id: 'task-19', content: 'Complementaria I' },
