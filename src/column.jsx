@@ -8,8 +8,8 @@ const Container = styled.div`
   font-color: #10162F;
 
   margin-top: 5px;
-  background-color: white;
-  border-radius: 10px;
+  background-color: transparent;
+  border-radius: 15px;
   width: 110px;
 
   display: flex;
@@ -17,7 +17,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  `;
+`;
 const Title = styled.h3`
   padding: 8px;
 `;
@@ -25,7 +25,7 @@ const TaskList = styled.div`
   padding: 8px;
   transition: background-color 0.2s ease;
   background-color: ${props =>
-    props.isDraggingOver ? 'lightgrey' : 'inherit'};
+    props.isDraggingOver ? '#10162F' : 'inherit'};
   flex-grow: 1;
   min-height: 100px;
 `;

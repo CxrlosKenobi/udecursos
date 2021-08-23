@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+## TODO
+- [ ] Check if credits are well done
+- [ ] Fix column hight/focus while dragging
+- [ ] Add years at the top of the semesters
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

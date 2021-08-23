@@ -5,9 +5,16 @@ import styled from 'styled-components';
 import { DragDropContext } from 'react-beautiful-dnd';
 import initialData from './initial-data';
 import Column from './column';
+import logo from './logo.png';
+import './App.css';
+
 
 const Container = styled.div`
   display: flex;
+`;
+
+const Heading = styled.h2`
+
 `;
 
 
@@ -81,18 +88,32 @@ class App extends React.Component {
 
   render() {
     return (
-      <DragDropContext onDragEnd={this.onDragEnd}>
-        <Container>
-          {this.state.columnOrder.map(columnId => {
-            const column = this.state.columns[columnId];
-            const tasks = column.taskIds.map(
-              taskId => this.state.tasks[taskId],
-            );
+      <div className="App">
+        <header className="App-header">
+          <div className="header-content">
+            <h1 className="App-logo">
+              <a href="/">
+                <img className="locate" src={logo} alt="logo" height="80" width="60"/>
+              </a>
+            </h1>
+            {/* <Heading>UdeCursos</Heading> */}
+          </div>
+        </header>
+        <div className="App-body">
+          <DragDropContext onDragEnd={this.onDragEnd}>
+            <Container>
+              {this.state.columnOrder.map(columnId => {
+                const column = this.state.columns[columnId];
+                const tasks = column.taskIds.map(
+                  taskId => this.state.tasks[taskId],
+                );
 
-            return <Column key={column.id} column={column} tasks={tasks} />;
-          })}
-        </Container>
-      </DragDropContext>
+                return <Column key={column.id} column={column} tasks={tasks} />;
+               })}
+            </Container>
+          </DragDropContext>
+        </div>
+      </div>
     );
   }
 }
