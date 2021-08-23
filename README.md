@@ -7,7 +7,7 @@
 
 ## Examples
 > Pre-release views
-![iamge](assets/screenshot.png)
+![image](assets/screenshot.png)
 
 
 <br>
