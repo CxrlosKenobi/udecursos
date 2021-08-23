@@ -1,11 +1,21 @@
-# Getting Started with Create React App
-
 ## TODO
 - [ ] Develope a cool footer <3
 - [ ] Look for a nice favicon
 - [ ] Check if credits are well done
 - [ ] Fix column hight/focus while dragging
 - [ ] Add years at the top of the semesters
+
+## Examples
+> Pre-release views
+![iamge](assets/screenshot.png)
+
+
+<br>
+
+<!-- Default documentation from Create React App package -->
+### Default documentation from Create React App package
+# Getting Started with Create React App
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
