@@ -2,15 +2,6 @@
     background-color: #FFF0E5;
     overflow-x: hidden;
 }
-.App-title {
-    font-family: "Apercu Pro", sans-serif black;
-    /* Locate inside the header */
-
-
-}
-.App-header{
-    background-color: #FFFFFF;
-}
 .App-body {
     display: flex;
     flex-direction: column;
@@ -18,22 +9,48 @@
     align-items: center;
     text-align: center;
 }
+.App-title {
+    font-family: "Apercu Pro", sans-serif black;
+    /* Locate inside the header */
 
-.header-content {
-    flex-direction: row;
+
+}
+.Header {
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: left;
+}
+.HeaderContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: 75px;
     border-bottom: 1px solid #10162F;
     
 }
-
-.App-logo {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.LeftHeader {
+    align-items: flex-end;
+    text-align: left;
+}
+.RightHeader {
+    align-items: flex-end;
+    text-align: right;
 }
 
-.locate {
-    margin-left: 6%;
-    transform: translate(-50%, 0);
+.HeaderContent img {
+    float: left;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+.HeaderContent h1 {
+    position: relative;
+    top: -62px;
+    left: 85px;
+}
+
+.HeaderContent h3 {
+    margin-top: 11px;
+    position: relative;
+    top: 3px;
+    left: -9px;
 }

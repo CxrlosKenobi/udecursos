@@ -13,7 +13,18 @@ const Container = styled.div`
   display: flex;
 `;
 
-const Heading = styled.h2`
+const H2 = styled.h2`
+  font-family: "Apercu Pro", sans-serif black;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #10162F;
+
+`;
+const H3 = styled.h3`
+  font-family: "Suisse Int\'l Mono", monospace;
+  font-size: 12px;
+  font-weight: bold;
+  color: #10162F;
 
 `;
 
@@ -89,14 +100,32 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <div className="header-content">
-            <h1 className="App-logo">
+        <header className="Header">
+          {/* <H1>Ingeniería Civil Informática</H1> */}
+          <div className="HeaderContent">
+  
+            <div className="LeftHeader">
               <a href="/">
-                <img className="locate" src={logo} alt="logo" height="80" width="60"/>
+                <img src={logo} alt="logo" height="70" width="52"/>
               </a>
-            </h1>
-            {/* <Heading>UdeCursos</Heading> */}
+              <h1>
+                <H2>UdeCursos</H2>
+              </h1>
+            </div>
+    
+            <div className="RightHeader">
+              <h3>
+                <a href="http://www.inf.udec.cl/">
+                  <H3>Ingeniería Civil Informática</H3>
+                </a>
+              </h3>
+              <h3>
+                <a href="http://secad.ing.udec.cl/horarios">
+                  <H3>UdeC 2021-2</H3>
+                </a>
+              </h3>
+            </div>
+
           </div>
         </header>
         <div className="App-body">
