@@ -103,7 +103,7 @@ class App extends React.Component {
           <div className="HeaderContent">
   
             <div className="LeftHeader">
-              <a href="/">
+              <a>
                 <img src={logo} alt="logo" height="70" width="52"/>
               </a>
               <h1>
