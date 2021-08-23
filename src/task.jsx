@@ -35,7 +35,6 @@ const Code = styled.div`
 `;
 const Content = styled.div`
   font-family: "Apercu Pro", sans-serif black;
-
   font-size: 12px;
   font-color: #10162F;
   font-weight: bold;
@@ -44,11 +43,11 @@ const Content = styled.div`
   flex-direction: column;
   flex-grow: 1;
   line-height: 1.2;
-
   align-items: center;
   justify-content: center;
-  margin-bottom: 38%;
-`;
+  margin-bottom: 36%;
+
+  `;
 const Credits = styled.div`
   font-family: "Suisse Int\'l Mono", monospace;
   font-size: 8.5px;

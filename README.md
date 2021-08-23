@@ -1,4 +1,5 @@
 ## TODO
+- [ ] Center the content of the container in a better way
 - [ ] Develope a cool footer <3
 - [ ] Look for a nice favicon
 - [ ] Check if credits are well done

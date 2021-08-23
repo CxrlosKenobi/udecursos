@@ -1,6 +1,6 @@
 .App {
     background-color: #FFF0E5;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .App-body {
     display: flex;
@@ -10,10 +10,7 @@
     text-align: center;
 }
 .App-title {
-    font-family: "Apercu Pro", sans-serif black;
-    /* Locate inside the header */
-
-
+    font-family: "Apercu Pro", sans-serif;
 }
 .Header {
     background-color: #FFFFFF;
@@ -53,4 +50,79 @@
     position: relative;
     top: 3px;
     left: -9px;
+}
+
+.Footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 3.6rem;
+}
+.FooterContent {
+    border-top: 1px solid #10162F;
+    padding: 1rem 0 0.5rem;
+
+    margin: 0;
+    -webkit-box-align: center;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    
+    font-size: 0.875rem;
+    text-align: center;
+}
+.FooterLeft {
+    
+    width: 33.3%;
+    text-align: left;
+
+}
+.FooterCenter {
+    width: 33.3%;
+    text-align: center;
+}
+.FooterRight {
+    width: 33.3%;
+    text-align: right;
+
+}
+.Footer a {
+    position: relative;
+    display: inline-block;
+    color: #10162F;
+    overflow: hidden;
+    background: linear-gradient(to right, #3A10E5, #3A10E5 50%, #10162F 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+
+    transition: background-position 400ms ease;
+    text-decoration: none;
+}
+.Footer a:hover {
+    background-position: 0 100%;
+}
+
+.F-L {
+    color: #10162F;
+    position: relative;
+    top: -6px;
+    background-clip: none !important;
+    transition: none !important;
+}
+.F-L:hover {
+    background-position: none !important;
+}
+.F-L2 {
+    color: #10162F;
+    position: relative;
+    bottom: -12px;
+    left: -130px;
+
 }

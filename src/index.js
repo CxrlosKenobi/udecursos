@@ -26,7 +26,13 @@ const H3 = styled.h3`
   color: #10162F;
 
 `;
+const H4 = styled.h4`
+  font-family: "Apercu Pro", sans-serif black;
+  font-size: 13px;
+  font-weight: bold;
+  color: #10162F;
 
+`;
 
 class App extends React.Component {
   state = initialData;
@@ -140,7 +146,33 @@ class App extends React.Component {
                })}
             </Container>
           </DragDropContext>
+          <br>
+          </br>
         </div>
+
+        <footer className="Footer">
+          <div className="FooterContent">
+
+            <div className="FooterLeft">
+              <a class="F-L">Última actualización:</a>
+              <a class="F-L2">Agosto 23, 2021</a>
+            </div>
+
+            <div className="FooterCenter">
+              {/* Github */}
+              <a href="https://github.com/CxrlosKenobi/udecursos-app" target="_blank">
+               <i class="fab fa-github"></i>   Código fuente
+              </a>
+            </div>
+            
+            <div className="FooterRight">
+              {/* Developed */}
+              <a>
+                <i class="fas fa-code"></i>   with   ❤️   by Kenobi
+              </a>
+            </div>
+          </div>
+        </footer>
       </div>
     );
   }
