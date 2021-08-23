@@ -8,7 +8,6 @@ import Column from './column';
 import logo from './logo.png';
 import './App.css';
 
-
 const Container = styled.div`
   display: flex;
 `;

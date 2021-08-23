@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 ## TODO
+- [ ] Develope a cool footer <3
+- [ ] Look for a nice favicon
 - [ ] Check if credits are well done
 - [ ] Fix column hight/focus while dragging
 - [ ] Add years at the top of the semesters
