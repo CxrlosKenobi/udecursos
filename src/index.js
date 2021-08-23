@@ -26,13 +26,6 @@ const H3 = styled.h3`
   color: #10162F;
 
 `;
-const H4 = styled.h4`
-  font-family: "Apercu Pro", sans-serif black;
-  font-size: 13px;
-  font-weight: bold;
-  color: #10162F;
-
-`;
 
 class App extends React.Component {
   state = initialData;
@@ -120,12 +113,18 @@ class App extends React.Component {
     
             <div className="RightHeader">
               <h3>
-                <a href="http://www.inf.udec.cl/">
+                <a 
+                  href="http://www.inf.udec.cl/"
+                  target="_blank" rel="noopener noreferrer"
+                >
                   <H3>Ingeniería Civil Informática</H3>
                 </a>
               </h3>
               <h3>
-                <a href="http://secad.ing.udec.cl/horarios">
+                <a 
+                  href="http://secad.ing.udec.cl/horarios"
+                  target="_blank" rel="noopener noreferrer"
+                >
                   <H3>UdeC 2021-2</H3>
                 </a>
               </h3>
@@ -160,7 +159,8 @@ class App extends React.Component {
 
             <div className="FooterCenter">
               {/* Github */}
-              <a href="https://github.com/CxrlosKenobi/udecursos-app" target="_blank">
+              <a href="https://github.com/CxrlosKenobi/udecursos-app" 
+                target="_blank" rel="noopener noreferrer">
                <i class="fab fa-github"></i>   Código fuente
               </a>
             </div>
