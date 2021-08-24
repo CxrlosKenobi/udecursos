@@ -8,9 +8,9 @@
 - [ ] Prepare tea with mint leaves for coding
 
 ## Examples
-> Pre-release views
+> Pre-release views of the Drag & Drop Curriculum
 
-![image](assets/Screenshot from 2021-08-23 23-27-45.png)
+![image](assets/Screenshot2021-08-23.png)
 
 
 <br>
