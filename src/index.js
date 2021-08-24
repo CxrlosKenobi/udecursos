@@ -99,7 +99,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="Header">
-          {/* <H1>Ingeniería Civil Informática</H1> */}
           <div className="HeaderContent">
   
             <div className="LeftHeader">
