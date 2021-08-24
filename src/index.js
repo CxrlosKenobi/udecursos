@@ -8,6 +8,9 @@ import Column from './column';
 import logo from './logo.png';
 import './App.css';
 
+// Import HashRouter package
+import { HashRouter } from 'react-router-dom';
+
 const Container = styled.div`
   display: flex;
 `;
@@ -102,7 +105,7 @@ class App extends React.Component {
           <div className="HeaderContent">
   
             <div className="LeftHeader">
-              <a>
+              <a href="/">
                 <img src={logo} alt="logo" height="70" width="52"/>
               </a>
               <h1>
@@ -157,15 +160,13 @@ class App extends React.Component {
             </div>
 
             <div className="FooterCenter">
-              {/* Github */}
-              <a href="https://github.com/CxrlosKenobi/udecursos-app" 
+              <a href="https://github.com/CxrlosKenobi/udecursos" 
                 target="_blank" rel="noopener noreferrer">
                <i class="fab fa-github"></i>   Código fuente
               </a>
             </div>
             
             <div className="FooterRight">
-              {/* Developed */}
               <a>
                 <i class="fas fa-code"></i>   with   ❤️   by Kenobi
               </a>
@@ -177,4 +178,11 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <React.StrictMode>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
