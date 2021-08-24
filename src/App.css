@@ -29,6 +29,15 @@
     align-items: flex-end;
     text-align: left;
 }
+.LeftHeader h4 {
+    align-items: flex-end;
+    text-align: left;
+    position: relative;
+    top: -111px;
+    left: 309px;
+    font-weight: normal;
+}
+
 .RightHeader {
     align-items: flex-end;
     text-align: right;
@@ -126,3 +135,4 @@
     left: -130px;
 
 }
+

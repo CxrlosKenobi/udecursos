@@ -30,6 +30,7 @@ const H3 = styled.h3`
 
 `;
 
+
 class App extends React.Component {
   state = initialData;
 
@@ -111,6 +112,9 @@ class App extends React.Component {
               <h1>
                 <H2>UdeCursos</H2>
               </h1>
+              <h4>
+                  beta
+              </h4>
             </div>
     
             <div className="RightHeader">
