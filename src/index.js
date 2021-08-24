@@ -105,7 +105,7 @@ class App extends React.Component {
           <div className="HeaderContent">
   
             <div className="LeftHeader">
-              <a href="http://cxrlosk.me/udecursos/">
+              <a href="https://cxrloskenobi.github.io/udecursos">
                 <img src={logo} alt="logo" height="70" width="52"/>
               </a>
               <h1>
