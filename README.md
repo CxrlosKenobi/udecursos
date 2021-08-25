@@ -1,5 +1,5 @@
 # UdeCursos
-> On process web app, check out the [beta here](http://cxrlosk.me/udecursos/)
+> In process open-source web app, check out the [beta here](http://cxrlosk.me/udecursos/)
 
 ## TODO
 - [x] Develope a cool footer <3
