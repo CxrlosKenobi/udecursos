@@ -153,6 +153,14 @@ class App extends React.Component {
           </DragDropContext>
           <br>
           </br>
+
+          {/* Display the sum of credits that each column has according to their tasks
+          <div>
+            <h3>
+              <H3>Total de créditos: {this.state.totalCredits}</H3>
+            </h3>
+          </div> */}
+
         </div>
 
         <footer className="Footer">

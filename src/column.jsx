@@ -21,6 +21,13 @@ const Container = styled.div`
 const Title = styled.h3`
   padding: 8px;
 `;
+const Credits = styled.h4`
+  font-family: "Suisse Int\'l Mono", monospace;
+  font-color: #633FE5;
+  font-size: 12px;
+
+  margin-top: 0px;
+`;
 const TaskList = styled.div`
   padding: 8px;
   transition: background-color 0.2s ease;
@@ -35,6 +42,8 @@ export default class Column extends React.Component {
       return (
         <Container>
           <Title>{this.props.column.title}</Title>
+          {/* Get the sum of the credits of all tasks in the column, converting each credit to an integer */}
+          <Credits>{this.props.tasks.reduce((acc, task) => acc + parseInt(task.credits), 0)}</Credits>
           <Droppable droppableId={this.props.column.id}>
             {(provided, snapshot) => (
               <TaskList
@@ -49,6 +58,9 @@ export default class Column extends React.Component {
               </TaskList>
             )}
           </Droppable>
+
+
+
         </Container>
       );
     }
