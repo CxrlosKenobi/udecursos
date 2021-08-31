@@ -168,7 +168,7 @@ class App extends React.Component {
 
             <div className="FooterLeft">
               <a class="F-L">Última actualización:</a>
-              <a class="F-L2">Agosto 23, 2021</a>
+              <a class="F-L2">Agosto 31, 2021</a>
             </div>
 
             <div className="FooterCenter">
