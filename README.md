@@ -6,8 +6,9 @@
 - [ ] Center the content of the container in a better way
 - [ ] Look for a nice favicon
 - [ ] Check if credits are well done
-- [ ] Fix column hight/focus while dragging
+- [x] Fix column hight/focus while dragging
 - [ ] Add years at the top of the semesters
+- [ ] Add feature to display continuity in tasks
 - [ ] Prepare tea with mint leaves for coding
 
 ## Examples
