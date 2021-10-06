@@ -133,26 +133,25 @@ class App extends React.Component {
           </div>
         </header>
         <div className="App-body">
-          <DragDropContext onDragEnd={this.onDragEnd}>
-            <Container>
-              {this.state.columnOrder.map(columnId => {
-                const column = this.state.columns[columnId];
-                const tasks = column.taskIds.map(
-                  taskId => this.state.tasks[taskId],
-                );
+            <DragDropContext onDragEnd={this.onDragEnd}>
+              <Container>
+                {this.state.columnOrder.map(columnId => {
+                  const column = this.state.columns[columnId];
+                  const tasks = column.taskIds.map(
+                    taskId => this.state.tasks[taskId],
+                  );
 
-                return <Column key={column.id} column={column} tasks={tasks} />;
-               })
-              }
-            </Container>
-          </DragDropContext>
-          {/* Display the sum of credits that each column has according to their tasks
-          <div>
-            <h3>
-              <H3>Total de créditos: {this.state.totalCredits}</H3>
-            </h3>
-          </div> */}
-
+                  return <Column key={column.id} column={column} tasks={tasks} />;
+                })
+                }
+              </Container>
+            </DragDropContext>
+            {/* Display the sum of credits that each column has according to their tasks
+            <div>
+              <h3>
+                <H3>Total de créditos: {this.state.totalCredits}</H3>
+              </h3>
+            </div> */}
         </div>
 
         <footer>

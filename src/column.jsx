@@ -18,7 +18,6 @@ const Container = styled.div`
   background-color: transparent;
   border-radius: 15px;
   width: 110px;
-  border: 1px solid green;
 
 `;
 const Title = styled.h3`
@@ -40,6 +39,7 @@ const TaskList = styled.div`
 
   flex-grow: 1;
   min-height: 100px;
+
 `;
 
 export default class Column extends React.Component {

@@ -14,8 +14,12 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  
   position: relative;
+
+  /* Center the grid item */
+  
 
   background-color: ${props => (props.isDragging ? '#FFD300' : "white")};
 

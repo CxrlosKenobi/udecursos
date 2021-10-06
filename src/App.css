@@ -8,14 +8,25 @@
 }
 
 .App-body {
+    /* @media only screen and (max-width: 1200) */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: scroll;
+    margin: 0 5%;
+    flex-wrap: wrap;
+    /* overflow-x: scroll; */
+    overflow: auto;
+    flex: 100vw;
 
-    /* width: 100%; */
-    /* flex: 1 1 auto;
-    overflow-y: scroll; */
+}
+#App-body section {
+    width: 100vw;
+    display: flex;
+
+    display: flex;
+    border: 3px solid green;
+    width: inherit;
+    height: fit-content;
+    overflow-x: scroll;
+    
 }
 .App-title {
     font-family: "Apercu Pro", sans-serif;
