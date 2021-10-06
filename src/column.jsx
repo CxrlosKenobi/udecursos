@@ -7,16 +7,19 @@ const Container = styled.div`
   font-family: "Apercu Pro", sans-serif black;
   font-color: #10162F;
 
-  margin-top: 5px;
-  background-color: transparent;
-  border-radius: 15px;
-  width: 110px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  position: relative;
+  margin-top: 5px;
+  background-color: transparent;
+  border-radius: 15px;
+  width: 110px;
+  border: 1px solid green;
+
 `;
 const Title = styled.h3`
   padding: 8px;
@@ -60,9 +63,6 @@ export default class Column extends React.Component {
               </TaskList>
             )}
           </Droppable>
-
-
-
         </Container>
       );
     }

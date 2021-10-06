@@ -15,6 +15,13 @@ const Container = styled.div`
   display: flex;
 `;
 
+const H2 = styled.h2`
+  font-family: "Apercu Pro", sans-serif black;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #10162F;
+
+`;
 const H3 = styled.h3`
   font-family: "Suisse Int\'l Mono", monospace;
   font-size: 12px;
@@ -91,6 +98,25 @@ class App extends React.Component {
     };
     this.setState(newState);
 
+    // Don't allow tasks to be dropped into the same column if the code of one task is inside the prerequisites list of another task
+    // This is a very simple implementation of this rule.
+    // The code of one task is inside the prerequisistes list of another task if one task is needed to be completed before the other task can be completed.
+    
+    // Getting the code of the task that is being moved
+    const taskCode = this.state.tasks[draggableId].code;
+    // Getting in one single list the prerequisites lists of each task inside the column that the task is being moved to
+    const prerequisites = this.state.columns[destination.droppableId].taskIds.map(taskId => this.state.tasks[taskId].prerequisites);
+
+    // In order to debug, write the prerequisites lists in a txt file
+    const fs = require('fs');
+    fs.writeFile('prerequisites.txt', prerequisites, function (err) {
+      if (err) {
+        return console.log(err);
+      }
+    }
+    );
+    
+
   };
 
   render() {
@@ -99,16 +125,16 @@ class App extends React.Component {
         <header className="Header">
           <div className="HeaderContent">
   
-            <div className="presentation">
-              <div id='img-container'>
-                <a href="https://cxrloskenobi.github.io/udecursos">
-                  <img src={logo} alt="logo" height="70" width="52"/>
-                </a>
-              </div>
-              <div id="heading-container">
-                  <h1>UdeCursos</h1>
-                  <h4>beta</h4>
-              </div>
+            <div className="LeftHeader">
+              <a href="https://cxrloskenobi.github.io/udecursos">
+                <img src={logo} alt="logo" height="70" width="52"/>
+              </a>
+              <h1>
+                <H2>UdeCursos</H2>
+              </h1>
+              <h4>
+                  beta
+              </h4>
             </div>
     
             <div className="RightHeader">
@@ -142,10 +168,12 @@ class App extends React.Component {
                 );
 
                 return <Column key={column.id} column={column} tasks={tasks} />;
-               })
-              }
+               })}
             </Container>
           </DragDropContext>
+          <br>
+          </br>
+
           {/* Display the sum of credits that each column has according to their tasks
           <div>
             <h3>
@@ -155,26 +183,26 @@ class App extends React.Component {
 
         </div>
 
-        <footer>
-          <div className="content">
+        <footer className="Footer">
+          <div className="FooterContent">
 
-            <div className="column-1">
-              <a className="last-update">Última actualización:<br></br>Octubre 6, 2021</a>
+            <div className="FooterLeft">
+              <a class="F-L">Última actualización:</a>
+              <a class="F-L2">Agosto 31, 2021</a>
             </div>
 
-            <div className="column-2">
+            <div className="FooterCenter">
               <a href="https://github.com/CxrlosKenobi/udecursos" 
                 target="_blank" rel="noopener noreferrer">
                <i class="fab fa-github"></i>   Código fuente
               </a>
             </div>
-
-            <div className="column-3">
+            
+            <div className="FooterRight">
               <a>
                 <i class="fas fa-code"></i>   with   ❤️   by Kenobi
               </a>
             </div>
-
           </div>
         </footer>
       </div>

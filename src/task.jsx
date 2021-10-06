@@ -11,11 +11,11 @@ const Container = styled.div`
   padding: 5px;
   margin-bottom: 10px;
 
-  -moz-box-flex: 1;
-  flex-grow: 1;
-  flex-basis: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
   background-color: ${props => (props.isDragging ? '#FFD300' : "white")};
 
@@ -26,40 +26,31 @@ const Code = styled.div`
   font-weight: bold;
   font-color: #633FE5;
 
-  display: flex;
-  padding: 4px;
-  -moz-box-align: center;
-  -moz-box-flex: 0;
-  flex-grow: 0;
-  flex-basis: 100%;
+  position: absolute;
+  padding: 10px;
+  top: 0px;
+  left: 0px;
 `;
 const Content = styled.div`
   font-family: "Apercu Pro", sans-serif black;
   font-size: 12px;
   font-color: #10162F;
   font-weight: bold;
+  line-height: 1.2;
 
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  line-height: 1.2;
   align-items: center;
   justify-content: center;
-  margin-bottom: 36%;
-
-  `;
+`;
 const Credits = styled.div`
   font-family: "Suisse Int\'l Mono", monospace;
   font-size: 8.5px;
   font-color: #633FE5;
 
-  
   position: absolute;
-  margin-top: 60px;
-  margin-left: 0px;
-  margin-right: -100px;
-  margin-bottom: -10px;
-  padding: 5px;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px;
 
 `;
 export default class Task extends React.Component {

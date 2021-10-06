@@ -1,13 +1,21 @@
 .App {
     background-color: #FFF0E5;
-    /* overflow-x: hidden; */
+    box-sizing: border-box;
+    /* display: flex;
+    flex-direction: column; */
+    /* width: 100%; */
+    overflow-x: hidden;
 }
+
 .App-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    overflow-x: scroll;
+
+    /* width: 100%; */
+    /* flex: 1 1 auto;
+    overflow-y: scroll; */
 }
 .App-title {
     font-family: "Apercu Pro", sans-serif;
@@ -20,22 +28,52 @@
 .HeaderContent {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     height: 75px;
-    border-bottom: 1px solid #10162F;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #10162F;    
+}
+.presentation {
+    position: relative;
+    height: inherit;
+    width: 28%;
+    align-items: flex-end;
+    text-align: left;
+
+}
+#img-container {
+    height: inherit;
+    float: left;
+    width: 15%;
+    margin-left: 5%;
+    text-align: center;
     
 }
-.LeftHeader {
-    align-items: flex-end;
-    text-align: left;
+#img-container img {
+    width: fit-content;
+    margin: 4px auto;
+
 }
-.LeftHeader h4 {
-    align-items: flex-end;
-    text-align: left;
+#heading-container {
+    height: inherit;
+    width: 70%;
+
+}
+.presentation h1 {
+    position: relative;
+    top: 0;
+    left: 85px;
+    font-size: 2.5em;
+    font-family: "Apercu Pro", sans-serif black;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #10162F;
+}
+.presentation h4 {
     position: relative;
     top: -111px;
     left: 313px;
     font-weight: normal;
+
 }
 
 .RightHeader {
@@ -43,11 +81,6 @@
     text-align: right;
 }
 
-.HeaderContent img {
-    float: left;
-    padding-left: 25px;
-    padding-top: 5px;
-}
 .HeaderContent h1 {
     position: relative;
     top: -62px;
@@ -61,78 +94,81 @@
     left: -9px;
 }
 
-.Footer {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+footer {
+    display: flex;    
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: auto;
     height: 3.6rem;
+    border-top: 1px solid #10162F;    
 }
-.FooterContent {
-    border-top: 1px solid #10162F;
-    padding: 1rem 0 0.5rem;
-
-    margin: 0;
-    -webkit-box-align: center;
-    box-sizing: border-box;
+footer .content {
+    width: 100%;
     display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    
-    font-size: 0.875rem;
-    text-align: center;
+    padding: 1rem 0.5rem;
 }
-.FooterLeft {
-    
+footer .column-1 {
+    display: flex;
     width: 33.3%;
     text-align: left;
-
 }
-.FooterCenter {
+footer .column-2 {
     width: 33.3%;
     text-align: center;
 }
-.FooterRight {
+footer .column-3 {
     width: 33.3%;
     text-align: right;
-
 }
-.Footer a {
-    position: relative;
-    display: inline-block;
+footer a {
     color: #10162F;
-    overflow: hidden;
-    background: linear-gradient(to right, #3A10E5, #3A10E5 50%, #10162F 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
+    --mainColor: #3A10E5;
+    --mainColor: #10162F;
 
-    transition: background-position 400ms ease;
-    text-decoration: none;
-}
-.Footer a:hover {
+    background:
+    linear-gradient(
+      to bottom, var(--mainColor) 0%,
+      var(--mainColor) 100%
+    );
     background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    
+    text-decoration: none;
+    transition: background-size .2s;
+    padding: 0.4rem 0.3rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    border-radius: 0.2rem;
+    border: 1px solid #10162F;
+
+}
+footer a:hover {
+    background-size: 4px 50px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #10162F;
+
 }
 
-.F-L {
+.last-update {
     color: #10162F;
-    position: relative;
-    top: -6px;
-    background-clip: none !important;
+    background: none !important;
     transition: none !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
 }
-.F-L:hover {
-    background-position: none !important;
-}
-.F-L2 {
-    color: #10162F;
-    position: relative;
-    bottom: -12px;
-    left: -130px;
+.last-update:hover {
+    background-position: none;
+    background-size: none;
+    text-decoration: none;
+    border: none;
+    color: inherit;
 
 }
 
