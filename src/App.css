@@ -8,26 +8,13 @@
 }
 
 .App-body {
-    /* @media only screen and (max-width: 1200) */
     display: flex;
     margin: 0 5%;
     flex-wrap: wrap;
-    /* overflow-x: scroll; */
     overflow: auto;
     flex: 100vw;
-
 }
-#App-body section {
-    width: 100vw;
-    display: flex;
 
-    display: flex;
-    border: 3px solid green;
-    width: inherit;
-    height: fit-content;
-    overflow-x: scroll;
-    
-}
 .App-title {
     font-family: "Apercu Pro", sans-serif;
 }
@@ -183,3 +170,13 @@ footer a:hover {
 
 }
 
+/* @media only screen and (min-height: 721) {
+    .App-body {
+        display: flex;
+        margin: 0 5%;
+        flex-wrap: wrap;
+        overflow: auto;
+        flex: 100vw;
+        height: calc(100vh - 135px);
+    }    
+} */
