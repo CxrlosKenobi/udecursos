@@ -196,7 +196,7 @@ footer a:hover {
         display: inline-block;
         position: relative;
         top: 27px;
-        left: 40%;
+        left: 55%;
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
@@ -206,14 +206,14 @@ footer a:hover {
         color: #FFF0E5;
         transition: color 0.3s ease;
     }
-    #menu-toggle a:hover { color: #3A10E5; }
+    #menu-toggle a:hover { color: #FFD300; }
     #menu-toggle input {
         display: block;
         width: 50px;
         height: 32px;
         position: absolute;
         top: -7px;
-        left: -5px;
+        left: -15px;
         cursor: pointer;        
         opacity: 0;
         z-index: 2;
@@ -221,7 +221,7 @@ footer a:hover {
     }
     #menu-toggle span {
         display: block;
-        width: 33px;
+        width: 30px;
         height: 4px;
         margin-bottom: 5px;
         position: relative;
@@ -237,7 +237,7 @@ footer a:hover {
     #menu-toggle span:nth-last-child(2) { transform-origin: 0% 100%; }
     #menu-toggle input:checked ~ span {
         opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
+        transform: rotate(45deg) translate(-1px, 1px);
         background: #FFF0E5;
     }
     #menu-toggle input:checked ~ span:nth-last-child(3) {
@@ -247,7 +247,7 @@ footer a:hover {
     #menu-toggle input:checked ~ span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); }
     #menu {
         position: absolute;
-        width: 60vw;
+        width: 65vw;
         margin: -100px 0 0 -50px;
         padding: 50px;
         padding-top: 125px;
@@ -262,7 +262,16 @@ footer a:hover {
     #menu li {
         padding: 10px 0;
         font-size: 1.2rem;
+        text-align: left;
     }
+    #menu p {
+        color: #172B4D;
+        position: absolute;
+        top: 17%;
+        right: 5%;
+        font-size: .75rem;
+    }
+    #menu p:hover { color: #FFF0E5; }
     #menu-toggle input:checked ~ ul { transform: none; }
 
     .presentation {
@@ -287,7 +296,7 @@ footer a:hover {
     }
     #heading-container h1 {
         position: relative;
-        top: 15.5%;
+        top: 16.5%;
         left: 5%;
         font-size: 2.5em;
         font-family: "Apercu Pro", sans-serif black;
@@ -300,7 +309,7 @@ footer a:hover {
         position: absolute;
         width: fit-content;
         font-size: .8rem;
-        top: 17px;
+        top: 18px;
         left: 243px;
         font-weight: normal;
     }
