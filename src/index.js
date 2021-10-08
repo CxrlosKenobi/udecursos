@@ -158,7 +158,7 @@ class App extends React.Component {
           <div className="content">
 
             <div className="column-1">
-              <a className="last-update">Última actualización:<br></br>Octubre 6, 2021</a>
+              <a className="last-update">Última actualización:<br></br>Octubre 8, 2021</a>
             </div>
 
             <div className="column-2">

@@ -1,9 +1,6 @@
 .App {
     background-color: #FFF0E5;
     box-sizing: border-box;
-    /* display: flex;
-    flex-direction: column; */
-    /* width: 100%; */
     overflow-x: hidden;
 }
 
@@ -173,13 +170,77 @@ footer a:hover {
 
 }
 
-/* @media only screen and (min-height: 721) {
-    .App-body {
+
+
+@media only screen and (max-width: 560px) {
+    footer {
+        display: flex;    
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
+        width: auto;
+        height: 3.7rem;
+        border-top: 1px solid #10162F;    
+    }
+    footer .content {
+        width: 100%;
         display: flex;
-        margin: 0 5%;
-        flex-wrap: wrap;
-        overflow: auto;
-        flex: 100vw;
-        height: calc(100vh - 135px);
+        padding: 1rem 0.1rem;
+    }
+    footer a {
+        color: #10162F;
+        --mainColor: #10162F;
+    
+        background:
+        linear-gradient(
+          to bottom, var(--mainColor) 0%,
+          var(--mainColor) 100%
+        );
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 1px 1px;
+        
+        text-decoration: none;
+        transition: background-size .2s;
+        padding: 0.5rem 0.2rem;
+        font-size: 0.62rem;
+        font-weight: bold;
+    
+        border-radius: 0.2rem;
+        border: 1px solid #10162F;    
     }    
-} */
+    .last-update {
+        color: #10162F;
+        background: none !important;
+        transition: none !important;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+        border: none;    
+    }
+}
+@media only screen and (max-width: 360px){
+    footer a {
+        color: #10162F;
+        --mainColor: #10162F;
+    
+        background:
+        linear-gradient(
+          to bottom, var(--mainColor) 0%,
+          var(--mainColor) 100%
+        );
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 1px 1px;
+        
+        text-decoration: none;
+        transition: background-size .2s;
+        padding: 0.5rem 0.2rem;
+        font-size: 0.60rem;
+        font-weight: bold;
+    
+        border-radius: 0.2rem;
+        border: 1px solid #10162F;    
+    }
+}
