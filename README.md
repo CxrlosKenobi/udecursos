@@ -5,8 +5,8 @@
 - [x] Develope a cool footer
 - [x] Look for a nice favicon
 - [x] Fix column hight/focus while dragging
-- [ ] Develope the responsive design for mobiles
-- [ ] Center the content of the container in a better way
+- [x] Develope the responsive design for mobiles
+- [x] Center the content of the container in a better way
 - [ ] Check if credits are well done
 - [ ] Add years at the top of the semesters
 - [ ] Add feature to display continuity in tasks
