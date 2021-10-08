@@ -30,6 +30,10 @@
     flex-wrap: wrap;
     border-bottom: 1px solid #10162F;    
 }
+#navigation {
+    display: none;
+}
+
 .presentation {
     position: relative;
     height: inherit;
@@ -54,7 +58,6 @@
 #heading-container {
     height: inherit;
     width: 70%;
-
 }
 .presentation h1 {
     position: relative;
@@ -173,6 +176,141 @@ footer a:hover {
 
 
 @media only screen and (max-width: 560px) {
+    .Header {
+        background-color: #FFFFFF;
+        width: 100%;
+        text-align: center;
+    }
+    .HeaderContent {
+        display: flex;
+        justify-content: space-between;
+        height: 75px;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #10162F;    
+    }
+    #navigation {
+        display: inline-block;
+    }
+
+    #menu-toggle {
+        display: inline-block;
+        position: relative;
+        top: 27px;
+        left: 40%;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    #menu-toggle a {
+        text-decoration: none;
+        color: #FFF0E5;
+        transition: color 0.3s ease;
+    }
+    #menu-toggle a:hover { color: #3A10E5; }
+    #menu-toggle input {
+        display: block;
+        width: 50px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;        
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+    }
+    #menu-toggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background-color: #10162F;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                        opacity 0.55s ease;
+    }
+    #menu-toggle span:first-child { transform-origin: 0% 0; }
+    #menu-toggle span:nth-last-child(2) { transform-origin: 0% 100%; }
+    #menu-toggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #FFF0E5;
+    }
+    #menu-toggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    #menu-toggle input:checked ~ span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); }
+    #menu {
+        position: absolute;
+        width: 60vw;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background: #10162F;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        border-radius: 10px;
+    }
+    #menu li {
+        padding: 10px 0;
+        font-size: 1.2rem;
+    }
+    #menu-toggle input:checked ~ ul { transform: none; }
+
+    .presentation {
+        position: relative;
+        height: inherit;
+        width: 85%;
+        align-items: flex-end;
+        text-align: center;
+    }
+    #img-container {
+        display: none;
+        height: inherit;
+        width: fit-content;
+        float: left;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #heading-container {
+        height: inherit;
+        align-items: center;
+        width: 100%;
+    }
+    #heading-container h1 {
+        position: relative;
+        top: 15.5%;
+        left: 5%;
+        font-size: 2.5em;
+        font-family: "Apercu Pro", sans-serif black;
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #10162F;
+        width: fit-content;
+    }
+    #heading-container h4 {
+        position: absolute;
+        width: fit-content;
+        font-size: .8rem;
+        top: 17px;
+        left: 243px;
+        font-weight: normal;
+    }
+    .RightHeader {
+        /* Hide all items from this container */
+        display: none;
+    }
+    
+
+
     footer {
         display: flex;    
         margin-left: 1.4rem;
