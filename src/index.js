@@ -105,8 +105,11 @@ class App extends React.Component {
               <span></span>
               <span></span>
               <ul id="menu">
+                {/* <a><li>Carrera</li></a> */}
+                <li>Carrera<br></br>  ⟶   Ing. Civil Informática</li>
                 <a href="https://cxrloskenobi.github.io/udecursos"><li>Drag and Drop</li></a>
-                {/* <a href="#"><li>Horarios</li></a>                   */}
+                <br></br>
+                <a href="http://secad.ing.udec.cl/horarios"><p> UdeC 2021-2</p></a>
               </ul>
             </div>
           </nav>
