@@ -25,5 +25,8 @@ Here is where you get your remaining PR's for the hacktoberfest!
 
 ![image](assets/Screenshot2021-08-23.png)
 
+## Getting started
+1. Go inside the repo and run `yarn install` to get all the dependencies
+2. Now run the app with `yarn start` to start the localhost
 
 <br>
