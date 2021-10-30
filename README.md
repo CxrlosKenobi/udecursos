@@ -20,13 +20,15 @@ Here is where you get your remaining PR's for the hacktoberfest!
 - [ ] Add feature to display continuity in tasks
 - [x] Prepare tea with mint leaves for coding
 
-## Examples
-> Pre-release views of the Drag & Drop Curriculum
-
-![image](assets/Screenshot2021-08-23.png)
 
 ## Getting started
 1. Go inside the repo and run `yarn install` to get all the dependencies
 2. Now run the app with `yarn start` to start the localhost
+
+
+## Examples
+> Pre-release views of the Drag & Drop Curriculum
+
+![image](assets/Screenshot2021-08-23.png)
 
 <br>
