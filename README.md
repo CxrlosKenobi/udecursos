@@ -1,10 +1,6 @@
 # UdeCursos
 > In process open-source web app, check out the [beta here](http://cxrlosk.me/udecursos/)
 
-## Hacktoberfest 2021 PR's are welcome!
-Here is where you get your remaining PR's for the hacktoberfest!
-1. Create your issue with any upgrade being for documentation, coding, responsive design, css details.
-2. Fork this repo and make your Pull Request! I'll be friendly accepting those until hacktoberfest is done.
 
 ## TODO
 - [x] Develope a cool footer
