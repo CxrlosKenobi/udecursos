@@ -1,8 +1,8 @@
 {
   "name": "udecursos-app",
-  "version": "0.1.0",
+  "version": "0.3.2",
   "private": true,
-  "homepage": "https://cxrloskenobi.github.io/udecursos",
+  "homepage": "http://udecursos.study/",
   "dependencies": {
     "@atlaskit/css-reset": "^6.1.2",
     "@testing-library/jest-dom": "^5.11.4",
