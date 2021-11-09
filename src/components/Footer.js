@@ -16,7 +16,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="column-3">
-                    <a href='/https://github.com/CxrlosKenobi'>
+                    <a href='https://github.com/CxrlosKenobi'>
                         <i className="fas fa-code"></i>   with   ❤️   by Kenobi
                     </a>
                 </div>
