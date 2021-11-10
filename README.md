@@ -15,8 +15,8 @@
 - [ ] Do not allow a block be dropped in a column that reach the 24 credits limit!
 - [ ] Add years at the top of the semesters
 - [ ] Upgrade the mobile hamburguer menu to look good
-- [ ] Add NavBar including Drag & Drop as the main page
-- [ ] Add feature to display continuity in tasks
+- [ ] Add NavBar including Malla as the main page
+- [ ] Add feature to display continuity in tasks (i.e. Calculus II cannot be with Calculus I on the same column)
 - [x] Prepare tea with mint leaves for coding
 
 
