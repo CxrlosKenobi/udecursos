@@ -16,16 +16,15 @@ const Header = () => {
             <div className="HeaderContent">
             <nav id="navigation">
                 <div id="menu-toggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                    <li>Carrera<br></br>  ⟶   Ing. Civil Informática</li>
-                    <a href="/Malla"><li>Malla</li></a>
-                    <br></br>
-                    <a href="http://secad.ing.udec.cl/horarios"><p> UdeC 2021-2</p></a>
-                </ul>
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        {/* <p><a href="http://secad.ing.udec.cl/horarios">Udec 2021-2</a></p> */}
+                        <li><a href="/Home">Home</a></li>
+                        <li><a href="/Malla">Malla</a></li>
+                    </ul>
                 </div>
             </nav>
                 <div className="presentation">
