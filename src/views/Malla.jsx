@@ -1,5 +1,5 @@
 import initialData from '../data/initial-data';
-import React from 'react';
+import React from 'react';  
 import Column from '../components/column';
 import { DragDropContext } from 'react-beautiful-dnd';
 import '../css/Malla.css'
