@@ -5,7 +5,8 @@ const Footer = () => {
         <footer>
             <div className="content">
                 <div className="column-1">
-                    <a href='https://github.com/CxrlosKenobi/udecursos/commits/master' className="last-update">
+                    <a href='https://github.com/CxrlosKenobi/udecursos/commits/master' 
+                        target="_blank" rel="noopener noreferrer" className="last-update">
                         Última actualización:<br></br>Noviembre 9, 2021
                     </a>
                 </div>
