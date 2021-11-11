@@ -1,7 +1,8 @@
 footer {
     display: flex;    
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
     width: auto;
     height: 3.6rem;
     border-top: 1px solid #10162F;    
