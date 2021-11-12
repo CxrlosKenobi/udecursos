@@ -183,7 +183,7 @@
         position: relative;
         top: 40px;
         right: 35px;
-        z-index: 20;
+        z-index: 9;
         background-color: #10162f;
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
