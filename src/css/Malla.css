@@ -4,10 +4,14 @@
     justify-content: center;
     align-items: center;
     margin: 0 5%;
+    margin-top: calc(85px + 5px);
+        
     flex-wrap: wrap;
     overflow: auto;
-    flex: 100vw;
 }
 #container-malla {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: calc(100vh - 140px);
 }

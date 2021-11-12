@@ -1,3 +1,8 @@
+* {
+    scrollbar-color: #10162F #FFF0E5;
+    scrollbar-width: thin;
+}
+
 .App {
     background-color: #FFF0E5;
     box-sizing: border-box;
