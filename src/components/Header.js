@@ -21,7 +21,25 @@ const Header = () => {
         );
     }
     
+    const NavItem = (props) => {
+        return (
+            <li>
+                <a href={props.go}>
+                    {props.children}
+                </a>
+            </li>
+        );
+    }
 
+    const NavBar = () => {
+        return (
+            <ul id="NavBar">
+                <NavItem go="/Inicio">Inicio</NavItem>
+                <NavItem go="/Malla">Malla</NavItem>
+                {/* <NavItem go="/Horarios">Horarios</NavItem> */}
+            </ul>
+        );
+    }
     return (
         <header className="Header">
             <div className="HeaderContent">
@@ -35,6 +53,7 @@ const Header = () => {
                         <h1>UdeCursos</h1>
                     </div>
                 </div>
+                <NavBar />                
                 <BurgerNav />
                 <div id="RightHeader">
                     <h3>
