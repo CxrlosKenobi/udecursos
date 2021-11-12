@@ -12,9 +12,9 @@
 - [x] Develope the responsive design for mobiles
 - [x] Center the content of the container in a better way
 - [x] Check if credits are well done
+- [x] Upgrade the mobile hamburguer menu to look good
 - [ ] Do not allow a block be dropped in a column that reach the 24 credits limit!
 - [ ] Add years at the top of the semesters
-- [ ] Upgrade the mobile hamburguer menu to look good
 - [ ] Add NavBar including Malla as the main page
 - [ ] Add feature to display continuity in tasks (i.e. Calculus II cannot be with Calculus I on the same column)
 - [x] Prepare tea with mint leaves for coding
