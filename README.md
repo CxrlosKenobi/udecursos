@@ -6,13 +6,6 @@
 
 
 ## TODO
-- [x] Develope a cool footer
-- [x] Look for a nice favicon
-- [x] Fix column hight/focus while dragging
-- [x] Develope the responsive design for mobiles
-- [x] Center the content of the container in a better way
-- [x] Check if credits are well done
-- [x] Upgrade the mobile hamburguer menu to look good
 - [ ] Do not allow a block be dropped in a column that reach the 24 credits limit!
 - [ ] Add years at the top of the semesters
 - [ ] Add NavBar including Malla as the main page
