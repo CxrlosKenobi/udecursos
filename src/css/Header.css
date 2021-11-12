@@ -28,6 +28,7 @@
     align-items: center;
     height: inherit;
     width: fit-content;
+    padding-right: 60px;
 }
 #img-container {
     height: inherit;
@@ -64,6 +65,34 @@
 }
 
 
+#NavBar {
+    height: inherit;
+
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+    font-family: "Suisse Int\'l Mono", monospace;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#NavBar li {
+    list-style: none;
+    margin: 0;
+}
+#NavBar a {
+    margin-right: 35px;
+    text-decoration: none;
+    color: #10162f;
+}
+#NavBar a:hover {
+    text-decoration: underline #4c2bee;
+}
+
 
 
 #RightHeader {
@@ -92,12 +121,15 @@
 
 
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 846px) {
     .presentation {
         position: relative;
         height: inherit;
         width: 85%;
         justify-content: flex-start;
+    }
+    #NavBar {
+        display: none;
     }
     #heading-container { padding-left: 2%; }
     #heading-container h1 {
@@ -129,10 +161,10 @@
     #menu a:hover { color: #4c2bee; }
     #menu-toggle input {
         position: absolute;
-        width: 45px;
-        height: 45px;
-        top: 19px;
-        right: 23px;
+        width: 55px;
+        height: 55px;
+        top: 15px;
+        right: 17px;
         opacity: 0;
         cursor: pointer;
         z-index: 10;
