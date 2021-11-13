@@ -89,9 +89,7 @@
     text-decoration: none;
     color: #10162f;
 }
-#NavBar a:hover {
-    text-decoration: underline #4c2bee;
-}
+#NavBar a:hover { color: #4c2bee; }
 
 
 
