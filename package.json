@@ -8,7 +8,6 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "gh-pages": "^3.2.3",
     "hash-router": "^0.4.0",
     "react": "^17.0.2",
     "react-beautiful-dnd": "^13.1.0",
@@ -24,8 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "yarn run build"
   },
   "eslintConfig": {
     "extends": [
