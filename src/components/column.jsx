@@ -22,11 +22,13 @@ const Container = styled.div`
 `;
 const Title = styled.h3`
   padding: 8px;
+  user-select: none;
 `;
 const Credits = styled.h4`
   font-family: "Suisse Int\'l Mono", monospace;
   font-color: #633FE5;
   font-size: 12px;
+  user-select: none;
 
   margin-top: 0px;
 `;

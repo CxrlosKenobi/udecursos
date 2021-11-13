@@ -15,7 +15,6 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  
   position: relative;
 
   /* Center the grid item */
@@ -34,6 +33,7 @@ const Code = styled.div`
   padding: 10px;
   top: 0px;
   left: 0px;
+  user-select: none;
 `;
 const Content = styled.div`
   font-family: "Apercu Pro", sans-serif black;
@@ -45,6 +45,7 @@ const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 `;
 const Credits = styled.div`
   font-family: "Suisse Int\'l Mono", monospace;
@@ -55,6 +56,7 @@ const Credits = styled.div`
   bottom: 0px;
   left: 0px;
   padding: 10px;
+  user-select: none;
 
 `;
 export default class Task extends React.Component {
