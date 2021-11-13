@@ -2,7 +2,7 @@
 
 ![image](assets/banner.png)
 
-> In process open-source web app, check out the [beta here](http://cxrlosk.me/udecursos/)
+> In process open-source web app, check out the [pre-release here](https://udecursos.study/)
 
 
 ## TODO
