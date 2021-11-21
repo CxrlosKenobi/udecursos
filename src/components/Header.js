@@ -15,6 +15,7 @@ const Header = () => {
                         {/* <p><a href="http://secad.ing.udec.cl/horarios">Udec 2021-2</a></p> */}
                         <li><a href="/Inicio">Inicio</a></li>
                         <li><a href="/Malla">Malla</a></li>
+                        <li><a href="/Utilidades">Utilidades</a></li>
                     </ul>
                 </div>
             </nav>
@@ -36,6 +37,7 @@ const Header = () => {
             <ul id="NavBar">
                 <NavItem go="/Inicio">Inicio</NavItem>
                 <NavItem go="/Malla">Malla</NavItem>
+                <NavItem go="/Utilidades">Utilidades</NavItem>
                 {/* <NavItem go="/Horarios">Horarios</NavItem> */}
             </ul>
         );
