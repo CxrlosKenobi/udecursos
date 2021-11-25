@@ -8,11 +8,9 @@
 ## Screenshots
 > Pre-release views of the Drag & Drop Feature
 
+### Check out the responsive design as well! 👀
 ![image](assets/latest_build.png)
 
-### Check out the responsive/accesible design as well!
-
-![image](assets/responsive_example.jpg)
 
 ## Getting started for devs! 
 1. Go inside the repo and run `yarn install` in order to get all the dependencies
