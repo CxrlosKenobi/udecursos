@@ -25,3 +25,6 @@
 > Pre-release views of the Drag & Drop Curriculum
 
 ![image](assets/Screenshot2021-08-23.png)
+
+## License
+[MIT](LICENSE)
