@@ -1,5 +1,5 @@
-import './css/App.css';
 import '@atlaskit/css-reset';
+import './css/App.css';
 import {
   BrowserRouter as Router,
   Switch,
