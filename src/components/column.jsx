@@ -1,7 +1,7 @@
 import React from 'react';
+import Task from './task';
 import styled from 'styled-components';
 import { Droppable } from 'react-beautiful-dnd';
-import Task from './task';
 
 const Container = styled.div`
   font-family: "Apercu Pro", sans-serif black;
@@ -44,29 +44,27 @@ const TaskList = styled.div`
 
 `;
 
-export default class Column extends React.Component {
-    render() {
-      return (
-        <Container>
-          <Title>{this.props.column.title}</Title>
-          {/* Get the sum of the credits of all tasks in the column, converting each credit to an integer */}
-          <Credits>{this.props.tasks.reduce((acc, task) => acc + parseInt(task.credits), 0)}</Credits>
-          <Droppable droppableId={this.props.column.id}>
-            {(provided, snapshot) => (
-              <TaskList
-                ref={provided.innerRef}
-                {...provided.droppableProps}
-                isDraggingOver={snapshot.isDraggingOver}
-              >
-                {this.props.tasks.map((task, index) => (
-                  <Task key={task.id} task={task} index={index} />
-                ))}
-                {provided.placeholder}
-              </TaskList>
-            )}
-          </Droppable>
-        </Container>
-      );
-    }
-  }
-  
+export default function Column(props) {
+  const credits = props.tasks.reduce((acc, task) => acc + parseInt(task.credits), 0);
+
+  return (
+    <Container>
+      <Title>{props.column.title}</Title>
+      <Credits>{credits}</Credits>
+      <Droppable droppableId={props.column.id}>
+        {(provided, snapshot) => (
+          <TaskList
+            ref={provided.innerRef}
+            {...provided.droppableProps}
+            isDraggingOver={snapshot.isDraggingOver}
+          >
+            {props.tasks.map((task, index) => (
+              <Task key={task.id} task={task} index={index} />
+            ))}
+            {provided.placeholder}
+          </TaskList>
+        )}
+      </Droppable>
+    </Container>
+  )
+}
