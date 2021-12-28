@@ -1,4 +1,15 @@
-/* Format of the data:
+// // Function created to be used inside the columns of initialData json
+// function getCredits() {
+//   var credits = 0;
+//   // Get the sum of credits that the tasks in the column has
+//   this.tasks.forEach(function(task) {
+//     credits += task.credits;
+//   });
+  
+//   return credits;
+// }
+
+/* Data format:
   ramos: {
     'id': { id: 'id', content: 'NAME', color: '#FFFFFF', credits: 0, code: 'courseCode', prerequisites: [] }
 */
@@ -72,67 +83,78 @@ const initialData = {
         id: 'column-1',
         title: 'I',
         taskIds: ['task-1', 'task-2', 'task-3', 'task-4', 'task-5'],
+        credits: '',
       },
       'column-2': {
         id: 'column-2',
         title: 'II',
         taskIds: ['task-6', 'task-7', 'task-8', 'task-9', 'task-10'],
+        credits: '',
       },
       'column-3': {
         id: 'column-3',
         title: 'III',
         taskIds: ['task-11', 'task-12', 'task-13', 'task-14'],
+        credits: '',
       },
       'column-4': {
         id: 'column-4',
         title: 'IV',
         taskIds: ['task-15', 'task-16', 'task-17', 'task-18', 'task-19'],
+        credits: '',
       },
       'column-5': {
         id: 'column-5',
         title: 'V',
         taskIds: ['task-20', 'task-21', 'task-22', 'task-23', 'task-24'],
+        credits: '',
       },
       'column-6': {
         id: 'column-6',
         title: 'VI',
         taskIds: ['task-25', 'task-26', 'task-27', 'task-28', 'task-29'],
+        credits: '',
       },
       'column-7': {
         id: 'column-7',
         title: 'VII',
         taskIds: ['task-30', 'task-31', 'task-32', 'task-33', 'task-34'],
+        credits: '',
       },
       'column-8': {
         id: 'column-8',
         title: 'VIII',
         taskIds: ['task-35', 'task-36', 'task-37', 'task-38', 'task-39'],
+        credits: '',
       },
       'column-9': {
         id: 'column-9',
         title: 'IX',
         taskIds: ['task-40', 'task-41', 'task-42', 'task-43', 'task-44'],
+        credits: '',
       },
       'column-10': {
         id: 'column-10',
         title: 'X',
         taskIds: ['task-45', 'task-46', 'task-47', 'task-48'],
+        credits: '',
     },
     'column-11': {
         id: 'column-11',
         title: 'XI',
         taskIds: ['task-49', 'task-50'],
-      }
-    },
-    // Facilitate reordering of the columns
-    columnOrder: [
-        'column-1', 'column-2', 
-        'column-3', 'column-4',
-        'column-5', 'column-6',
-        'column-7', 'column-8',
-        'column-9', 'column-10',
-        'column-11'],
-  };
+        credits: '',
+    }
+  },
+  // Facilitate reordering of the columns
+  columnOrder: [
+      'column-1', 'column-2', 
+      'column-3', 'column-4',
+      'column-5', 'column-6',
+      'column-7', 'column-8',
+      'column-9', 'column-10',
+      'column-11']
+};
   
-  export default initialData;
+export default initialData;
   
