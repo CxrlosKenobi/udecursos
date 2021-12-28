@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Header from './components/Header';
 import Malla from './views/Malla';
+import Utilidades from './views/Utilidades';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -17,6 +18,9 @@ const App = () => {
                 <Switch>
                     <Route path="/Malla">
                         <Malla/>
+                    </Route>
+                    <Route path="/Utilidades">
+                        <Utilidades/>
                     </Route>
                 </Switch>
                 <Footer/>
