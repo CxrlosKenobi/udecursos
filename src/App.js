@@ -11,9 +11,9 @@ import Malla from './views/Malla';
 import Utilidades from './views/Utilidades';
 import Footer from './components/Footer';
 
-export default function App() {
+export default function UdeCursos() {
     return (
-        <div className='App'>
+        <div id='UdeCursos'>
             <Router>
                 <Header/>
                 <Switch>

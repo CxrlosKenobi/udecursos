@@ -1,4 +1,5 @@
 import initialData from '../data/initial-data';
+import astro from '../data/astroMalla';
 import dynamicData from '../data/dynamic-data';
 import React, { useState, useEffect, useCallback } from 'react';  
 import Column from '../components/Column';

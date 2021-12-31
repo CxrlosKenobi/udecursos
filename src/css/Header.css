@@ -1,5 +1,4 @@
 .Header {
-    background-color: #fff;
     width: 100%;
     text-align: left;
     display: flex;
@@ -12,6 +11,7 @@
     flex-direction: column;
 }
 .HeaderContent {
+    background-color: #fff;
     height: 75px;
     width: 100%;
     display: flex;
@@ -40,14 +40,14 @@
     text-align: center;
 }
 #img-container a {
+    border: 1px solid red;
     text-decoration: none;
-    height: fit-content;
-    width: fit-content;
 }
 #img-container img {
     width: fit-content;
     margin: 4px auto;
 }
+#img-container img:hover { cursor: pointer }
 #heading-container {
     height: inherit;
     width: fit-content;
@@ -71,16 +71,6 @@
     -ms-user-select: none;
     user-select: none;
 }
-#heading-container h1:hover {
-    -webkit-animation: all 0.6s ease-in-out;
-    animation: all 0.6s ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-
-    cursor: pointer;
-    color: #5d4213;
-}
-
 
 #NavBar {
     height: inherit;
@@ -111,12 +101,12 @@
     list-style: none;
     margin: 0;
 }
-#NavBar a, .Dropdown {
+#NavBar a, .Dropdown, .aux-li {
     margin-right: 35px !important;
     text-decoration: none !important;
     color: #10162f !important;
 }
-#NavBar a:hover, .Dropdown:hover { 
+#NavBar a:hover, .Dropdown:hover, .aux-li:hover { 
     color: #4c2bee !important; 
 }
 
@@ -145,8 +135,11 @@
     margin-top: 11px;
 }
 #accordion {
+    background-color: #FFF;
+    border-radius: 5px;
     height: fit-content;
-    width: 100%;
+    width: 95%;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,19 +148,23 @@
 #accordion ul {
     width: 100%;
     list-style: none;
+    padding-left: 0;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 5px 10px;
+    margin: 5px 15px;
 }
 #accordion li {
     margin: 5px 8px;
     padding: 4px;
+    user-select: none;
 }
 #accordion li:hover {
-    color: #4c2bee;
+    cursor: pointer;
+    text-decoration: underline #4c2bee;
+    font-style: none;
 }
 
 

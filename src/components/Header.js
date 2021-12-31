@@ -1,38 +1,45 @@
+import React, { useState, useEffect } from 'react';
 import '../css/Header.css';
 import logo from '../assets/logo.png';
-
-import React, { useState } from 'react';
 import data from '../data/careers-data';
-
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 
 
 export default function Header() {
 	const [career, setCareer] = useState({});
-	let state = data.carreras;
- 	
-	function MenuPopupState(props) {
+	let careerData = data.carreras;
+	
+	const [state, setState] = useState(false);
+	const [accordion, setAccordion] = useState(null);
 
+	useEffect(() => {
+		if (state) {
+			 setAccordion(
+				<div id='accordion'>
+					<ul>
+						{careerData.map((option) => (
+							<li key={option.id} 
+									style={option.name === career.name ? {
+										fontWeight: 'bold', textDecoration: 'underline #4c2bee'} : {}}
+									onClick={(() => setCareer(option))} >
+								{option.name}
+							</li>
+						))}
+					</ul>
+				</div>
+			)
+		} else {
+			setAccordion(<div></div>)
+		}
+	}, [state, careerData, career]);
+	
+
+	function AccordionMenu(props) {
 		return (
-			<PopupState variant="popover" popupId="demo-popup-menu">
-				{(popupState) => (
-					<React.Fragment>
-						<Button className='Dropdown' variant="contained" {...bindTrigger(popupState)}>
-							{props.title}
-						</Button>
-						<Menu {...bindMenu(popupState)}>
-							{state.map((item) => (
-								<MenuItem key={item.id} onClick={() => {setCareer(item)}}>
-									{item.name}
-								</MenuItem>
-							))}
-						</Menu>
-					</React.Fragment>
-				)}
-			</PopupState>
+			<>
+				<li className='aux-li' onClick={() => state ? setState(false) : setState(true)}>
+					{props.children}
+				</li>
+			</>
 		);
 	}
 
@@ -50,11 +57,9 @@ export default function Header() {
 	return (
 			<header className="Header">
 				<div className="HeaderContent">
-							<div className="presentation">
+							<div className="presentation" onClick={() => window.location.href = '/Inicio'}>
 									<div id='img-container'>
-											<a href="/">
-													<img src={logo} alt="logo" height="70" width="52"/>
-											</a>
+												<img src={logo} alt="Logo" height="70" width="52"/>
 									</div>
 									<div id="heading-container">
 											<h1>UdeCursos</h1>
@@ -64,7 +69,7 @@ export default function Header() {
 							<ul id="NavBar">
 									<NavItem go="/Inicio">Inicio</NavItem>
 									<NavItem go="/Malla">Malla</NavItem>
-									<MenuPopupState title='Carreras'/>
+									<AccordionMenu>Carreras</AccordionMenu>
 									<NavItem go="/Utilidades">Utilidades</NavItem>
 							</ul>
 
@@ -86,30 +91,19 @@ export default function Header() {
 							<div id="RightHeader">
 									<h3>
 											<a href={career.link}
-													target="_blank" rel="noopener noreferrer">
+													target="_blank" rel="nostateer noreferrer">
 													{career.name}
 											</a>
 									</h3>
 									<h3>
 											<a href="http://secad.ing.udec.cl/horarios"
-													target="_blank" rel="noopener noreferrer">
+													target="_blank" rel="nostateer noreferrer">
 													UdeC 2021-2
 											</a>
 									</h3>
 							</div>
 					</div>
-
-					<div id='accordion'>
-						<ul>
-							{
-								state.map((item) => (
-									<li key={item.id} onClick={(() => setCareer(item))} >
-										{item.name}
-									</li>
-								))
-							}
-						</ul>
-					</div>
+					{accordion}
 			</header>
 	)
 }
