@@ -1,5 +1,5 @@
 .Header {
-    background-color: #ffffff;
+    background-color: #fff;
     width: 100%;
     text-align: left;
     display: flex;
@@ -8,6 +8,8 @@
     top: 0;
     left: 0;
     z-index: 9;
+    display: flex;
+    flex-direction: column;
 }
 .HeaderContent {
     height: 75px;
@@ -142,7 +144,31 @@
     align-self: flex-end;
     margin-top: 11px;
 }
+#accordion {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #10162f;
+}
+#accordion ul {
+    width: 100%;
+    list-style: none;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5px 10px;
+}
+#accordion li {
+    margin: 5px 8px;
+    padding: 4px;
+}
+#accordion li:hover {
+    color: #4c2bee;
+}
 
 
 

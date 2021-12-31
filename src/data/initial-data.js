@@ -144,6 +144,5 @@ const initialData = {
       'column-9', 'column-10',
       'column-11']
 };
-  
+
 export default initialData;
-  

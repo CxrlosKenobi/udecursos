@@ -1,18 +1,20 @@
 import '../css/Header.css';
 import logo from '../assets/logo.png';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import data from '../data/careers-data';
+
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
-import data from '../data/careers-data';
+
 
 export default function Header() {
-	const [career, setCareer] = useState({})
+	const [career, setCareer] = useState({});
+	let state = data.carreras;
  	
 	function MenuPopupState(props) {
-		let state = data.carreras;
 
 		return (
 			<PopupState variant="popover" popupId="demo-popup-menu">
@@ -33,6 +35,17 @@ export default function Header() {
 			</PopupState>
 		);
 	}
+
+	function NavItem(props) {
+		return (
+				<li>
+						<a href={props.go}>
+								{props.children}
+						</a>
+				</li>
+		);
+	}
+
 
 	return (
 			<header className="Header">
@@ -85,16 +98,18 @@ export default function Header() {
 									</h3>
 							</div>
 					</div>
+
+					<div id='accordion'>
+						<ul>
+							{
+								state.map((item) => (
+									<li key={item.id} onClick={(() => setCareer(item))} >
+										{item.name}
+									</li>
+								))
+							}
+						</ul>
+					</div>
 			</header>
 	)
-}
-
-function NavItem(props) {
-		return (
-				<li>
-						<a href={props.go}>
-								{props.children}
-						</a>
-				</li>
-		);
 }
