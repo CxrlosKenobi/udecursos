@@ -62,6 +62,21 @@
     display: flex;
     align-self: center;
     justify-content: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#heading-container h1:hover {
+    -webkit-animation: all 0.6s ease-in-out;
+    animation: all 0.6s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    cursor: pointer;
+    color: #5d4213;
 }
 
 
@@ -80,16 +95,28 @@
     padding: 0;
     list-style: none;
 }
+.Dropdown {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    font-family: "Suisse Int\'l Mono", monospace !important;
+    font-size: 1rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    text-transform: none !important;
+}
 #NavBar li {
     list-style: none;
     margin: 0;
 }
-#NavBar a {
-    margin-right: 35px;
-    text-decoration: none;
-    color: #10162f;
+#NavBar a, .Dropdown {
+    margin-right: 35px !important;
+    text-decoration: none !important;
+    color: #10162f !important;
 }
-#NavBar a:hover { color: #4c2bee; }
+#NavBar a:hover, .Dropdown:hover { 
+    color: #4c2bee !important; 
+}
 
 
 
