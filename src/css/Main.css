@@ -1,0 +1,100 @@
+#Main {
+	height: 100%;
+	width: 90%;
+	margin: 76px 0 5% 5%;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+#Main .spacer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 2%;
+}
+
+#main-body {
+	display: flex;
+	font-size: .7rem;
+	flex-wrap: wrap;
+}
+#main-body .first-row {
+	height: inherit;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#main-body .second-row {
+	height: inherit;
+	width: 40%;
+}
+
+#explore-container {
+	margin: 2% 2%;
+	display: flex;
+}
+#explore-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+
+
+.window-box {
+	width: 465px;
+	height: 296px;
+	border: 1px solid #10162f;
+	color: lightgray;
+	margin-right: 4px;
+}
+.window-box:hover {
+	color: #FFD300;
+	transition: 350ms ease-in;
+}
+.img-container {
+	height: 86%;
+	max-width: 100%;
+	background-color: white;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.img-container img {
+	width: 100%;
+	cursor: pointer;
+}
+.img-container p {
+	position: absolute;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #10162f !important;
+	width: inherit;
+	text-shadow: 0 0 25px white;
+}
+.img-container h3, h4 {
+	font-family: 'Suisse Int\'l Mono', monospace;
+	margin: 0 auto;
+}
+.img-container h4 {
+	font-size: .8rem;
+}
+
+.box-content {
+	height: 14%;
+	width: 100%;
+	background-color: #10162f;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+}
+.box-content h3 {
+	padding-left: 4%;
+	color: inherit;
+	font-family: 'Suisse Int\'l Mono', monospace;
+}
