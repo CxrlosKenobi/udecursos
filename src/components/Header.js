@@ -1,7 +1,7 @@
 import '../css/Header.css';
 import logo from '../assets/logo.png';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -9,9 +9,34 @@ import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 import data from '../data/careers-data';
 
 export default function Header() {
+	const [career, setCareer] = useState({})
+ 	
+	function MenuPopupState(props) {
+		let state = data.carreras;
+
+		return (
+			<PopupState variant="popover" popupId="demo-popup-menu">
+				{(popupState) => (
+					<React.Fragment>
+						<Button className='Dropdown' variant="contained" {...bindTrigger(popupState)}>
+							{props.title}
+						</Button>
+						<Menu {...bindMenu(popupState)}>
+							{state.map((item) => (
+								<MenuItem key={item.id} onClick={() => {setCareer(item)}}>
+									{item.name}
+								</MenuItem>
+							))}
+						</Menu>
+					</React.Fragment>
+				)}
+			</PopupState>
+		);
+	}
+
 	return (
 			<header className="Header">
-					<div className="HeaderContent">
+				<div className="HeaderContent">
 							<div className="presentation">
 									<div id='img-container'>
 											<a href="/">
@@ -25,7 +50,7 @@ export default function Header() {
 
 							<ul id="NavBar">
 									<NavItem go="/Inicio">Inicio</NavItem>
-									<NavItem go="/Malla">Malla |</NavItem>
+									<NavItem go="/Malla">Malla</NavItem>
 									<MenuPopupState title='Carreras'/>
 									<NavItem go="/Utilidades">Utilidades</NavItem>
 							</ul>
@@ -47,15 +72,14 @@ export default function Header() {
 
 							<div id="RightHeader">
 									<h3>
-											<a href='https://a.com'
+											<a href={career.link}
 													target="_blank" rel="noopener noreferrer">
-													''
+													{career.name}
 											</a>
 									</h3>
 									<h3>
 											<a href="http://secad.ing.udec.cl/horarios"
-													target="_blank" rel="noopener noreferrer"
-											>
+													target="_blank" rel="noopener noreferrer">
 													UdeC 2021-2
 											</a>
 									</h3>
@@ -65,41 +89,12 @@ export default function Header() {
 	)
 }
 
-function MenuPopupState(props) {
-	const [career, setCareer] = useState('');
-  let state = data;
-	state = state.carreras;
-
-  return (
-    <PopupState variant="popover" popupId="demo-popup-menu">
-      {(popupState) => (
-        <React.Fragment>
-          <Button className='Dropdown' variant="contained" {...bindTrigger(popupState)}>
-            {props.title}
-          </Button>
-          <Menu {...bindMenu(popupState)}>
-						<MenuItem onClick={() => {console.log(state); console.log(state) }}>
-							AAA
-						</MenuItem>
-
-						{state.map((item) => (
-							<MenuItem key={item.id} onClick={() => {setCareer(item)}}>
-								{item.name}
-							</MenuItem>
-						))}
-          </Menu>
-        </React.Fragment>
-      )}
-    </PopupState>
-  );
-}
-
 function NavItem(props) {
-    return (
-        <li>
-            <a href={props.go}>
-                {props.children}
-            </a>
-        </li>
-    );
+		return (
+				<li>
+						<a href={props.go}>
+								{props.children}
+						</a>
+				</li>
+		);
 }

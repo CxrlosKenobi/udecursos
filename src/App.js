@@ -11,7 +11,7 @@ import Malla from './views/Malla';
 import Utilidades from './views/Utilidades';
 import Footer from './components/Footer';
 
-const App = () => {
+export default function App() {
     return (
         <div className='App'>
             <Router>
@@ -26,5 +26,3 @@ const App = () => {
         </div>
     );
 }
-
-export default App;

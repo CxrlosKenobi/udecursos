@@ -22,7 +22,6 @@ const Container = styled.div`
     outline: 2.2px solid #4C2BEE;
 
   }
-
 `;
 const Code = styled.div`
   font-family: "Suisse Int\'l Mono", monospace;

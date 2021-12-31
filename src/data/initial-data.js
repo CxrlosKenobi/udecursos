@@ -1,14 +1,3 @@
-// // Function created to be used inside the columns of initialData json
-// function getCredits() {
-//   var credits = 0;
-//   // Get the sum of credits that the tasks in the column has
-//   this.tasks.forEach(function(task) {
-//     credits += task.credits;
-//   });
-  
-//   return credits;
-// }
-
 /* Data format:
   ramos: {
     'id': { id: 'id', content: 'NAME', color: '#FFFFFF', credits: 0, code: 'courseCode', prerequisites: [] }
@@ -26,7 +15,7 @@ const initialData = {
       'task-7': { id: 'task-7', content: 'Álgebra II', color: "#FFD300", credits: "5", code: "525150", prerequisites: ['525140'] },
       'task-8': { id: 'task-8', content: 'Cálculo II', color: "#FFD300", credits: "5", code: "527150", prerequisites: ['527140'] },
       'task-9': { id: 'task-9', content: 'Intro. Desarrollo Soluciones Inf.', color: "#FFD300", credits: "3", code: "503152", prerequisites: [] },
-      'task-10': { id: 'task-10', content: 'Intro. Innovación Ingeniería', color: "#FFD300", credits: "2", code: "500151", prerequisites: ['503120'] },
+      'task-10': { id: 'task-10', content: 'Intro. Innovación Ingeniería', color: "#FFD300", credits: "2", code: "500151", prerequisites: [] },
 
       'task-11': { id: 'task-11', content: 'Lógica', color: "#FFD300", credits: "4", code: "503207", prerequisites: [] },
       'task-12': { id: 'task-12', content: 'Ecuaciones Diferenciales Ordinarias', color: "#FFD300", credits: "4", code: "521218", prerequisites: ['525150', '527150'] },
@@ -39,9 +28,9 @@ const initialData = {
       'task-18': { id: 'task-18', content: 'Programación II', color: "#FFD300", credits: "4", code: "503212", prerequisites: ['503208'] },
       'task-19': { id: 'task-19', content: 'Complementaria I', color: "#FFD300", credits: "3", code: "201", prerequisites: [] },
 
-      'task-20': { id: 'task-20', content: 'Estadística', color: "#FFD300", credits: "4", code: "523210", prerequisites: [] },
-      'task-21': { id: 'task-21', content: 'Mecánica y Termodinámica', color: "#FFD300", credits: "5", code: "541341", prerequisites: [] },
-      'task-22': { id: 'task-22', content: 'Estructura de Datos', color: "#FFD300", credits: "4", code: "503220", prerequisites: [] },
+      'task-20': { id: 'task-20', content: 'Estadística', color: "#FFD300", credits: "4", code: "523210", prerequisites: ['525140', '527150'] },
+      'task-21': { id: 'task-21', content: 'Mecánica y Termodinámica', color: "#FFD300", credits: "5", code: "541341", prerequisites: ['531140', '510150', '521227'] },
+      'task-22': { id: 'task-22', content: 'Estructura de Datos', color: "#FFD300", credits: "4", code: "503220", prerequisites: ['503208'] },
       'task-23': { id: 'task-23', content: 'Electiva I', color: "#FFD300", credits: "3", code: "101", prerequisites: [] },
       'task-24': { id: 'task-24', content: 'Complementaria II', color: "#FFD300", credits: "3", code: "202", prerequisites: [] },
 

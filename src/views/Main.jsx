@@ -53,7 +53,7 @@ export default function Main() {
 
 										<div className='window-box' style={{height: '145px', width: '400px'}}>
 											<section className='img-container' style={{height: '100%'}}>
-												<h3>Otra utilidad</h3>
+												<h3>Creador de Horario UdeC</h3>
 											</section>
 										</div>
 									</div>
