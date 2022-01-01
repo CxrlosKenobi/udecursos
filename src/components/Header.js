@@ -1,15 +1,21 @@
-import React, { useState, useEffect } from 'react';
+	import React, { useState, useEffect } from 'react';
 import '../css/Header.css';
 import logo from '../assets/logo.png';
 import data from '../data/careers-data';
 
 
 export default function Header() {
-	const [career, setCareer] = useState({});
+	const [career, setCareer] = useState({id: 99, name: '(Elige una carrera del menu)', link: ''});
 	let careerData = data.carreras;
 	
 	const [state, setState] = useState(false);
 	const [accordion, setAccordion] = useState(null);
+
+	useEffect(() => {
+		if (career.id === 99) {
+			document.querySelector('#RightHeader a').style.color = '#707070';
+		}
+	}, [career])
 
 	useEffect(() => {
 		if (state) {
@@ -20,14 +26,19 @@ export default function Header() {
 							<li key={option.id} 
 									style={option.name === career.name ? {
 										fontWeight: 'bold', textDecoration: 'underline #4c2bee'} : {}}
-									onClick={(() => setCareer(option))} >
+									onClick={(() => {
+										setCareer(option);
+										document.querySelector('#RightHeader a').style.color = '#10162F';
+										setTimeout(() => setState(false), 300);
+									})} >
 								{option.name}
 							</li>
 						))}
 					</ul>
 				</div>
-			)
-		} else {
+			); 
+		} 
+		else {
 			setAccordion(<div></div>)
 		}
 	}, [state, careerData, career]);
@@ -35,11 +46,9 @@ export default function Header() {
 
 	function AccordionMenu(props) {
 		return (
-			<>
-				<li className='aux-li' onClick={() => state ? setState(false) : setState(true)}>
-					{props.children}
-				</li>
-			</>
+			<li className='aux-li' onClick={() => state ? setState(false) : (setState(true))}>
+				{props.children}
+			</li>
 		);
 	}
 

@@ -60,7 +60,8 @@
     font-family: "Apercu Pro", sans-serif black;
     font-size: 2.8rem;
     font-weight: bold;
-    color: #10162f;
+    /* color: #10162f; */
+    color: #6d6d6d;
     display: flex;
     align-self: center;
     justify-content: center;
@@ -101,11 +102,22 @@
     list-style: none;
     margin: 0;
 }
+
+#NavBar li:focus, #NavBar a:focus, #RightHeader a:focus {
+    outline: none;
+    border: 1px dashed #10162f;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 #NavBar a, .Dropdown, .aux-li {
     margin-right: 35px !important;
     text-decoration: none !important;
     color: #10162f !important;
+    cursor: pointer;
+    user-select: none;
 }
+
 #NavBar a:hover, .Dropdown:hover, .aux-li:hover { 
     color: #4c2bee !important; 
 }
