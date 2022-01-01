@@ -13,7 +13,7 @@ export default function Header() {
 
 	useEffect(() => {
 		if (career.id === 99) {
-			document.querySelector('#RightHeader a').style.color = '#707070';
+			document.querySelector('#career').style.color = '#707070';
 		}
 	}, [career])
 
@@ -99,7 +99,7 @@ export default function Header() {
 
 							<div id="RightHeader">
 									<h3>
-											<a href={career.link}
+											<a id='career' href={career.link}
 													target="_blank" rel="nostateer noreferrer">
 													{career.name}
 											</a>
