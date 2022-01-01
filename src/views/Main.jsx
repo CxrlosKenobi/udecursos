@@ -12,7 +12,7 @@ function CommitList() {
 	const [changelogs, setChangelogs] = useState(null)
 
 	const [commits, setCommits] = useState([]);
-	const octokit = new Octokit({ auth: `${token}` })
+	const octokit = new Octokit({ auth: token })
 
 	useEffect(() => {
 		async function fetchAPI() {
@@ -40,7 +40,7 @@ function CommitList() {
 			)
 		} else {
 			setChangelogs(
-				<p id='changelogs-error'>Uh oh, debe haber un error de conexión :( <br/>Intentando recuperar datos de la API ...</p>
+				<p id='changelogs-error'>Uh oh, debe haber un error de conexión :( <br/>Intentando recuperar datos de la API . . .</p>
 			)
 		}
 	}, [received, commits])
