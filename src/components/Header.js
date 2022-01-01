@@ -1,4 +1,4 @@
-	import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/Header.css';
 import logo from '../assets/logo.png';
 import data from '../data/careers-data';

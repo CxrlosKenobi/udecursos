@@ -54,7 +54,7 @@
 	transition: 350ms ease-in;
 }
 .img-container {
-	height: 86%;
+	height: 87%;
 	max-width: 100%;
 	background-color: white;
 	cursor: pointer;
@@ -85,7 +85,7 @@
 }
 
 .box-content {
-	height: 14%;
+	height: 13%;
 	width: 100%;
 	background-color: #10162f;
 	display: flex;
@@ -97,4 +97,33 @@
 	padding-left: 4%;
 	color: inherit;
 	font-family: 'Suisse Int\'l Mono', monospace;
+}
+
+
+
+.aux-title {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	height: fit-content;
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+.aux-title h1 {
+	margin: 0;
+	padding: 0;
+	margin-left: 4px;
+}
+.git-branch-svg {
+	height: 28px;
+	margin: 0;
+	padding: 0;
+}
+#changelogs-error {
+	font-size: 1rem;
+	margin-left: 5%;
+	font-weight: bold;
+	color: #707070;
 }
