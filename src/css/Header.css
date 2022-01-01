@@ -139,6 +139,7 @@
     text-decoration: none;
     color: #10162F;
     cursor: pointer;
+    user-select: none;
 }
 #RightHeader a:hover { text-decoration: underline #4c2bee; }
 #RightHeader h3 {
