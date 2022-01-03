@@ -1,13 +1,13 @@
 import '../css/Footer.css'
 
-const Footer = () => {
+export default function Footer(){
     return (
         <footer>
             <div className="content">
                 <div className="column-1">
                     <a href='https://github.com/CxrlosKenobi/udecursos/commits/master' 
                         target="_blank" rel="noopener noreferrer" className="last-update">
-                        Última actualización:<br></br>Diciembre 30, 2021
+                        Última actualización:<br></br>Enero 2, 2022
                     </a>
                 </div>
                 <div className="column-2">
@@ -25,5 +25,3 @@ const Footer = () => {
         </footer>
     );
 }
-
-export default Footer;

@@ -169,6 +169,12 @@
 	height: 35px;
 	border-right: 1px solid #D0D7DE;
 }
+.commit-info ._login {
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #24292F;
+	margin-right: 5px;
+}
 .commit-info ._name {
 	color: #707070;
 	align-self: center;
@@ -180,6 +186,12 @@
 }
 .commit-desc ._desc {
 	font-size: 1rem;
+	text-decoration: none;
+	color: #24292F;
+}
+._desc:focus {
+	outline: none;
+	color: #707070;
 }
 
 ._date {
@@ -189,4 +201,5 @@
 }
 ._date h2 {
 	font-size: 1rem;
+	user-select: none;
 }

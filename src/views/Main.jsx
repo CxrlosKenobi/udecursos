@@ -42,14 +42,13 @@ function CommitList() {
 	function parseDate(date) {
 		let y = date.split('T')[0].split('-')[0]
 		let m = date.split('T')[0].split('-')[1]
-		let d = date.split('T')[0].split('-')[1]
+		let d = date.split('T')[0].split('-')[2]
 
 		return `${d}/${m}/${y}`
 	}
 
 	useEffect(() => {
 		if (received) {
-			console.log(commits)
 			setChangelogs(
 				commits.data.map(request => {
 					return (
@@ -58,10 +57,16 @@ function CommitList() {
 								<img src={request.author.avatar_url} alt='GitHub profile pic' className='profilepic' />
 							</div>
 							<div className='commit-info'>
-								<h2 className='_login' alt={request.commit.author.name}>@{request.author.login}</h2>
+								<a href={request.author.html_url} className='_login' alt={request.commit.author.name}
+                    target="_blank" rel="noopener noreferrer">
+										@{request.author.login}
+								</a>
 							</div>
 							<div className='commit-desc'>
-								<p className='_desc'>{request.commit.message}</p>
+								<a href={request.html_url} className='_desc'
+                    target="_blank" rel="noopener noreferrer">
+									{request.commit.message}
+								</a>
 							</div>
 							<div className='_date'>
 								<h2>{parseDate(request.commit.author.date)}</h2>
