@@ -5,7 +5,7 @@ import data from '../data/careers-data';
 
 
 export default function Header() {
-	const [career, setCareer] = useState({id: 99, name: '(Elige una carrera del menu)'});
+	const [career, setCareer] = useState({id: 99, name: '(Eliga una carrera del menu)'});
 	let careerData = data.carreras;
 	
 	const [state, setState] = useState(false);

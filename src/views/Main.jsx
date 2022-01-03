@@ -18,34 +18,68 @@ function CommitList() {
 		async function fetchAPI() {
 			const owner = 'CxrlosKenobi', repo = 'udecursos'
 
-			const response = await octokit.request(
-        `GET /repos/{owner}/{repo}/commits`, 
-				{ owner, repo, per_page: 5 }
-			);
-			response.length > 0 
-			? (
-				setCommits(response) && console.log(response) && setReceived(true)
-			) 
-			: (
-				console.log("Couldn't fetch data from the GitHub API :(") && setReceived(false) && console.log(response)
-			)
+			try {
+				const response = await octokit.request(
+					`GET /repos/{owner}/{repo}/commits`, 
+					{ owner, repo, per_page: 5 }
+				);
+				if (response.status === 200)
+				{
+					setCommits(response)
+					setReceived(true)
+				} else {
+					console.log("Couldn't fetch data from the GitHub API :(")
+					setReceived(false)
+				}
+			} catch(e) {
+				console.log(e)
+			}
 		}
 		fetchAPI()
 	}, [])
+	
+	// Aux function
+	function parseDate(date) {
+		let y = date.split('T')[0].split('-')[0]
+		let m = date.split('T')[0].split('-')[1]
+		let d = date.split('T')[0].split('-')[1]
+
+		return `${d}/${m}/${y}`
+	}
 
 	useEffect(() => {
 		if (received) {
+			console.log(commits)
 			setChangelogs(
-				console.log(commits.data)
+				commits.data.map(request => {
+					return (
+						<div key={request.sha} className="commit">
+							<div className='profilepic-container'>
+								<img src={request.author.avatar_url} alt='GitHub profile pic' className='profilepic' />
+							</div>
+							<div className='commit-info'>
+								<h2 className='_login'>@{request.author.login}</h2>
+								<h2 className='_name'>| {request.commit.author.name}</h2>
+								<div className='_date'>
+									<h2>{parseDate(request.commit.author.date)}</h2>
+								</div>
+							</div>
+							<div className='commit-desc'>
+								<p className='_desc'>{request.commit.message}</p>
+							</div>
+						</div>
+					)
+				})
 			)
 		} else {
 			setChangelogs(
-				<p id='changelogs-error'>Uh oh, debe haber un error de conexión :( <br/>Intentando recuperar datos de la API . . .</p>
+			<div id='changelogs-error'>
+				<p>Intentando recuperar datos de la API . . .</p>
+			</div>
 			)
 		}
 	}, [received, commits])
-
-	return (changelogs);
+	return changelogs
 }
 
 export default function Main() {
@@ -110,8 +144,8 @@ export default function Main() {
 								<img src={gitBranch} className='git-branch-svg' alt='Changelogs Udecursos'/>
 								<h1>Últimos cambios</h1>
 							</div>
-							<CommitList /> 
 						</div>
+						<CommitList /> 	
 				</div>
 		</div>
 	)
