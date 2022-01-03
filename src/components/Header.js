@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Header.css';
-import logo from '../assets/logo.png';
 import data from '../data/careers-data';
-
+import logo from '../assets/logo.png';
+import arrow from '../assets/arrow.png';
+import arrowHover from '../assets/arrowHover.png';
 
 export default function Header() {
 	const [career, setCareer] = useState({id: 99, name: '(Eliga una carrera del menu)'});
@@ -45,10 +46,24 @@ export default function Header() {
 	
 
 	function AccordionMenu(props) {
+		const [hover, setHover] = useState(false);
+		const [icon, setIcon] = useState(arrow);
+		useEffect(() => {
+			if (hover === true){
+				setIcon(arrowHover);
+			} else {
+				setIcon(arrow);
+			}
+		}, [hover]);
+
 		return (
-			<li className='aux-li' onClick={() => state ? setState(false) : (setState(true))}>
-				{props.children}
-			</li>
+			<div className='aux-li'
+					onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+				<li onClick={() => state ? setState(false) : (setState(true))}>
+					{props.children}
+				</li>
+				<img className='arrow' src={icon} alt='Carreras'/> 
+			</div>
 		);
 	}
 

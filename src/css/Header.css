@@ -108,8 +108,7 @@
     border-radius: 5px;
     padding: 5px;
 }
-
-#NavBar a, .Dropdown, .aux-li {
+#NavBar a, .Dropdown {
     margin-right: 35px !important;
     text-decoration: none !important;
     color: #10162f !important;
@@ -119,6 +118,20 @@
 
 #NavBar a:hover, .Dropdown:hover, .aux-li:hover { 
     color: #4c2bee !important; 
+}
+.aux-li {
+    margin-right: 22px !important;
+    text-decoration: none !important;
+    color: #10162f !important;
+    cursor: pointer;
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+}
+.arrow {
+    margin: 0 4px;
+    width: 14px;
 }
 
 
