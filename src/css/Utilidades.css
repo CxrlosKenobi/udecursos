@@ -4,8 +4,6 @@
     align-items: flex-start;
     justify-content: space-between;
     
-
-    
     flex-wrap: wrap;
     overflow: auto;
     
@@ -21,7 +19,7 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    width: 15%;
+    width: 17%;
     /* min-height: calc(100vh - 140px); */
     min-height: calc(100vh - 166px);
     background-color: white;
@@ -29,12 +27,19 @@
 }
 #body-selector h1 {
     font-size: 1.4rem;
-
     margin: 5% 10%;
 }
+#body-selector ul {
+    margin: 0;
+    padding: 10px 0 0 20px;
+}
 #body-selector li {
-    /* Remove the list bullets */
+    margin: 12px 0;
+    margin-top: 0;
     list-style: none;
+}
+#body-selector li:focus {
+    text-decoration: underline #10162F;
 }
 #body-selector #wip {
     color: gray;

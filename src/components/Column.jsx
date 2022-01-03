@@ -1,5 +1,5 @@
 import React from 'react';
-import Task from './task';
+import Task from './Task';
 import styled from 'styled-components';
 import { Droppable } from 'react-beautiful-dnd';
 
@@ -26,7 +26,7 @@ const Title = styled.h3`
 `;
 const Credits = styled.h4`
   font-family: "Suisse Int\'l Mono", monospace;
-  font-color: #633FE5;
+  font-color: #10162F;
   font-size: 12px;
   user-select: none;
 
@@ -46,11 +46,11 @@ const TaskList = styled.div`
 
 export default function Column(props) {
   const credits = props.tasks.reduce((acc, task) => acc + parseInt(task.credits), 0);
-
+  
   return (
     <Container>
       <Title>{props.column.title}</Title>
-      <Credits>{credits}</Credits>
+      <Credits id={`column-credits-${props.column.id}`}>{credits}</Credits>
       <Droppable droppableId={props.column.id}>
         {(provided, snapshot) => (
           <TaskList

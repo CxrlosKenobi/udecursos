@@ -18,7 +18,10 @@ const Container = styled.div`
   position: relative;
 
   background-color: ${props => (props.isDragging ? '#FFD300' : "white")};
+  &:focus {
+    outline: 2.2px solid #4C2BEE;
 
+  }
 `;
 const Code = styled.div`
   font-family: "Suisse Int\'l Mono", monospace;

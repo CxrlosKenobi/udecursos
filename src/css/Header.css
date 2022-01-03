@@ -1,5 +1,4 @@
 .Header {
-    background-color: #ffffff;
     width: 100%;
     text-align: left;
     display: flex;
@@ -8,8 +7,11 @@
     top: 0;
     left: 0;
     z-index: 9;
+    display: flex;
+    flex-direction: column;
 }
 .HeaderContent {
+    background-color: #fff;
     height: 75px;
     width: 100%;
     display: flex;
@@ -38,14 +40,14 @@
     text-align: center;
 }
 #img-container a {
+    border: 1px solid red;
     text-decoration: none;
-    height: fit-content;
-    width: fit-content;
 }
 #img-container img {
     width: fit-content;
     margin: 4px auto;
 }
+#img-container img:hover { cursor: pointer }
 #heading-container {
     height: inherit;
     width: fit-content;
@@ -62,8 +64,13 @@
     display: flex;
     align-self: center;
     justify-content: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-
 
 #NavBar {
     height: inherit;
@@ -80,16 +87,39 @@
     padding: 0;
     list-style: none;
 }
+.Dropdown {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    font-family: "Suisse Int\'l Mono", monospace !important;
+    font-size: 1rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    text-transform: none !important;
+}
 #NavBar li {
     list-style: none;
     margin: 0;
 }
-#NavBar a {
-    margin-right: 35px;
-    text-decoration: none;
-    color: #10162f;
+
+#NavBar li:focus, #NavBar a:focus, #RightHeader a:focus {
+    outline: none;
+    border: 1px dashed #10162f;
+    border-radius: 5px;
+    padding: 5px;
 }
-#NavBar a:hover { color: #4c2bee; }
+
+#NavBar a, .Dropdown, .aux-li {
+    margin-right: 35px !important;
+    text-decoration: none !important;
+    color: #10162f !important;
+    cursor: pointer;
+    user-select: none;
+}
+
+#NavBar a:hover, .Dropdown:hover, .aux-li:hover { 
+    color: #4c2bee !important; 
+}
 
 
 
@@ -102,12 +132,14 @@
     width: fit-content;
     margin-right: 18px;
 }
-#RightHeader a {
+#RightHeader a, #career {
     font-family: "Suisse Int\'l Mono", monospace;
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
     color: #10162F;
+    cursor: pointer;
+    user-select: none;
 }
 #RightHeader a:hover { text-decoration: underline #4c2bee; }
 #RightHeader h3 {
@@ -115,7 +147,38 @@
     align-self: flex-end;
     margin-top: 11px;
 }
+#accordion {
+    background-color: #FFF;
+    border-radius: 5px;
+    height: fit-content;
+    width: 95%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #10162f;
+}
+#accordion ul {
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 5px 15px;
+}
+#accordion li {
+    margin: 5px 8px;
+    padding: 4px;
+    user-select: none;
+}
+#accordion li:hover {
+    cursor: pointer;
+    text-decoration: underline #4c2bee;
+    font-style: none;
+}
 
 
 

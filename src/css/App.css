@@ -3,7 +3,20 @@
     scrollbar-width: thin;
 }
 
-.App {
+*::-webkit-scrollbar {
+    height: 2px;
+    width: 3px;
+}
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #10162F;
+    border-radius: 10px;
+    border: transparent;
+}
+
+#UdeCursos {
     background-color: #FFF0E5;
     box-sizing: border-box;
     overflow-x: hidden;

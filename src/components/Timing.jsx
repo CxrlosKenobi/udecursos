@@ -1,32 +1,33 @@
 import '../css/Timing.css';
 import React, { Component } from 'react';
 
-const Calculations = (hours, minutes, seconds) => {
-    let totalSecs = (hours * 3600) + (minutes * 60) + seconds;
+// const Calculations = (hours, minutes, seconds) => {
+//     let totalSecs = (hours * 3600) + (minutes * 60) + seconds;
 
-    // 1.25X
-    let x125 = (totalSecs * 100) / 125;
-    let x1Hours = Math.floor(x125 / 3600);
-    let x1Minutes = Math.floor((x125 % 3600) / 60);
-    let x1Seconds = Math.floor(x125 % 60);
-    let result125 = `${x1Hours}h ${x1Minutes}m ${x1Seconds}s`;
+//     // 1.25X
+//     let x125 = (totalSecs * 100) / 125;
+//     let x1Hours = Math.floor(x125 / 3600);
+//     let x1Minutes = Math.floor((x125 % 3600) / 60);
+//     let x1Seconds = Math.floor(x125 % 60);
+//     let result125 = `${x1Hours}h ${x1Minutes}m ${x1Seconds}s`;
 
-    // 1.5X
-    let x15 = (totalSecs * 100) / 150;
-    let x15Hours = Math.floor(x15 / 3600);
-    let x15Minutes = Math.floor((x15 % 3600) / 60);
-    let x15Seconds = Math.floor(x15 % 60);
-    let result15 = `${x15Hours}h ${x15Minutes}m ${x15Seconds}s`;
+//     // 1.5X
+//     let x15 = (totalSecs * 100) / 150;
+//     let x15Hours = Math.floor(x15 / 3600);
 
-    // 2X
-    let x2 = (totalSecs * 100) / 200;
-    let x2Hours = Math.floor(x2 / 3600);
-    let x2Minutes = Math.floor((x2 % 3600) / 60);
-    let x2Seconds = Math.floor(x2 % 60);
-    let result2 = `${x2Hours}h ${x2Minutes}m ${x2Seconds}s`;
+//     let x15Minutes = Math.floor((x15 % 3600) / 60);
+//     let x15Seconds = Math.floor(x15 % 60);
+//     let result15 = `${x15Hours}h ${x15Minutes}m ${x15Seconds}s`;
 
-    return [result125, result15, result2];
-}
+//     // 2X
+//     let x2 = (totalSecs * 100) / 200;
+//     let x2Hours = Math.floor(x2 / 3600);
+//     let x2Minutes = Math.floor((x2 % 3600) / 60);
+//     let x2Seconds = Math.floor(x2 % 60);
+//     let result2 = `${x2Hours}h ${x2Minutes}m ${x2Seconds}s`;
+
+//     return [result125, result15, result2];
+// }
 
 class Timing extends Component {
     
