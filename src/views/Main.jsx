@@ -58,14 +58,13 @@ function CommitList() {
 								<img src={request.author.avatar_url} alt='GitHub profile pic' className='profilepic' />
 							</div>
 							<div className='commit-info'>
-								<h2 className='_login'>@{request.author.login}</h2>
-								<h2 className='_name'>| {request.commit.author.name}</h2>
-								<div className='_date'>
-									<h2>{parseDate(request.commit.author.date)}</h2>
-								</div>
+								<h2 className='_login' alt={request.commit.author.name}>@{request.author.login}</h2>
 							</div>
 							<div className='commit-desc'>
 								<p className='_desc'>{request.commit.message}</p>
+							</div>
+							<div className='_date'>
+								<h2>{parseDate(request.commit.author.date)}</h2>
 							</div>
 						</div>
 					)
@@ -74,7 +73,7 @@ function CommitList() {
 		} else {
 			setChangelogs(
 			<div id='changelogs-error'>
-				<p>Intentando recuperar datos de la API . . .</p>
+				<p>Obteniendo datos de la API . . .</p>
 			</div>
 			)
 		}

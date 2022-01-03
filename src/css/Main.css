@@ -138,11 +138,14 @@
 .commit {
 	height: 75px;
 	width: 100%;
-	border: 1px solid #10162f;
+	margin: 5px 24px;
+	border: 1px solid #D0D7DE;
+	border-radius: 9px;
+	background-color: #fff;
+
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin: 5px 24px;
 }
 .profilepic-container {
 	height: inherit;
@@ -153,15 +156,37 @@
 .profilepic-container img {
 	height: 100%;
 	border-radius: 50%;
-	transform: scale(.8);
+	transform: scale(.75);
 }
 
 .commit-info {
 	display: flex;
+	color: #24292F;
 	flex-direction: row;
 	align-items: center;
+	cursor: pointer;
+	padding-right: 14px;
+	height: 35px;
+	border-right: 1px solid #D0D7DE;
 }
 .commit-info ._name {
 	color: #707070;
 	align-self: center;
+	margin: 0;
+	padding: 0;
+}
+.commit-desc {
+	margin: 0 13px;
+}
+.commit-desc ._desc {
+	font-size: 1rem;
+}
+
+._date {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: 15px;
+}
+._date h2 {
+	font-size: 1rem;
 }

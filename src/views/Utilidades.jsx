@@ -29,6 +29,7 @@ export default function Utilidades() {
 		return (
 			<>
 				<h2>Calculating weight of grades!</h2>
+				
 			</>
 		)
 	}
