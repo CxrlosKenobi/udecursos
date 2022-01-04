@@ -48,6 +48,7 @@ export default function Header() {
 	function AccordionMenu(props) {
 		const [hover, setHover] = useState(false);
 		const [icon, setIcon] = useState(arrow);
+		
 		useEffect(() => {
 			if (hover === true){
 				setIcon(arrowHover);
