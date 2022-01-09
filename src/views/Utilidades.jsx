@@ -26,27 +26,51 @@ export default function Utilidades() {
 
 
 	function Weight() {
+		const [certs, setCerts] = useState(2)
+		const [tareas, setTareas] = useState(2)
+
 		return (
 			<div className='weight-container'>
-				<h2>Ingresa tus notas y su respectivo porcentaje de ponderación</h2>
+				<h2>Ingrese sus notas y su respectivo porcentaje de ponderación</h2>
 				<div style={{display: 'flex'}}>
+
 					<section className='w-row'>
 						<div className='exam-num'>
 							<h3>Certámenes</h3>
-							<p>1</p>
+
+							{Array(certs).fill(0).map((_, i) => (
+								<div key={i}>
+									<p>{i + 1}</p>
+								</div>
+							))}
+							
 						</div>
 
 						<div className='weights'>
 							<h3>Ponderación</h3>
-							<div className='weight-input'>
-								<input type="text" className="form-control" placeholder="-"/>
-								<p>%</p>
+							{Array(certs).fill(0).map((_, i) => (
+								<div className='weight-input' key={i}>
+									<input type="text" className="form-control" placeholder="-"/>
+									<p>%</p>
+								</div>
+							))}
+
+
+							<div style={{display: 'flex'}}>
+								<buttton className='plus-button' onClick={
+									() => { if ((0 < certs) && (certs < 6)) setCerts(certs + 1) }
+								} />
+								<button className='minus-button' onClick={
+									() => { if (certs > 1) setCerts(certs - 1) }
+								} />
 							</div>
 						</div>
 
 						<div className='grade'>
 							<h3>Calificación</h3>
-							<input type="text" className="form-control" placeholder="-"/>
+							{Array(certs).fill(0).map((_, i) => (
+								<input type="text" className="form-control" placeholder="-" key={i} />
+							))}
 						</div>
 					</section>
 
@@ -54,20 +78,36 @@ export default function Utilidades() {
 					<section className='w-row'>
 						<div className='exam-num'>
 							<h3>Tareas</h3>
-							<p>1</p>
+							{Array(tareas).fill(0).map((_, i) => (
+								<div key={i}>
+									<p>{i + 1}</p>
+								</div>
+							))}
 						</div>
 
 						<div className='weights'>
 							<h3>Ponderación</h3>
-							<div className='weight-input'>
-								<input type="text" className="form-control" placeholder="-"/>
-								<p>%</p>
+							{Array(tareas).fill(0).map((_, i) => (
+								<div className='weight-input' key={i}>
+									<input type="text" className="form-control" placeholder="-"/>
+									<p>%</p>
+								</div>
+							))}
+							<div style={{display: 'flex'}}>
+								<buttton className='plus-button' onClick={
+									() => { if ((0 < tareas) && (tareas < 8)) setTareas(tareas + 1) }
+								} />
+								<button className='minus-button' onClick={
+									() => { if (tareas > 1) setTareas(tareas - 1) }
+								} />
 							</div>
 						</div>
 
 						<div className='grade'>
 							<h3>Calificación</h3>
-							<input type="text" className="form-control" placeholder="-"/>
+							{Array(tareas).fill(0).map((_, i) => (
+								<input type="text" className="form-control" placeholder="-" key={i} />
+							))}
 						</div>
 					</section>
 				</div>
