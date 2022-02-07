@@ -24,63 +24,62 @@
 }
 
 .presentation {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    height: inherit;
-    width: fit-content;
-    padding-right: 60px;
-}
-#img-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: inherit;
+  width: fit-content;
+  padding-right: 60px;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+
+  & #img-container {
     height: inherit;
     float: left;
     width: fit-content;
     margin-left: 5%;
     text-align: center;
-}
-#img-container a {
-    border: 1px solid red;
-    text-decoration: none;
-}
-#img-container img {
-    width: fit-content;
-    margin: 4px auto;
-}
-#img-container img:hover { cursor: pointer }
-#heading-container {
+    & a {
+      border: 1px solid red;
+    }
+
+    & img {
+      width: fit-content;
+      margin: 4px auto;
+    }
+  }
+
+  & #Heading-container {
     height: inherit;
     width: fit-content;
     display: flex;
     text-align: left;
     padding-left: 5%;
+
+    & h1 {
+      font-family: "Apercu Pro", sans-serif black;
+      font-size: 2.8rem;
+      font-weight: bold;
+      color: #10162f;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+    }
+    &:hover, &:active, &:focus { text-decoration: none; }
+  }
+  &:active, &:focus {outline: none; }
 }
 
-#heading-container h1 {
-    font-family: "Apercu Pro", sans-serif black;
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #10162f;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
 
 #NavBar {
     height: inherit;
-
     display: flex;
     flex: 1;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    
     font-family: "Suisse Int\'l Mono", monospace;
     font-size: 1rem;
     margin: 0;
