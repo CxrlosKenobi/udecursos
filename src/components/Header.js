@@ -84,7 +84,7 @@ export default function Header() {
 
 
   return (
-    <header className="Header">
+    <header id="Header">
       <div className="HeaderContent">
         <Link to="/" className="presentation">
           <div id='img-container'>

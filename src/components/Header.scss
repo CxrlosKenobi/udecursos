@@ -1,23 +1,23 @@
-.Header {
-    width: 100%;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9;
-    display: flex;
-    flex-direction: column;
+#Header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  text-align: left;
+  border-radius: 10px;
 }
 .HeaderContent {
-    background-color: #fff;
-    height: 75px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid #10162f;
-    justify-content: space-between;
+  background-color: #fff;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #10162f;
+  justify-content: space-between;
 }
 #navigation {
     display: none;
