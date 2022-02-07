@@ -1,10 +1,13 @@
-import initialData from '../data/initial-data';
-import astro from '../data/astroMalla';
-import dynamicData from '../data/dynamic-data';
-import React, { useState, useEffect, useCallback } from 'react';  
-import Column from '../components/Column';
+import React, { useState, useEffect, useCallback } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
+//
+import Column from '../components/Column';
+import initialData from '../data/initial-data';
+import dynamicData from '../data/dynamic-data';
+import astro from '../data/astroMalla';
+//
 import '../css/Malla.css'
+
 
 function fetchData(data) {
   dynamicData.columns = data.columns;
@@ -51,7 +54,7 @@ function delay(fn) {
 //   }, [])
 // }
 
-export default function Malla(props) {
+export function Malla(props) {
   const [state, setState] = useState(initialData);
 
   const handleDragEnd = useCallback(
@@ -141,7 +144,7 @@ export default function Malla(props) {
   );
 
   return (
-    <div id='body-malla'>
+    <main id='body-malla'>
       <DragDropContext onDragEnd={handleDragEnd} sensors={[]}>
         <div id='container-malla'>
           {state.columnOrder.map(columnId => {
@@ -154,6 +157,6 @@ export default function Malla(props) {
           })}
           </div>
       </DragDropContext>
-    </div>
+    </main>
   )
 }

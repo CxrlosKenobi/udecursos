@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+//
 import '../css/Utilidades.css'
 
 
-export default function Utilidades() {
+export function Utilidades() {
 	const [option, setOption] = useState(0)
 	const [Stage, setStage] = useState('')
 	
