@@ -3,7 +3,7 @@ import '../css/Utilidades.css'
 
 
 export default function Utilidades() {
-	const [option, setOption] = useState(99)
+	const [option, setOption] = useState(0)
 	const [Stage, setStage] = useState('')
 	
 	const tools = {
