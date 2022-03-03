@@ -2,7 +2,7 @@
 
 ![image](assets/banner.png)
 
-> In process open-source web app, check out the [pre-release here](https://udecursos.study/)
+> In process open-source web app, check out the [pre-release here](https://udecursos.study/) or the [non-stable build status here](http://build.udecursos.study/Inicio)
 
 
 ## Screenshots
