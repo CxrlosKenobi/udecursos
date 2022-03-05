@@ -26,23 +26,19 @@ loadingTask.promise
       console.log("# Metadata Is Loaded");
     });
 
-    const loadPage = function (pageNum) {
-      return doc.getPage(pageNum).then((page) => {
-        return page
-          .getTextContent()
+    const loadPage = async (pageNum) => {
+      const page = await doc.getPage(pageNum);
+      const content = await page
+        .getTextContent();
 
-          .then((content) => {
-            const strings = content.items.map((item) => {
-              (!unwantedItems.includes(item.str)) && globalList.push(item.str);
-              return item.str;
-            });
-            console.log("## Text Content");
-            console.log(strings.join("|"));
-            page.cleanup();
-          })
+        content.items.map((item) => {
+          return (!unwantedItems.includes(item.str)) && globalList.push(item.str);
+        });
+        
+        console.log("## Text Content");
+        page.cleanup();
 
-          .then(() => console.log("# Page Cleaned Up"));
-      });
+      return console.log("# Page Cleaned Up");
     };
 
     for (let i = 1; i <= numPages; i++) {
