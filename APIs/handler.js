@@ -1,5 +1,7 @@
 const pdfjsLib = require("pdfjs-dist/legacy/build/pdf.js");
 const fs = require("fs");
+//
+const { checkBooleanRegex } = require("./utils/helpers");
 
 
 const globalList = [];
@@ -10,8 +12,10 @@ const unwantedItems = [
   "Autoriza DICIV",
   "Autoriza Depto.",
   "1 año:Aer-125 créd:Ele/Eln-70 cré:INF",
-  "90 créditos"
+  "90 créditos",
+  "Prerrequisitos",
 ];
+
 
 const pdfPath = process.argv[2] || "./Test.pdf";
 const loadingTask = pdfjsLib.getDocument(pdfPath);
@@ -32,7 +36,10 @@ loadingTask.promise
         .getTextContent();
 
         content.items.map((item) => {
-          return (!unwantedItems.includes(item.str)) && globalList.push(item.str);
+          if ((!unwantedItems.includes(item.str)) 
+          && !checkBooleanRegex(/[0-9]\d\d\d\d\d-\d\d\d\d\d\d/g, item.str)) {
+            return globalList.push(item.str); 
+          } else return null;
         });
         
         console.log("## Text Content");
@@ -54,14 +61,24 @@ loadingTask.promise
 
     globalList.map((item, i) => { return console.log(i, item) });
 
+    const aux = { "row": [], "row2": [] };
+    
+    let pivot = 0;
+    globalList.map((item, i) => {
+      while (!checkBooleanRegex(/[0-9]\d\d\d\d\d-\d/g, item)) {
+        
+      }
+
+    });
+    
     const json = JSON.stringify(globalList, null, 2);
     fs.writeFile("output.json", json, function (err) {
       if (err) {
         console.log("An error occured while writing JSON Object to File.");
-        
         return console.log(err);
       }
       console.log("JSON file has been saved.");
     });
 
-  }, (e) => console.error("Error: " + e));
+  });
+
