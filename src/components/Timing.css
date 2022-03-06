@@ -1,0 +1,39 @@
+#body-timing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* margin-right: 10%; */
+    background-color: white;
+    border: 1px solid #10162F;   
+}
+#body-timing h1 {
+    font-size: 1.4rem;
+    
+    margin: 5% 10%;
+}
+
+.form-timing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-timing .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-timing input {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    text-align: center;
+    
+    margin: 15px;
+    width: 80px;
+    border: none;
+    border-bottom: 1px solid #10162F;
+}

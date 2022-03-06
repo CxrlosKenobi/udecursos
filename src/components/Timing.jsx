@@ -1,5 +1,5 @@
-import '../css/Timing.css';
 import React, { Component } from 'react';
+import './Timing.css';
 
 // const Calculations = (hours, minutes, seconds) => {
 //     let totalSecs = (hours * 3600) + (minutes * 60) + seconds;
