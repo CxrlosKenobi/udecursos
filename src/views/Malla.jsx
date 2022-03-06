@@ -6,7 +6,7 @@ import initialData from '../data/initial-data';
 import dynamicData from '../data/dynamic-data';
 import astro from '../data/astroMalla';
 //
-import '../css/Malla.css'
+import './Malla.css';
 
 
 function fetchData(data) {

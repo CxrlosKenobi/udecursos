@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 //
-import '../css/Utilidades.css'
+import './Utilidades.css'
 
 
 export function Utilidades() {

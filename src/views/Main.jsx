@@ -6,7 +6,7 @@ import malla from '../assets/malla.png';
 import mallaBlur from '../assets/mallaBlur.png';
 import gitBranch from '../assets/gitBranch.png';
 //
-import '../css/Main.css';
+import './Main.css';
 
 
 function CommitList() {
