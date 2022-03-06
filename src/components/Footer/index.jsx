@@ -1,4 +1,4 @@
-import './Footer.scss'
+import './index.scss'
 
 
 export default function Footer(){
@@ -25,4 +25,4 @@ export default function Footer(){
       </div>
     </footer>
   );
-}
+};
