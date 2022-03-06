@@ -1,0 +1,152 @@
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  & .header-wrapper {
+    background-color: #fff;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #10162f;
+    justify-content: space-between;
+
+    & .logo-heading {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      height: inherit;
+      width: fit-content;
+      padding-right: 60px;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+    
+      & #img-container {
+        height: inherit;
+        float: left;
+        width: fit-content;
+        margin-left: 5%;
+        text-align: center;
+        
+        & a { border: 1px solid red; }
+        & img {
+          width: fit-content;
+          margin: 4px auto;
+        }
+      }
+    
+      & .heading-container {
+        height: inherit;
+        width: fit-content;
+        display: flex;
+        text-align: left;
+        padding-left: 5%;
+    
+        & h1 {
+          font-family: "Apercu Pro", sans-serif black;
+          font-size: 2.8rem;
+          font-weight: bold;
+          color: #10162f;
+          display: flex;
+          align-self: center;
+          justify-content: center;
+        }
+        &:hover, &:active, &:focus { text-decoration: none; }
+
+        @media only screen and (max-width: 846px) {
+          padding-left: 2%;
+
+          & h1 { font-size: 2.5rem; }
+        }
+      }
+      &:active, &:focus { outline: none; }
+    }
+
+    & #NavBar {
+      height: inherit;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: "Suisse Int\'l Mono", monospace;
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+    
+      & li {
+        list-style: none;
+        margin: 0;
+      }
+    
+      & a {
+        margin-right: 35px !important;
+        text-decoration: none ;
+        color: #10162f;
+        user-select: none;
+        cursor: pointer;
+        &:hover { color: #4c2bee !important; }
+      }
+    
+      & .aux-li {
+        margin-right: 22px !important;
+        text-decoration: none !important;
+        color: #10162f !important;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        &:hover { color: #4c2bee !important; }
+    
+        & .arrow {
+          margin: 0 4px;
+          width: 14px;
+        }
+      }
+
+      @media only screen and (max-width: 846px) {
+        display: none;
+      }
+    }
+
+    & #navigation { display: none; }
+
+    & .right-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      height: inherit;
+      width: fit-content;
+      margin-right: 18px;
+    
+      & a, #career {
+        font-family: "Suisse Int\'l Mono", monospace;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #10162F;
+        cursor: pointer;
+        user-select: none;
+      }
+    
+      & a:hover { text-decoration: underline #4c2bee; }
+      & h3 {
+        display: flex;
+        align-self: flex-end;
+        margin-top: 11px;
+      }
+
+      @media only screen and (max-width: 846px) {
+        display: none;
+      }
+    }
+  }
+}
