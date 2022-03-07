@@ -18,7 +18,8 @@ export default function Footer(){
           </a>
         </div>
         <div className="signature">
-          <a href='https://github.com/CxrlosKenobi'>
+          <a href='https://github.com/CxrlosKenobi'
+            target="_blank" rel="noopener noreferrer">
             <i className="fas fa-code"></i>   with   ❤️   by Kenobi
           </a>
         </div>
