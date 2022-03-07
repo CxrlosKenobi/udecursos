@@ -1,152 +1,60 @@
 footer {
-    display: flex;    
-    margin-top: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: auto;
-    height: 3.6rem;
-    border-top: 1px solid #10162F;    
-}
-footer .content {
+  --mainColor: #10162F;
+  width: 90%;
+  height: 65px;
+  margin: 0 5%;
+  border-top: 1px solid var(--mainColor);
+
+  & .footer-wrapper {
     width: 100%;
-    display: flex;
-    padding: 1rem 0.5rem;
-}
-footer .column-1 {
-    display: flex;
-    width: 33.3%;
-    text-align: left;
-}
-footer .column-2 {
-    width: 33.3%;
-    text-align: center;
-}
-footer .column-3 {
-    width: 33.3%;
-    text-align: right;
-}
-footer a {
-    color: #10162F;
-    --mainColor: #3A10E5;
-    --mainColor: #10162F;
-
-    background:
-    linear-gradient(
-        to bottom, var(--mainColor) 0%,
-        var(--mainColor) 100%
-    );
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 1px 1px;
-
-    text-decoration: none;
-    transition: background-size .2s;
-    padding: 0.4rem 0.3rem;
-    font-size: 0.8rem;
-    font-weight: bold;
-
-    border-radius: 0.2rem;
-    border: 1px solid #10162F;
-
-}
-footer a:hover {
-    background-size: 4px 50px;
-    text-decoration: none;
-    color: white;
-    border: 1px solid #10162F;
-
-}
-
-.last-update {
-    color: #10162F;
-    background: none !important;
-    transition: none !important;
-
-    display: flex;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     align-items: center;
-    justify-content: center;
-    border: none;
+    user-select: none;
+    cursor: pointer;
 
-}
-.last-update:hover {
-    background-position: none;
-    background-size: none;
-    text-decoration: none;
-    border: none;
-    color: inherit;
-
-}
-
-@media only screen and (max-width: 560px) {
-    footer {
-        display: flex;    
-        margin-left: 1.4rem;
-        margin-right: 1.4rem;
-        width: auto;
-        height: 3.7rem;
-        border-top: 1px solid #10162F;    
+    & a {
+      color: var(--mainColor);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: .8rem;
     }
-    footer .content {
-        width: 100%;
-        display: flex;
-        padding: 1rem 0.1rem;
+
+    & .last-update {
+      justify-self: flex-start;
     }
-    footer a {
-        color: #10162F;
-        --mainColor: #10162F;
-    
-        background:
-        linear-gradient(
-          to bottom, var(--mainColor) 0%,
-          var(--mainColor) 100%
-        );
+
+    & .source-code {
+      & a {
+        background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
         background-position: 0 100%;
         background-repeat: repeat-x;
         background-size: 1px 1px;
-        
-        text-decoration: none;
         transition: background-size .2s;
-        padding: 0.5rem 0.2rem;
-        font-size: 0.62rem;
-        font-weight: bold;
-    
+        padding: 0.4rem 0.3rem;
         border-radius: 0.2rem;
-        border: 1px solid #10162F;    
-    }    
-    .last-update {
-        color: #10162F;
-        background: none !important;
-        transition: none !important;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 8px;
-        border: none;    
-    }
-}
+        border: 1px solid var(--mainColor);
 
-@media only screen and (max-width: 375px) {
-    footer a {
-        color: #10162F;
-        --mainColor: #10162F;
-    
-        background:
-        linear-gradient(
-          to bottom, var(--mainColor) 0%,
-          var(--mainColor) 100%
-        );
-        background-position: 0 100%;
-        background-repeat: repeat-x;
-        background-size: 1px 1px;
-        
-        text-decoration: none;
-        transition: background-size .2s;
-        padding: 0.5rem 0.2rem;
-        font-size: 0.55rem !important; /* iPhone SE breakpoint */
-        font-weight: bold;
-    
-        border-radius: 0.2rem;
-        border: 1px solid #10162F;    
+        &:hover {
+          background-size: 4px 50px;
+          text-decoration: none;
+          color: white;
+          border: 1px solid var(--mainColor);
+        }
+      }
     }
+
+    & .signature {
+      justify-self: flex-end;
+    }
+
+    @media only screen and (max-width: 460px) {
+      & a { font-size: .65rem; }
+    }
+    @media only screen and (max-width: 375px) {
+      & a { font-size: .6rem; }
+    }
+  }
 }
