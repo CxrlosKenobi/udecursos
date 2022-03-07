@@ -1,7 +1,7 @@
 .commit {
   height: 75px;
-  width: 100%;
-  margin: 5px 2%;
+  width: 98%;
+  margin: 5px 1%;
   border: 1px solid #d0d7de;
   border-radius: 9px;
   background-color: #fff;
@@ -11,7 +11,7 @@
 
   &:hover, &:focus, &:active {
     border: 1px solid #10162f;
-    transition: all 200ms ease-in-out;
+    transition: border-color 200ms ease-in-out;
   }
 
   & .profilepic-container {
