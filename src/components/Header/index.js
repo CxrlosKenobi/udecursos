@@ -32,11 +32,12 @@ export default function Header() {
         <ul id="NavBar">
           <NavItem to="/">Inicio</NavItem>
           <NavItem to="/Malla">Malla</NavItem>
-          <AccordionMenu
+          <NavItem to="/Horarios">Auto-Horario</NavItem>
+          {/* <AccordionMenu
             children="Carreras"
             state={accordionState}
             setState={setAccordionState}
-            />
+            /> */}
           <NavItem to="/Utilidades">Utilidades</NavItem>
         </ul>
         <div className="right-header">
