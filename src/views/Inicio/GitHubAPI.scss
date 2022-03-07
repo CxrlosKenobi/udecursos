@@ -1,0 +1,161 @@
+.commit {
+  height: 75px;
+  width: 100%;
+  margin: 5px 2%;
+  border: 1px solid #d0d7de;
+  border-radius: 9px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &:hover, &:focus, &:active {
+    border: 1px solid #10162f;
+    transition: all 200ms ease-in-out;
+  }
+
+  & .profilepic-container {
+    height: inherit;
+    width: 80px;
+    margin-left: 5px;
+
+    & img {
+      height: 100%;
+      border-radius: 50%;
+      transform: scale(0.75);
+    }
+  }
+
+  & .commit-info {
+    display: flex;
+    color: #24292f;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 14px;
+    height: 35px;
+    border-right: 1px solid #d0d7de;
+    cursor: pointer;
+
+    & ._login {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #24292f;
+      margin-right: 5px;
+    }
+  }
+
+  & .commit-desc {
+    margin: auto .9rem;
+    height: 90%;
+    max-height: 90%;
+    width: 95%;
+    max-width: 95%;
+    overflow-y: scroll;
+
+    & ._desc {
+      height: 100%;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #24292f;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &:focus {
+        outline: none;
+        color: #707070;
+      }
+    }
+  }
+
+  & ._date {
+    color: #10162f;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 15px;
+
+    & h2 {
+      font-size: 1rem;
+      user-select: none;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    flex-direction: column;
+    height: fit-content;
+    width: 92%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+
+    & .profilepic-container {
+      width: 30%;
+      height: 100px;
+      margin: 0 auto;
+
+      & img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    & .commit-info {
+      border-right: none;
+      padding: 0;
+
+      & ._login {
+        margin: 0;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #d0d7de;
+      }
+    }
+
+    & .commit-desc {
+      height: fit-content;
+      max-height: 95px;
+      width: 93%;
+      max-width: 93%;
+      overflow-y: scroll;
+      padding: 5px 0;
+
+      & ._desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #555;
+      }
+    }
+
+    & ._date {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 10px;
+
+      & h2 {
+        font-size: 0.85rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    & .profilepic-container {
+      width: 35%;
+      height: 105px;
+    }
+  }
+}
+
+.changelogs-error {
+  font-size: 1rem;
+  margin: 5px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-weight: bold;
+  color: #707070;
+}
