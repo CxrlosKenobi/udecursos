@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 //
 import Header from './components/Header/index';
-import { Inicio } from './views/Main';
+import { Inicio } from './views/Inicio/index';
 import { Malla } from './views/Malla';
 import { Utilidades } from './views/Utilidades';
 import Footer from './components/Footer/index';

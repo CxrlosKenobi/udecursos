@@ -1,0 +1,110 @@
+#Inicio {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: fit-content;
+	width: 90%;
+	margin: 0 5%;
+
+	& #Main-body {
+		display: flex;
+		height: fit-content;
+		flex-wrap: wrap;
+		font-size: .7rem;
+		margin-top: 1.2rem;
+
+		& #First-row {
+			height: fit-content;
+			width: 100%;
+			margin-bottom: 10px;
+
+			& h1 {
+				text-align: left;
+				user-select: none;
+			}
+		}
+
+		& #Second-row {
+			height: fit-content;
+			width: 100%;
+
+			& .aux-title {
+				display: flex;
+				align-items: center;
+				flex-direction: row;
+				width: 100%;
+				height: fit-content;
+				margin: 0;
+				margin-bottom: 10px;
+				padding: 0;
+				user-select: none;
+			
+				& .git-branch-svg {
+					height: 28px;
+					margin: 0;
+					padding: 0;
+				}
+				
+				& h1 {
+					margin: 0;
+					padding: 0;
+					margin-left: 4px;
+				}
+			}
+		}
+
+		@media only screen and (max-width: 450px) {
+			font-size: .6rem;		
+		}
+	}
+}
+
+
+
+// .img-container {
+// 	height: 87%;
+// 	max-width: 100%;
+// 	background-color: white;
+// 	cursor: pointer;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	flex-direction: column;
+
+// 	& img {
+// 		width: 100%;
+// 		cursor: pointer;
+// 	}
+
+// 	& p {
+// 		position: absolute;
+// 		text-align: center;
+// 		font-size: 1rem;
+// 		font-weight: bold;
+// 		color: #10162f !important;
+// 		width: inherit;
+// 		text-shadow: 20px 20px 50px white;
+// 	}
+
+// }
+// & h3, h4 {
+// 	font-family: 'Suisse Int\'l Mono', monospace;
+// 	margin: 0 auto;
+// }
+
+// & h4 { font-size: .8rem; }
+
+// .box-content {
+// 	height: 13%;
+// 	width: 100%;
+// 	background-color: #10162f;
+// 	display: flex;
+// 	align-items: center;
+// 	cursor: pointer;
+// 	user-select: none;
+// }
+// .box-content h3 {
+// 	padding-left: 4%;
+// 	color: inherit;
+// 	font-family: 'Suisse Int\'l Mono', monospace;
+// }

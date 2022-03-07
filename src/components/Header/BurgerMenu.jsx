@@ -27,7 +27,7 @@ const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #FFF0F5;
+  background-color: #FFF0E5;
   transform: ${({ menuState }) => menuState ? 'translateX(0)' : 'translateX(100%)'};
   height: 100vh;
   width: 40%;

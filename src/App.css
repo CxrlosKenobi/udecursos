@@ -1,23 +1,23 @@
 * {
-    scrollbar-color: #10162F #FFF0E5;
-    scrollbar-width: thin;
+  scrollbar-color: #10162F #FFF0E5;
+  scrollbar-width: thin;
 }
 
+
 *::-webkit-scrollbar {
-    height: 2px;
-    width: 3px;
+  height: 2px;
+  width: 3px;
 }
 *::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-    background-color: #10162F;
-    border-radius: 10px;
-    border: transparent;
+  background-color: #10162F;
+  border-radius: 10px;
+  border: transparent;
 }
 
 #UdeCursos {
-    background-color: #FFF0E5;
-    box-sizing: border-box;
-    overflow-x: hidden;
+  background-color: #FFF0E5;
+  box-sizing: border-box;
 }
