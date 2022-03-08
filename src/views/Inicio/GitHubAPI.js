@@ -12,7 +12,7 @@ export function CommitList() {
 	const [commits, setCommits] = useState([]);
 	
 	useEffect(() => {
-		const octokit = new Octokit({ auth: token })
+		const octokit = new Octokit({ auth: token.token })
 		async function fetchAPI() {
 			const owner = 'CxrlosKenobi', repo = 'udecursos'
 
