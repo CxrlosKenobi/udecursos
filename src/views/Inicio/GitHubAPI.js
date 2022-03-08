@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Octokit } from '@octokit/core';
 //
-import { token } from '../../data/octok.json';
+import token from '../../data/octok.json';
 //
 import "./GitHubAPI.scss";
 
