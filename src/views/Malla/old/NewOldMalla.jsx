@@ -1,5 +1,5 @@
-import initialData from '../data/initial-data';
-import dynamicData from '../data/dynamic-data';
+import initialData from '../../../data/initial-data';
+import dynamicData from '../../../data/dynamic-data';
 import React, { useState, useEffect } from 'react';  
 import Column from '../components/column';
 import { DragDropContext } from 'react-beautiful-dnd';

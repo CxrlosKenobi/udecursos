@@ -77,4 +77,4 @@ export default function Task(props) {
       )}
     </Draggable>
   );
-}
+};

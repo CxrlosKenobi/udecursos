@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 //
-import Column from '../components/Column';
-import initialData from '../data/initial-data';
-import dynamicData from '../data/dynamic-data';
-import astro from '../data/astroMalla';
+import Column from '../../components/Malla/Column';
+import initialData from '../../data/initial-data';
+import dynamicData from '../../data/dynamic-data';
+import astro from '../../data/astroMalla';
 //
-import './Malla.css';
+import './index.scss';
 
 
 function fetchData(data) {

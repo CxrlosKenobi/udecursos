@@ -2,8 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 //
 import Header from './components/Header/index';
 import { Inicio } from './views/Inicio/index';
-import { Malla } from './views/Malla';
-import { Utilidades } from './views/Utilidades';
+import { Malla } from './views/Malla/index';
+import { Utilidades } from './views/Utilidades/index';
 import Footer from './components/Footer/index';
 //
 import '@atlaskit/css-reset';

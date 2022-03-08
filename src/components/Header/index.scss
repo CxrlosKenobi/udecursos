@@ -27,28 +27,28 @@ header {
       user-select: none;
       text-decoration: none;
       cursor: pointer;
-    
+
       & #img-container {
         height: inherit;
         float: left;
         width: fit-content;
         margin-left: 5%;
         text-align: center;
-        
+
         & a { border: 1px solid red; }
         & img {
           width: fit-content;
           margin: 4px auto;
         }
       }
-    
+
       & .heading-container {
         height: inherit;
         width: fit-content;
         display: flex;
         text-align: left;
         padding-left: 5%;
-    
+
         & h1 {
           font-family: "Apercu Pro", sans-serif black;
           font-size: 2.8rem;
@@ -80,12 +80,12 @@ header {
       font-size: 1rem;
       margin: 0;
       padding: 0;
-    
+
       & li {
         list-style: none;
         margin: 0;
       }
-    
+
       & a {
         margin-right: 35px !important;
         text-decoration: none ;
@@ -94,7 +94,7 @@ header {
         cursor: pointer;
         &:hover { color: #4c2bee !important; }
       }
-    
+
       & .aux-li {
         margin-right: 22px !important;
         text-decoration: none !important;
@@ -104,7 +104,7 @@ header {
         display: flex;
         align-items: center;
         &:hover { color: #4c2bee !important; }
-    
+
         & .arrow {
           margin: 0 4px;
           width: 14px;
@@ -126,7 +126,7 @@ header {
       height: inherit;
       width: fit-content;
       margin-right: 18px;
-    
+
       & a, #career {
         font-family: "Suisse Int\'l Mono", monospace;
         font-size: 12px;
@@ -136,7 +136,7 @@ header {
         cursor: pointer;
         user-select: none;
       }
-    
+
       & a:hover { text-decoration: underline #4c2bee; }
       & h3 {
         display: flex;

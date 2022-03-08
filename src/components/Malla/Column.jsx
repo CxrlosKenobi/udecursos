@@ -3,6 +3,7 @@ import Task from './Task';
 import styled from 'styled-components';
 import { Droppable } from 'react-beautiful-dnd';
 
+
 const Container = styled.div`
   font-family: "Apercu Pro", sans-serif black;
   font-color: #10162F;
@@ -66,5 +67,5 @@ export default function Column(props) {
         )}
       </Droppable>
     </Container>
-  )
-}
+  );
+};
