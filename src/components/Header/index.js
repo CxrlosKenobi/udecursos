@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 //
-import { Accordion, AccordionMenu } from './Accordion';
+import { Accordion } from './Accordion';
 import { NavItem } from '../../utils/helpers';
 import { Burger, Menu } from './BurgerMenu';
 import data from '../../data/careers-data';
@@ -33,11 +33,6 @@ export default function Header() {
           <NavItem to="/">Inicio</NavItem>
           <NavItem to="/Malla">Malla</NavItem>
           <NavItem to="/Horarios">Auto-Horario</NavItem>
-          {/* <AccordionMenu
-            children="Carreras"
-            state={accordionState}
-            setState={setAccordionState}
-            /> */}
           <NavItem to="/Utilidades">Utilidades</NavItem>
         </ul>
         <div className="right-header">
