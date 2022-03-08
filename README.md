@@ -42,7 +42,7 @@
 > Check out the responsive design as well! 👀
 > Pre-release views 
 
-![image](assets/latest_build.png)
+![image](assets/latest-build.png)
 
 ![image](assets/malla.png)
 
