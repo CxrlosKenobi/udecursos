@@ -43,7 +43,8 @@
 > Pre-release views of the Drag & Drop Feature
 
 ### Check out the responsive design as well! 👀
-![image](assets/latest_build.png)
+![image](assets/latest-build.png)
+![image](assets/malla.png)
 
 
 ## Getting started for devs! 
