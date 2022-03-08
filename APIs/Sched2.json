@@ -1,0 +1,1772 @@
+{
+  "Departamentos": [
+    {
+      "id": 0,
+      "codigo": "543120-1",
+      "asignatura": "Introducción a la Ingeniería Eléctrica",
+      "cr": 2,
+      "ht": 2,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 1"
+      ],
+      "profesores": [
+        "Luis García"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 1,
+      "codigo": "543202-1",
+      "asignatura": "Circuitos y Máquinas Eléctricas",
+      "cr": null,
+      "ht": null,
+      "hp": null,
+      "hl": null,
+      "carrera": [
+        " "
+      ],
+      "profesores": [
+        " "
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 2,
+      "codigo": "543206-1",
+      "asignatura": "Electromagnetismo Aplicado",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "MAT 5"
+      ],
+      "profesores": [
+        "Juan Tapia"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 3,
+      "codigo": "543208-1",
+      "asignatura": "Electrónica",
+      "cr": 4,
+      "ht": 4,
+      "hp": 1,
+      "hl": 0,
+      "carrera": [
+        "ELE 6",
+        "ELN 5"
+      ],
+      "profesores": [
+        "Lautaro Salazar"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 4,
+      "codigo": "543214-1",
+      "asignatura": "Sistemas Lineales Dinámicos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELE 5"
+      ],
+      "profesores": [
+        "Daniel Sbarbaro"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 5,
+      "codigo": "543214-2",
+      "asignatura": "Sistemas Lineales Dinámicos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "BIO 4",
+        "ELN 5"
+      ],
+      "profesores": [
+        "José Espinoza"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 6,
+      "codigo": "543214-3",
+      "asignatura": "Sistemas Lineales Dinámicos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ICM 11"
+      ],
+      "profesores": [
+        "Juan Pablo Segovia"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 7,
+      "codigo": "543239-1",
+      "asignatura": "Laboratorio de Circuitos",
+      "cr": null,
+      "ht": null,
+      "hp": null,
+      "hl": null,
+      "carrera": [
+        " "
+      ],
+      "profesores": [
+        " "
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 8,
+      "codigo": "543239-2",
+      "asignatura": "Laboratorio de Circuitos",
+      "cr": null,
+      "ht": null,
+      "hp": null,
+      "hl": null,
+      "carrera": [
+        " "
+      ],
+      "profesores": [
+        " "
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 9,
+      "codigo": "543241-1",
+      "asignatura": "Dispositivos Semiconductores",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELE 5",
+        "ELN 4",
+        "TEL 5"
+      ],
+      "profesores": [
+        "Gabriel Saavedra"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 10,
+      "codigo": "543242-1",
+      "asignatura": "Algoritmos y Lenguaje de Programacion",
+      "cr": null,
+      "ht": null,
+      "hp": null,
+      "hl": null,
+      "carrera": [
+        " "
+      ],
+      "profesores": [
+        " "
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 11,
+      "codigo": "543243-1",
+      "asignatura": "Laboratorio de Electronica",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 4,
+      "carrera": [
+        "TEL 7"
+      ],
+      "profesores": [
+        "Jorge Salgado"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 12,
+      "codigo": "543244-1",
+      "asignatura": "Sistemas de Control",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "BIO 5",
+        "ELN 6"
+      ],
+      "profesores": [
+        "Alejandro Rojas"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 13,
+      "codigo": "543246-1",
+      "asignatura": "Sistemas de Comunicaciones",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 7",
+        "ELN 7"
+      ],
+      "profesores": [
+        "Luis Arias"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 14,
+      "codigo": "543247-1",
+      "asignatura": "Teoria de Circuitos II",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELE 5",
+        "ELN 5"
+      ],
+      "profesores": [
+        "Enrique López"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 15,
+      "codigo": "543247-2",
+      "asignatura": "Teoria de Circuitos II",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "Claudio Roa"
+      ],
+      "profesores": [
+        "Horario Pendiente"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 16,
+      "codigo": "543248-1",
+      "asignatura": "Electronica de Potencia",
+      "cr": 3,
+      "ht": 3,
+      "hp": 1,
+      "hl": 0,
+      "carrera": [
+        "ELE 7",
+        "ELN 7"
+      ],
+      "profesores": [
+        "Eduardo Wiechmann"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 17,
+      "codigo": "543251-1",
+      "asignatura": "Electromagnetismo",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELE 3"
+      ],
+      "profesores": [
+        "Rubén Peña"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 18,
+      "codigo": "543251-2",
+      "asignatura": "Electromagnetismo",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELN 3"
+      ],
+      "profesores": [
+        "Leonardo Palma"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 19,
+      "codigo": "543251-3",
+      "asignatura": "Electromagnetismo",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "BIO 3"
+      ],
+      "profesores": [
+        "Ricardo Soto"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 20,
+      "codigo": "543252-1",
+      "asignatura": "Introducción al Diseño Asistido por Computador",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "ELE 3"
+      ],
+      "profesores": [
+        "Gastón Retamal"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 21,
+      "codigo": "543351-1",
+      "asignatura": "Electromagnetismo",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "AER 5",
+        "MEC 5"
+      ],
+      "profesores": [
+        "Carlos Madariaga"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 22,
+      "codigo": "543352-1",
+      "asignatura": "Redes de Corriente Alterna",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELE 5"
+      ],
+      "profesores": [
+        "Enrique López"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 23,
+      "codigo": "543352-2",
+      "asignatura": "Redes de Corriente Alterna",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELN 5"
+      ],
+      "profesores": [
+        "Claudio Roa"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 24,
+      "codigo": "543353-1",
+      "asignatura": "Laboratorio de Redes de Corriente Alterna",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "ELE 5"
+      ],
+      "profesores": [
+        "Enrique López"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 25,
+      "codigo": "543353-2",
+      "asignatura": "Laboratorio de Redes de Corriente Alterna",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "ELN 5"
+      ],
+      "profesores": [
+        "Claudio Roa"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 26,
+      "codigo": "543366-1",
+      "asignatura": "Analisis de Sistemas Electricos de Potencia",
+      "cr": 4,
+      "ht": 4,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 7"
+      ],
+      "profesores": [
+        "Luis García"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 27,
+      "codigo": "543368-1",
+      "asignatura": "Máquinas Eléctricas",
+      "cr": 4,
+      "ht": 4,
+      "hp": 3,
+      "hl": 2,
+      "carrera": [
+        "IND 5"
+      ],
+      "profesores": [
+        "Christian Vega"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 28,
+      "codigo": "543368-2",
+      "asignatura": "Máquinas Eléctricas",
+      "cr": 4,
+      "ht": 4,
+      "hp": 3,
+      "hl": 2,
+      "carrera": [
+        "IND 5"
+      ],
+      "profesores": [
+        "Christian Vega"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 29,
+      "codigo": "543391-1",
+      "asignatura": "Mercado Eléctrico",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 9"
+      ],
+      "profesores": [
+        "Claudio Roa"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 30,
+      "codigo": "543392-1",
+      "asignatura": "Materiales Eléctricos",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 9"
+      ],
+      "profesores": [
+        "Juan Tapia"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 31,
+      "codigo": "543417-1",
+      "asignatura": "Analisis de Sist.elect.de Distrib.en Condic.de Falla",
+      "cr": 4,
+      "ht": 4,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 9",
+        "ELN 9"
+      ],
+      "profesores": [
+        "Luis García"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 32,
+      "codigo": "543426-1",
+      "asignatura": "Arquitectura de Computadores",
+      "cr": 4,
+      "ht": 4,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 7"
+      ],
+      "profesores": [
+        "Ricardo Sánchez"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 33,
+      "codigo": "543426-2",
+      "asignatura": "Arquitectura de Computadores",
+      "cr": 4,
+      "ht": 4,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELN 7"
+      ],
+      "profesores": [
+        "Miguel Figueroa"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 34,
+      "codigo": "543447-1",
+      "asignatura": "Taller de Proyectos Eléctricos",
+      "cr": 4,
+      "ht": 2,
+      "hp": 0,
+      "hl": 4,
+      "carrera": [
+        "ELE 11"
+      ],
+      "profesores": [
+        "Cristian Gutiérrez"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 35,
+      "codigo": "543499-1",
+      "asignatura": "Memoria de Título",
+      "cr": null,
+      "ht": null,
+      "hp": null,
+      "hl": null,
+      "carrera": [
+        " "
+      ],
+      "profesores": [
+        " "
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 36,
+      "codigo": "543522-1",
+      "asignatura": "Protecciones Eléctricas",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELE 9",
+        "ELN 9"
+      ],
+      "profesores": [
+        "Luis Morán"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 37,
+      "codigo": "543536-1",
+      "asignatura": "Laboratorio de Conversion Electromecanica de la Energia",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 4,
+      "carrera": [
+        "ELE 7"
+      ],
+      "profesores": [
+        "Juan Tapia ",
+        " Leonardo Palma ",
+        " Manuel Valenzuela ",
+        " Rubén"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 38,
+      "codigo": "543582-1",
+      "asignatura": "Accionamientos Industriales",
+      "cr": 4,
+      "ht": 3,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "ELE 9",
+        "ELN 9"
+      ],
+      "profesores": [
+        "Manuel Valenzuela"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 39,
+      "codigo": "543697-1",
+      "asignatura": "Proyecto de Mt Electrico",
+      "cr": 3,
+      "ht": 0,
+      "hp": 6,
+      "hl": 0,
+      "carrera": [
+        "ELE 11"
+      ],
+      "profesores": [
+        "Leonardo Palma"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 40,
+      "codigo": "543699-1",
+      "asignatura": "Memoria de Título",
+      "cr": null,
+      "ht": null,
+      "hp": null,
+      "hl": null,
+      "carrera": [
+        " "
+      ],
+      "profesores": [
+        " "
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 41,
+      "codigo": "543707-1",
+      "asignatura": "Identificacion de Parametros",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 11",
+        "ELN"
+      ],
+      "profesores": [
+        "Alejandro Rojas"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 42,
+      "codigo": "543726-1",
+      "asignatura": "Modelacion Dinamica de Redes Electricas",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELE 11",
+        "ELN 11"
+      ],
+      "profesores": [
+        "Claudio Roa"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 43,
+      "codigo": "543730-1",
+      "asignatura": "Confiabilidad de Sistemas Elect. y Electro.",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 9",
+        "ELN 9"
+      ],
+      "profesores": [
+        "Enrique López"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 44,
+      "codigo": "543731-1",
+      "asignatura": "Control Sist Elect de Energ",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 9",
+        "ELN 9"
+      ],
+      "profesores": [
+        "Claudio Roa ",
+        " Enrique López"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 45,
+      "codigo": "543739-1",
+      "asignatura": "Antenas",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 9",
+        "ELN 9",
+        "TEL 9"
+      ],
+      "profesores": [
+        "Felipe Lamas"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 46,
+      "codigo": "543745-1",
+      "asignatura": "Control Convertidores Estat",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 9",
+        "ELN 9"
+      ],
+      "profesores": [
+        "Lautaro Salazar"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 47,
+      "codigo": "543780-1",
+      "asignatura": "Desarrollo de Aplicaciones para Dispositivos Moviles",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "ELE 9",
+        "ELN 9"
+      ],
+      "profesores": [
+        "Mario Medina"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 48,
+      "codigo": "543804-1",
+      "asignatura": "Análisis de Señales Biomédicas",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "BIO 9",
+        "ELN 9"
+      ],
+      "profesores": [
+        "Esteban Pino"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 49,
+      "codigo": "543805-1",
+      "asignatura": "Análisis de Imágenes Médicas",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "BIO 9",
+        "ELN 9",
+        "TEL 9"
+      ],
+      "profesores": [
+        "Pamela Guevara"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 50,
+      "codigo": "543814-1",
+      "asignatura": "Generación de Energía Eléctrica a Partir de Fuentes",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "BIO 9",
+        "ELE 9",
+        "ELN"
+      ],
+      "profesores": [
+        "Leonardo Palma"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 51,
+      "codigo": "543815-1",
+      "asignatura": "Introducción al Diseño de Máquinas Eléctricas",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 11",
+        "ELN 11"
+      ],
+      "profesores": [
+        "Juan Tapia"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 52,
+      "codigo": "543816-1",
+      "asignatura": "Minería de Textos Biomédicos",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "BIO 9"
+      ],
+      "profesores": [
+        "Rosa Figueroa"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 53,
+      "codigo": "543821-1",
+      "asignatura": "Optimización de Sistemas",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "BIO 10",
+        "ELE"
+      ],
+      "profesores": [
+        "Daniel Sbarbaro"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 54,
+      "codigo": "543822-1",
+      "asignatura": "Diseño Avanzado de Sistemas Digitales",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "BIO 10",
+        "ELE"
+      ],
+      "profesores": [
+        "Miguel Figueroa"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 55,
+      "codigo": "543823-1",
+      "asignatura": "Diseño Avanzado de Controladores",
+      "cr": 4,
+      "ht": 4,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 10",
+        "ELN 10"
+      ],
+      "profesores": [
+        "Alejandro Rojas"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 56,
+      "codigo": "543825-1",
+      "asignatura": "Comunicaciones Ópticas",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 1,
+      "carrera": [
+        "TEL 9"
+      ],
+      "profesores": [
+        "Gabriel Saavedra"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 57,
+      "codigo": "543826-1",
+      "asignatura": "Control No Lineal de Convertidores",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 10",
+        "ELN 10"
+      ],
+      "profesores": [
+        "José Espinoza"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 58,
+      "codigo": "543829-1",
+      "asignatura": "Control Multivariable",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELE 9",
+        "ELN 9",
+        "TEL 9"
+      ],
+      "profesores": [
+        "José Espinoza"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 59,
+      "codigo": "547120-1",
+      "asignatura": "Introducción a la Ingeniería Electrónica",
+      "cr": 2,
+      "ht": 2,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELN 1"
+      ],
+      "profesores": [
+        "Mario Medina"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 60,
+      "codigo": "547249-1",
+      "asignatura": "Fundamentos de Maquinas Electricas y Servosistemas",
+      "cr": 3,
+      "ht": 3,
+      "hp": 1,
+      "hl": 0,
+      "carrera": [
+        "ELN 7"
+      ],
+      "profesores": [
+        "Rubén Peña"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 61,
+      "codigo": "547308-1",
+      "asignatura": "Electrónica",
+      "cr": 3,
+      "ht": 3,
+      "hp": 1,
+      "hl": 0,
+      "carrera": [
+        "ELE 5",
+        "ELN 5"
+      ],
+      "profesores": [
+        "Lautaro Salazar"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 62,
+      "codigo": "547309-1",
+      "asignatura": "Sistemas Lineales Dinámicos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELE 5"
+      ],
+      "profesores": [
+        "Daniel Sbarbaro"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 63,
+      "codigo": "547309-2",
+      "asignatura": "Sistemas Lineales Dinámicos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELN 5"
+      ],
+      "profesores": [
+        "José Espinoza"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 64,
+      "codigo": "547325-1",
+      "asignatura": "Proyecto Electronico",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "ELN 11"
+      ],
+      "profesores": [
+        "Juan Pablo Segovia"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 65,
+      "codigo": "547507-1",
+      "asignatura": "Control de Procesos por Computador",
+      "cr": 5,
+      "ht": 4,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "ELE 9",
+        "ELN 9"
+      ],
+      "profesores": [
+        "Juan Pablo Segovia"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 66,
+      "codigo": "547511-1",
+      "asignatura": "Instrumentación en Sistemas",
+      "cr": 4,
+      "ht": 3,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "ELN 9"
+      ],
+      "profesores": [
+        "Juan Pablo Segovia"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 67,
+      "codigo": "547516-1",
+      "asignatura": "Taller Emprendimiento e Innovacion Tecnologica",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "BIO 10",
+        "ELN 11",
+        "INF"
+      ],
+      "profesores": [
+        "Alvaro Ananías"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 68,
+      "codigo": "547590-1",
+      "asignatura": "Práctica Profesional",
+      "cr": 0,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELN 9"
+      ],
+      "profesores": [
+        "Mario Medina"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 69,
+      "codigo": "547696-1",
+      "asignatura": "Proyecto de Memoria de Titulo",
+      "cr": null,
+      "ht": null,
+      "hp": null,
+      "hl": null,
+      "carrera": [
+        " "
+      ],
+      "profesores": [
+        " "
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 70,
+      "codigo": "547698-1",
+      "asignatura": "Memoria de Título",
+      "cr": null,
+      "ht": null,
+      "hp": null,
+      "hl": null,
+      "carrera": [
+        " "
+      ],
+      "profesores": [
+        " "
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 71,
+      "codigo": "549104-1",
+      "asignatura": "Sistemas y Señales",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "TEL 5"
+      ],
+      "profesores": [
+        "Sebastián Godoy"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 72,
+      "codigo": "549107-1",
+      "asignatura": "Taller de Desarrollo de Habilidades Comunicativas",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "ELN 9"
+      ],
+      "profesores": [
+        "Sergio Barría"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 73,
+      "codigo": "549108-1",
+      "asignatura": "Programacion Orientada Al Objeto",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "TEL 7"
+      ],
+      "profesores": [
+        "Sergio Sobarzo"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 74,
+      "codigo": "549110-1",
+      "asignatura": "Lab. de Sistemas de Comunicaciones",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "TEL 7"
+      ],
+      "profesores": [
+        "Luis Arias"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 75,
+      "codigo": "549112-1",
+      "asignatura": "Teoria de Redes de Telecomunicaciones",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "TEL 9"
+      ],
+      "profesores": [
+        "Jorge Pezoa ",
+        " Sergio Sobarzo"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 76,
+      "codigo": "549125-1",
+      "asignatura": "Introducción a la Ingeniería en Telecomunicaciones",
+      "cr": 2,
+      "ht": 2,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "TEL 1"
+      ],
+      "profesores": [
+        "Gabriel Saavedra ",
+        " Luis Arias ",
+        " Sebastián Godoy ",
+        " Sergio"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 77,
+      "codigo": "549150-1",
+      "asignatura": "Procesos Aleatorios",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "TEL 5"
+      ],
+      "profesores": [
+        "Diego Ramírez"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 78,
+      "codigo": "549155-1",
+      "asignatura": "Optronica",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "TEL 5"
+      ],
+      "profesores": [
+        "Sergio Torres"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 79,
+      "codigo": "549170-1",
+      "asignatura": "Sistemas Computacionales",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "TEL 7"
+      ],
+      "profesores": [
+        "Ricardo Sánchez"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 80,
+      "codigo": "549175-1",
+      "asignatura": "Comunicaciones Digitales",
+      "cr": 4,
+      "ht": 3,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "TEL 7"
+      ],
+      "profesores": [
+        "Jorge Pezoa"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 81,
+      "codigo": "549190-1",
+      "asignatura": "Comunicaciones Inalambricas",
+      "cr": 4,
+      "ht": 3,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "TEL 9"
+      ],
+      "profesores": [
+        "Jorge Pezoa ",
+        " Sergio Torres"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 82,
+      "codigo": "549195-1",
+      "asignatura": "Procesamiento Digital de Imagenes",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "TEL 9"
+      ],
+      "profesores": [
+        "Sebastián Godoy"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 83,
+      "codigo": "549211-1",
+      "asignatura": "Electrodinámica",
+      "cr": 4,
+      "ht": 3,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "TEL 3"
+      ],
+      "profesores": [
+        "Sebastián Godoy"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 84,
+      "codigo": "549300-1",
+      "asignatura": "Proyecto de H.P.",
+      "cr": null,
+      "ht": null,
+      "hp": null,
+      "hl": null,
+      "carrera": [
+        " "
+      ],
+      "profesores": [
+        " "
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 85,
+      "codigo": "549301-1",
+      "asignatura": "Memoria de Título",
+      "cr": null,
+      "ht": null,
+      "hp": null,
+      "hl": null,
+      "carrera": [
+        " "
+      ],
+      "profesores": [
+        " "
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 86,
+      "codigo": "549302-1",
+      "asignatura": "Dispositivos de Estado Sólido",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "TEL 5"
+      ],
+      "profesores": [
+        "Gabriel Saavedra"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    },
+    {
+      "id": 87,
+      "codigo": "549303-1",
+      "asignatura": "Procesos Aleatorios",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "TEL 5"
+      ],
+      "profesores": [
+        "[T] Ma 1,2 (TM 3",
+        "12) ",
+        " Ju 1 (TM 3",
+        "12)"
+      ],
+      "horariosYSalas": {
+        "T": [],
+        "P": []
+      }
+    }
+  ],
+  "FacultadDeIngenieria": [
+    {
+      "id": 0,
+      "codigo": "500120-1",
+      "asignatura": "Introducción a la Ingeniería",
+      "cr": 2,
+      "ht": 2,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "PCM1"
+      ],
+      "profesores": [],
+      "horariosYSalas": {
+        "T": [
+          "Lu 1,2 (A-512)"
+        ],
+        "P": []
+      }
+    },
+    {
+      "id": 1,
+      "codigo": "500120-2",
+      "asignatura": "Introducción a la Ingeniería",
+      "cr": 2,
+      "ht": 2,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "PCM1"
+      ],
+      "profesores": [],
+      "horariosysalas": {
+        "T": [
+          "Lu 1,2 (Sala Teaching)"
+        ],
+        "P": []
+      }
+    }
+  ],
+  "IngenieriaCivil": [],
+  "IngenieriaElectrica": [],
+  "IngenieriaIndustrial": [],
+  "IngenieriaInformatica": [],
+  "IngenieriaDeMateriales": [],
+  "IngenieriaMecanica": [],
+  "IngenieriaMetalurgica": [],
+  "IngenieriaQuimica": []
+}
