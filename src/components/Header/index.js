@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 //
+import { sendCareer, cartSelector } from '../../state/cartSlice';
 import { Accordion } from './Accordion';
 import { NavItem } from '../../utils/helpers';
 import { Burger, Menu } from './BurgerMenu';
+import { CgClose } from 'react-icons/cg';
 import data from '../../data/careers-data';
 import logo from '../../assets/logo.png';
 //
@@ -11,12 +14,25 @@ import './index.scss';
 
 
 export default function Header() {
-  const [career, setCareer] = useState({id: 99, name: '(Elige una carrera del menu)'});
   const [accordionState, setAccordionState] = useState(false);
   const [menuState, setMenuState] = useState(false);
-  let careerData = data.carreras;
-
+  const [career, setCareer] = useState({});
+  
+  const dispatch = useDispatch();
+  const cart = useSelector(cartSelector); 
   const toggleMenu = () => setMenuState(!menuState);
+  const periodoUdeC = `UdeC ${new Date().getFullYear()}-1`;
+
+  function handleCareer(career) {
+    setCareer(career);
+    dispatch(sendCareer(career));
+  }
+
+  function cleanCareer() {
+    setCareer({});
+    dispatch(sendCareer({}));
+  }
+
 
   return (
     <header>
@@ -37,21 +53,36 @@ export default function Header() {
         </ul>
         <div className="right-header">
           <h3>
-            {career.id !== 99 ? (
-              <a id='career' href={career.link}
-                target="_blank" rel="nostateer noreferrer">
-                {career.name}
-              </a>
+            {cart.career.name !== undefined ? ( 
+              <div className="career">
+                <a 
+                  href={career.link} 
+                  target="_blank" 
+                  rel="nostateer noreferrer"
+                >
+                  {cart.career.name}
+                </a>
+                <CgClose 
+                  onClick={cleanCareer} 
+                  className="remove-career" 
+                />
+              </div>
             ) : (
-              <p id='career' onClick={() => accordionState ? setAccordionState(false) : (setAccordionState(true))}>
-                {career.name}
+              <p 
+                className='career void' 
+                onClick={() => setAccordionState(!accordionState)}
+              >
+                {"(Click para elegir carrera)"}
               </p>
             )}
           </h3>
           <h3>
-            <a href="http://secad.ing.udec.cl/horarios"
-              target="_blank" rel="nostateer noreferrer">
-              UdeC 2021-2
+            <a 
+              href="http://secad.ing.udec.cl/horarios"
+              target="_blank" 
+              rel="nostateer noreferrer"
+            >
+              {periodoUdeC}
             </a>
           </h3>
         </div>
@@ -59,9 +90,11 @@ export default function Header() {
         <Menu menuState={menuState} toggleMenu={toggleMenu} />
       </div>
       <Accordion
-        careerData={careerData}
+        cart={cart}
+        data={data.carreras}
         career={career}
         setCareer={setCareer}
+        handler={handleCareer}
         accordionState={accordionState}
         setAccordionState={setAccordionState}
       />

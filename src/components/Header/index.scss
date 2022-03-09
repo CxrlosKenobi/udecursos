@@ -127,7 +127,7 @@ header {
       width: fit-content;
       margin-right: 18px;
 
-      & a, #career {
+      & a, .career {
         font-family: "Suisse Int\'l Mono", monospace;
         font-size: 12px;
         font-weight: bold;
@@ -136,6 +136,23 @@ header {
         cursor: pointer;
         user-select: none;
       }
+
+      & .career {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .remove-career {
+          font-size: .75rem;
+          padding-left: 8px;
+          cursor: pointer;
+          
+          &:hover { transform: scale(1.25); }
+          &:active { transform: scale(1); }
+        }
+      }
+
+      & .void { color: gray; }
 
       & a:hover { text-decoration: underline #4c2bee; }
       & h3 {
