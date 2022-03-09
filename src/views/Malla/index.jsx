@@ -9,7 +9,7 @@ import './index.scss';
 
 
 function fetchData(data) {
-  dynamicData.columns = data.columns;
+  dynamicData.columns = data.Columns;
   dynamicData.tasks = data.tasks;
 }
 
@@ -26,10 +26,10 @@ export function Malla(props) {
       if (destination.droppableId === source.droppableId &&
           destination.index === source.index) return; 
       
-      const start = state.columns[source.droppableId];
-      const finish = state.columns[destination.droppableId];
-      const destinationCredits = finish.taskIds.reduce((acc, task) => acc + parseInt(state.tasks[task].credits), 0);
-      const taskCredits = parseInt(state.tasks[draggableId].credits);
+      const start = state.Columns[source.droppableId];
+      const finish = state.Columns[destination.droppableId];
+      const destinationCredits = finish.taskIds.reduce((acc, task) => acc + parseInt(state.Tasks[task].credits), 0);
+      const taskCredits = parseInt(state.Tasks[draggableId].credits);
       
       // Same column
       if (start === finish) {
@@ -43,8 +43,8 @@ export function Malla(props) {
         };
         const newState = {
           ...state,
-          columns: {
-            ...state.columns,
+          Columns: {
+            ...state.Columns,
             [newColumn.id]: newColumn,
           },
         };
@@ -74,8 +74,8 @@ export function Malla(props) {
       if ((destinationCredits + taskCredits) <= 24) {
         const newState = {
           ...state,
-          columns: {
-            ...state.columns,
+          Columns: {
+            ...state.Columns,
             [newStart.id]: newStart,
             [newFinish.id]: newFinish,
           },
