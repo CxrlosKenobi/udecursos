@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 
-export function Menu ({ menuState, toggleMenu }) {
+export function Menu({ menuState, toggleMenu }) {
   return (
     <StyledMenu menuState={menuState}>
       <Link to="/" onClick={toggleMenu}>Inicio</Link>
@@ -13,7 +13,7 @@ export function Menu ({ menuState, toggleMenu }) {
   );
 };
 
-export function Burger ({ menuState, toggleMenu }) {
+export function Burger({ menuState, toggleMenu }) {
   return (
     <StyledBurger menuState={menuState} onClick={toggleMenu}>
       <div />
@@ -27,13 +27,16 @@ const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #FFF0E5;
+  background-color: #FFF;
   transform: ${({ menuState }) => menuState ? 'translateX(0)' : 'translateX(100%)'};
   height: 100vh;
+  max-height: 100vh;
   width: 40%;
   max-width: 400px;
   text-align: right;
-  padding: 5rem 1.5rem 2rem 2rem;
+  padding: 0 1.5rem 2rem 2rem;
+  margin-top: 4.89rem;
+  border-left: 1px solid #10162F;
   position: absolute;
   top: 0;
   right: 0;
@@ -54,24 +57,24 @@ const StyledMenu = styled.nav`
   @media only screen and (max-width: 412px) {
     width: 60%;
   }
-`
+`;
 
 const StyledBurger = styled.button`
   display: none;
 
   @media only screen and (max-width: 846px) {
     position: relative;
-    top: 28%;
+    top: 25%;
     right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
+    width: 2.6rem;
+    height: 2.6rem;
     background: transparent;
     border: none;
+    padding: 5px;
     cursor: pointer;
-    padding: 0;
     z-index: 10;
     transform: scale(0.9);
     z-index: 3;
@@ -98,4 +101,4 @@ const StyledBurger = styled.button`
       }
     }
   }
-`
+`;
