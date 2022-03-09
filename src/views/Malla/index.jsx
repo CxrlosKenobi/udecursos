@@ -1,11 +1,14 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
+import { useSelector } from "react-redux";
 //
+import { cartSelector } from "../../state/cartSlice";
+import SeekCareer from "./Seeker";
 import Column from '../../components/Malla/Column';
-import Informatica from '../../data/mallas-carreras/Informatica';
 import dynamicData from '../../data/dynamic-data';
 //
 import './index.scss';
+
 
 
 function fetchData(data) {
@@ -14,8 +17,15 @@ function fetchData(data) {
 }
 
 
-export function Malla(props) {
-  const [state, setState] = useState(Informatica);
+export function Malla() {
+  const cart = useSelector(cartSelector);
+  const data = SeekCareer(cart.career.name);
+  const [state, setState] = useState(data);
+
+  useEffect(() => {
+    setState(data);
+  }, [data]);
+  
 
   const handleDragEnd = useCallback(
     function handleDragEnd(result) {
@@ -68,7 +78,6 @@ export function Malla(props) {
         ...finish,
         taskIds: finishTaskIds
       };
-      
       
       // If the destination credits + the task credits are greater than the max credits,
       if ((destinationCredits + taskCredits) <= 24) {

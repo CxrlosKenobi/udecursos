@@ -90,7 +90,6 @@ export default function Header() {
         <Menu menuState={menuState} toggleMenu={toggleMenu} />
       </div>
       <Accordion
-        cart={cart}
         data={data.carreras}
         career={career}
         setCareer={setCareer}
