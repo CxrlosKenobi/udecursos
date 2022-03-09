@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 //
 import Header from "./components/Header/index";
+import { ScrollWrapper } from "./utils/helpers";
 import { Inicio } from "./views/Inicio/index";
 import { Malla } from "./views/Malla/index";
 import { Utilidades } from "./views/Utilidades/index";
@@ -19,11 +20,13 @@ export default function UdeCursos() {
       <section id="UdeCursos">
         <BrowserRouter>
           <Header/>
-          <Routes>
-            <Route exact path="/" element={<Inicio/>} />
-            <Route path="/Malla" element={<Malla/>} />
-            <Route path="/Utilidades" element={<Utilidades/>} />
-          </Routes>
+          <ScrollWrapper>
+            <Routes>
+              <Route exact path="/" element={<Inicio/>} />
+              <Route path="/Malla" element={<Malla/>} />
+              <Route path="/Utilidades" element={<Utilidades/>} />
+            </Routes>
+          </ScrollWrapper>
           <Footer/>
         </BrowserRouter>
       </section>
