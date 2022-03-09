@@ -12947,6 +12947,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-icons@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "react-icons@npm:4.3.1"
+  peerDependencies:
+    react: "*"
+  checksum: 2cc608acdd3e906aa3aaee290b8398220639677c949382d86e554020e5dab6a9f1ed7484418aa5272cb5c5c018e1fc9a323d433d901697a76530029f9ecb1263
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1, react-is@npm:^16.7.0, react-is@npm:^16.8.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -14940,6 +14949,7 @@ __metadata:
     react: ^17.0.2
     react-beautiful-dnd: ^13.1.0
     react-dom: ^17.0.2
+    react-icons: ^4.3.1
     react-redux: ^7.2.6
     react-router-dom: ^6.2.2
     react-scripts: 5.0.0
