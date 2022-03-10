@@ -1,9 +1,12 @@
 import Informatica from "../../data/mallas-carreras/Informatica";
 import Fisica from "../../data/mallas-carreras/Fisica";
+import IngFisica from "../../data/mallas-carreras/IngFisica";
 import Aeroespacial from "../../data/mallas-carreras/Aeroespacial";
 import Astronomia from "../../data/mallas-carreras/Astronomia";
-import Matematica from "../../data/mallas-carreras/Matematica";
-import Medicina from "../../data/mallas-carreras/Medicina";
+import Electronica from "../../data/mallas-carreras/Electronica";
+import Industrial from "../../data/mallas-carreras/Industrial";
+import Biomedica from "../../data/mallas-carreras/Biomedica";
+import Estadistica from "../../data/mallas-carreras/Estadistica";
 
 
 export default function SeekCareer(career) {
@@ -11,8 +14,11 @@ export default function SeekCareer(career) {
     case "Ing. Civil Informática":
       return Informatica;
 
-    case "Ciencias Física":
+    case "Ciencias Físicas":
       return Fisica;
+
+    case "Ing. Física":
+      return IngFisica;
 
     case "Ing. Civil Aeroespacial":
       return Aeroespacial;
@@ -20,14 +26,19 @@ export default function SeekCareer(career) {
     case "Astronomía":
       return Astronomia;
 
-    case "Ing. Civil Matemática":
-      return Matematica;
+    case "Ing. Civil Electrónica":
+      return Electronica;
 
-    case "Medicina":
-      return Medicina;
+    case "Ing. Civil Industrial":
+      return Industrial;
+    
+    case "Ing. Civil Biomédica":
+      return Biomedica;
+
+    case "Ing. Estadística":
+      return Estadistica;
 
     default:
       return Informatica;
   }
-
 };

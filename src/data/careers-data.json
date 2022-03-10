@@ -7,108 +7,43 @@
 		},
 		{
 			"id": 2,
+			"name": "Ciencias Físicas",
+			"link": "https://admision.udec.cl/ciencias-fisicas/"
+		},
+		{
+			"id": 3,
+			"name": "Ing. Física",
+			"link": "https://admision.udec.cl/ciencias-fisicas/"
+		},
+		{
+			"id": 4,
 			"name": "Ing. Civil Aeroespacial",
 			"link": "https://fi.udec.cl/pregrado/ingenieria-civil-aeroespacial/"
 		},
 		{
-			"id": 3,
-			"name": "Ciencias Físicas",
-			"link": ""
-		},
-		{
-			"id": 4,
-			"name": "Astronomía",
-			"link": ""
-		},
-		{
 			"id": 5,
-			"name": "Ing. Civil Matemática",
-			"link": ""
+			"name": "Astronomía",
+			"link": "https://admision.udec.cl/astronomia/"
 		},
 		{
 			"id": 6,
-			"name": "Medicina",
-			"link": ""
+			"name": "Ing. Civil Electrónica",	
+			"link": "https://fi.udec.cl/pregrado/ingenieria-civil-electronica/"
 		},
 		{
 			"id": 7,
-			"name": "Ing. Civil Electrónica",
-			"link": ""
+			"name": "Ing. Civil Industrial",
+			"link": "https://fi.udec.cl/pregrado/ingenieria-civil-industrial/malla/"
 		},
 		{
 			"id": 8,
-			"name": "Ing. Civil Industrial",
-			"link": ""
+			"name": "Ing. Civil Biomédica",
+			"link": "https://fi.udec.cl/pregrado/ingenieria-civil-biomedica/"
 		},
 		{
 			"id": 9,
-			"name": "Ing. Civil Química",
-			"link": ""
-		},
-		{
-			"id": 10,
-			"name": "Ing. Civil en Telecomunicaciones",
-			"link": ""
-		},
-		{
-			"id": 11,
-			"name": "Arquitectura",
-			"link": ""
-		},
-		{
-			"id": 12,
-			"name": "Ing. Civil Eléctrica",
-			"link": ""
-		},
-		{
-			"id": 13,
-			"name": "Ing. Civil de Minas",
-			"link": ""
-		},
-		{
-			"id": 14,
-			"name": "Ing. Civil Biomédica",
-			"link": ""
-		},
-		{
-			"id": 15,
-			"name": "Odontología",
-			"link": ""
-		},
-		{
-			"id": 16,
-			"name": "Ing. Civil",
-			"link": ""
-		},
-		{
-			"id": 17,
-			"name": "Ing. Civil Mecánica",
-			"link": ""
-		},
-		{
-			"id": 18,
 			"name": "Ing. Estadística",
-			"link": ""
-		},
-		{
-			"id": 19,
-			"name": "Ing. Forestal",
-			"link": ""
-		},
-		{
-			"id": 20,
-			"name": "Ing. Civil de Materiales",
-			"link": ""
-		},
-		{
-			"id": 21,
-			"name": "Ing. Comercial",
-			"link": ""
-		},
-		{
-			"id": 22,
-			"name": "Química y Farmacia",
-			"link": ""
+			"link": "https://admision.udec.cl/ingenieria-estadistica/"
 		}
 	]
 }

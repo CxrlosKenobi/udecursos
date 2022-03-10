@@ -3,7 +3,7 @@
     'id': { id: 'id', content: 'NAME', color: '#FFFFFF', credits: 0, code: 'courseCode', prerequisites: [] }
 */
 
-const Medicina = {
+const IngFisica = {
 
   Tasks: {
   },
@@ -15,4 +15,4 @@ const Medicina = {
   ]
 };
 
-export default Medicina;
+export default IngFisica;
