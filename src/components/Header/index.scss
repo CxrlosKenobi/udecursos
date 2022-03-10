@@ -137,7 +137,7 @@ header {
         user-select: none;
       }
 
-      & .career {
+      & .career-info {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -147,8 +147,8 @@ header {
           padding-left: 8px;
           cursor: pointer;
           
-          &:hover { transform: scale(1.25); }
-          &:active { transform: scale(1); }
+          &:hover, &:focus { transform: scale(1.25); }
+          &:active { transform: scale(.85); }
         }
       }
 

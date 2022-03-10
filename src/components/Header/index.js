@@ -3,29 +3,33 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 //
 import { sendCareer, cartSelector } from '../../state/cartSlice';
-import { Accordion } from './Accordion';
+import { Accordion } from './CareerSelector';
 import { NavItem } from '../../utils/helpers';
 import { Burger, Menu } from './BurgerMenu';
 import { CgClose } from 'react-icons/cg';
-import data from '../../data/careers-data';
 import logo from '../../assets/logo.png';
 //
 import './index.scss';
 
 
 export default function Header() {
-  const [accordionState, setAccordionState] = useState(false);
   const [menuState, setMenuState] = useState(false);
+  const [submenu, setSubmenu] = useState(false);
+  const [accordionState, setAccordionState] = useState(false);
   const [career, setCareer] = useState({});
-  
+
   const dispatch = useDispatch();
-  const cart = useSelector(cartSelector); 
+  const cart = useSelector(cartSelector);
+
   const toggleMenu = () => setMenuState(!menuState);
+  const toggleSubmenu = () => setSubmenu(!submenu);
+
   const periodoUdeC = `UdeC ${new Date().getFullYear()}-1`;
 
   function handleCareer(career) {
     setCareer(career);
     dispatch(sendCareer(career));
+    setAccordionState(false);
   }
 
   function cleanCareer() {
@@ -48,49 +52,63 @@ export default function Header() {
         <ul id="NavBar">
           <NavItem to="/">Inicio</NavItem>
           <NavItem to="/Malla">Malla</NavItem>
-          <NavItem to="/Horarios">Auto-Horario</NavItem>
+          <NavItem to="/Horario">Horario</NavItem>
           <NavItem to="/Utilidades">Utilidades</NavItem>
         </ul>
         <div className="right-header">
           <h3>
-            {cart.career.name !== undefined ? ( 
-              <div className="career">
-                <a 
-                  href={career.link} 
-                  target="_blank" 
+            {cart.career.name !== undefined ? (
+              <div className="career-info">
+                <a
+                  href={career.link}
+                  target="_blank"
                   rel="nostateer noreferrer"
                 >
                   {cart.career.name}
                 </a>
-                <CgClose 
-                  onClick={cleanCareer} 
-                  className="remove-career" 
+                <CgClose
+                  onClick={cleanCareer}
+                  className="remove-career"
                 />
               </div>
             ) : (
-              <p 
-                className='career void' 
+              <p
+                className='career void'
                 onClick={() => setAccordionState(!accordionState)}
               >
-                {"(Click para elegir carrera)"}
+                (Click para elegir carrera)
               </p>
             )}
           </h3>
           <h3>
-            <a 
+            <a
               href="http://secad.ing.udec.cl/horarios"
-              target="_blank" 
+              target="_blank"
               rel="nostateer noreferrer"
             >
               {periodoUdeC}
             </a>
           </h3>
         </div>
-        <Burger menuState={menuState} toggleMenu={toggleMenu} />
-        <Menu menuState={menuState} toggleMenu={toggleMenu} />
+        <Burger
+          menuState={menuState}
+          toggleMenu={toggleMenu}
+          submenu={submenu}
+          setSubmenu={setSubmenu}
+        />
+        <Menu
+          menuState={menuState}
+          toggleMenu={toggleMenu}
+          submenu={submenu}
+          toggleSubmenu={toggleSubmenu}
+          career={cart.career}
+          handleCareer={handleCareer}
+          cleanCareer={cleanCareer}
+          periodoUdeC={periodoUdeC}
+          CgClose={CgClose}
+        />
       </div>
       <Accordion
-        data={data.carreras}
         career={career}
         setCareer={setCareer}
         handler={handleCareer}

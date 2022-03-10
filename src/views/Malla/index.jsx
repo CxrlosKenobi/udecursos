@@ -10,7 +10,6 @@ import dynamicData from '../../data/dynamic-data';
 import './index.scss';
 
 
-
 function fetchData(data) {
   dynamicData.columns = data.Columns;
   dynamicData.tasks = data.tasks;
@@ -25,7 +24,7 @@ export function Malla() {
   useEffect(() => {
     setState(data);
   }, [data]);
-  
+
 
   const handleDragEnd = useCallback(
     function handleDragEnd(result) {
