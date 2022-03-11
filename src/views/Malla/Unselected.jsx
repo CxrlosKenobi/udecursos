@@ -5,8 +5,11 @@ import "./Unselected.scss";
 
 export function Unselected() {
   return (
-    <div className="unselected">
+    <main id="Unselected">
+      <div />
       <h1>Selecciona una carrera</h1>
-    </div>
+      <hr />
+      <div />
+    </main>
   );
 };

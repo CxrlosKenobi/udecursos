@@ -6,6 +6,7 @@ import { sendCareer, cartSelector } from '../../state/cartSlice';
 import { Accordion } from './CareerSelector';
 import { NavItem } from '../../utils/helpers';
 import { Burger, Menu } from './BurgerMenu';
+import { GoSync } from 'react-icons/go';
 import { CgClose } from 'react-icons/cg';
 import logo from '../../assets/logo.png';
 //
@@ -66,6 +67,10 @@ export default function Header() {
                 >
                   {cart.career.name}
                 </a>
+                <GoSync
+                  className="sync-icon"
+                  onClick={() => setAccordionState(!accordionState)}
+                />
                 <CgClose
                   onClick={cleanCareer}
                   className="remove-career"
@@ -109,7 +114,7 @@ export default function Header() {
         />
       </div>
       <Accordion
-        career={career}
+        careerName={cart.career.name}
         setCareer={setCareer}
         handler={handleCareer}
         accordionState={accordionState}

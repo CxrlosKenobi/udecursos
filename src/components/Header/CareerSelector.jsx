@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import styled from 'styled-components';
 //
 import data from '../../data/careers-data';
 //
@@ -7,34 +8,21 @@ import "./CareerSelector.scss";
 
 const carreras = data.carreras;
 
-export function Accordion({ career, handler, accordionState, setAccordionState }) {
-  const [accordion, setAccordion] = useState(null);
-
-  useEffect(() => {
-    accordionState ? (
-      setAccordion(
-        <div id='Accordion'>
-          <ul>
-            {carreras.map((option) => (
-              <li key={option.id}
-                  onClick={(() => handler(option))}
-                  style={option.name === career.name ? (
-                    {fontWeight: 'bold', textDecoration: 'underline #4C2BEE'}
-                    ) : (null)
-                  }
-              >
-                {option.name}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )
-    ) : (
-      setAccordion(null)
-    )
-  }, [accordionState, setAccordionState, career, handler]);
-
-  return <>{ accordion }</>
+export function Accordion({ careerName, handler, accordionState }) {
+  return (
+    <StyledAccordion id='Accordion' accordionState={accordionState}>
+      <ul>
+        {carreras.map((option) => (
+          <li key={option.id}
+              onClick={(() => handler(option))}
+              className={option.name === careerName ? 'chosen' : ''}
+          >
+            {option.name}
+          </li>
+        ))}
+      </ul>
+    </StyledAccordion>
+  );
 };
 
 export function SubmenuList({ careerName, handleCareer }) {
@@ -44,14 +32,7 @@ export function SubmenuList({ careerName, handleCareer }) {
         {carreras.map((option) => (
           <li key={option.id}
               onClick={(() => handleCareer(option))}
-              style={option.name === careerName ? (
-                {fontWeight: 'bold',
-                 listStyle: 'disc',
-                 textDecorationLine: 'underline',
-                 textDecorationColor: '#4C2BEE',
-                 textDecorationThickness: '2px'}
-                ) : (null)
-              }
+              className={option.name === careerName ? 'chosen' : ''}
           >
             {option.name}
           </li>
@@ -60,3 +41,25 @@ export function SubmenuList({ careerName, handleCareer }) {
     </section>
   );
 };
+
+
+const StyledAccordion = styled.section`
+  background-color: #FFF;
+  border-radius: 5px;
+  height: fit-content;
+  width: 95%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #10162f;
+  position: relative;
+  top: 0;
+  transform: ${({ accordionState }) => accordionState ? 'translateY(0)' : 'translateY(-110%)'};
+  transition: transform 200ms ease-in-out;
+  z-index: -1;
+
+  @media only screen and (max-width: 846px) {
+    display: none;
+  }
+`;

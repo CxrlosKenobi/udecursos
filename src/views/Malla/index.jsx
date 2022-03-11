@@ -28,7 +28,7 @@ export function Malla() {
     cart.career.name !== undefined &&
       gsap.fromTo(mallaRef.current,
         { opacity: 0, duration: 0.35 },
-        { opacity: 1, duration: 0.5 }
+        { opacity: 1, duration: 0.6 }
       );
   }, [data, cart.career.name]);
 

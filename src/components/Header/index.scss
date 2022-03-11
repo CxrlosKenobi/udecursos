@@ -150,9 +150,27 @@ header {
           &:hover, &:focus { transform: scale(1.25); }
           &:active { transform: scale(.85); }
         }
+
+        & .sync-icon {
+          font-size: .8rem;
+          margin-left: 8px;
+          cursor: pointer;
+
+          &:hover {
+            transform-origin: center center;
+            transform: rotate(360deg);
+            transition: transform 250ms ease-in-out;
+          }
+          &:active { transform: scale(.85); }
+        }
+
       }
 
-      & .void { color: gray; }
+      & .void { 
+        color: gray; 
+
+        &:active { color: #10162f; }
+      }
 
       & a:hover { text-decoration: underline #4c2bee; }
       & h3 {

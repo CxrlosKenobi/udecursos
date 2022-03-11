@@ -1,14 +1,4 @@
 #Accordion {
-  background-color: #FFF;
-  border-radius: 5px;
-  height: fit-content;
-  width: 95%;
-  margin: 5px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #10162f;
-
   & ul {
     width: 100%;
     list-style: none;
@@ -20,7 +10,7 @@
     margin: 5px 15px;
   }
 
-  & li {
+  & li, & .chosen {
     margin: 5px 8px;
     padding: 4px;
     user-select: none;
@@ -31,6 +21,13 @@
       font-style: none;
     }
   }
+
+  & .chosen {
+    font-weight: bold;
+    text-decoration: underline #4c2bee;
+    font-style: none;
+  }
+
 }
 
 #Career-list-wrapper {
@@ -47,19 +44,26 @@
     margin: 1rem auto;
     
 
-    & li {
+    & li, & .chosen {
       margin: 0;
       padding: 6.5px 0;
       font-size: .95rem;
 
       &:hover, &:active, &:focus {
         cursor: pointer;
-        /* Setting text styles one by one, in order to include Apple devices */
         text-decoration-line: underline;
         text-decoration-color: #4C2BEE;
-        text-decoration-thickness: 2px;
+        text-decoration-thickness: 1px;
         font-style: none;
       }
+    }
+
+    & .chosen {
+      font-weight: bold;
+      list-style: disc;
+      text-decoration-line: underline;
+      text-decoration-color: #4C2BEE;
+      text-decoration-thickness: 2px;
     }
   }
 }

@@ -8,7 +8,10 @@ import { SubmenuList } from "./CareerSelector";
 import "./BurgerMenu.scss";
 
 
-export function Menu({ menuState, toggleMenu, submenu, toggleSubmenu, career, handleCareer, cleanCareer, periodoUdeC, CgClose }) {
+export function Menu({
+  menuState, toggleMenu, submenu, toggleSubmenu,
+  career, handleCareer, cleanCareer, periodoUdeC, CgClose }) {
+
   return (
     <>
       <StyledMenu id="BurgerMenu" menuState={menuState}>
@@ -31,7 +34,7 @@ export function Menu({ menuState, toggleMenu, submenu, toggleSubmenu, career, ha
           </a>
           <CgClose
             onClick={cleanCareer}
-            className="remove-career" 
+            className="remove-career"
           />
         </div>
       ) : (
@@ -50,8 +53,8 @@ export function Menu({ menuState, toggleMenu, submenu, toggleSubmenu, career, ha
       </h3>
 
       </StyledMenu>
-      <SubMenu 
-        submenu={submenu} 
+      <SubMenu
+        submenu={submenu}
         toggleSubmenu={toggleSubmenu}
         careerName={career.name}
         handleCareer={handleCareer}
