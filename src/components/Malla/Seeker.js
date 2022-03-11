@@ -7,7 +7,7 @@ import Electronica from "../../data/mallas-carreras/Electronica";
 import Industrial from "../../data/mallas-carreras/Industrial";
 import Biomedica from "../../data/mallas-carreras/Biomedica";
 import Estadistica from "../../data/mallas-carreras/Estadistica";
-
+import Default from "../../data/mallas-carreras/Default";
 
 export default function SeekCareer(career) {
   switch (career) {
@@ -39,6 +39,6 @@ export default function SeekCareer(career) {
       return Estadistica;
 
     default:
-      return Informatica;
+      return Default;
   }
 };
