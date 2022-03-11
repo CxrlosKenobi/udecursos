@@ -8661,6 +8661,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gsap@npm:^3.9.1":
+  version: 3.9.1
+  resolution: "gsap@npm:3.9.1"
+  checksum: 4ea20b134bb00419286842f6e57ea7cb132b5b738d2aca2eecd6f423804ca3a4ac531c76aee63aad9d8b40a0f16e6a50b78bc201fd53f5fa3ca18be51b89f6bb
+  languageName: node
+  linkType: hard
+
 "gzip-size@npm:^6.0.0":
   version: 6.0.0
   resolution: "gzip-size@npm:6.0.0"
@@ -14943,6 +14950,7 @@ __metadata:
     "@testing-library/user-event": ^13.5.0
     csv-parser: ^3.0.0
     csv-writer: ^1.6.0
+    gsap: ^3.9.1
     hash-router: ^0.4.0
     material-ui-popup-state: ^2.0.0
     pdfjs-dist: ^2.13.216
