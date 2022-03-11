@@ -1,9 +1,11 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useRef, useState, useEffect, useCallback } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 import { useSelector } from "react-redux";
+import { gsap } from 'gsap';
 //
 import { cartSelector } from "../../state/cartSlice";
-import SeekCareer from "./Seeker";
+import { Unselected } from './Unselected';
+import SeekCareer from "../../components/Malla/Seeker";
 import Column from '../../components/Malla/Column';
 import dynamicData from '../../data/dynamic-data';
 //
@@ -15,15 +17,20 @@ function fetchData(data) {
   dynamicData.tasks = data.tasks;
 }
 
-
 export function Malla() {
   const cart = useSelector(cartSelector);
   const data = SeekCareer(cart.career.name);
-  const [state, setState] = useState(data);
+  const [malla, setMalla] = useState(data);
+  const mallaRef = useRef(null);
 
   useEffect(() => {
-    setState(data);
-  }, [data]);
+    setMalla(data);
+    cart.career.name !== undefined &&
+      gsap.fromTo(mallaRef.current,
+        { opacity: 0, duration: 0.35 },
+        { opacity: 1, duration: 0.5 }
+      );
+  }, [data, cart.career.name]);
 
 
   const handleDragEnd = useCallback(
@@ -33,13 +40,13 @@ export function Malla() {
       // Dropped outside the list
       if (!destination) return;
       if (destination.droppableId === source.droppableId &&
-          destination.index === source.index) return; 
-      
-      const start = state.Columns[source.droppableId];
-      const finish = state.Columns[destination.droppableId];
-      const destinationCredits = finish.taskIds.reduce((acc, task) => acc + parseInt(state.Tasks[task].credits), 0);
-      const taskCredits = parseInt(state.Tasks[draggableId].credits);
-      
+          destination.index === source.index) return;
+
+      const start = malla.Columns[source.droppableId];
+      const finish = malla.Columns[destination.droppableId];
+      const destinationCredits = finish.taskIds.reduce((acc, task) => acc + parseInt(malla.Tasks[task].credits), 0);
+      const taskCredits = parseInt(malla.Tasks[draggableId].credits);
+
       // Same column
       if (start === finish) {
         const newTaskIds = Array.from(start.taskIds);
@@ -50,16 +57,16 @@ export function Malla() {
           ...start,
           taskIds: newTaskIds,
         };
-        const newState = {
-          ...state,
+        const newMalla = {
+          ...malla,
           Columns: {
-            ...state.Columns,
+            ...malla.Columns,
             [newColumn.id]: newColumn,
           },
         };
 
-        setState(newState);
-        fetchData(newState);
+        setMalla(newMalla);
+        fetchData(newMalla);
 
         return;
       }
@@ -77,22 +84,22 @@ export function Malla() {
         ...finish,
         taskIds: finishTaskIds
       };
-      
+
       // If the destination credits + the task credits are greater than the max credits,
       if ((destinationCredits + taskCredits) <= 24) {
-        const newState = {
-          ...state,
+        const newMalla = {
+          ...malla,
           Columns: {
-            ...state.Columns,
+            ...malla.Columns,
             [newStart.id]: newStart,
             [newFinish.id]: newFinish,
           },
         };
 
-        setState(newState);
-        fetchData(newState);
-        
-        return 
+        setMalla(newMalla);
+        fetchData(newMalla);
+
+        return
       } else {
         const element = document.getElementById('column-credits-' + destination.droppableId);
         element.classList.add('animated', 'ease-out', 'bounceIn');
@@ -104,26 +111,29 @@ export function Malla() {
           element.style.transform = 'scale(1)';
           element.style.transition = 'all 500ms';
         }, 500);
-        
+
         return;
       }
-    }, [state]
+    }, [malla]
   );
 
   return (
-    <main id='body-malla'>
-      <DragDropContext onDragEnd={handleDragEnd} sensors={[]}>
-        <div id='container-malla'>
-          {state.ColumnOrder.map(columnId => {
-            const column = state.Columns[columnId];
-            const tasks = column.taskIds.map(taskId => state.Tasks[taskId]);
+    <main id="body-malla">
+        {cart.career.name !== undefined
+          ? (
+          <DragDropContext onDragEnd={handleDragEnd}>
+            <div id='container-malla' ref={mallaRef}>
+              {malla.ColumnOrder.map(columnId => {
+                const column = malla.Columns[columnId];
+                const tasks = column.taskIds.map(taskId => malla.Tasks[taskId]);
 
-            return (
-              <Column key={column.id} column={column} tasks={tasks} /> 
-            );
-          })}
-          </div>
-      </DragDropContext>
+                return <Column key={column.id} column={column} tasks={tasks} />
+              })}
+            </div>
+          </DragDropContext>
+          ) : (
+          <Unselected />
+        )}
     </main>
   );
 };

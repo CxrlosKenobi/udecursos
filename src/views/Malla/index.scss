@@ -1,17 +1,39 @@
 #body-malla {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5%;
-    margin-top: calc(85px + 5px);
-        
-    flex-wrap: wrap;
-    overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5%;
+  margin-top: calc(85px + 5px);
+      
+  flex-wrap: wrap;
+  overflow: auto;
 }
 #container-malla {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    min-height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: calc(100vh - 140px);
 }
+
+// /* This fires as soon as the element enters the DOM */
+// .unselected-enter {
+//   opacity: 0;
+// }
+
+// /* This is where we can add the transition*/
+// .unselected-enter-active {
+//   opacity: 1;
+//   transition: opacity 300ms;
+// }
+
+// /* This fires as soon as the state is false */
+// .unselected-exit {
+//   opacity: 1;
+// }
+
+// /* fires as element leaves the DOM*/
+// .unselected-exit-active {
+//   opacity: 0;
+//   transition: opacity 200ms;
+// }
