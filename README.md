@@ -63,12 +63,6 @@ yarn start
 4. Happy coding!
 Don't forget to star the repo and submit your pull requests!
 
-
-### Check out the responsive design as well! 👀
-![image](assets/latest-build.png)
-![image](assets/malla.png)
-=======
-
 ---
 
 #### Built as my final project in my Front-End Engineer Path at:
