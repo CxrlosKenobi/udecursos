@@ -22,7 +22,7 @@ export function SectionsGrid() {
         <a className="locked">
           <img src={mallaBlur} alt="Malla" />
           <div>
-            <h2>Creador de Horarios (En proceso)</h2>
+            <h2>Creador de Horarios (En desarrollo)</h2>
           </div>
         </a>      
       </section>
@@ -30,7 +30,7 @@ export function SectionsGrid() {
         <a className="locked">
           <img src={mallaBlur} alt="Malla" />
           <div>
-            <h2>Utilidades (En proceso)</h2>
+            <h2>Utilidades (En desarrollo)</h2>
           </div>
         </a>
       </section>

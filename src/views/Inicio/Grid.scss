@@ -66,4 +66,23 @@
       }
     }
   }
+
+  // Breakpoints
+  @media only screen and (max-width: 412px) {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+
+    & section {
+      height: 219px;
+      width: 340px;
+    }
+  }
+
+  @media only screen and (max-width: 365px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    & section {
+      height: 195px;
+      width: 300px;
+    }
+  }
 }
