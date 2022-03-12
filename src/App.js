@@ -7,7 +7,6 @@ import Header from "./components/Header/index";
 import { ScrollWrapper } from "./utils/helpers";
 import { Inicio } from "./views/Inicio/index";
 import { Malla } from "./views/Malla/index";
-import { Utilidades } from "./views/Utilidades/index";
 import Footer from "./components/Footer/index";
 //
 import "@atlaskit/css-reset";
@@ -24,7 +23,6 @@ export default function UdeCursos() {
             <Routes>
               <Route exact path="/" element={<Inicio/>} />
               <Route path="/Malla" element={<Malla/>} />
-              <Route path="/Utilidades" element={<Utilidades/>} />
             </Routes>
           </ScrollWrapper>
           <Footer/>

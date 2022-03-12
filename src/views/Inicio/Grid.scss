@@ -21,6 +21,11 @@
         color: #FFC107;
         transition: color 200ms ease-out;
       }
+      & .locked div h2 {
+        color: gray;
+        transition: color 200ms ease-out;
+      }
+
     }
 
     & a {
@@ -52,6 +57,12 @@
           height: 100%;
           margin-left: 10px;
         }
+      }
+    }
+
+    & .locked {
+      & div h2 {
+        color: darkgray;
       }
     }
   }

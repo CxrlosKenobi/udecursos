@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 //
 import malla from '../../assets/malla.png';
+import mallaBlur from '../../assets/mallaBlur.png';
 //
 import "./Grid.scss";
 
@@ -18,20 +19,20 @@ export function SectionsGrid() {
         </Link>
       </section>
       <section>
-        <Link to="/Horario">
-          <img src={malla} alt="Malla" />
+        <a className="locked">
+          <img src={mallaBlur} alt="Malla" />
           <div>
-            <h2>Creador de Horarios</h2>
+            <h2>Creador de Horarios (En proceso)</h2>
           </div>
-        </Link>      
+        </a>      
       </section>
       <section>
-        <Link to="/Utilidades">
-          <img src={malla} alt="Malla" />
+        <a className="locked">
+          <img src={mallaBlur} alt="Malla" />
           <div>
-            <h2>Utilidades</h2>
+            <h2>Utilidades (En proceso)</h2>
           </div>
-        </Link>
+        </a>
       </section>
     </div>
   );

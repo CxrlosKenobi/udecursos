@@ -17,8 +17,8 @@ export function Menu({
       <StyledMenu id="BurgerMenu" menuState={menuState}>
         <Link to="/" onClick={toggleMenu}>Inicio</Link>
         <Link to="/Malla" onClick={toggleMenu}>Malla</Link>
-        <Link to="/Horario" onClick={toggleMenu}>Horario</Link>
-        <Link to="/Utilidades" onClick={toggleMenu}>Utilidades</Link>
+        <a className="locked">Horario</a>
+        <a className="locked">Utilidades</a>
         <div>
           <span onClick={toggleSubmenu}>Elegir Carrera</span>
           <FiChevronRight className="icon"/>
@@ -155,6 +155,11 @@ const StyledMenu = styled.nav`
 
       &:hover { color: #10162F; }
       &:active { color: #10162F; }
+    }
+    & .locked {
+      color: gray;
+      &:hover { color: gray; }
+      &:active { color: gray; }
     }
     & .first { border-top: 1px solid #090B13; }
   }
