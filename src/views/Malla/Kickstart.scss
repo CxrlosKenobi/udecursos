@@ -1,0 +1,31 @@
+#Kickstart {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & div {
+    text-align: center;
+    
+    & img {
+      height: 220px;
+    }
+
+    & h2 {
+      margin: 0;
+      font-size: 1.2rem !important;
+      font-weight: 400;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1rem !important;
+      }
+    }
+
+    & h3 {
+      @media only screen and (max-width: 600px) {
+        font-size: 1.1rem !important;
+      }
+    }
+  }
+}

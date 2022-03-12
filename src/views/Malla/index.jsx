@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { gsap } from 'gsap';
 //
 import { cartSelector } from "../../state/cartSlice";
-import { Unselected } from './Unselected';
+import { Kickstart } from './Kickstart';
 import SeekCareer from "../../components/Malla/Seeker";
 import Column from '../../components/Malla/Column';
 import dynamicData from '../../data/dynamic-data';
@@ -33,7 +33,7 @@ export function Malla() {
   }, [data, cart.career.name]);
 
 
-  const handleDragEnd = useCallback(
+  const handleDragEnd = useCallback(  
     function handleDragEnd(result) {
       const { destination, source, draggableId } = result;
 
@@ -132,7 +132,7 @@ export function Malla() {
             </div>
           </DragDropContext>
           ) : (
-          <Unselected />
+          <Kickstart />
         )}
     </main>
   );

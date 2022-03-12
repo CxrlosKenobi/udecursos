@@ -1,10 +1,9 @@
-#body-malla {
+#body-malla { 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 5%;
-  margin-top: calc(85px + 5px);
       
   flex-wrap: wrap;
   overflow: auto;
