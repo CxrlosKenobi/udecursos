@@ -1,0 +1,72 @@
+#BurgerMenu {
+  & .career-info, & h3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+  }
+
+  & .career-info, & .career-info a, & h3 a {
+    font-size: .7rem;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    color: #10162F;
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+
+    
+    & .remove-career {
+      font-size: .8rem;
+      padding-left: 8px;
+      cursor: pointer;
+      
+      &:hover { transform: scale(1.25); }
+      &:active { transform: scale(1); }
+    }
+  }
+
+  & h3 { margin: 5px 0 10px 0; }
+
+  & .void { color: gray; }
+
+  & div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+
+    & .icon {
+      margin-left: 5px;
+    }
+  }
+}
+
+#Submenu {
+  display: none;
+  
+  @media only screen and (max-width: 846px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    & div {
+      display: flex;
+      align-items: center;
+      color: #10162F;
+      margin-top: .5rem;
+      cursor: pointer;
+
+      & .icon {
+        font-size: 1.5rem;
+        margin-left: 5px;
+      }
+
+      & span {
+        margin-left: 4px;
+        font-size: 1rem;
+      }
+    }
+  }
+}

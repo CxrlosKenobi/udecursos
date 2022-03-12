@@ -1,0 +1,65 @@
+#Inicio {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: fit-content;
+	width: 90%;
+	margin: 0 5% 1rem 5%;
+
+	& #Main-body {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		height: fit-content;
+		width: 100%;
+		flex-wrap: wrap;
+		font-size: .7rem;
+
+		& #First-row {
+			height: fit-content;
+			width: 100%;
+			margin: 1rem 0;
+
+			& h1 {
+				text-align: left;
+				user-select: none;
+			}
+		}
+
+		& #Second-row {
+			height: fit-content;
+			width: 100%;
+			margin: 1rem 0;
+
+			& .aux-title {
+				display: flex;
+				align-items: center;
+				flex-direction: row;
+				width: 100%;
+				height: fit-content;
+				margin: 0;
+				margin-bottom: 10px;
+				padding: 0;
+				user-select: none;
+			
+				& .git-branch-svg {
+					height: 28px;
+					margin: 0;
+					padding: 0;
+				}
+				
+				& h1 {
+					margin: 0;
+					padding: 0;
+					margin-left: 4px;
+				}
+			}
+		}
+
+		@media only screen and (max-width: 450px) {
+			font-size: .6rem;		
+		}
+	}
+}

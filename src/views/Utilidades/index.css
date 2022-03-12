@@ -1,0 +1,169 @@
+#body-utilidades {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	
+	flex-wrap: wrap;
+	overflow: auto;
+	
+	margin: 90px 5% 15px 5%;
+	min-height: calc(100vh - 166px);
+}
+#body-selector {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	width: 17%;
+	/* min-height: calc(100vh - 140px); */
+	min-height: calc(100vh - 166px);
+	background-color: white;
+	border: 1px solid #10162F;
+}
+#body-selector h1 {
+	font-size: 1.4rem;
+	margin: 5% 10%;
+}
+#body-selector ul {
+	margin: 0;
+	padding: 10px 0 0 20px;
+}
+#body-selector li {
+	margin: 12px 0;
+	margin-top: 0;
+	list-style: none;
+}
+#body-selector li:focus {
+	text-decoration: underline #10162F;
+}
+#body-selector #wip {
+	color: gray;
+	user-select: none;
+}
+
+#stage {
+	width: 80%;
+}
+
+
+
+/****** Grades weight calculator ******/
+.weight-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.w-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	width: 50%;
+	margin: 10px 0;
+	transform: scale(.9);
+	border: 1px solid #707070;
+	
+	padding: 10px;
+	border-radius: 2px;
+}
+
+
+/*** Plus Button ***/
+.plus-button, .minus-button {
+	margin: 30px;
+	border: 1px solid gray;
+	background-color: #fff;
+	font-size: 16px;
+	height: 2.5em;
+	width: 2.5em;
+	border-radius: 50%;
+	position: relative;
+}
+.plus-button::after, .plus-button::before, .minus-button::after, .minus-button::before {
+	content: '';
+	display: block;
+	background-color: gray;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.plus-button::before {
+	background-color: gray;
+	height: 1rem;
+	width: .2rem;
+}
+.plus-button::after, .minus-button::after {
+	height: .2rem;
+	width: 1rem;
+}
+.plus-button:hover, .minus-button:hover {
+	background-color: #FFD300;
+	border: 1px solid #FFD300;
+	transition: all .2s ease-out;
+}
+.plus-button:hover::after, .plus-button:hover::before, .minus-button:hover::after {
+	background-color: white;
+}
+.plus-button:active, .minus-button:active {
+	background-color: #bca013;
+	border: 1px solid white;
+	transition: all 50ms ease-out;
+}
+
+/*** Plus Button END ***/
+
+
+.exam-num p {
+	font-size: 1.5rem;
+	margin: 8px;
+}
+
+.exam-num, .weights, .grade {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px 0;
+}
+.weight-input, .grade input {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border: 1px solid #10162F;
+	border-radius: 8px;
+	height: 40px;
+	width: fit-content;
+	background-color: white;
+	margin: 5px 0;
+	padding: 0;
+	font-size: 1.5rem;
+}
+.weight-input input {
+	width: 30px;
+	height: 100%;
+	border: none;
+	background-color: transparent;
+	color: #10162F;
+	margin-left: 15px;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+.grade input {
+	font-size: 1.5rem;
+	width: 60px;
+	color: #10162F;
+	font-weight: 500;
+}
+
+.weight-input input:focus, .grade input:focus {
+	outline: none;
+}
+.weight-input p {
+	user-select: none;
+	margin: 0 6px;
+	padding: 0;
+	font-weight: 500;
+	font-size: 1.2rem;
+}

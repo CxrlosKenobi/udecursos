@@ -1,27 +1,35 @@
 {
   "name": "udecursos-app",
-  "version": "0.6.1",
+  "version": "0.8.2",
   "private": true,
   "homepage": "http://udecursos.study/",
   "dependencies": {
-    "@atlaskit/css-reset": "^6.1.2",
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
-    "@mui/material": "^5.2.6",
+    "@atlaskit/css-reset": "^6.3.8",
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.5.0",
     "@octokit/core": "^3.5.1",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@reduxjs/toolkit": "^1.8.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3",
+    "@testing-library/user-event": "^13.5.0",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "gsap": "^3.9.1",
     "hash-router": "^0.4.0",
     "material-ui-popup-state": "^2.0.0",
+    "pdfjs-dist": "^2.13.216",
     "react": "^17.0.2",
     "react-beautiful-dnd": "^13.1.0",
     "react-dom": "^17.0.2",
-    "react-router": "^5.2.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "styled-components": "^5.3.0",
-    "web-vitals": "^1.0.1"
+    "react-icons": "^4.3.1",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.0",
+    "redux": "^4.1.2",
+    "sass": "^1.49.9",
+    "styled-components": "^5.3.3",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,5 +55,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "packageManager": "yarn@3.2.0"
 }

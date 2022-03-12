@@ -31,13 +31,13 @@
 
 ![image](assets/banner.png)
 ---
-> ✨💻 Open Source Full-stack web application built on React with Redux Toolkit and session persistent data managed in local storage. 💻✨
+
 > Check out the [beta here](https://udecursos.study/) or the **[latest build here!](http://build.udecursos.study/)** directly from the *dev branch*
 
 🎒 Visual designed platform, bringing a modern and intuitive way to the courses management, for and by the students of the [Universidad de Concepción](https://admision.udec.cl/). Students can drag & drop their courses, visualize schedules and manage their grades.
 
----
 
+---
 ## Screenshots
 > Check out the responsive design as well! 👀
 > Pre-release views 
@@ -62,6 +62,12 @@ yarn start
 
 4. Happy coding!
 Don't forget to star the repo and submit your pull requests!
+
+
+### Check out the responsive design as well! 👀
+![image](assets/latest-build.png)
+![image](assets/malla.png)
+=======
 
 ---
 
