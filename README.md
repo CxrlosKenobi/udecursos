@@ -1,6 +1,5 @@
 <p align="center">
   <h1 align="center">UdeCursos</h1>
-  
   <p align="center">
     <a href="https://reactjs.org/">
       <img 
@@ -32,26 +31,46 @@
 
 ![image](assets/banner.png)
 ---
-> ✨💻 Open Source Full-stack web application built on React with Redux Toolkit and session persistent data managed in local storage. 💻✨
 
-> Check out the [pre-release](https://udecursos.study/) or the [non-stable build status](http://build.udecursos.study/)
+> Check out the [beta here](https://udecursos.study/) or the **[latest build here!](http://build.udecursos.study/)** directly from the *dev branch*
 
-🎒 Visual designed platform, bringing a modern and intuitive way to the courses management, for and by the students of the [Universidad de Concepción](https://admision.udec.cl/).
+🎒 Visual designed platform, bringing a modern and intuitive way to the courses management, for and by the students of the [Universidad de Concepción](https://admision.udec.cl/). Students can drag & drop their courses, visualize schedules and manage their grades.
+
 
 ---
 ## Screenshots
-> Pre-release views of the Drag & Drop Feature
+> Check out the responsive design as well! 👀
+> Pre-release views 
+
+![image](assets/latest-build.png)
+
+![image](assets/malla.png)
+
+
+## Getting started for devs!
+1. Fork or clone the repo and install node modules:
+```bash
+yarn install
+```
+
+2. Run the app:
+```bash
+yarn start
+```
+
+3. Open the browser and go to http://localhost:3000/
+
+4. Happy coding!
+Don't forget to star the repo and submit your pull requests!
+
 
 ### Check out the responsive design as well! 👀
 ![image](assets/latest-build.png)
 ![image](assets/malla.png)
-
-
-## Getting started for devs! 
-1. Go inside the repo and run `yarn install` in order to get all the dependencies
-2. Now run the app with `yarn start``to start the development server
+=======
 
 ---
+
 #### Built as my final project in my Front-End Engineer Path at:
 
 <a href="https://codecademy.com/">
