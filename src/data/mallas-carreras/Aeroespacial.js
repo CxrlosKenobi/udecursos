@@ -67,7 +67,7 @@ const Aeroespacial = {
     'task-51': { id: 'task-51', content: 'Propulsión', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
     'task-52': { id: 'task-52', content: 'Formulación y Evaluación de Proyectos', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
 
-    'task-53': { id: 'task-53', content: 'Integradora Solución de Problema Complejo', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
+    'task-53': { id: 'task-53', content: 'Integradora Solución de un Problema Complejo', color: "black", credits: "0", code: "000000-0", prerequisites: [], shrink: true },
     'task-54': { id: 'task-54', content: 'Electivos o Estadías', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
     'task-55': { id: 'task-55', content: 'Gestión de Empresas', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
 

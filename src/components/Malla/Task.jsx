@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Draggable } from 'react-beautiful-dnd';
 
+
 const Container = styled.div`
   border: 1px solid #10162F;
   border-radius: 9px;
@@ -33,11 +34,12 @@ const Code = styled.div`
   padding: 10px;
   top: 0px;
   left: 0px;
+  height: fit-content;
   user-select: none;
 `;
 const Content = styled.div`
   font-family: "Apercu Pro", sans-serif black;
-  font-size: 12px;
+  font-size: ${(props) => (props.shrink ? "10px" : "12px")};
   font-color: #10162F;
   font-weight: bold;
   line-height: 1.2;
@@ -60,6 +62,7 @@ const Credits = styled.div`
 
 `;
 
+
 export default function Task(props) {
   return (
     <Draggable draggableId={props.task.id} index={props.index}>
@@ -71,7 +74,9 @@ export default function Task(props) {
           isDragging={snapshot.isDragging}
         >
           <Code>{props.task.code}</Code>
-          <Content>{props.task.content}</Content>
+          <Content shrink={props.task.shrink ? true : false}>
+            {props.task.content}
+          </Content>
           <Credits>{props.task.credits}</Credits>
         </Container>
       )}

@@ -32,9 +32,9 @@ const IngFisica = {
     'task-20': { id: 'task-20', content: 'Teoría de Circuitos', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
 
     'task-21': { id: 'task-21', content: 'Física Matemática III', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
-    'task-22': { id: 'task-22', content: 'Física VII: Introducción Mecánica Cuántica', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
+    'task-22': { id: 'task-22', content: 'Física VII: Introducción a la Mecánica Cuántica', color: "black", credits: "0", code: "000000-0", prerequisites: [], shrink: true },
     'task-23': { id: 'task-23', content: 'Electrodinámica I', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
-    'task-24': { id: 'task-24', content: 'Dispositivos Semiconductores', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
+    'task-24': { id: 'task-24', content: 'Dispositivos Semi-conductores', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
     'task-25': { id: 'task-25', content: 'Laboratorio II', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
 
     'task-26': { id: 'task-26', content: 'Mecánica de Fluidos', color: "black", credits: "0", code: "000000-0", prerequisites: [] },

@@ -14,7 +14,7 @@ const Informatica = {
       'task-6': { id: 'task-6', content: 'Física II', color: "#FFD300", credits: "4", code: "510150", prerequisites: ['510140'] },
       'task-7': { id: 'task-7', content: 'Álgebra II', color: "#FFD300", credits: "5", code: "525150", prerequisites: ['525140'] },
       'task-8': { id: 'task-8', content: 'Cálculo II', color: "#FFD300", credits: "5", code: "527150", prerequisites: ['527140'] },
-      'task-9': { id: 'task-9', content: 'Intro. Desarrollo Soluciones Inf.', color: "#FFD300", credits: "3", code: "503152", prerequisites: [] },
+      'task-9': { id: 'task-9', content: 'Intro. Desarrollo de Soluciones Informáticas', color: "#FFD300", credits: "3", code: "503152", prerequisites: [], shrink: true },
       'task-10': { id: 'task-10', content: 'Intro. Innovación Ingeniería', color: "#FFD300", credits: "2", code: "500151", prerequisites: [] },
 
       'task-11': { id: 'task-11', content: 'Lógica', color: "#FFD300", credits: "4", code: "503207", prerequisites: [] },
