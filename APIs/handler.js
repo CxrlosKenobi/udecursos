@@ -13,10 +13,12 @@ const unwantedItems = [
   "Departamento de Ingeniería Civil",
   "Autoriza DICIV",
   "Autoriza Depto.",
+  "Autoriza DIE",
   "1 año:Aer-125 créd:Ele/Eln-70 cré:INF",
   "90 créditos",
   "Prerrequisitos",
-  "Licenciatura"
+  "Licenciatura",
+  "Primer Año Ingeniería"
 ];
 
 
@@ -41,7 +43,9 @@ loadingTask.promise
         content.items.map((item) => {
           if ((!unwantedItems.includes(item.str))
           && !checkBooleanRegex(/\d{6}\ ?\-\ ?\d{6}/g, item.str)
-          && !checkBooleanRegex(/\d{6}/g, item.str)) {
+          && !checkBooleanRegex(/\d{6}/g, item.str)
+          && !checkBooleanRegex(/\(\d{6}\)/g, item.str)
+          ) {
             return globalList.push(item.str);
           } else return null;
         });
@@ -62,13 +66,12 @@ loadingTask.promise
     console.log("# End of Document\n");
 
     const Sched = require("./Sched.json");
-    
+    // console.log("Sched: ", Sched)
     const aux = { "row": [], "row2": [] };
-    
+
     let pivot = 0, depto = 0, idCounter = null;
-    let allocation = Sched[Object.keys(Sched)[depto]];
     globalList.map((item, index) => {
-      if (item.includes("Código") || item.includes("Asignatura")) {
+      if (item === "Asignatura") {
         depto += 1;
         idCounter = -1;
 
@@ -76,57 +79,83 @@ loadingTask.promise
         const template = getTemplate();
         idCounter += 1;
         pivot = index;
-        depto += 1;
 
-        template.id = idCounter;
-        template.codigo = item;
 
+        template.id = idCounter; // ID
+        template.codigo = item; // Codigo
+
+        // Asignatura
         if (globalList[pivot + 1] === " ")
           template.asignatura = globalList[pivot + 2];
           pivot += 2;
 
-        template.cr = parseInt(globalList[pivot + 2]);
+        template.cr = parseInt(globalList[pivot + 2]); // CR
         pivot += 2;
 
-        template.ht = parseInt(globalList[pivot + 2]);
+        template.ht = parseInt(globalList[pivot + 2]); // HT
         pivot += 2;
 
-        template.hp = parseInt(globalList[pivot + 2]);
+        template.hp = parseInt(globalList[pivot + 2]); // HP
         pivot += 2;
 
-        template.hl = parseInt(globalList[pivot + 2]);
+        template.hl = parseInt(globalList[pivot + 2]); // HL
         pivot += 2;
 
-        template.carrera = globalList[pivot + 2].split("/");
+        template.carrera = globalList[pivot + 2].split("/"); // Carrera
         pivot += 2;
 
-        template.profesores = globalList[pivot + 2].split("-");
-        Sched[Object.keys(Sched)[depto]][idCounter] = template;
+        // Profesores
+        if (!globalList[pivot + 2].includes("[T]" || "Fija Profesor" || "Horario")) {
+          if (globalList[pivot + 3] !== " " && 
+              globalList[pivot + 3] !== undefined && 
+              !globalList[pivot + 3].includes("[T]" || "Fija Profesor" || "Horario") &&
+              !checkBooleanRegex(/\d{6}-\d/g, globalList[pivot + 3])
+          ) {
+            const mergedProfs = globalList[pivot + 2].concat(" ").concat(globalList[pivot + 3]);
+            template.profesores = mergedProfs.split(" - ");
+            pivot += 3;
+          } else {
+            template.profesores = globalList[pivot + 2].split(" - ");
+            pivot += 2;
+          }
+        } else {
+          template.profesores = "";
+        }
+
+        // Horarios y Salas (T y P|L)
+        if (globalList[pivot + 2] !== undefined && 
+          globalList[pivot + 2].includes("[T]" || "Horario" || "Fija Profesor"))
+          template.horariosYSalas.T = globalList[pivot + 2].split(" - ");
+        else
+          template.horariosYSalas.T = "";
+
+        if (globalList[pivot + 2] !== undefined && 
+          globalList[pivot + 3].includes("[P]"))
+          template.horariosYSalas.P = [globalList[pivot + 3]];
+        else
+          template.horariosYSalas.P = "";
+
+        console.log("Iteration: ", index)
+        // Sched[Object.keys(Sched)[depto]][idCounter] = template;
+        // console.log(`\n\nTemplate:`);
+        // console.log(template);
+        // console.log('\nQuery: ')
+        // console.log(Sched[Object.keys(Sched)[1]])
+        
+        console.log("depto: ", depto);
+        console.log();
+        Sched[Object.keys(Sched)[depto]].push(template);
       }
-
       return null;
     });
 
-    // Execute commands from the terminal
-    let cmd = "rm -rf Sched2.json; rm -rf output.json";
-    const exec = require("child_process").exec;
-    exec(cmd, (err, stdout, stderr) => {
-      if (err) throw err;
-    });
-
-    fs.writeFile("Sched2.json", JSON.stringify(Sched, null, 2), (err) => {
-      if (err) throw err;
-      console.log("Sched2.json has been saved!");
-    });
-
-    const json = JSON.stringify(globalList, null, 2);
-    fs.writeFile("output.json", json, function (err) {
-      if (err) throw err;
-      console.log("output.json has been saved!");
-    });
+    getCleaning();
+    writeToJSON("Sched2.json", Sched);
+    writeToJSON("output.json", globalList);
   });
 
 
+// Temporal auxiliar functions
 function getTemplate() {
   return {
     "id": 0,
@@ -144,3 +173,20 @@ function getTemplate() {
     }
   };
 };
+
+function writeToJSON(name, data) {
+  const json = JSON.stringify(data, null, 2);
+  fs.writeFile(name, json, (err) => {
+    if (err) throw err;
+    console.log(`${name} has been saved!`);
+  });
+}
+
+function getCleaning() {
+  // Execute commands from the terminal
+  let cmd = "rm -rf Sched2.json && rm -rf output.json";
+  const exec = require("child_process").exec;
+  exec(cmd, (err, stdout, stderr) => {
+    if (err) throw err;
+  });
+}
