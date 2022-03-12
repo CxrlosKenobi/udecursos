@@ -30,7 +30,6 @@ const Credits = styled.h4`
   font-color: #10162F;
   font-size: 12px;
   user-select: none;
-
   margin-top: 0px;
 `;
 const TaskList = styled.div`

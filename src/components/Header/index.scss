@@ -161,14 +161,23 @@ header {
             transform: rotate(360deg);
             transition: transform 250ms ease-in-out;
           }
-          &:active { transform: scale(.85); }
+          &:active { 
+            transform-origin: center center;
+            transform: scale(.85); 
+          }
         }
 
       }
 
       & .void { 
         color: gray; 
+        @keyframes glow {
+          0% { color: gray; }
+          50% { color: #4c2bee; }
+          100% { color: gray; }
+        }
 
+        animation: glow 1s ease-in-out infinite alternate;
         &:active { color: #10162f; }
       }
 
