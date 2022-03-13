@@ -8,7 +8,8 @@
     "IngenieriaDeMateriales",
     "IngenieriaMecanica",
     "IngenieriaMetalurgica",
-    "IngenieriaQuimica"
+    "IngenieriaQuimica",
+    "OtrasFacultades"
   ],
   "FacultadDeIngenieria": [
   ],
@@ -19,5 +20,6 @@
   "IngenieriaDeMateriales": [],
   "IngenieriaMecanica": [],
   "IngenieriaMetalurgica": [],
-  "IngenieriaQuimica": []
+  "IngenieriaQuimica": [],
+  "OtrasFacultades": []
 }

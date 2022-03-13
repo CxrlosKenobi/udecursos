@@ -14,11 +14,16 @@ const unwantedItems = [
   "Autoriza DICIV",
   "Autoriza Depto.",
   "Autoriza DIE",
+  "Autoriza DIIND",
+  "Autoriza DIAMB",
+  "Autoriza DIINF",
   "1 año:Aer-125 créd:Ele/Eln-70 cré:INF",
-  "90 créditos",
   "Prerrequisitos",
   "Licenciatura",
-  "Primer Año Ingeniería"
+  "Primer Año Ingeniería",
+  "Aprobado semestre 4 del Plan Estudio",
+  "Aprobado semestre 9 del Plan de Estudios",
+  "Aprobado el semestre 9 del Plan de Estud"
 ];
 
 
@@ -45,6 +50,7 @@ loadingTask.promise
           && !checkBooleanRegex(/\d{6}\ ?\-\ ?\d{6}/g, item.str)
           && !checkBooleanRegex(/\d{6}/g, item.str)
           && !checkBooleanRegex(/\(\d{6}\)/g, item.str)
+          && !checkBooleanRegex(/\d{1,3} créditos/g, item.str)
           ) {
             return globalList.push(item.str);
           } else return null;
@@ -66,8 +72,6 @@ loadingTask.promise
     console.log("# End of Document\n");
 
     const Sched = require("./Sched.json");
-    // console.log("Sched: ", Sched)
-    const aux = { "row": [], "row2": [] };
 
     let pivot = 0, depto = 0, idCounter = null;
     globalList.map((item, index) => {
@@ -79,7 +83,6 @@ loadingTask.promise
         const template = getTemplate();
         idCounter += 1;
         pivot = index;
-
 
         template.id = idCounter; // ID
         template.codigo = item; // Codigo
@@ -105,9 +108,9 @@ loadingTask.promise
         pivot += 2;
 
         // Profesores
-        if (!globalList[pivot + 2].includes("[T]" || "Fija Profesor" || "Horario")) {
-          if (globalList[pivot + 3] !== " " && 
-              globalList[pivot + 3] !== undefined && 
+        if (!(globalList[pivot + 2].includes("[T]" || "Fija Profesor" || "Horario"))) {
+          if (globalList[pivot + 3] !== " " &&
+              globalList[pivot + 3] !== undefined &&
               !globalList[pivot + 3].includes("[T]" || "Fija Profesor" || "Horario") &&
               !checkBooleanRegex(/\d{6}-\d/g, globalList[pivot + 3])
           ) {
@@ -122,18 +125,24 @@ loadingTask.promise
           template.profesores = "";
         }
 
+
         // Horarios y Salas (T y P|L)
-        if (globalList[pivot + 2] !== undefined && 
-          globalList[pivot + 2].includes("[T]" || "Horario" || "Fija Profesor"))
+        if (globalList[pivot + 2] !== undefined &&
+          (globalList[pivot + 2].includes("[T]") || globalList[pivot + 2].includes("Fija Profesor") ||
+          globalList[pivot + 2].includes("Horario"))
+        )
           template.horariosYSalas.T = globalList[pivot + 2].split(" - ");
         else
           template.horariosYSalas.T = "";
 
-        if (globalList[pivot + 2] !== undefined && 
-          globalList[pivot + 3].includes("[P]"))
+        if (globalList[pivot + 2] !== undefined && globalList[pivot + 3] !== undefined &&
+          (globalList[pivot + 3].includes("[L]") || globalList[pivot + 3].includes("[P]"))
+        )
           template.horariosYSalas.P = [globalList[pivot + 3]];
         else
           template.horariosYSalas.P = "";
+
+
 
         console.log("Iteration: ", index)
         // Sched[Object.keys(Sched)[depto]][idCounter] = template;
@@ -141,11 +150,12 @@ loadingTask.promise
         // console.log(template);
         // console.log('\nQuery: ')
         // console.log(Sched[Object.keys(Sched)[1]])
-        
+
         console.log("depto: ", depto);
         console.log();
         Sched[Object.keys(Sched)[depto]].push(template);
       }
+
       return null;
     });
 
@@ -184,7 +194,7 @@ function writeToJSON(name, data) {
 
 function getCleaning() {
   // Execute commands from the terminal
-  let cmd = "rm -rf Sched2.json && rm -rf output.json";
+  let cmd = "rm -rf Sched2.json output.json";
   const exec = require("child_process").exec;
   exec(cmd, (err, stdout, stderr) => {
     if (err) throw err;
