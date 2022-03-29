@@ -22,7 +22,7 @@ const Electronica = {
     'task-13': { id: 'task-13', content: 'Estadística y Probabilidades', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
     'task-14': { id: 'task-14', content: 'Electro-magnetismo', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
     'task-15': { id: 'task-15', content: 'Programación', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
-    'task-16': { id: 'task-16', content: 'Español Acadedémio', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
+    'task-16': { id: 'task-16', content: 'Español Académico', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
 
     'task-17': { id: 'task-17', content: 'Modelación de procesos', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
     'task-18': { id: 'task-18', content: 'Calculo Numérico', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
