@@ -84,6 +84,8 @@ loadingTask.promise
         idCounter += 1;
         pivot = index;
 
+        //** Optimization pending to be implemented **
+
         template.id = idCounter; // ID
         template.codigo = item; // Codigo
 
@@ -104,27 +106,52 @@ loadingTask.promise
         template.hl = parseInt(globalList[pivot + 2]); // HL
         pivot += 2;
 
-        template.carrera = globalList[pivot + 2].split("/"); // Carrera
-        pivot += 2;
-
-        // Profesores
-        if (!(globalList[pivot + 2].includes("[T]" || "Fija Profesor" || "Horario"))) {
-          if (globalList[pivot + 3] !== " " &&
-              globalList[pivot + 3] !== undefined &&
-              !globalList[pivot + 3].includes("[T]" || "Fija Profesor" || "Horario") &&
-              !checkBooleanRegex(/\d{6}-\d/g, globalList[pivot + 3])
-          ) {
-            const mergedProfs = globalList[pivot + 2].concat(" ").concat(globalList[pivot + 3]);
-            template.profesores = mergedProfs.split(" - ");
-            pivot += 3;
+        // Carreras
+        // Pending multi-row support
+        let _index = 0;
+        if (globalList[pivot + 2] !== undefined) {
+          let careerChain = ""; _index += 2;
+          while (globalList[pivot + _index].includes("/")) {
+            console.log("YUP");
+            careerChain += ` ${globalList[pivot + _index]}`;
+            _index += 1;
+          }
+          if (_index > 5) { // Edge case for multi 503203-1
+            template.carrera = careerChain.split("/");
+            pivot += _index;
           } else {
-            template.profesores = globalList[pivot + 2].split(" - ");
+            template.carrera = globalList[pivot + 2].split("/");
             pivot += 2;
           }
         } else {
-          template.profesores = "";
+          template.carrera = "";
+          pivot += 2;
         }
 
+        // Profesores
+        // Support for multi-row added
+        // * Implement this in a switch statement *
+        console.log("index", _index);
+        if (_index > 5) {
+          template.profesores = globalList[pivot];
+        } else {
+          if (!(globalList[pivot + 2].includes("[T]" || "Fija Profesor" || "Horario"))) {
+            if (globalList[pivot + 3] !== " " &&
+                globalList[pivot + 3] !== undefined &&
+                !globalList[pivot + 3].includes("[T]" || "Fija Profesor" || "Horario") &&
+                !checkBooleanRegex(/\d{6}-\d/g, globalList[pivot + 3])
+            ) {
+              const mergedProfs = globalList[pivot + 2].concat(" ").concat(globalList[pivot + 3]);
+              template.profesores = mergedProfs.split(" - ");
+              pivot += 3;
+            } else {
+              template.profesores = globalList[pivot + 2].split(" - ");
+              pivot += 2;
+            }
+          } else {
+            template.profesores = "";
+          }
+        }
 
         // Horarios y Salas (T y P|L)
         if (globalList[pivot + 2] !== undefined &&
@@ -200,3 +227,5 @@ function getCleaning() {
     if (err) throw err;
   });
 }
+
+

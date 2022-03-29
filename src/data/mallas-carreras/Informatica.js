@@ -64,7 +64,7 @@ const Informatica = {
       'task-48': { id: 'task-48', content: 'Electiva VI', color: "#FFD300", credits: "3", code: "106", prerequisites: [] },
 
       'task-49': { id: 'task-49', content: 'Electiva VII', color: "#FFD300", credits: "3", code: "107", prerequisites: [] },
-      'task-50': { id: 'task-50', content: 'Electiva VIII', color: "#FFD300", credits: "3", code: "108", prerequisites: [] },
+      'task-50': { id: 'task-50', content: 'Electiva VIII', color: "#FFD300", credits: "3", code: "108", prerequisites: [] }
 
     },
 
@@ -139,12 +139,12 @@ const Informatica = {
 
   // Facilitate reordering of the columns
   ColumnOrder: [
-      'column-1', 'column-2', 
-      'column-3', 'column-4',
-      'column-5', 'column-6',
-      'column-7', 'column-8',
-      'column-9', 'column-10',
-      'column-11'
+    'column-1', 'column-2', 
+    'column-3', 'column-4',
+    'column-5', 'column-6',
+    'column-7', 'column-8',
+    'column-9', 'column-10',
+    'column-11'
   ]
 };
 

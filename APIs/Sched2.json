@@ -4823,15 +4823,24 @@
       "hp": 0,
       "hl": 3,
       "carrera": [
-        "AER 3",
+        " AER 3",
         "BIO 4",
-        "CIV"
+        "CIV 3",
+        "ELE 3",
+        "ELN 3",
+        "IND 3",
+        "MAT 3",
+        "MEC 3",
+        "MET 3",
+        "MIN 3",
+        "QUI 3",
+        "TEL 3"
       ],
-      "profesores": [
-        "3/MAT 3/MEC 3/MET 3/MIN 3/QUI"
-      ],
+      "profesores": "Javier Vidal",
       "horariosYSalas": {
-        "T": "",
+        "T": [
+          "[T] Ma 3,4 (A-114)"
+        ],
         "P": ""
       }
     },
