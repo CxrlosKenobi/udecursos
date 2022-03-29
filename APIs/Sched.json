@@ -1,53 +1,25 @@
-    {
-      "Departamentos": [
-        "FacultadDeIngeniería",
-        "IngenieriaCivil",
-        "IngenieriaElectrica",
-        "IngenieriaIndustrial",
-        "IngenieriaInformatica",
-        "IngenieriaDeMateriales",
-        "IngenieriaMecanica",
-        "IngenieriaMetalurgica",
-        "IngenieriaQuimica"
-      ],
-      "FacultadDeIngenieria": [
-        {
-          "id": 0,
-          "codigo": "500120-1",
-          "asignatura": "Introducción a la Ingeniería",
-          "cr": 2,
-          "ht": 2,
-          "hp": 0,
-          "hl": 0,
-          "carrera": ["PCM1"],
-          "profesores": [],
-          "horariosYSalas": {
-            "T": ["Lu 1,2 (A-512)"],
-            "P": []
-          }
-        },
-        {
-          "id": 1,
-          "codigo": "500120-2",
-          "asignatura": "Introducción a la Ingeniería",
-          "cr": 2,
-          "ht": 2,
-          "hp": 0,
-          "hl": 0,
-          "carrera": ["PCM1"],
-          "profesores": [],
-          "horariosysalas": {
-            "T": ["Lu 1,2 (Sala Teaching)"],
-            "P": []
-          }
-        }
-      ],
-      "IngenieriaCivil": [],
-      "IngenieriaElectrica": [],
-      "IngenieriaIndustrial": [],
-      "IngenieriaInformatica": [],
-      "IngenieriaDeMateriales": [],
-      "IngenieriaMecanica": [],
-      "IngenieriaMetalurgica": [],
-      "IngenieriaQuimica": []
-    }
+{
+  "Departamentos": [
+    "FacultadDeIngeniería",
+    "IngenieriaCivil",
+    "IngenieriaElectrica",
+    "IngenieriaIndustrial",
+    "IngenieriaInformatica",
+    "IngenieriaDeMateriales",
+    "IngenieriaMecanica",
+    "IngenieriaMetalurgica",
+    "IngenieriaQuimica",
+    "OtrasFacultades"
+  ],
+  "FacultadDeIngenieria": [
+  ],
+  "IngenieriaCivil": [],
+  "IngenieriaElectrica": [],
+  "IngenieriaIndustrial": [],
+  "IngenieriaInformatica": [],
+  "IngenieriaDeMateriales": [],
+  "IngenieriaMecanica": [],
+  "IngenieriaMetalurgica": [],
+  "IngenieriaQuimica": [],
+  "OtrasFacultades": []
+}

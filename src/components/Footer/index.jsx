@@ -8,7 +8,7 @@ export default function Footer(){
         <div className="last-update">
           <a href='https://github.com/CxrlosKenobi/udecursos/commits/master' 
             target="_blank" rel="noopener noreferrer">
-            Última actualización:<br></br>Marzo 12, 2022
+            Última actualización:<br></br>Marzo 29, 2022
           </a>
         </div>
         <div className="source-code">

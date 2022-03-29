@@ -1,5 +1,1254 @@
 {
   "Departamentos": [
+    "FacultadDeIngeniería",
+    "IngenieriaCivil",
+    "IngenieriaElectrica",
+    "IngenieriaIndustrial",
+    "IngenieriaInformatica",
+    "IngenieriaDeMateriales",
+    "IngenieriaMecanica",
+    "IngenieriaMetalurgica",
+    "IngenieriaQuimica",
+    "OtrasFacultades"
+  ],
+  "FacultadDeIngenieria": [
+    {
+      "id": 0,
+      "codigo": "500120-1",
+      "asignatura": "Introducción a la Ingeniería",
+      "cr": 2,
+      "ht": 2,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "PCM 1"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 1,2 (A-512)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 1,
+      "codigo": "500120-2",
+      "asignatura": "Introducción a la Ingeniería",
+      "cr": 2,
+      "ht": 2,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "PCM 1"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 1,2 (Sala Teaching)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 2,
+      "codigo": "500701-1",
+      "asignatura": "Inglés Comunicativo 1 Nivel Principiante",
+      "cr": 3,
+      "ht": 2,
+      "hp": 3,
+      "hl": 0,
+      "carrera": [
+        "CIV 3",
+        "TEL 3"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 8,9 (TM 3-8)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 3,
+      "codigo": "500702-1",
+      "asignatura": "Inglés Comunicativo 2 Nivel Elemental",
+      "cr": 3,
+      "ht": 2,
+      "hp": 3,
+      "hl": 0,
+      "carrera": [
+        "CIV 4",
+        "TEL 4"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Vi 10,11 (TM 3-7)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 4,
+      "codigo": "500703-1",
+      "asignatura": "Inglés Comunicativo 3 Nivel Básico",
+      "cr": 3,
+      "ht": 2,
+      "hp": 3,
+      "hl": 0,
+      "carrera": [
+        "CIV 5",
+        "TEL 5"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 5,6 (TM 3-10)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 5,
+      "codigo": "500703-2",
+      "asignatura": "Inglés Comunicativo 3 Nivel Básico",
+      "cr": 3,
+      "ht": 2,
+      "hp": 3,
+      "hl": 0,
+      "carrera": [
+        "CIV 5",
+        "TEL 5"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 8,9 (TM 3-8)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 6,
+      "codigo": "500704-1",
+      "asignatura": "Inglés Comunicativo 4 Nivel Básico Alto",
+      "cr": 3,
+      "ht": 2,
+      "hp": 3,
+      "hl": 0,
+      "carrera": [
+        "CIV 6",
+        "TEL 6"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 5,6 (TM 3-10)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 7,
+      "codigo": "500704-2",
+      "asignatura": "Inglés Comunicativo 4 Nivel Básico Alto",
+      "cr": 3,
+      "ht": 2,
+      "hp": 3,
+      "hl": 0,
+      "carrera": [
+        "CIV 6",
+        "TEL 6"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 7,8 (TM 3-7)"
+        ],
+        "P": ""
+      }
+    }
+  ],
+  "IngenieriaCivil": [
+    {
+      "id": 0,
+      "codigo": "544499-1",
+      "asignatura": "Memoria de Título",
+      "cr": 20,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "CIV 12"
+      ],
+      "profesores": [
+        "Luis Merino"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 1,
+      "codigo": "544555-1",
+      "asignatura": "Introducción a las Ciencias Ambientales",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELN 11",
+        "ICM 11",
+        "IES"
+      ],
+      "profesores": [
+        "Jaime Zaror"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 12,13 (TM 3-10)"
+        ],
+        "P": [
+          "[P] Vi 6,7 (TM 3-10)"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "codigo": "554040-1",
+      "asignatura": "Ingeniería de la Construcción",
+      "cr": 3,
+      "ht": 3,
+      "hp": 1,
+      "hl": 0,
+      "carrera": [
+        "CIV 7"
+      ],
+      "profesores": [
+        "Luis Merino"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 1,2 (Pend)",
+          "Ju 1 (Pend)"
+        ],
+        "P": [
+          "[P] Ju 2 (Pend)"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "codigo": "554041-1",
+      "asignatura": "Introduccion a la Ciencia Ambiental",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 7"
+      ],
+      "profesores": [
+        "Jaime Zaror"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 12,13 (TM 3-9)"
+        ],
+        "P": [
+          "[P] Ju 6,7 (TM 3-9)"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "codigo": "554042-1",
+      "asignatura": "Ingeniería Antisísmica",
+      "cr": 4,
+      "ht": 3,
+      "hp": 1,
+      "hl": 1,
+      "carrera": [
+        "CIV 7"
+      ],
+      "profesores": [
+        "Peter Dechent"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 1,2 (LabCiv 2-2)",
+          "Ma 8,9 (LabCiv 2-2)"
+        ],
+        "P": [
+          "[P] Ju 4 (LabCiv 2-2)"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "codigo": "554043-1",
+      "asignatura": "Mecanica de Suelos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 1,
+      "hl": 2,
+      "carrera": [
+        "CIV 7"
+      ],
+      "profesores": [
+        "Mario Valenzuela"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 3,4 (LabCiv 2-2)",
+          "Mi 3,4 (LabCiv 2-2)"
+        ],
+        "P": [
+          "[L] Ma 10,11 (LabCiv 2-2)"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "codigo": "554044-1",
+      "asignatura": "Fundamentos de la Ingeniería de Transportes",
+      "cr": 4,
+      "ht": 4,
+      "hp": 1,
+      "hl": 0,
+      "carrera": [
+        "CIV 7"
+      ],
+      "profesores": [
+        "Alejandro Tudela"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 1,2 (LabCiv 2-1)",
+          "Vi 1,2 (LabCiv 2-1)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 7,
+      "codigo": "554050-1",
+      "asignatura": "Proyecto de Memoria de Título",
+      "cr": 4,
+      "ht": 2,
+      "hp": 4,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Oscar Link"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 8,
+      "codigo": "554060-1",
+      "asignatura": "Planificacion y Control de Proyectos",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 1,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Rodrigo Valenzuela"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 6,7 (TM 3-1)"
+        ],
+        "P": [
+          "[P] Ju 6,7 (TM 3-1)"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "codigo": "554061-1",
+      "asignatura": "Memoria de Título",
+      "cr": 18,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "CIV 12"
+      ],
+      "profesores": [
+        "Luis Merino"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 10,
+      "codigo": "554062-1",
+      "asignatura": "Practica de Vacaciones",
+      "cr": 0,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Maricarmen Guerra"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 11,
+      "codigo": "554072-1",
+      "asignatura": "Taller de Habilidades Comunicativas",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Alonso Benavides"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ju 10,11,12 (LabCiv 1-5)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 12,
+      "codigo": "554075-1",
+      "asignatura": "Taller de Investigación de Pregrado I",
+      "cr": 1,
+      "ht": 0,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 8"
+      ],
+      "profesores": [
+        "Luis Merino"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 13,
+      "codigo": "554076-1",
+      "asignatura": "Taller de Investigación de Pregrado II",
+      "cr": 1,
+      "ht": 0,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "CIV 10"
+      ],
+      "profesores": [
+        "Luis Merino"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 14,
+      "codigo": "554120-1",
+      "asignatura": "Introducción a la Ingeniería Civil",
+      "cr": 2,
+      "ht": 2,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "CIV 1"
+      ],
+      "profesores": [
+        "Gonzalo Montalva"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 1,2 (A-413)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 15,
+      "codigo": "554203-1",
+      "asignatura": "Gestion y Control de Calidad",
+      "cr": 4,
+      "ht": 4,
+      "hp": 1,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Julieta Henriquez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 1,2 (TM 3-6)",
+          "Vi 3,4 (TM 3-10)"
+        ],
+        "P": [
+          "[P] Vi 10,11 (TM 3-14)"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "codigo": "554210-1",
+      "asignatura": "Diseño de Pavimentos",
+      "cr": 4,
+      "ht": 4,
+      "hp": 1,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Mauricio Pradena"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 6,7 (LabCiv 2-1)",
+          "Vi 6 (LabCiv 2-1)"
+        ],
+        "P": [
+          "[P] Vi 7,8 (LabCiv 2-1)"
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "codigo": "554215-1",
+      "asignatura": "Estudio de Costos y Licitación",
+      "cr": 4,
+      "ht": 4,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Daniel Sanhueza"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 12,13 (LabCiv 2-2)",
+          "Ma 12,13 (LabCiv 2-2)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 18,
+      "codigo": "554216-1",
+      "asignatura": "Física del Edificio",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Luis Merino"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 8,9,10 (LabCiv 1-5)"
+        ],
+        "P": [
+          "[P] Vi 8,9 (LabCiv 1-5)"
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "codigo": "554220-1",
+      "asignatura": "Ingeniería de la Construcción",
+      "cr": 3,
+      "ht": 3,
+      "hp": 1,
+      "hl": 0,
+      "carrera": [
+        "CIV 3"
+      ],
+      "profesores": [
+        "Luis Merino"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 1,2 (A-314)",
+          "Ju 1 (A-314)"
+        ],
+        "P": [
+          "[P] Ju 2 (A-314)"
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "codigo": "554221-1",
+      "asignatura": "Dibujo en Ingeniería Civil",
+      "cr": 2,
+      "ht": 1,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "CIV 3"
+      ],
+      "profesores": [
+        "Eduardo Moraga"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 5 (A-415)"
+        ],
+        "P": [
+          "[L] Ju 3,4 (LabCom TM)"
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "codigo": "554250-1",
+      "asignatura": "Estática",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 4"
+      ],
+      "profesores": [
+        "Daniella Escribano"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (LabCiv 2-1)"
+        ],
+        "P": [
+          "[P] Ju 3,4 (LabCiv 2-1)"
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "codigo": "554301-1",
+      "asignatura": "Dinamica de Estructuras",
+      "cr": 4,
+      "ht": 3,
+      "hp": 1,
+      "hl": 1,
+      "carrera": [
+        "CIV 10"
+      ],
+      "profesores": [
+        "Patricio Cendoya"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 4,5 (LabCiv 2-1)",
+          "Vi 3,4 (LabCiv 2-1)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 23,
+      "codigo": "554302-1",
+      "asignatura": "Hormigón Armado II",
+      "cr": 4,
+      "ht": 3,
+      "hp": 1,
+      "hl": 1,
+      "carrera": [
+        "CIV 9"
+      ],
+      "profesores": [
+        "Alexander Opazo"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 6,7,8 (LabCiv 2-1)"
+        ],
+        "P": [
+          "[P] Ju 6,7 (LabCiv 2-1)"
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "codigo": "554303-1",
+      "asignatura": "Estructuras Metálicas",
+      "cr": 4,
+      "ht": 3,
+      "hp": 1,
+      "hl": 1,
+      "carrera": [
+        "CIV 9"
+      ],
+      "profesores": [
+        "Rodrigo Silva"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (LabCiv 2-2)",
+          "Vi 1,2 (LabCiv 2-2)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 25,
+      "codigo": "554306-1",
+      "asignatura": "Proyecto de Estructuras de Acero",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Carlos Ramírez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 11,12,13 (LabCiv 2-1)"
+        ],
+        "P": [
+          "[P] Mi 12,13 (LabCiv 2-1)"
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "codigo": "554310-1",
+      "asignatura": "Métodos de Elementos Finitos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Patricio Cendoya"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 8,9,10 (LabCiv 2-1)"
+        ],
+        "P": [
+          "[P] Vi 8,9 (LabCiv 2-2)"
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "codigo": "554311-1",
+      "asignatura": "Estructuras de Madera",
+      "cr": 4,
+      "ht": 3,
+      "hp": 1,
+      "hl": 1,
+      "carrera": [
+        "CIV 10"
+      ],
+      "profesores": [
+        "Marcelo González"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 1,2,3 (LabCiv 1-1)"
+        ],
+        "P": [
+          "[P] Mi 1,2 (LabCiv 1-1)"
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "codigo": "554321-1",
+      "asignatura": "Optimización en Ingeniería Civil",
+      "cr": 3,
+      "ht": 3,
+      "hp": 1,
+      "hl": 0,
+      "carrera": [
+        "CIV 5"
+      ],
+      "profesores": [
+        "Juan Carrasco"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 1,2 (TM 3-9)",
+          "Vi 3 (TM 3-9)"
+        ],
+        "P": [
+          "[P] Vi 4 (TM 3-9)"
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "codigo": "554322-1",
+      "asignatura": "Mecánica de Sólidos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 5"
+      ],
+      "profesores": [
+        "Rodrigo Silva"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 4 (TM 3-15)",
+          "Ju 3,4 (TM 3-15)"
+        ],
+        "P": [
+          "[P] Ma 12,13 (TM 3-15)"
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "codigo": "554323-1",
+      "asignatura": "Mecánica de Fluidos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 1,
+      "carrera": [
+        "CIV 5"
+      ],
+      "profesores": [
+        "Maricarmen Guerra"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ju 10 (TM 3-10)",
+          "Vi 8,9 (TM 3-10)"
+        ],
+        "P": [
+          "[P] Ju 11 (TM 3-10)"
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "codigo": "554324-1",
+      "asignatura": "Materiales de Construcción",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 1,
+      "carrera": [
+        "CIV 5"
+      ],
+      "profesores": [
+        "Mauricio Pradena"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 5 (TM 3-15)",
+          "Ju 8,9 (TM 3-15)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 32,
+      "codigo": "554325-1",
+      "asignatura": "Demanda en Obras de Infraestructura",
+      "cr": 2,
+      "ht": 2,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "CIV 5"
+      ],
+      "profesores": [
+        "Tomás Echaveguren"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 1,2 (TM 3-1)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 33,
+      "codigo": "554401-1",
+      "asignatura": "Fundaciones",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 9"
+      ],
+      "profesores": [
+        "Mario Valenzuela"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 1,2 (LabCiv 2-2)",
+          "Ju 1 (LabCiv 2-2)"
+        ],
+        "P": [
+          "[P] Ju 2,3 (LabCiv 2-2)"
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "codigo": "554402-1",
+      "asignatura": "Dinamica de Suelos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 9"
+      ],
+      "profesores": [
+        "Gonzalo Montalva"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 8,9,10 (LabCiv 1-5)"
+        ],
+        "P": [
+          "[P] Ju 8,9 (LabCiv 1-5)"
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "codigo": "554406-1",
+      "asignatura": "Mecánica de Suelos Avanzada",
+      "cr": 4,
+      "ht": 3,
+      "hp": 1,
+      "hl": 1,
+      "carrera": [
+        "CIV 10"
+      ],
+      "profesores": [
+        "Daniella Escribano"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 3,4 (TM 3-2)",
+          "Ju 3 (TM 3-6)"
+        ],
+        "P": [
+          "[P] Ju 4 (TM 3-6)"
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "codigo": "554502-1",
+      "asignatura": "Métodos Numéricos y Modelación",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 9"
+      ],
+      "profesores": [
+        "Oscar Link"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 8,9,10 (LabCiv 2-1)"
+        ],
+        "P": [
+          "[P] Ju 8,9 (LabCiv 2-1)"
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "codigo": "554503-1",
+      "asignatura": "Hidráulica Urbana",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 1,
+      "carrera": [
+        "CIV 10"
+      ],
+      "profesores": [
+        "Cristian Soto"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 12,13 (LabCiv 2-1)"
+        ],
+        "P": [
+          "[P] Ju 12,13 (LabCiv 2-1)"
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "codigo": "554504-1",
+      "asignatura": "Proyecto Hidráulico-Ambiental",
+      "cr": 4,
+      "ht": 3,
+      "hp": 4,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Jose Vargas"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ju 1,2 (LabCiv 1-1)"
+        ],
+        "P": [
+          "[P] Ma 7,8,9,10 (LabCiv 1-1)"
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "codigo": "554505-1",
+      "asignatura": "Ingenieria Sanitaria",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 1,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Alex Schwarz"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ju 3,4,5 (TM 3-14)"
+        ],
+        "P": [
+          "[P] Lu 10,11 (TM 3-14)"
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "codigo": "554506-1",
+      "asignatura": "Ingenieria del Agua Subterranea",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 1,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Alex Schwarz"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 41,
+      "codigo": "554531-1",
+      "asignatura": "Ingeniería de Costas",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Maricarmen Guerra"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 42,
+      "codigo": "554601-1",
+      "asignatura": "Modelos Demanda Transportes",
+      "cr": 4,
+      "ht": 4,
+      "hp": 0,
+      "hl": 1,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Juan Carrasco"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 3,4 (LabCiv 1-5)",
+          "Mi 3,4 (LabCiv 1-5)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 43,
+      "codigo": "554602-1",
+      "asignatura": "Ingenieria de Transito",
+      "cr": 4,
+      "ht": 4,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Juan Carrasco"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 8,9 (LabCiv 1-5)",
+          "Ju 1,2 (LabCiv 1-5)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 44,
+      "codigo": "554603-1",
+      "asignatura": "Redes de Transporte",
+      "cr": 4,
+      "ht": 4,
+      "hp": 0,
+      "hl": 1,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Juan Carrasco"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 45,
+      "codigo": "554605-1",
+      "asignatura": "Proyecto Transporte Urbano",
+      "cr": 4,
+      "ht": 2,
+      "hp": 4,
+      "hl": 0,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Rodrigo Medina"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 1,2 (LabCiv 1-5)"
+        ],
+        "P": [
+          "[P] Mi 1,2 (LabCiv 1-5) - Vi 1,2 (LabCiv 1-5)"
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "codigo": "554606-1",
+      "asignatura": "Proyecto de Diseño Vial",
+      "cr": 4,
+      "ht": 2,
+      "hp": 4,
+      "hl": 1,
+      "carrera": [
+        "CIV 11"
+      ],
+      "profesores": [
+        "Álvaro Díaz"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 8,9 (LabCiv 2-2)"
+        ],
+        "P": [
+          "[P] Mi 10,11 (LabCiv 2-2) - Ju 10,11 (LabCiv 2-2)"
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "codigo": "554616-1",
+      "asignatura": "Seguridad Vial",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 10"
+      ],
+      "profesores": [
+        "Tomás Echaveguren"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 4 (LabCiv 1-1)",
+          "Mi 8,9 (LabCiv 1-1)"
+        ],
+        "P": [
+          "[P] Vi 8,9 (LabCiv 1-1)"
+        ]
+      }
+    }
+  ],
+  "IngenieriaElectrica": [
     {
       "id": 0,
       "codigo": "543120-1",
@@ -15,8 +1264,10 @@
         "Luis García"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 8,9 (TM 3-9)"
+        ],
+        "P": ""
       }
     },
     {
@@ -31,11 +1282,15 @@
         " "
       ],
       "profesores": [
-        " "
+        "  Luis Muñoz"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ju 10,11,12 (TM 3-13)"
+        ],
+        "P": [
+          "[P] Ma 10,11 (TM 3-12)"
+        ]
       }
     },
     {
@@ -53,8 +1308,13 @@
         "Juan Tapia"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 5 (TM 3-8)",
+          "Ju 3,4 (TM 3-8)"
+        ],
+        "P": [
+          "[P] Ju 12,13 (TM 3-8)"
+        ]
       }
     },
     {
@@ -73,8 +1333,10 @@
         "Lautaro Salazar"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -92,8 +1354,10 @@
         "Daniel Sbarbaro"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "- Horario de 547309-1"
+        ],
+        "P": ""
       }
     },
     {
@@ -112,8 +1376,10 @@
         "José Espinoza"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "- Horario de 547309-2"
+        ],
+        "P": ""
       }
     },
     {
@@ -131,46 +1397,57 @@
         "Juan Pablo Segovia"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 3,4,5 (TM 3-14)"
+        ],
+        "P": [
+          "[P] Mi 10,11 (TM 3-14)"
+        ]
       }
     },
     {
       "id": 7,
       "codigo": "543239-1",
       "asignatura": "Laboratorio de Circuitos",
-      "cr": null,
-      "ht": null,
-      "hp": null,
-      "hl": null,
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
       "carrera": [
-        " "
+        "ELE 5",
+        "ELN 5"
       ],
       "profesores": [
-        " "
+        "Jorge Salgado"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 1,2 (TM 3-10)"
+        ],
+        "P": [
+          "[L] Ma 8,9,10 (Lab.Ele-1)"
+        ]
       }
     },
     {
       "id": 8,
       "codigo": "543239-2",
       "asignatura": "Laboratorio de Circuitos",
-      "cr": null,
-      "ht": null,
-      "hp": null,
-      "hl": null,
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
       "carrera": [
-        " "
+        "ELN 5"
       ],
       "profesores": [
-        " "
+        "Jorge Salgado"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -190,27 +1467,34 @@
         "Gabriel Saavedra"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
       "id": 10,
       "codigo": "543242-1",
       "asignatura": "Algoritmos y Lenguaje de Programacion",
-      "cr": null,
-      "ht": null,
-      "hp": null,
-      "hl": null,
+      "cr": 3,
+      "ht": 3,
+      "hp": 1,
+      "hl": 0,
       "carrera": [
-        " "
+        "ELE 3",
+        "TEL 3"
       ],
       "profesores": [
-        " "
+        "Ricardo Sánchez"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 1,2 (LabCom IS-1)"
+        ],
+        "P": [
+          "[P] Ju 1,2 (LabCom IS-1)"
+        ]
       }
     },
     {
@@ -228,8 +1512,12 @@
         "Jorge Salgado"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Mi 8,9 (TM 3-2)"
+        ],
+        "P": [
+          "[L] Lu 9,10,11,12 (Lab.Ele-1)"
+        ]
       }
     },
     {
@@ -248,8 +1536,13 @@
         "Alejandro Rojas"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 8,9 (TM 3-4)",
+          "Mi 8 (TM 3-7)"
+        ],
+        "P": [
+          "[P] Vi 10,11 (TM 3-11)"
+        ]
       }
     },
     {
@@ -268,8 +1561,11 @@
         "Luis Arias"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 5 (TM 3-8)",
+          "Vi 3,4 (TM 3-8)"
+        ],
+        "P": ""
       }
     },
     {
@@ -288,8 +1584,10 @@
         "Enrique López"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -307,8 +1605,8 @@
         "Horario Pendiente"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": "",
+        "P": ""
       }
     },
     {
@@ -327,8 +1625,13 @@
         "Eduardo Wiechmann"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 3,4 (TM 3-8)",
+          "Mi 3 (TM 3-8)"
+        ],
+        "P": [
+          "[P] Mi 4 (TM 3-8)"
+        ]
       }
     },
     {
@@ -346,8 +1649,13 @@
         "Rubén Peña"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 5 (TM 3-15)",
+          "Ju 3,4 (A-313)"
+        ],
+        "P": [
+          "[P] Ju 12,13 (TM 3-1)"
+        ]
       }
     },
     {
@@ -365,8 +1673,13 @@
         "Leonardo Palma"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 5 (TM 3-9)",
+          "Ju 3,4 (A-415)"
+        ],
+        "P": [
+          "[P] Ju 12,13 (TM 3-9)"
+        ]
       }
     },
     {
@@ -384,8 +1697,13 @@
         "Ricardo Soto"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 5 (TM 3-4)",
+          "Ju 3,4 (TM 3-4)"
+        ],
+        "P": [
+          "[P] Ju 12,13 (IS 2-2)"
+        ]
       }
     },
     {
@@ -403,8 +1721,12 @@
         "Gastón Retamal"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 12,13 (TM 3-8)"
+        ],
+        "P": [
+          "[L] Vi 11,12,13 (LabCom TM)"
+        ]
       }
     },
     {
@@ -423,8 +1745,12 @@
         "Carlos Madariaga"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 10,11 (A-211)"
+        ],
+        "P": [
+          "[P] Sa 2,3 (TM 3-1)"
+        ]
       }
     },
     {
@@ -442,8 +1768,13 @@
         "Enrique López"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 4 (TM 3-10)",
+          "Mi 3,4 (TM 3-10)"
+        ],
+        "P": [
+          "[P] Sa 2,3 (TM 3-10)"
+        ]
       }
     },
     {
@@ -461,8 +1792,13 @@
         "Claudio Roa"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 4 (TM 3-7)",
+          "Mi 3,4 (TM 3-7)"
+        ],
+        "P": [
+          "[P] Sa 2,3 (TM 3-7)"
+        ]
       }
     },
     {
@@ -480,8 +1816,12 @@
         "Enrique López"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 8,9 (TM 3-10)"
+        ],
+        "P": [
+          "[L] Ju 3,4,5 (Lab.Ele-1)"
+        ]
       }
     },
     {
@@ -499,8 +1839,12 @@
         "Claudio Roa"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 8,9 (TM 3-7)"
+        ],
+        "P": [
+          "[L] Vi 3,4,5 (Lab.Ele-1)"
+        ]
       }
     },
     {
@@ -518,8 +1862,11 @@
         "Luis García"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 8,9 (TM 3-12)",
+          "Vi 1,2 (TM 3-8)"
+        ],
+        "P": ""
       }
     },
     {
@@ -537,8 +1884,13 @@
         "Christian Vega"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 1,2 (A-511)",
+          "Ju 1 (A-511)"
+        ],
+        "P": [
+          "[P] Sa 2,3 (TM 3-15)"
+        ]
       }
     },
     {
@@ -556,8 +1908,8 @@
         "Christian Vega"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": "",
+        "P": ""
       }
     },
     {
@@ -575,8 +1927,11 @@
         "Claudio Roa"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 1,2 (TM 3-14)",
+          "Vi 3 (TM 3-14)"
+        ],
+        "P": ""
       }
     },
     {
@@ -594,8 +1949,11 @@
         "Juan Tapia"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 9 (TM 3-12)",
+          "Mi 3,4 (TM 3-14)"
+        ],
+        "P": ""
       }
     },
     {
@@ -614,8 +1972,11 @@
         "Luis García"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 3,4 (TM 3-11)",
+          "Ju 3,4 (TM 3-11)"
+        ],
+        "P": ""
       }
     },
     {
@@ -633,8 +1994,11 @@
         "Ricardo Sánchez"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 1,2 (TM 3-3)",
+          "Mi 1,2 (TM 3-3)"
+        ],
+        "P": ""
       }
     },
     {
@@ -652,8 +2016,11 @@
         "Miguel Figueroa"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 1,2 (TM 3-11)",
+          "Mi 1,2 (TM 3-11)"
+        ],
+        "P": ""
       }
     },
     {
@@ -671,27 +2038,31 @@
         "Cristian Gutiérrez"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 1,2 (TM 3-8)"
+        ],
+        "P": [
+          "[L] Sa 2,3,4,5 (TM 3-8)"
+        ]
       }
     },
     {
       "id": 35,
       "codigo": "543499-1",
       "asignatura": "Memoria de Título",
-      "cr": null,
-      "ht": null,
-      "hp": null,
-      "hl": null,
+      "cr": 20,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
       "carrera": [
-        " "
+        "ELE 12"
       ],
       "profesores": [
-        " "
+        "Leonardo Palma"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": "",
+        "P": ""
       }
     },
     {
@@ -710,8 +2081,13 @@
         "Luis Morán"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 7,8 (TM 3-12)",
+          "Ma 7 (TM 3-12)"
+        ],
+        "P": [
+          "[P] Ju 12,13 (TM 3-12)"
+        ]
       }
     },
     {
@@ -726,14 +2102,14 @@
         "ELE 7"
       ],
       "profesores": [
-        "Juan Tapia ",
-        " Leonardo Palma ",
-        " Manuel Valenzuela ",
-        " Rubén"
+        "Juan Tapia",
+        "Leonardo Palma",
+        "Manuel Valenzuela",
+        "Rubén Peña"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": "",
+        "P": ""
       }
     },
     {
@@ -752,8 +2128,10 @@
         "Manuel Valenzuela"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -771,27 +2149,27 @@
         "Leonardo Palma"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": "",
+        "P": ""
       }
     },
     {
       "id": 40,
       "codigo": "543699-1",
       "asignatura": "Memoria de Título",
-      "cr": null,
-      "ht": null,
-      "hp": null,
-      "hl": null,
+      "cr": 18,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
       "carrera": [
-        " "
+        "ELE 12"
       ],
       "profesores": [
-        " "
+        "Leonardo Palma"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": "",
+        "P": ""
       }
     },
     {
@@ -810,8 +2188,10 @@
         "Alejandro Rojas"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -830,8 +2210,10 @@
         "Claudio Roa"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -850,8 +2232,10 @@
         "Enrique López"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -867,12 +2251,14 @@
         "ELN 9"
       ],
       "profesores": [
-        "Claudio Roa ",
-        " Enrique López"
+        "Claudio Roa",
+        "Enrique López"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -892,8 +2278,10 @@
         "Felipe Lamas"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -912,8 +2300,10 @@
         "Lautaro Salazar"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ju 10,11,12 (Lab.Eln)"
+        ],
+        "P": ""
       }
     },
     {
@@ -932,8 +2322,10 @@
         "Mario Medina"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 10,11 (TM 3-14)"
+        ],
+        "P": ""
       }
     },
     {
@@ -952,8 +2344,12 @@
         "Esteban Pino"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 3,4 (LabBio InfMed)"
+        ],
+        "P": [
+          "[L] Vi 7,8,9 (LabBio InfMed)"
+        ]
       }
     },
     {
@@ -973,8 +2369,12 @@
         "Pamela Guevara"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Mi 3,4 (LabCom IS-2)"
+        ],
+        "P": [
+          "[L] Lu 8,9,10 (LabCom IS-2)"
+        ]
       }
     },
     {
@@ -994,8 +2394,11 @@
         "Leonardo Palma"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Mi 8,9 (TM 3-16)",
+          "Vi 4 (TM 3-16)"
+        ],
+        "P": ""
       }
     },
     {
@@ -1014,8 +2417,10 @@
         "Juan Tapia"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -1033,8 +2438,12 @@
         "Rosa Figueroa"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ju 3,4 (IS 2-3)"
+        ],
+        "P": [
+          "[L] Ma 3,4,5 (LabCom IS-1)"
+        ]
       }
     },
     {
@@ -1053,8 +2462,11 @@
         "Daniel Sbarbaro"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 4 (TM 3-16)",
+          "Ju 3,4 (TM 3-18)"
+        ],
+        "P": ""
       }
     },
     {
@@ -1073,8 +2485,10 @@
         "Miguel Figueroa"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -1093,8 +2507,10 @@
         "Alejandro Rojas"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -1112,8 +2528,13 @@
         "Gabriel Saavedra"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 5 (LabTel Señales)",
+          "Mi 3,4 (LabTel Señales)"
+        ],
+        "P": [
+          "[L] Vi 2,3,4 (Fija Prof)"
+        ]
       }
     },
     {
@@ -1132,8 +2553,11 @@
         "José Espinoza"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 11 (TM 3-10)",
+          "Ju 3,4 (TM 3-10)"
+        ],
+        "P": ""
       }
     },
     {
@@ -1153,8 +2577,11 @@
         "José Espinoza"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 10 (TM 3-10)",
+          "Mi 3,4 (TM 3-11)"
+        ],
+        "P": ""
       }
     },
     {
@@ -1172,8 +2599,10 @@
         "Mario Medina"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 1,2 (TM 3-9)"
+        ],
+        "P": ""
       }
     },
     {
@@ -1191,8 +2620,13 @@
         "Rubén Peña"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 8,9 (TM 3-3)",
+          "Mi 8 (TM 3-3)"
+        ],
+        "P": [
+          "[P] Mi 9 (TM 3-3)"
+        ]
       }
     },
     {
@@ -1211,8 +2645,13 @@
         "Lautaro Salazar"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 1,2 (TM 3-1)",
+          "Ju 1 (TM 3-1)"
+        ],
+        "P": [
+          "[P] Ju 2 (TM 3-1)"
+        ]
       }
     },
     {
@@ -1230,8 +2669,13 @@
         "Daniel Sbarbaro"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 3,4 (TM 3-10)",
+          "Mi 9 (TM 3-10)"
+        ],
+        "P": [
+          "[P] Ju 10,11 (A-5)"
+        ]
       }
     },
     {
@@ -1249,8 +2693,13 @@
         "José Espinoza"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 3,4 (TM 3-7)",
+          "Mi 9 (TM 3-7)"
+        ],
+        "P": [
+          "[P] Ju 10,11 (Fija Prof)"
+        ]
       }
     },
     {
@@ -1268,8 +2717,12 @@
         "Juan Pablo Segovia"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ju 4,5 (TM 3-2)"
+        ],
+        "P": [
+          "[L] Ma 8,9,10 (Lab.Eln)"
+        ]
       }
     },
     {
@@ -1288,8 +2741,13 @@
         "Juan Pablo Segovia"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 1,2 (TM 3-17)",
+          "Mi 1,2 (TM 3-17)"
+        ],
+        "P": [
+          "[L] Ju 7,8,9 (LabELN3)"
+        ]
       }
     },
     {
@@ -1307,8 +2765,12 @@
         "Juan Pablo Segovia"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 3,4,5 (TM 3-6)"
+        ],
+        "P": [
+          "[L] Vi 8,9 (LabELN3)"
+        ]
       }
     },
     {
@@ -1328,8 +2790,10 @@
         "Alvaro Ananías"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Vi 1,2,3 (IS 2-3)"
+        ],
+        "P": ""
       }
     },
     {
@@ -1347,46 +2811,46 @@
         "Mario Medina"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": "",
+        "P": ""
       }
     },
     {
       "id": 69,
       "codigo": "547696-1",
       "asignatura": "Proyecto de Memoria de Titulo",
-      "cr": null,
-      "ht": null,
-      "hp": null,
-      "hl": null,
+      "cr": 2,
+      "ht": 0,
+      "hp": 4,
+      "hl": 0,
       "carrera": [
-        " "
+        "ELN 11"
       ],
       "profesores": [
-        " "
+        "Mario Medina"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": "",
+        "P": ""
       }
     },
     {
       "id": 70,
       "codigo": "547698-1",
       "asignatura": "Memoria de Título",
-      "cr": null,
-      "ht": null,
-      "hp": null,
-      "hl": null,
+      "cr": 18,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
       "carrera": [
-        " "
+        "ELN 12"
       ],
       "profesores": [
-        " "
+        "Mario Medina"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": "",
+        "P": ""
       }
     },
     {
@@ -1404,8 +2868,10 @@
         "Sebastián Godoy"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -1423,8 +2889,11 @@
         "Sergio Barría"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 12,13 (TM 3-11)",
+          "Mi 12 (TM 3-11)"
+        ],
+        "P": ""
       }
     },
     {
@@ -1442,8 +2911,12 @@
         "Sergio Sobarzo"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Vi 1,2 (TM 3-18)"
+        ],
+        "P": [
+          "[P] Ma 10,11 (TM 3-16)"
+        ]
       }
     },
     {
@@ -1461,8 +2934,12 @@
         "Luis Arias"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Mi 3,4 (Lab.Ele-2)"
+        ],
+        "P": [
+          "[L] Ju 8,9,10 (LabTel Señales)"
+        ]
       }
     },
     {
@@ -1477,12 +2954,16 @@
         "TEL 9"
       ],
       "profesores": [
-        "Jorge Pezoa ",
-        " Sergio Sobarzo"
+        "Jorge Pezoa",
+        "Sergio Sobarzo"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Mi 8,9 (TM 3-18)"
+        ],
+        "P": [
+          "[P] Vi 8,9 (TM 3-18)"
+        ]
       }
     },
     {
@@ -1497,14 +2978,15 @@
         "TEL 1"
       ],
       "profesores": [
-        "Gabriel Saavedra ",
-        " Luis Arias ",
-        " Sebastián Godoy ",
-        " Sergio"
+        "Gabriel Saavedra",
+        "Luis Arias",
+        "Sebastián Godoy",
+        "Sergio Sobarzo",
+        "Sergio Torres"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": "",
+        "P": ""
       }
     },
     {
@@ -1522,8 +3004,10 @@
         "Diego Ramírez"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "Horario Pendiente"
+        ],
+        "P": ""
       }
     },
     {
@@ -1541,8 +3025,11 @@
         "Sergio Torres"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 8,9 (TM 3-14)",
+          "Mi 9 (TM 3-12)"
+        ],
+        "P": ""
       }
     },
     {
@@ -1560,8 +3047,11 @@
         "Ricardo Sánchez"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Mi 10,11 (TM 3-18)",
+          "Vi 4 (TM 3-18)"
+        ],
+        "P": ""
       }
     },
     {
@@ -1579,8 +3069,13 @@
         "Jorge Pezoa"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 8,9 (TM 3-18)",
+          "Vi 3 (TM 3-18)"
+        ],
+        "P": [
+          "[L] Vi 7,8,9 (Fija Prof)"
+        ]
       }
     },
     {
@@ -1595,12 +3090,16 @@
         "TEL 9"
       ],
       "profesores": [
-        "Jorge Pezoa ",
-        " Sergio Torres"
+        "Jorge Pezoa",
+        "Sergio Torres"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 2,3,4 (TM 3-2)"
+        ],
+        "P": [
+          "[L] Ju 3,4,5 (LabTel Señales)"
+        ]
       }
     },
     {
@@ -1618,8 +3117,11 @@
         "Sebastián Godoy"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Lu 8,9 (TM 3-16)",
+          "Vi 5 (TM 3-16)"
+        ],
+        "P": ""
       }
     },
     {
@@ -1637,46 +3139,49 @@
         "Sebastián Godoy"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 8,9 (TM 3-17)",
+          "Ju 8 (TM 3-17)"
+        ],
+        "P": ""
       }
     },
     {
       "id": 84,
       "codigo": "549300-1",
       "asignatura": "Proyecto de H.P.",
-      "cr": null,
-      "ht": null,
-      "hp": null,
-      "hl": null,
+      "cr": 3,
+      "ht": 0,
+      "hp": 6,
+      "hl": 0,
       "carrera": [
-        " "
+        "TEL 11"
       ],
       "profesores": [
-        " "
+        "Sergio Sobarzo"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": "",
+        "P": ""
       }
     },
     {
       "id": 85,
       "codigo": "549301-1",
       "asignatura": "Memoria de Título",
-      "cr": null,
-      "ht": null,
-      "hp": null,
-      "hl": null,
+      "cr": 18,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
       "carrera": [
-        " "
+        "TEL 12"
       ],
       "profesores": [
-        " "
+        "Sergio Sobarzo"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": "",
+        "P": ""
       }
     },
     {
@@ -1694,8 +3199,13 @@
         "Gabriel Saavedra"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Mi 8 (TM 3-5)",
+          "Ju 3,4 (TM 3-5)"
+        ],
+        "P": [
+          "[P] Sa 2,3 (TM 3-5)"
+        ]
       }
     },
     {
@@ -1709,64 +3219,2567 @@
       "carrera": [
         "TEL 5"
       ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 1,2 (TM 3-12)",
+          "Ju 1 (TM 3-12)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 88,
+      "codigo": "549304-1",
+      "asignatura": "Señales y Sistemas",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "TEL 5"
+      ],
       "profesores": [
-        "[T] Ma 1,2 (TM 3",
-        "12) ",
-        " Ju 1 (TM 3",
-        "12)"
+        "Sebastián Godoy"
       ],
       "horariosYSalas": {
-        "T": [],
-        "P": []
+        "T": [
+          "[T] Ma 3,4 (TM 3-12)",
+          "Ju 2 (TM 3-12)"
+        ],
+        "P": [
+          "[P] Vi 8,9 (LabTel Señales)"
+        ]
       }
-    }
-  ],
-  "FacultadDeIngenieria": [
+    },
     {
-      "id": 0,
-      "codigo": "500120-1",
-      "asignatura": "Introducción a la Ingeniería",
+      "id": 89,
+      "codigo": "549305-1",
+      "asignatura": "Taller de Aplicación TIC 2",
+      "cr": 2,
+      "ht": 1,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "TEL 5"
+      ],
+      "profesores": [
+        "Luciano Radrigán"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 2 (TM 3-2)"
+        ],
+        "P": [
+          "[L] Ma 7,8,9 (LabTel Señales)"
+        ]
+      }
+    },
+    {
+      "id": 90,
+      "codigo": "550120-1",
+      "asignatura": "Introducción a la Ingeniería Biomédica",
       "cr": 2,
       "ht": 2,
       "hp": 0,
       "hl": 0,
       "carrera": [
-        "PCM1"
+        "BIO 1"
       ],
-      "profesores": [],
+      "profesores": [
+        "Rosa Figueroa"
+      ],
       "horariosYSalas": {
         "T": [
-          "Lu 1,2 (A-512)"
+          "[T] Lu 8,9 (TM 3-1)"
         ],
-        "P": []
+        "P": ""
+      }
+    },
+    {
+      "id": 91,
+      "codigo": "550201-1",
+      "asignatura": "Introducción a los Sistemas de Información en Salud",
+      "cr": 2,
+      "ht": 2,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "BIO 3"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (TM 3-4)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 92,
+      "codigo": "550451-1",
+      "asignatura": "Procesamiento Digital de Señales",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "BIO 7"
+      ],
+      "profesores": [
+        "Esteban Pino"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 3,4 (TM 3-5)"
+        ],
+        "P": [
+          "[P] Vi 3,4 (TM 3-5)"
+        ]
+      }
+    },
+    {
+      "id": 93,
+      "codigo": "550460-1",
+      "asignatura": "Electrónica Biomédica",
+      "cr": 3,
+      "ht": 3,
+      "hp": 1,
+      "hl": 0,
+      "carrera": [
+        "BIO 5"
+      ],
+      "profesores": [
+        "Pablo Aqueveque"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 1,2 (TM 3-5)",
+          "Ju 1 (TM 3-5)"
+        ],
+        "P": [
+          "[P] Ju 2 (TM 3-5)"
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "codigo": "550461-1",
+      "asignatura": "Laboratorio de Electrónica",
+      "cr": 3,
+      "ht": 0,
+      "hp": 0,
+      "hl": 6,
+      "carrera": [
+        "BIO 5"
+      ],
+      "profesores": [
+        "Pablo Aqueveque"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 95,
+      "codigo": "550461-2",
+      "asignatura": "Laboratorio de Electrónica",
+      "cr": 3,
+      "ht": 0,
+      "hp": 0,
+      "hl": 6,
+      "carrera": [
+        "BIO 5"
+      ],
+      "profesores": [
+        "Britam Gómez"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 96,
+      "codigo": "550462-1",
+      "asignatura": "Laboratorio de Sistemas Embebidos",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "BIO 7"
+      ],
+      "profesores": [
+        "Enrique Germany"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 3,4 (LabCom TM)"
+        ],
+        "P": [
+          "[L] Mi 8,9,10 (LabBio InfMed)"
+        ]
+      }
+    },
+    {
+      "id": 97,
+      "codigo": "550501-1",
+      "asignatura": "Equipamiento Clínico",
+      "cr": 4,
+      "ht": 3,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "BIO 9"
+      ],
+      "profesores": [
+        "Cesar García",
+        "Esteban Pino",
+        "Geronimo Bolado",
+        "Hernan Soto",
+        "Solange Aedo"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 98,
+      "codigo": "550502-1",
+      "asignatura": "Diseño en Ingeniería Biomédica",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 1,
+      "carrera": [
+        "BIO 9"
+      ],
+      "profesores": [
+        "Alvaro Saldaña",
+        "Jaime Pinto",
+        "Solange Aedo"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 10 (TM 3-11)",
+          "Vi 1,2 (TM 3-11)"
+        ],
+        "P": [
+          "[P] Mi 11 (TM 3-11)"
+        ]
+      }
+    },
+    {
+      "id": 99,
+      "codigo": "550550-1",
+      "asignatura": "Práctica Profesional",
+      "cr": 0,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "BIO 9"
+      ],
+      "profesores": [
+        "Pamela Guevara"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 100,
+      "codigo": "550590-1",
+      "asignatura": "Proyecto Memoria de Título",
+      "cr": 2,
+      "ht": 0,
+      "hp": 4,
+      "hl": 0,
+      "carrera": [
+        "BIO 10"
+      ],
+      "profesores": [
+        "Rosa Figueroa"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 101,
+      "codigo": "550699-1",
+      "asignatura": "Memoria de Título",
+      "cr": 20,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "BIO 11"
+      ],
+      "profesores": [
+        "Rosa Figueroa Departamento de Ingeniería Industrial"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    }
+  ],
+  "IngenieriaIndustrial": [
+    {
+      "id": 0,
+      "codigo": "545328-1",
+      "asignatura": "Contab General y Costos Ind",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 7"
+      ],
+      "profesores": [
+        "María Hormazábal"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Vi 8,9 (A-112)"
+        ],
+        "P": [
+          "[P] Lu 10,11 (TM 3-4)"
+        ]
       }
     },
     {
       "id": 1,
-      "codigo": "500120-2",
-      "asignatura": "Introducción a la Ingeniería",
+      "codigo": "545328-2",
+      "asignatura": "Contab General y Costos Ind",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 7"
+      ],
+      "profesores": [
+        "María Hormazábal"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 2,
+      "codigo": "546100-1",
+      "asignatura": "Comportamiento Organizacional",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "MET 7"
+      ],
+      "profesores": [
+        "Pierina Ruggeri"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 3,4,5 (TM 3-9)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 3,
+      "codigo": "546101-1",
+      "asignatura": "Gestión de Empresas",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "BIO 9"
+      ],
+      "profesores": [
+        "Patricio Sáez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 12,13 (TM 3-3)"
+        ],
+        "P": [
+          "[P] Ju 12,13 (TM 3-3)"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "codigo": "546101-2",
+      "asignatura": "Gestión de Empresas",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 9"
+      ],
+      "profesores": [
+        "Nicolás Von Caprivi"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 12,13 (TM 3-4)"
+        ],
+        "P": [
+          "[P] Ju 12,13 (TM 3-4)"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "codigo": "546101-3",
+      "asignatura": "Gestión de Empresas",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ICM 11",
+        "QUI 10"
+      ],
+      "profesores": [
+        "María Hormazábal"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 12,13 (TM 3-5)"
+        ],
+        "P": [
+          "[P] Ju 12,13 (TM 3-5)"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "codigo": "546101-4",
+      "asignatura": "Gestión de Empresas",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "MIN 9"
+      ],
+      "profesores": [
+        "Omar Veloso"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 12,13 (TM 3-10)"
+        ],
+        "P": [
+          "[P] Ju 12,13 (TM 3-10)"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "codigo": "546102-1",
+      "asignatura": "Formulación y Evaluación de Proyectos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "MAT 9",
+        "MET 9"
+      ],
+      "profesores": [
+        "José Oliveros"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 11,12,13 (A-201)"
+        ],
+        "P": [
+          "[P] Mi 12,13 (A-201)"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "codigo": "546102-2",
+      "asignatura": "Formulación y Evaluación de Proyectos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "QUI 9"
+      ],
+      "profesores": [
+        "Graciela Sandoval"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 11,12,13 (A-108)"
+        ],
+        "P": [
+          "[P] Mi 12,13 (A-108)"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "codigo": "546102-3",
+      "asignatura": "Formulación y Evaluación de Proyectos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 7",
+        "TEL 9"
+      ],
+      "profesores": [
+        "Francisco Martínez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 11,12,13 (A-109)"
+        ],
+        "P": [
+          "[P] Mi 12,13 (A-109)"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "codigo": "546102-4",
+      "asignatura": "Formulación y Evaluación de Proyectos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "AER 9",
+        "MEC 9"
+      ],
+      "profesores": [
+        "Rubén Uribe"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 11,12,13 (A-1)"
+        ],
+        "P": [
+          "[P] Mi 12,13 (A-1)"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "codigo": "546102-5",
+      "asignatura": "Formulación y Evaluación de Proyectos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELE 9"
+      ],
+      "profesores": [
+        "Alejandro Andalaft"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 11,12,13 (A-2)"
+        ],
+        "P": [
+          "[P] Mi 12,13 (A-2)"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "codigo": "546201-1",
+      "asignatura": "Microeconomía",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 5"
+      ],
+      "profesores": [
+        "Cristian Mardones"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 1,2 (A-512)",
+          "Ju 2 (A-511)"
+        ],
+        "P": [
+          "[P] Ma 12,13 (TM 3-1)"
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "codigo": "546201-2",
+      "asignatura": "Microeconomía",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 5"
+      ],
+      "profesores": [
+        "Cristian Mardones"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 14,
+      "codigo": "546370-1",
+      "asignatura": "Economía",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "MAT 7",
+        "MET 7"
+      ],
+      "profesores": [
+        "Alejandro Andalaft"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 10 (A-201)",
+          "Mi 10,11 (A-201)"
+        ],
+        "P": [
+          "[P] Vi 10,11 (A-313)"
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "codigo": "546370-2",
+      "asignatura": "Economía",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "CIV 5"
+      ],
+      "profesores": [
+        "Javiera Gasep"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 10 (A-108)",
+          "Mi 10,11 (A-108)"
+        ],
+        "P": [
+          "[P] Vi 10,11 (A-413)"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "codigo": "546370-3",
+      "asignatura": "Economía",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELN 9"
+      ],
+      "profesores": [
+        "Omar Veloso"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 10 (A-109)",
+          "Mi 10,11 (A-109)"
+        ],
+        "P": [
+          "[P] Vi 10,11 (A-414)"
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "codigo": "546370-4",
+      "asignatura": "Economía",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ICM 7"
+      ],
+      "profesores": [
+        "Cristian Ulloa"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 10 (A-1)",
+          "Mi 10,11 (A-1)"
+        ],
+        "P": [
+          "[P] Vi 10,11 (A-415)"
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "codigo": "546370-5",
+      "asignatura": "Economía",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IES 7"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 10 (A-2)",
+          "Mi 10,11 (A-2)"
+        ],
+        "P": [
+          "[P] Vi 10,11 (A-416)"
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "codigo": "546415-1",
+      "asignatura": "Taller en Optimización",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Lorena Pradenas"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ju 1,2 (DII 1)"
+        ],
+        "P": [
+          "[P] Lu 5,6 (DII 1)"
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "codigo": "546460-1",
+      "asignatura": "Sistemas de Produccion",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Eduardo Salazar"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 2,3,4 (DII 1)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 21,
+      "codigo": "546499-1",
+      "asignatura": "Memoria de Título",
+      "cr": 20,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "Sebastián Astroza"
+      ],
+      "profesores": [
+        "  Gestión Sustentable"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 22,
+      "codigo": "546516-1",
+      "asignatura": "Gestión Sustentable",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Francisco Ruiz"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 10,11,12 (DII 1)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 23,
+      "codigo": "580120-1",
+      "asignatura": "Desarrollo de Habilidades de Gestión",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 1"
+      ],
+      "profesores": [
+        "Angela Zenteno",
+        "Benjamín Germany"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 3,4 (Sala Teaching)"
+        ],
+        "P": [
+          "[P] Ma 10,11 (A-213)"
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "codigo": "580120-2",
+      "asignatura": "Desarrollo de Habilidades de Gestión",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 1"
+      ],
+      "profesores": [
+        "Angela Zenteno",
+        "Benjamín Germany"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 3,4 (Sala Teaching)"
+        ],
+        "P": [
+          "[P] Ju 10,11 (A-213)"
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "codigo": "580201-1",
+      "asignatura": "Liderazgo y Trabajo en Equipo",
       "cr": 2,
       "ht": 2,
       "hp": 0,
       "hl": 0,
       "carrera": [
-        "PCM1"
+        "IND 3"
       ],
-      "profesores": [],
-      "horariosysalas": {
+      "profesores": [
+        "Magdalena Jensen"
+      ],
+      "horariosYSalas": {
         "T": [
-          "Lu 1,2 (Sala Teaching)"
+          "[T] Ma 1,2 (Sala Teaching)"
         ],
-        "P": []
+        "P": ""
+      }
+    },
+    {
+      "id": 26,
+      "codigo": "580201-2",
+      "asignatura": "Liderazgo y Trabajo en Equipo",
+      "cr": 2,
+      "ht": 2,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "IND 3"
+      ],
+      "profesores": [
+        "Magdalena Jensen"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ju 1,2 (Sala Teaching)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 27,
+      "codigo": "580301-1",
+      "asignatura": "Innovación",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ELN 5",
+        "TEL 5"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 10,11 (A-212)"
+        ],
+        "P": [
+          "[P] Sa 4,5 (TM 3-9)"
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "codigo": "580311-1",
+      "asignatura": "Análisis Estadístico Multivariado",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 5"
+      ],
+      "profesores": [
+        "Hernaldo Reinoso"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (TM 3-9)"
+        ],
+        "P": [
+          "[P] Vi 10,11 (TM 3-8)"
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "codigo": "580311-2",
+      "asignatura": "Análisis Estadístico Multivariado",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 5"
+      ],
+      "profesores": [
+        "Hernaldo Reinoso"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ju 3,4 (TM 3-9)"
+        ],
+        "P": [
+          "[P] Vi 10,11 (TM 3-10)"
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "codigo": "580315-1",
+      "asignatura": "Optimización I",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 5"
+      ],
+      "profesores": [
+        "Carlos Contreras",
+        "Rosa Medina"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 3,4 (A-414)"
+        ],
+        "P": [
+          "[P] Lu 10,11 (TM 3-1)"
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "codigo": "580315-2",
+      "asignatura": "Optimización I",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 5"
+      ],
+      "profesores": [
+        "Carlos Contreras",
+        "Rosa Medina"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 32,
+      "codigo": "580411-1",
+      "asignatura": "Diseños de Sistemas de Producción",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 7"
+      ],
+      "profesores": [
+        "Carlos Herrera",
+        "Patricio Sáez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (A-512)"
+        ],
+        "P": [
+          "[P] Mi 12,13 (TM 3-1)"
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "codigo": "580411-2",
+      "asignatura": "Diseños de Sistemas de Producción",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 7"
+      ],
+      "profesores": [
+        "Carlos Herrera",
+        "Patricio Sáez"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 34,
+      "codigo": "580413-1",
+      "asignatura": "Marketing",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 7"
+      ],
+      "profesores": [
+        "Andrés Vidal"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Vi 3,4 (A-413)"
+        ],
+        "P": [
+          "[P] Lu 12,13 (TM 3-4)"
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "codigo": "580413-2",
+      "asignatura": "Marketing",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 7"
+      ],
+      "profesores": [
+        "Andrés Vidal"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 36,
+      "codigo": "580415-1",
+      "asignatura": "Gestión Estratégica y Control de Gestión",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 7"
+      ],
+      "profesores": [
+        "José Oliveros",
+        "Marcela Parada"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ju 3,4,5 (A-414)"
+        ],
+        "P": [
+          "[P] Vi 10,11 (TM 3-16)"
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "codigo": "580415-2",
+      "asignatura": "Gestión Estratégica y Control de Gestión",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 7"
+      ],
+      "profesores": [
+        "José Oliveros",
+        "Marcela Parada"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 38,
+      "codigo": "580450-1",
+      "asignatura": "Práctica Profesional",
+      "cr": 0,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "IND 11"
+      ],
+      "profesores": [
+        "Sebastián Astroza"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 39,
+      "codigo": "580511-1",
+      "asignatura": "Innovación",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Carlos Navarrete",
+        "Pablo Catalan"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 3,4 (A-511)"
+        ],
+        "P": [
+          "[P] Lu 10,11 (TM 3-3)"
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "codigo": "580511-2",
+      "asignatura": "Innovación",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Carlos Navarrete",
+        "Pablo Catalan"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 41,
+      "codigo": "580513-1",
+      "asignatura": "Evaluación de Proyectos",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Jorge Jimenez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 1,2 (A-413)"
+        ],
+        "P": [
+          "[P] Ju 8,9 (TM 3-8)"
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "codigo": "580513-2",
+      "asignatura": "Evaluación de Proyectos",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Jorge Jimenez"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 43,
+      "codigo": "580515-1",
+      "asignatura": "Desarrollo Organizacional y Recursos Humanos",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Angela Zenteno",
+        "Henry Rodriguez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ju 3,4 (A-314)"
+        ],
+        "P": [
+          "[P] Mi 12,13 (TM 3-16)"
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "codigo": "580515-2",
+      "asignatura": "Desarrollo Organizacional y Recursos Humanos",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Angela Zenteno",
+        "Henry Rodriguez"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 45,
+      "codigo": "580542-1",
+      "asignatura": "Gestión de la Cadena de Suministro",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Hernaldo Reinoso"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 8,9 (DII 1)"
+        ],
+        "P": [
+          "[P] Ju 10,11 (TM 3-17)"
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "codigo": "580560-1",
+      "asignatura": "Taller de Gestión de Operaciones",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Eduardo Salazar"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 1,2 (DII 1)"
+        ],
+        "P": [
+          "[P] Mi 8,9 (DII 1)"
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "codigo": "580562-1",
+      "asignatura": "Programación Aplicada a la Ingeniería Industrial",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Carlos Contreras"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (DII 1)"
+        ],
+        "P": [
+          "[L] Vi 10,11 (Pend)"
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "codigo": "580563-1",
+      "asignatura": "Gestión Pública",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Luis Quiñones"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 10,11 (TM 3-17)"
+        ],
+        "P": [
+          "[P] Ju 5,6 (DII 1)"
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "codigo": "580564-1",
+      "asignatura": "Gestión en Salud",
+      "cr": 3,
+      "ht": 3,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Cristian Ulloa"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Vi 3,4,5 (DII 1)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 50,
+      "codigo": "580565-1",
+      "asignatura": "Bias, Lies And Causal Inference: Data Interpretation In The",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Sebastián Astroza"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 8,9 (DII 1)"
+        ],
+        "P": [
+          "[P] Ju 10,11 (DII 1)"
+        ]
+      }
+    },
+    {
+      "id": 51,
+      "codigo": "580566-1",
+      "asignatura": "Cambio Climático y Gestión de Gases de Efecto Invernadero",
+      "cr": 3,
+      "ht": 3,
+      "hp": 1,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Magdalena Jensen"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 8,9 (TM 3-18)",
+          "Vi 8 (TM 3-17)"
+        ],
+        "P": [
+          "[P] Vi 9 (TM 3-17)"
+        ]
+      }
+    },
+    {
+      "id": 52,
+      "codigo": "580600-1",
+      "asignatura": "Juegos de Estrategia",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Horario Pendiente"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 53,
+      "codigo": "580601-1",
+      "asignatura": "Evaluación Social de Proyectos y Gestión Pública",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Horario Pendiente"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 54,
+      "codigo": "580602-1",
+      "asignatura": "Evaluación de Riesgos Laborales y Ambientales",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 9"
+      ],
+      "profesores": [
+        "Horario Pendiente"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 55,
+      "codigo": "580699-1",
+      "asignatura": "Memoria de Título",
+      "cr": 18,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "IND 11"
+      ],
+      "profesores": [
+        "Sebastián Astroza Departamento de Ingeniería Informática"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
       }
     }
   ],
-  "IngenieriaCivil": [],
-  "IngenieriaElectrica": [],
-  "IngenieriaIndustrial": [],
-  "IngenieriaInformatica": [],
+  "IngenieriaInformatica": [
+    {
+      "id": 0,
+      "codigo": "503120-1",
+      "asignatura": "Introducción a la Ingeniería Informática",
+      "cr": 2,
+      "ht": 2,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "INF 1"
+      ],
+      "profesores": [
+        "Javier Vidal",
+        "Pedro Pinacho"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 8,9 (A-214)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 1,
+      "codigo": "503201-1",
+      "asignatura": "Lenguaje de Programación",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ICM 3",
+        "IES 3"
+      ],
+      "profesores": [
+        "Javier Vidal"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 8,9 (A-313)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 2,
+      "codigo": "503203-1",
+      "asignatura": "Programación",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        " AER 3",
+        "BIO 4",
+        "CIV 3",
+        "ELE 3",
+        "ELN 3",
+        "IND 3",
+        "MAT 3",
+        "MEC 3",
+        "MET 3",
+        "MIN 3",
+        "QUI 3",
+        "TEL 3"
+      ],
+      "profesores": "Javier Vidal",
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (A-114)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 3,
+      "codigo": "503203-2",
+      "asignatura": "Programación",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "Eduardo Mendez"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (A-211)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 4,
+      "codigo": "503203-3",
+      "asignatura": "Programación",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "Pamela Guevara"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (A-313)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 5,
+      "codigo": "503203-4",
+      "asignatura": "Programación",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "Bernardo Hernández"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (A-314)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 6,
+      "codigo": "503203-5",
+      "asignatura": "Programación",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "Juan Fecci"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (A-414)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 7,
+      "codigo": "503203-6",
+      "asignatura": "Programación",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "Christopher Flores"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (A-415)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 8,
+      "codigo": "503203-7",
+      "asignatura": "Programación",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "Bárbaro López-Portilla"
+      ],
+      "profesores": "",
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (A-416)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 9,
+      "codigo": "503207-1",
+      "asignatura": "Lógica",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 3"
+      ],
+      "profesores": [
+        "Pierluigi Cerulo"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 8,9 (A-413)",
+          "Ju 10 (A-214)"
+        ],
+        "P": [
+          "[P] Vi 10,11 (TM 3-9)"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "codigo": "503208-1",
+      "asignatura": "Programación I",
+      "cr": 4,
+      "ht": 3,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "INF 3"
+      ],
+      "profesores": [
+        "Roberto Asín"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 10,11 (A-413)",
+          "Ju 11 (A-214)"
+        ],
+        "P": [
+          "[L] Vi 3,4 (LabSoftwar)"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "codigo": "503212-1",
+      "asignatura": "Programación II",
+      "cr": 4,
+      "ht": 3,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "INF 4"
+      ],
+      "profesores": [
+        "Jorge López"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 3,4,5 (LabSoftwar)"
+        ],
+        "P": [
+          "[L] Ma 3,4 (LabSoftwar)"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "codigo": "503213-1",
+      "asignatura": "Matemáticas Discretas",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 4"
+      ],
+      "profesores": [
+        "Ricardo Contreras"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 1,2 (IS 2-3)",
+          "Ju 1 (IS 2-3)"
+        ],
+        "P": [
+          "[P] Ma 10,11 (IS 2-3)"
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "codigo": "503215-1",
+      "asignatura": "Lenguaje de Programacion",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "AMB 3"
+      ],
+      "profesores": [
+        "Alejandra Fernández",
+        "Javier Vidal"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ju 10,11 (A-4)"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 14,
+      "codigo": "503220-1",
+      "asignatura": "Estructura de Datos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "INF 5"
+      ],
+      "profesores": [
+        "Alexander Irribarra"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (IS 2-2)",
+          "Ju 3 (IS 2-2)"
+        ],
+        "P": [
+          "[L] Lu 8,9 (LabSoftwar)"
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "codigo": "503309-1",
+      "asignatura": "Análisis de Algoritmos",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 7"
+      ],
+      "profesores": [
+        "Cecilia Hernández"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 3,4 (IS 2-1)",
+          "Mi 3 (IS 2-1)"
+        ],
+        "P": [
+          "[P] Ju 10,11 (IS 2-1)"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "codigo": "503312-1",
+      "asignatura": "Sistemas de Computación",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "ICM 9"
+      ],
+      "profesores": [
+        "Ilse Gutiérrez",
+        "Pía Maldonado"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 7,8,9 (Pend)"
+        ],
+        "P": [
+          "[P] Sa 2,3 (Pend)"
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "codigo": "503353-1",
+      "asignatura": "Redes de Computadores",
+      "cr": 4,
+      "ht": 3,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "INF 8"
+      ],
+      "profesores": [
+        "Pedro Pinacho"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 2,3,4 (LabRedes)"
+        ],
+        "P": [
+          "[L] Ju 4,5,6 (LabRedes)"
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "codigo": "503355-1",
+      "asignatura": "Ingeniería de Software II",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 9"
+      ],
+      "profesores": [
+        "Gonzalo Rojas"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 9 (IS 2-1)",
+          "Mi 8,9 (IS 2-1)"
+        ],
+        "P": [
+          "[P] Vi 8,9 (LabSoftwar)"
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "codigo": "503356-1",
+      "asignatura": "Inteligencia Artificial",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 9"
+      ],
+      "profesores": [
+        "Julio Godoy"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (IS 2-1)",
+          "Ju 2 (IS 2-2)"
+        ],
+        "P": [
+          "[P] Sa 2,3 (IS 2-1)"
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "codigo": "503357-1",
+      "asignatura": "Informática y Sociedad",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 9"
+      ],
+      "profesores": [
+        "Eduardo Mendez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 8 (IS 2-1)",
+          "Ju 3,4 (IS 2-1)"
+        ],
+        "P": [
+          "[P] Vi 10,11 (IS 2-2)"
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "codigo": "503358-1",
+      "asignatura": "Gestión Informática",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 9"
+      ],
+      "profesores": [
+        "Marcela Varas"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 1,2 (IS 2-1)",
+          "Ju 1 (IS 2-2)"
+        ],
+        "P": [
+          "[P] Mi 10,11 (IS 2-1)"
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "codigo": "503540-1",
+      "asignatura": "E-commerce y E-business",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 8"
+      ],
+      "profesores": [
+        "Gastón Leiva"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 10,11 (TM 3-17)"
+        ],
+        "P": [
+          "[P] Mi 10,11 (TM 3-17)"
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "codigo": "503585-1",
+      "asignatura": "Tecnologías de Información",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 7"
+      ],
+      "profesores": [
+        "Ilse Gutiérrez",
+        "Pía Maldonado"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 7,8,9 (TM 3-4)"
+        ],
+        "P": [
+          "[P] Sa 2,3 (LabCom TM)"
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "codigo": "503585-2",
+      "asignatura": "Tecnologías de Información",
+      "cr": 4,
+      "ht": 3,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "IND 7"
+      ],
+      "profesores": [
+        "Ilse Gutiérrez",
+        "Pía Maldonado"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ju 7,8,9 (TM 3-4)"
+        ],
+        "P": [
+          "[P] Sa 4,5 (LabCom TM)"
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "codigo": "503599-1",
+      "asignatura": "Memoria de Título",
+      "cr": 20,
+      "ht": 0,
+      "hp": 0,
+      "hl": 0,
+      "carrera": [
+        "INF 10"
+      ],
+      "profesores": [
+        "Javier Vidal"
+      ],
+      "horariosYSalas": {
+        "T": "",
+        "P": ""
+      }
+    },
+    {
+      "id": 26,
+      "codigo": "503601-1",
+      "asignatura": "Taller de Programación Competitiva I",
+      "cr": 1,
+      "ht": 0,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "INF 4"
+      ],
+      "profesores": [
+        "Andrea Rodríguez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 27,
+      "codigo": "503602-1",
+      "asignatura": "Taller de Programación Competitiva II",
+      "cr": 1,
+      "ht": 0,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "INF 5"
+      ],
+      "profesores": [
+        "Andrea Rodríguez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 28,
+      "codigo": "503603-1",
+      "asignatura": "Taller de Programación Competitiva III",
+      "cr": 1,
+      "ht": 0,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "INF 6"
+      ],
+      "profesores": [
+        "Andrea Rodríguez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 29,
+      "codigo": "503604-1",
+      "asignatura": "Taller de Programación Competitiva IV",
+      "cr": 1,
+      "ht": 0,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "INF 7"
+      ],
+      "profesores": [
+        "Andrea Rodríguez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 30,
+      "codigo": "503605-1",
+      "asignatura": "Taller de Programación Competitiva V",
+      "cr": 1,
+      "ht": 0,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "INF 8"
+      ],
+      "profesores": [
+        "Andrea Rodríguez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 31,
+      "codigo": "503606-1",
+      "asignatura": "Taller de Programación Competitiva VI",
+      "cr": 1,
+      "ht": 0,
+      "hp": 0,
+      "hl": 3,
+      "carrera": [
+        "INF 9"
+      ],
+      "profesores": [
+        "Andrea Rodríguez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 32,
+      "codigo": "503607-1",
+      "asignatura": "Interfaces de Usuario en Sistemas Software",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 9"
+      ],
+      "profesores": [
+        "Gonzalo Rojas"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 3,4 (IS 2-3)"
+        ],
+        "P": [
+          "[P] Ju 10,11 (IS 2-3)"
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "codigo": "503624-1",
+      "asignatura": "Inteligencia Computacional Aplicada a Ciberseguridad",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 11"
+      ],
+      "profesores": [
+        "Pedro Pinacho"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Mi 3,4 (LabSoftwar)"
+        ],
+        "P": [
+          "[P] Ju 8,9 (LabSoftwar)"
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "codigo": "503627-1",
+      "asignatura": "Introducción a la Computación Paralela",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 11"
+      ],
+      "profesores": [
+        "Cecilia Hernández"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (TM 3-18)"
+        ],
+        "P": [
+          "[P] Vi 3,4 (LabCom IS-2)"
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "codigo": "503630-1",
+      "asignatura": "Taller de Programación de Robots I",
+      "cr": 1,
+      "ht": 0,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "INF 10"
+      ],
+      "profesores": [
+        "Julio Godoy"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 36,
+      "codigo": "503638-1",
+      "asignatura": "Fundamentos de Estructuras de Datos y Algoritmos",
+      "cr": 6,
+      "ht": 4,
+      "hp": 4,
+      "hl": 0,
+      "carrera": [
+        "INF 9"
+      ],
+      "profesores": [
+        "José Fuentes",
+        "Roberto Asín"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 3,4 (IS 3-1)",
+          "Mi 3,4 (IS 3-1)"
+        ],
+        "P": [
+          "[P] Ju 3,4 (IS 3-1) - Vi 3,4 (IS 3-1)"
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "codigo": "503639-1",
+      "asignatura": "Fundamentos de Teoría de la Computación",
+      "cr": 6,
+      "ht": 4,
+      "hp": 4,
+      "hl": 0,
+      "carrera": [
+        "INF 9"
+      ],
+      "profesores": [
+        "Lilian Salinas"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Ma 1,2 (IS 3-1)",
+          "Mi 1,2 (IS 3-1)"
+        ],
+        "P": [
+          "[P] Ju 1,2 (IS 3-1) - Vi 1,2 (IS 3-1)"
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "codigo": "503641-1",
+      "asignatura": "Arquitectura de Software",
+      "cr": 3,
+      "ht": 2,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "INF 11"
+      ],
+      "profesores": [
+        "Gonzalo Pérez"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 10,11 (IS 2-3)"
+        ],
+        "P": [
+          "[L] Mi 10,11 (Pend)"
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "codigo": "503642-1",
+      "asignatura": "Taller Tekko - Informática en la Empresa I",
+      "cr": 1,
+      "ht": 0,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "INF 11"
+      ],
+      "profesores": [
+        "Francisco Serrano"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 40,
+      "codigo": "503643-1",
+      "asignatura": "Taller Tekko - Informática en la Empresa II",
+      "cr": 1,
+      "ht": 0,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "INF 11"
+      ],
+      "profesores": [
+        "Francisco Serrano"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 41,
+      "codigo": "503644-1",
+      "asignatura": "Taller Tekko - Informática en la Empresa III",
+      "cr": 1,
+      "ht": 0,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "INF 11"
+      ],
+      "profesores": [
+        "Francisco Serrano"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 42,
+      "codigo": "503645-1",
+      "asignatura": "Taller Tekko - Informática en la Empresa IV",
+      "cr": 1,
+      "ht": 0,
+      "hp": 0,
+      "hl": 2,
+      "carrera": [
+        "INF 11"
+      ],
+      "profesores": [
+        "Francisco Serrano"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "Fija Profesor"
+        ],
+        "P": ""
+      }
+    },
+    {
+      "id": 43,
+      "codigo": "503648-1",
+      "asignatura": "Aprendizaje de Máquina Probabilístico",
+      "cr": 3,
+      "ht": 2,
+      "hp": 2,
+      "hl": 0,
+      "carrera": [
+        "INF 9"
+      ],
+      "profesores": [
+        "Guillermo Cabrera",
+        "Pierluigi Cerulo"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Lu 3,4 (TM 3-17)"
+        ],
+        "P": [
+          "[P] Mi 3,4 (TM 3-17)"
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "codigo": "503649-1",
+      "asignatura": "Deep Learning",
+      "cr": 3,
+      "ht": 2,
+      "hp": 1,
+      "hl": 1,
+      "carrera": [
+        "INF 9"
+      ],
+      "profesores": [
+        "Guillermo Cabrera",
+        "Julio Godoy"
+      ],
+      "horariosYSalas": {
+        "T": [
+          "[T] Vi 3,4 (TM 3-2)"
+        ],
+        "P": [
+          "[P] Lu 7,8 (TM 3-6)"
+        ]
+      }
+    }
+  ],
   "IngenieriaDeMateriales": [],
   "IngenieriaMecanica": [],
   "IngenieriaMetalurgica": [],
-  "IngenieriaQuimica": []
+  "IngenieriaQuimica": [],
+  "OtrasFacultades": []
 }
