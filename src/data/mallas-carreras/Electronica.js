@@ -39,7 +39,7 @@ const Electronica = {
     'task-28': { id: 'task-28', content: 'Innovación', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
 
     'task-29': { id: 'task-29', content: 'Diseño Sistemas Digitales', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
-    'task-30': { id: 'task-30', content: 'Microelectrónica', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
+    'task-30': { id: 'task-30', content: 'Micro-electrónica', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
     'task-31': { id: 'task-31', content: 'Sistemas de Control', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
     'task-32': { id: 'task-32', content: 'Procesamiento Digital de Señales', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
     'task-33': { id: 'task-33', content: 'Laboratorio de Electrónica', color: "black", credits: "0", code: "000000-0", prerequisites: [] },
