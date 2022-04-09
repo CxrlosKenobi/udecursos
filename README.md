@@ -38,11 +38,11 @@
 <!-- Align vertically -->
 <div align="center">
   <p>
-    <a href="https://www.mozilla.org/" target="_blank" rel="noopener noreferrer">
+    <h4 href="https://www.mozilla.org/" target="_blank" rel="noopener noreferrer">
       Optimized for the latest version of 
       <img src="assets/firefox.png" alt="Firefox" width="28" height="28" />
       but you can also use it in other browsers.
-    </a>
+    </h4>
   </p>
 </div>
 
