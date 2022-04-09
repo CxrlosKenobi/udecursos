@@ -36,11 +36,11 @@
 
 
 <!-- Align vertically -->
-<div style="display: flex; flex-direction: column; align-items: center;">
+<div align="center">
   <p>
     <a href="https://www.mozilla.org/" target="_blank" rel="noopener noreferrer">
       Optimized for the latest version of 
-      <img src="assets/firefox.png" alt="Firefox" width="30" height="30" />
+      <img src="assets/firefox.png" alt="Firefox" width="28" height="28" />
       but you can also use it in other browsers.
     </a>
   </p>
