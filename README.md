@@ -34,7 +34,14 @@
 
 > Check out the [beta here](https://udecursos.study/) or the **[latest build here!](http://build.udecursos.study/)** directly from the *dev branch*
 
-> Optimized for the latest version of [Firefox](https://www.mozilla.org/) ![image](assets/firefox.png) but you can also use it in other browsers.
+
+<p>
+  <a href="https://www.mozilla.org/" target="_blank" rel="noopener noreferrer">
+    Optimized for the latest version of 
+    <img src="assets/firefox.png" alt="Firefox" width="20" height="20" />
+    but you can also use it in other browsers.
+  </a>
+</p>
 
 🎒 Visual designed platform, bringing a modern and intuitive way to the courses management, for and by the students of the [Universidad de Concepción](https://admision.udec.cl/). Students can drag & drop their courses, visualize schedules and manage their grades.
 
