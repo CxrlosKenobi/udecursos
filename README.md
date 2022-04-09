@@ -40,7 +40,7 @@
   <p>
     <h4 href="https://www.mozilla.org/" target="_blank" rel="noopener noreferrer">
       Optimized for the latest version of 
-      <img src="assets/firefox.png" alt="Firefox" width="14" height="14" />
+      <img src="assets/firefox.png" alt="Firefox" width="16" height="16" />
       but you can also use it in other browsers.
     </h4>
   </p>
