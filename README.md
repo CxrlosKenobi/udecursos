@@ -55,10 +55,9 @@
 > Check out the responsive design as well! 👀
 > Pre-release views 
 
-![image](assets/latest-build.png)
+![Inicio UdeCursos](assets/latest-build.png)
 
-![image](assets/malla.png)
-
+![Malla UdeCursos](assets/malla.gif)
 
 ## Getting started for devs!
 1. Fork or clone the repo and install node modules:
