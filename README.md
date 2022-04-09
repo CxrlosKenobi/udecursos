@@ -38,7 +38,7 @@
 <p>
   <a href="https://www.mozilla.org/" target="_blank" rel="noopener noreferrer">
     Optimized for the latest version of 
-    <img src="assets/firefox.png" alt="Firefox" width="20" height="20" />
+    <img src="assets/firefox.png" alt="Firefox" width="30" height="30" />
     but you can also use it in other browsers.
   </a>
 </p>
