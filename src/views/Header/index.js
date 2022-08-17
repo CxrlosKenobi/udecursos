@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 //
-import { sendCareer, cartSelector } from '../../state/cartSlice';
-import { Accordion } from './CareerSelector';
+import { sendCareer, cartSelector } from '../../redux/cartSlice';
+import { Accordion } from './components/CareerSelector';
 import { NavItem } from '../../utils/helpers';
-import { Burger, Menu } from './BurgerMenu';
+import { Burger, Menu } from './components/BurgerMenu';
 import { GoSync } from 'react-icons/go';
 import { CgClose } from 'react-icons/cg';
 import logo from '../../assets/logo.png';

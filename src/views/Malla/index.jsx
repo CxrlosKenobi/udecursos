@@ -3,10 +3,10 @@ import { DragDropContext } from 'react-beautiful-dnd';
 import { useSelector } from "react-redux";
 import { gsap } from 'gsap';
 //
-import { cartSelector } from "../../state/cartSlice";
+import { cartSelector } from "../../redux/cartSlice";
 import { Kickstart } from './Kickstart';
-import SeekCareer from "../../components/Malla/Seeker";
-import Column from '../../components/Malla/Column';
+import SeekCareer from "./components/Seeker";
+import Column from './components/Column';
 import dynamicData from '../../data/dynamic-data';
 //
 import './index.scss';
