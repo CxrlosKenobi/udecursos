@@ -3,14 +3,14 @@ import store from "./state/store";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 //
-import Header from "./components/Header/index";
+import Header from "./views/Header/index";
 import { ScrollWrapper } from "./utils/helpers";
 import { Inicio } from "./views/Inicio/index";
 import { Malla } from "./views/Malla/index";
-import Footer from "./components/Footer/index";
+import Footer from "./views/Footer/index";
 //
 import "@atlaskit/css-reset";
-import "./App.css";
+import "./App.scss";
 
 
 export default function UdeCursos() {
