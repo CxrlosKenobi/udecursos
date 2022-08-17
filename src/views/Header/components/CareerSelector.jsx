@@ -1,4 +1,3 @@
-import React from "react";
 import styled from 'styled-components';
 //
 import data from '../../../data/careers-data';

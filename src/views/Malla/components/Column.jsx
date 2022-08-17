@@ -1,4 +1,3 @@
-import React from 'react';
 import Task from './Task';
 import styled from 'styled-components';
 import { Droppable } from 'react-beautiful-dnd';

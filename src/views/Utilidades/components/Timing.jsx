@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import './Timing.css';
 
 // const Calculations = (hours, minutes, seconds) => {
