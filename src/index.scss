@@ -1,5 +1,5 @@
 * {
-  scrollbar-color: #10162F #FFF0E5;
+  scrollbar-color: var(--border-color) var(--secondary-color);
   scrollbar-width: thin;
   
   &::-webkit-scrollbar {
@@ -12,20 +12,10 @@
   }
   
   &::-webkit-scrollbar-thumb {
-    background-color: #10162F;
+    background-color: var(--border-color);
     border-radius: 10px;
     border: transparent;
   }
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--bg-color);
-}
-
-main {
-  margin-top: 78px !important;
 }
 
 // Root design pattern
@@ -36,27 +26,34 @@ main {
   --border-color: #10162F;
   --children-color: #10162F;
   --theme-icon-color: #10162F;
-
-  --dark-bg-color: #161616;
-  --dark-secondary-color: #2C2E43;
-  --dark-text-color: #F4F6FC;
-  --dark-border-color: #595260;
-  --children-dark-color: #B2B1B9;
-  --dark-theme-icon-color: white;
-
-  --bg-color: var(--dark-bg-color);
-  --secondary-color: var(--dark-secondary-color);
-  --text-color: var(--dark-text-color);
-  --border-color: var(--dark-border-color);
-  --children-color: var(--children-dark-color);
-  --theme-icon-color: var(--dark-theme-icon-color);
+  --highlight-color: #4C2BEE;
 }
 
-#UdeCursos {
+html.dark {
+  --bg-color: #161616;
+  --secondary-color: #2C2E43;
+  --text-color: #F4F6FC;
+  --border-color: #595260;
+  --children-color: #B2B1B9;
+  --theme-icon-color: white;
+  --highlight-color: #FFD300;
+}
+
+html.theming, html.theming * {
+  transition: all 200ms linear;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
-  
+
   h1, h2, h3, h4 {
     color: var(--text-color);
   }
+}
+
+main {
+  margin-top: 78px !important;
 }

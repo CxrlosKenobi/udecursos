@@ -24,8 +24,8 @@ export function SunIcon() {
   return (
     <motion.svg
       key="sun"
-      width="1.7rem"
-      height="1.7rem"
+      width="1.7em"
+      height="1.7em"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -87,8 +87,8 @@ export function MoonIcon() {
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1.7rem"
-      height="1.7rem"
+      width="1.7em"
+      height="1.7em"
       viewBox="0 0 50 50"
       key="moon"
     >

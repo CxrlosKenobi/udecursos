@@ -3,7 +3,7 @@ import { DragDropContext } from 'react-beautiful-dnd';
 import { useSelector } from "react-redux";
 import { gsap } from 'gsap';
 //
-import { cartSelector } from "../../redux/cartSlice";
+import { careerSelector } from "../../redux/careerSlice";
 import { Kickstart } from './Kickstart';
 import SeekCareer from "./components/Seeker";
 import Column from './components/Column';
@@ -18,22 +18,22 @@ function fetchData(data) {
 }
 
 export function Malla() {
-  const cart = useSelector(cartSelector);
-  const data = SeekCareer(cart.career.name);
+  const career = useSelector(careerSelector);
+  const data = SeekCareer(career.chosen.name);
   const [malla, setMalla] = useState(data);
   const mallaRef = useRef(null);
 
   useEffect(() => {
     setMalla(data);
-    cart.career.name !== undefined &&
+    career.chosen.name !== undefined &&
       gsap.fromTo(mallaRef.current,
         { opacity: 0, duration: 0.35 },
         { opacity: 1, duration: 0.6 }
       );
-  }, [data, cart.career.name]);
+  }, [data, career.chosen.name]);
 
 
-  const handleDragEnd = useCallback(  
+  const handleDragEnd = useCallback(
     function handleDragEnd(result) {
       const { destination, source, draggableId } = result;
 
@@ -119,21 +119,21 @@ export function Malla() {
 
   return (
     <main id="body-malla">
-        {cart.career.name !== undefined
-          ? (
-          <DragDropContext onDragEnd={handleDragEnd}>
-            <div id='container-malla' ref={mallaRef}>
-              {malla.ColumnOrder.map(columnId => {
-                const column = malla.Columns[columnId];
-                const tasks = column.taskIds.map(taskId => malla.Tasks[taskId]);
+      {career.chosen.name !== undefined
+        ? (
+        <DragDropContext onDragEnd={handleDragEnd}>
+          <div id='container-malla' ref={mallaRef}>
+            {malla.ColumnOrder.map(columnId => {
+              const column = malla.Columns[columnId];
+              const tasks = column.taskIds.map(taskId => malla.Tasks[taskId]);
 
-                return <Column key={column.id} column={column} tasks={tasks} />
-              })}
-            </div>
-          </DragDropContext>
-          ) : (
-          <Kickstart />
-        )}
+              return <Column key={column.id} column={column} tasks={tasks} />
+            })}
+          </div>
+        </DragDropContext>
+        ) : (
+        <Kickstart />
+      )}
     </main>
   );
 };

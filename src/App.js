@@ -1,5 +1,3 @@
-import React from "react";
-import store from "./redux/store";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 //
@@ -8,14 +6,15 @@ import { ScrollWrapper } from "./utils/helpers";
 import { Inicio } from "./views/Inicio/index";
 import { Malla } from "./views/Malla/index";
 import Footer from "./views/Footer/index";
+import store from "./redux/store";
 //
 import "@atlaskit/css-reset";
 
+export default function App() {
 
-export default function UdeCursos() {
   return (
     <Provider store={store}>
-      <section id="UdeCursos">
+      <div id="UdeCursos">
         <BrowserRouter>
           <Header/>
           <ScrollWrapper>
@@ -26,7 +25,7 @@ export default function UdeCursos() {
           </ScrollWrapper>
           <Footer/>
         </BrowserRouter>
-      </section>
+      </div>
     </Provider>
   );
 };

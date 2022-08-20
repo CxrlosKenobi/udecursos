@@ -1,4 +1,7 @@
 #Accordion {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+
   & ul {
     width: 100%;
     list-style: none;
@@ -17,14 +20,14 @@
 
     &:hover {
       cursor: pointer;
-      text-decoration: underline #4c2bee;
+      text-decoration: underline var(--highlight-color);
       font-style: none;
     }
   }
 
   & .chosen {
     font-weight: bold;
-    text-decoration: underline #4c2bee;
+    text-decoration: underline var(--highlight-color);
     font-style: none;
   }
 
@@ -52,7 +55,7 @@
       &:hover, &:active, &:focus {
         cursor: pointer;
         text-decoration-line: underline;
-        text-decoration-color: #4C2BEE;
+        text-decoration-color: var(--highlight-color);
         text-decoration-thickness: 2px;
         font-style: none;
       }
@@ -62,7 +65,7 @@
       font-weight: bold;
       list-style: disc;
       text-decoration-line: underline;
-      text-decoration-color: #4C2BEE;
+      text-decoration-color: var(--highlight-color);
       text-decoration-thickness: 2px;
     }
   }

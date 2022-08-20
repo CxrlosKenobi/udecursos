@@ -35,7 +35,6 @@ header {
         margin-left: 5%;
         text-align: center;
 
-        & a { border: 1px solid red; }
         & img {
           width: fit-content;
           margin: 4px auto;
@@ -53,7 +52,6 @@ header {
           font-family: "Apercu Pro", sans-serif black;
           font-size: 2.8rem;
           font-weight: bold;
-          color: #10162f;
           display: flex;
           align-self: center;
           justify-content: center;
@@ -92,7 +90,7 @@ header {
         color: var(--text-color);
         user-select: none;
         cursor: pointer;
-        &:hover { color: #4c2bee !important; }
+        &:hover { color: var(--highlight-color) !important; }
       }
 
       & .aux-li {
@@ -103,7 +101,7 @@ header {
         user-select: none;
         display: flex;
         align-items: center;
-        &:hover { color: #4c2bee !important; }
+        &:hover { color: var(--highlight-color) !important; }
 
         & .arrow {
           margin: 0 4px;
@@ -131,7 +129,7 @@ header {
         font-size: 12px;
         font-weight: bold;
         text-decoration: none;
-        color: #10162F;
+        color: var(--text-color);
         cursor: pointer;
         user-select: none;
       }
@@ -172,7 +170,7 @@ header {
         color: gray; 
         @keyframes glow {
           0% { color: gray; }
-          50% { color: #4c2bee; }
+          50% { color: var(--highlight-color); }
           100% { color: gray; }
         }
 
@@ -180,7 +178,7 @@ header {
         &:active { color: #10162f; }
       }
 
-      & a:hover { text-decoration: underline #4c2bee; }
+      & a:hover { text-decoration: underline var(--highlight-color); }
       & h3 {
         display: flex;
         align-self: flex-end;

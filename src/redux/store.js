@@ -1,15 +1,21 @@
 import { configureStore } from "@reduxjs/toolkit";
-import cartReducer from "./cartSlice";
-
+//
+import metadataReducer from "./metadataSlice";
+import careerReducer from "./careerSlice";
 
 // Middleware
 const localStorageMiddleware = ({ getState }) => {
   return (next) => (action) => {
     const result = next(action);
-    const career = getState().cart.career;
+    const career = getState().career;
+    // const metadata = getState().metadata;
 
     if (typeof window !== "undefined") {
-      localStorage.setItem("career", JSON.stringify(career));
+      const udecursos = {
+        career: career,
+        metadata: { theme: "light" } // Workaround for persistent theme yet to be implemented
+      };
+      localStorage.setItem("udecursos_data", JSON.stringify(udecursos));
     }
 
     return result;
@@ -20,21 +26,23 @@ const localStorageMiddleware = ({ getState }) => {
 // Store rehydration
 const reHydrateStore = () => {
   if (typeof window === "undefined") return;
-  
-  const career = JSON.parse(localStorage.getItem("career"));
-  if (career !== null) {
+
+  const udecursos = JSON.parse(localStorage.getItem("udecursos_data"));
+  if (udecursos) {
     return {
-      cart: {
-        career: career,
-      }
+      career: udecursos.career,
+      metadata: udecursos.metadata
     };
-  }
+  }  
 };
 
 
 // Store configuration
 const store = configureStore({
-  reducer: { cart: cartReducer, },
+  reducer: {
+    career: careerReducer,
+    metadata: metadataReducer
+  },
   preloadedState: reHydrateStore(),
   middleware: (getDefaultMiddleware) => 
     getDefaultMiddleware().concat(localStorageMiddleware)
