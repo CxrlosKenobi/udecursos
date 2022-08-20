@@ -3,7 +3,7 @@ import { Draggable } from 'react-beautiful-dnd';
 
 
 const Container = styled.div`
-  border: 1px solid #10162F;
+  border: 1px solid var(--border-color);
   border-radius: 9px;
   
   height: 80px;
@@ -17,17 +17,16 @@ const Container = styled.div`
   align-content: center;
   position: relative;
 
-  background-color: ${props => (props.isDragging ? '#FFD300' : "white")};
+  background-color: ${props => (props.isDragging ? '#FFD300' : "var(--secondary-color)")};
   &:focus {
     outline: 2.2px solid #4C2BEE;
-
   }
 `;
 const Code = styled.div`
   font-family: "Suisse Int\'l Mono", monospace;
   font-size: 8.5px;
   font-weight: bold;
-  font-color: #633FE5;
+  color: var(--children-color);
 
   position: absolute;
   padding: 10px;
@@ -51,14 +50,13 @@ const Content = styled.div`
 const Credits = styled.div`
   font-family: "Suisse Int\'l Mono", monospace;
   font-size: 8.5px;
-  font-color: #633FE5;
+  color: var(--children-color);
 
   position: absolute;
   bottom: 0px;
   left: 0px;
   padding: 10px;
   user-select: none;
-
 `;
 
 

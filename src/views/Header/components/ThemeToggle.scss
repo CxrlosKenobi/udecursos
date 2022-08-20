@@ -1,0 +1,11 @@
+.theme-toggle {
+  button {
+    background: none;
+    border: none;
+    
+    svg {
+      color: var(--theme-icon-color);
+      cursor: pointer;
+    }
+  }
+}

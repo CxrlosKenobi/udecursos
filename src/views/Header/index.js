@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 //
+import ThemeToggle from './components/ThemeToggle';
 import { sendCareer, cartSelector } from '../../redux/cartSlice';
 import { Accordion } from './components/CareerSelector';
 import { NavItem } from '../../utils/helpers';
@@ -57,43 +58,7 @@ export default function Header() {
           <NavItem to="/Utilidades">Utilidades</NavItem> */}
         </ul>
         <div className="right-header">
-          <h3>
-            {cart.career.name !== undefined ? (
-              <div className="career-info">
-                <a
-                  href={career.link}
-                  target="_blank"
-                  rel="nostateer noreferrer"
-                >
-                  {cart.career.name}
-                </a>
-                <GoSync
-                  className="sync-icon"
-                  onClick={() => setAccordionState(!accordionState)}
-                />
-                <CgClose
-                  onClick={cleanCareer}
-                  className="remove-career"
-                />
-              </div>
-            ) : (
-              <p
-                className='career void'
-                onClick={() => setAccordionState(!accordionState)}
-              >
-                (Click para elegir carrera)
-              </p>
-            )}
-          </h3>
-          <h3>
-            <a
-              href="http://secad.ing.udec.cl/horarios"
-              target="_blank"
-              rel="nostateer noreferrer"
-            >
-              {periodoUdeC}
-            </a>
-          </h3>
+          <ThemeToggle />
         </div>
         <Burger
           menuState={menuState}

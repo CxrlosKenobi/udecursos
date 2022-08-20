@@ -5,7 +5,7 @@ import { Droppable } from 'react-beautiful-dnd';
 
 const Container = styled.div`
   font-family: "Apercu Pro", sans-serif black;
-  font-color: #10162F;
+  color: var(--text-color);
 
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@ const Title = styled.h3`
 `;
 const Credits = styled.h4`
   font-family: "Suisse Int\'l Mono", monospace;
-  font-color: #10162F;
+  color: var(--children-color);
   font-size: 12px;
   user-select: none;
   margin-top: 0px;

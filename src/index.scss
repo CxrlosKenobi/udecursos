@@ -21,13 +21,42 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--bg-color);
 }
 
 main {
   margin-top: 78px !important;
 }
 
+// Root design pattern
+:root {
+  --bg-color: #FFF0E5;
+  --secondary-color: white;
+  --text-color: #10162F;
+  --border-color: #10162F;
+  --children-color: #10162F;
+  --theme-icon-color: #10162F;
+
+  --dark-bg-color: #161616;
+  --dark-secondary-color: #2C2E43;
+  --dark-text-color: #F4F6FC;
+  --dark-border-color: #595260;
+  --children-dark-color: #B2B1B9;
+  --dark-theme-icon-color: white;
+
+  --bg-color: var(--dark-bg-color);
+  --secondary-color: var(--dark-secondary-color);
+  --text-color: var(--dark-text-color);
+  --border-color: var(--dark-border-color);
+  --children-color: var(--children-dark-color);
+  --theme-icon-color: var(--dark-theme-icon-color);
+}
+
 #UdeCursos {
-  background-color: #FFF0E5;
-  box-sizing: border-box;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  
+  h1, h2, h3, h4 {
+    color: var(--text-color);
+  }
 }

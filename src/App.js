@@ -10,7 +10,6 @@ import { Malla } from "./views/Malla/index";
 import Footer from "./views/Footer/index";
 //
 import "@atlaskit/css-reset";
-import "./App.scss";
 
 
 export default function UdeCursos() {

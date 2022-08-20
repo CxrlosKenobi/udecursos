@@ -1,4 +1,4 @@
-import './index.scss'
+import "./index.scss"
 
 
 export default function Footer(){
@@ -6,7 +6,7 @@ export default function Footer(){
     <footer>
       <div className="footer-wrapper">
         <div className="last-update">
-          <a href='https://github.com/CxrlosKenobi/udecursos/commits/master' 
+          <a href="https://github.com/CxrlosKenobi/udecursos/commits/master" 
             target="_blank" rel="noopener noreferrer">
             Última actualización:<br></br>Marzo 29, 2022
           </a>
@@ -18,7 +18,7 @@ export default function Footer(){
           </a>
         </div>
         <div className="signature">
-          <a href='https://github.com/CxrlosKenobi'
+          <a href="https://github.com/CxrlosKenobi"
             target="_blank" rel="noopener noreferrer">
             <i className="fas fa-code"></i>   with   ❤️   by Kenobi
           </a>

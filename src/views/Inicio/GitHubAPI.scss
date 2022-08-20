@@ -2,9 +2,9 @@
   height: 75px;
   width: 98%;
   margin: 5px 1%;
-  border: 1px solid #d0d7de;
+  border: 1px solid var(--border-color);
   border-radius: 9px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -28,7 +28,6 @@
 
   & .commit-info {
     display: flex;
-    color: #24292f;
     flex-direction: row;
     align-items: center;
     padding-right: 14px;
@@ -39,7 +38,7 @@
     & ._login {
       font-size: 1.1rem;
       font-weight: 500;
-      color: #24292f;
+      color: var(--text-color);
       margin-right: 5px;
     }
   }
@@ -56,7 +55,7 @@
       height: 100%;
       font-size: 1rem;
       text-decoration: none;
-      color: #24292f;
+      color: var(--text-color);
       display: flex;
       align-items: center;
       justify-content: flex-start;

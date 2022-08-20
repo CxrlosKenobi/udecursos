@@ -1,9 +1,9 @@
 footer {
-  --mainColor: #10162F;
+  background-color: var(--bg-color);
+  border-top: 1px solid var(--border-color);
   width: 90%;
   height: 65px;
   margin: 0 5%;
-  border-top: 1px solid var(--mainColor);
 
   & .footer-wrapper {
     width: 100%;
@@ -16,7 +16,7 @@ footer {
     cursor: pointer;
 
     & a {
-      color: var(--mainColor);
+      color: var(--text-color);
       text-decoration: none;
       font-weight: bold;
       font-size: .8rem;
@@ -28,20 +28,20 @@ footer {
 
     & .source-code {
       & a {
-        background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+        background: linear-gradient(to bottom, var(--secondary-color) 0%, var(--secondary-color) 100%);
         background-position: 0 100%;
         background-repeat: repeat-x;
         background-size: 1px 1px;
         transition: background-size .2s;
         padding: 0.4rem 0.3rem;
         border-radius: 0.2rem;
-        border: 1px solid var(--mainColor);
+        border: 1px solid var(--border-color);
 
         &:hover {
           background-size: 4px 50px;
           text-decoration: none;
           color: white;
-          border: 1px solid var(--mainColor);
+          border: 1px solid var(--border-color);
         }
       }
     }
