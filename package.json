@@ -15,6 +15,7 @@
     "@testing-library/user-event": "^14.4.3",
     "csv-parser": "^3.0.0",
     "csv-writer": "^1.6.0",
+    "framer-motion": "^7.2.0",
     "gsap": "^3.10.4",
     "hash-router": "^0.4.0",
     "material-ui-popup-state": "^4.0.2",
