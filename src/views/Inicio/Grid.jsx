@@ -18,7 +18,7 @@ export function SectionsGrid() {
         </Link>
       </section>
       <section>
-        <a className="locked">
+        <a href="/" className="locked">
           <img src={mallaBlur} alt="Malla" />
           <div>
             <h2>Creador de Horarios (En desarrollo)</h2>
@@ -26,7 +26,7 @@ export function SectionsGrid() {
         </a>      
       </section>
       <section>
-        <a className="locked">
+        <a href="/" className="locked">
           <img src={mallaBlur} alt="Malla" />
           <div>
             <h2>Utilidades (En desarrollo)</h2>

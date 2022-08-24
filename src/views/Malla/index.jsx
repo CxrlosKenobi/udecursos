@@ -1,40 +1,33 @@
-import { useRef, useState, useEffect, useCallback } from 'react';
+import { useRef, useEffect, useCallback } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
-import { useSelector } from "react-redux";
-import { gsap } from 'gsap';
+import { useDispatch, useSelector } from "react-redux";
 //
-import { careerSelector } from "../../redux/careerSlice";
+import { getCareer, getCareerTasks } from "../../APIs/MongoDB";
+import { mallaSelector, careerSelector, stateMalla } from "../../redux/careerSlice";
 import { Kickstart } from './Kickstart';
-import SeekCareer from "./components/Seeker";
-import Column from './components/Column';
-import dynamicData from '../../data/dynamic-data';
+import Semester from './components/Semester';
 //
 import './index.scss';
 
-
-function fetchData(data) {
-  dynamicData.columns = data.Columns;
-  dynamicData.tasks = data.tasks;
-}
-
 export function Malla() {
+  const dispatch = useDispatch();
   const career = useSelector(careerSelector);
-  const data = SeekCareer(career.chosen.name);
-  const [malla, setMalla] = useState(data);
+  const malla = useSelector(mallaSelector);
   const mallaRef = useRef(null);
 
   useEffect(() => {
-    setMalla(data);
-    career.chosen.name !== undefined &&
-      gsap.fromTo(mallaRef.current,
-        { opacity: 0, duration: 0.35 },
-        { opacity: 1, duration: 0.6 }
-      );
-  }, [data, career.chosen.name]);
-
+    async function careerData() {
+      const _career = await getCareer("INF");
+      const _tasks = await getCareerTasks("INF");
+      const _malla = buildMalla(_career, _tasks);
+      dispatch(stateMalla(_malla));
+    }
+    careerData();
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleDragEnd = useCallback(
     function handleDragEnd(result) {
+      console.log("handleDragEnd result", result);
       const { destination, source, draggableId } = result;
 
       // Dropped outside the list
@@ -42,92 +35,78 @@ export function Malla() {
       if (destination.droppableId === source.droppableId &&
           destination.index === source.index) return;
 
-      const start = malla.Columns[source.droppableId];
-      const finish = malla.Columns[destination.droppableId];
-      const destinationCredits = finish.taskIds.reduce((acc, task) => acc + parseInt(malla.Tasks[task].credits), 0);
-      const taskCredits = parseInt(malla.Tasks[draggableId].credits);
+      const start = malla.semesters[source.droppableId];
+      const finish = malla.semesters[destination.droppableId];
 
       // Same column
       if (start === finish) {
-        const newTaskIds = Array.from(start.taskIds);
-        newTaskIds.splice(source.index, 1);
-        newTaskIds.splice(destination.index, 0, draggableId);
+        const newTaskList = Array.from(start.tasks);
+        newTaskList.splice(source.index, 1);
+        
+        const draggedTask = malla.semesters[source.droppableId].tasks.find(
+          (task) => task.code === draggableId
+        );
 
-        const newColumn = {
+        newTaskList.splice(destination.index, 0, draggedTask);
+
+        const updatedSemester = {
           ...start,
-          taskIds: newTaskIds,
+          tasks: newTaskList
         };
-        const newMalla = {
+        const updatedMalla = {
           ...malla,
-          Columns: {
-            ...malla.Columns,
-            [newColumn.id]: newColumn,
-          },
+          semesters: {
+            ...malla.semesters,
+            [updatedSemester.id]: updatedSemester
+          }
         };
 
-        setMalla(newMalla);
-        fetchData(newMalla);
-
+        dispatch(stateMalla(updatedMalla));
         return;
       }
 
       // Moving from one list to another
-      const startTaskIds = Array.from(start.taskIds);
-      startTaskIds.splice(source.index, 1);
+      const startTaskList = Array.from(start.tasks);
+      startTaskList.splice(source.index, 1);
       const newStart = {
         ...start,
-        taskIds: startTaskIds,
+        tasks: startTaskList,
       };
-      const finishTaskIds = Array.from(finish.taskIds);
-      finishTaskIds.splice(destination.index, 0, draggableId);
+
+      const finishTaskList = Array.from(finish.tasks);
+      const draggedTask = malla.semesters[source.droppableId].tasks.find(
+        (task) => task.code === draggableId
+      );
+
+      finishTaskList.splice(destination.index, 0, draggedTask);
       const newFinish = {
         ...finish,
-        taskIds: finishTaskIds
+        tasks: finishTaskList
       };
 
-      // If the destination credits + the task credits are greater than the max credits,
-      if ((destinationCredits + taskCredits) <= 24) {
-        const newMalla = {
-          ...malla,
-          Columns: {
-            ...malla.Columns,
-            [newStart.id]: newStart,
-            [newFinish.id]: newFinish,
-          },
-        };
+      const updatedMalla = {
+        ...malla,
+        semesters: {
+          ...malla.semesters,
+          [newStart.id]: newStart,
+          [newFinish.id]: newFinish,
+        }
+      };
 
-        setMalla(newMalla);
-        fetchData(newMalla);
-
-        return
-      } else {
-        const element = document.getElementById('column-credits-' + destination.droppableId);
-        element.classList.add('animated', 'ease-out', 'bounceIn');
-        element.style.color = 'red';
-        element.style.transform = 'scale(1.3)';
-        setTimeout(() => {
-          element.classList.remove('animated', 'ease-out', 'bounceIn');
-          element.style.color = '#10162F';
-          element.style.transform = 'scale(1)';
-          element.style.transition = 'all 500ms';
-        }, 500);
-
-        return;
-      }
-    }, [malla]
+      dispatch(stateMalla(updatedMalla));
+    }, [malla] // eslint-disable-line react-hooks/exhaustive-deps
   );
 
   return (
     <main id="body-malla">
-      {career.chosen.name !== undefined
+      {career.info.name !== undefined
         ? (
         <DragDropContext onDragEnd={handleDragEnd}>
           <div id='container-malla' ref={mallaRef}>
-            {malla.ColumnOrder.map(columnId => {
-              const column = malla.Columns[columnId];
-              const tasks = column.taskIds.map(taskId => malla.Tasks[taskId]);
-
-              return <Column key={column.id} column={column} tasks={tasks} />
+            {malla.semesters && Object.values(malla.semesters).map((semester) => {
+              return (
+                <Semester key={semester.id} content={semester} tasks={semester.tasks} />
+              );
             })}
           </div>
         </DragDropContext>
@@ -136,4 +115,19 @@ export function Malla() {
       )}
     </main>
   );
+};
+
+function buildMalla(career, _tasks) {
+  let malla = { semesters: {} };
+  Object.values(career.semesters).map((semester) => {
+    const builtSemester = {
+      ...semester,
+      tasks: _tasks.filter((task) => semester.tasksCodes.includes(task.code))
+    };
+
+    delete builtSemester.tasksCodes;
+    return malla.semesters[semester.id] = builtSemester;
+  });
+  
+  return malla;
 };

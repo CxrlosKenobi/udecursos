@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 //
 import data from '../../../data/careers-data';
-//
 import "./CareerSelector.scss";
 
 
@@ -12,7 +11,7 @@ export function Accordion({ careerName, handler, accordionState }) {
     <StyledAccordion id='Accordion' accordionState={accordionState}>
       <ul>
         {carreras.map((option) => (
-          <li key={option.id}
+          <li key={option.code}
               onClick={(() => handler(option))}
               className={option.name === careerName ? 'chosen' : ''}
           >
@@ -29,7 +28,7 @@ export function SubmenuList({ careerName, handleCareer }) {
     <section id="Career-list-wrapper">
       <ul>
         {carreras.map((option) => (
-          <li key={option.id}
+          <li key={option.code}
               onClick={(() => handleCareer(option))}
               className={option.name === careerName ? 'chosen' : ''}
           >
