@@ -16,8 +16,10 @@ const Container = styled.div`
   justify-content: center;
   align-content: center;
   position: relative;
+  user-select: none;
 
-  background-color: ${props => (props.isDragging ? '#FFD300' : "var(--secondary-color)")};
+  background-color: ${props => (props.isDragging ? 'var(--highlight-color2)' : "var(--secondary-color)")};
+  // border-color: ${props => (props.isDragging ? 'gray' : "var(--border-color)")};
   &:focus {
     outline: 2.2px solid #4C2BEE;
   }
@@ -33,7 +35,6 @@ const Code = styled.div`
   top: 0px;
   left: 0px;
   height: fit-content;
-  user-select: none;
 `;
 const Content = styled.div`
   font-family: "Apercu Pro", sans-serif black;
@@ -45,7 +46,6 @@ const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  user-select: none;
 `;
 const Credits = styled.div`
   font-family: "Suisse Int\'l Mono", monospace;
@@ -56,13 +56,12 @@ const Credits = styled.div`
   bottom: 0px;
   left: 0px;
   padding: 10px;
-  user-select: none;
 `;
 
 
-export default function Task(props) {
+export default function Task({ index, content }) {
   return (
-    <Draggable draggableId={props.task.id} index={props.index}>
+    <Draggable draggableId={content.code} index={index}>
       {(provided, snapshot) => (
         <Container
           {...provided.draggableProps}
@@ -70,11 +69,11 @@ export default function Task(props) {
           ref={provided.innerRef}
           isDragging={snapshot.isDragging}
         >
-          <Code>{props.task.code}</Code>
-          <Content shrink={props.task.shrink ? true : false}>
-            {props.task.content}
+          <Code>{content.code}</Code>
+          <Content shrink={content.shrink ? true : false}>
+            {content.name}
           </Content>
-          <Credits>{props.task.credits}</Credits>
+          <Credits>{content.credits}</Credits>
         </Container>
       )}
     </Draggable>

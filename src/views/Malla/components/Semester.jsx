@@ -1,6 +1,7 @@
-import Task from './Task';
 import styled from 'styled-components';
 import { Droppable } from 'react-beautiful-dnd';
+//
+import Task from './Task';
 
 
 const Container = styled.div`
@@ -32,33 +33,32 @@ const Credits = styled.h4`
   margin-top: 0px;
 `;
 const TaskList = styled.div`
-  padding: 8px;
+  margin: 4px;
+  padding: 4px 4px 0 4px;
   transition: background-color 0.2s ease;
   background-color: ${props =>
-    props.isDraggingOver ? '#10162F' : 'inherit'};
+    props.isDraggingOver ? 'var(--border-color)' : 'inherit'};
   border-radius: 9px;
 
   flex-grow: 1;
   min-height: 100px;
-
 `;
 
-export default function Column(props) {
-  const credits = props.tasks.reduce((acc, task) => acc + parseInt(task.credits), 0);
-  
+export default function Semester({ content, tasks }) {
+  // const credits = props.tasks.reduce((acc, task) => acc + parseInt(task.credits), 0);
   return (
     <Container>
-      <Title>{props.column.title}</Title>
-      <Credits id={`column-credits-${props.column.id}`}>{credits}</Credits>
-      <Droppable droppableId={props.column.id}>
+      <Title>{content.name}</Title>
+      {/* <Credits id={`column-credits-${props.column.id}`}>{credits}</Credits> */}
+      <Droppable droppableId={content.id}>
         {(provided, snapshot) => (
           <TaskList
             ref={provided.innerRef}
             {...provided.droppableProps}
             isDraggingOver={snapshot.isDraggingOver}
           >
-            {props.tasks.map((task, index) => (
-              <Task key={task.id} task={task} index={index} />
+            {tasks.map((task, index) => (
+              <Task key={task.code} index={index} content={task} />
             ))}
             {provided.placeholder}
           </TaskList>
