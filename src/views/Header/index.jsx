@@ -1,44 +1,42 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-//
-import ThemeHandler from './components/ThemeHandler';
-import { setCareer, cleanCareer, careerSelector } from '../../redux/careerSlice';
-import { Accordion } from './components/CareerSelector';
-import { NavItem } from '../../utils/helpers';
-import BurgerMenu, { BurgerBtn } from './components/BurgerMenu';
 import { GoSync } from 'react-icons/go';
 import { CgClose } from 'react-icons/cg';
-import logo from '../../assets/logo.png';
 //
+import ThemeHandler from './components/ThemeHandler';
+import BurgerMenu, { BurgerBtn } from './components/BurgerMenu';
+import { Accordion } from './components/CareerSelector';
+import { NavItem } from '../../utils/helpers';
+import { setCareerInfo, cleanCareer, careerSelector } from '../../redux/careerSlice';
+import logo from '../../assets/logo.png';
 import './index.scss';
 
 
 export default function Header() {
+  const dispatch = useDispatch();
+  const career = useSelector(careerSelector);
+
   const [menuState, setMenuState] = useState(false);
   const [submenu, setSubmenu] = useState(false);
   const [accordionState, setAccordionState] = useState(false);
 
-  const dispatch = useDispatch();
-  const career = useSelector(careerSelector);
-
   const toggleMenu = () => setMenuState(!menuState);
   const toggleSubmenu = () => setSubmenu(!submenu);
 
-  const periodoUdeC = `UdeC ${new Date().getFullYear()}-1`;
+  const periodoUdeC = `UdeC ${new Date().getFullYear()}-2`;
 
   function handleCareer(chosenCareer) {
-    dispatch(setCareer(chosenCareer));
+    dispatch(setCareerInfo(chosenCareer));
     setAccordionState(false);
   };
-
 
   return (
     <header>
       <div className="header-wrapper">
         <Link to="/" className="logo-heading">
           <div id='img-container'>
-            <img src={logo} alt="Logo" height="70" width="52"/>
+            <img src={logo} alt="Logo" height="70" width="52" />
           </div>
           <div className="heading-container">
             <h1>UdeCursos</h1>
@@ -51,10 +49,10 @@ export default function Header() {
         </ul>
         <div className="right-header">
           <h3>
-            {career.chosen.name !== undefined ? (
+            {Object.keys(career.info).length > 0 ? (
               <div className="career-info">
-                <a href={career.chosen.link} target="_blank" rel="nostateer noreferrer">
-                  {career.chosen.name}
+                <a href={career.info.link} target="_blank" rel="nostateer noreferrer">
+                  {career.info.name}
                 </a>
                 <GoSync onClick={() => setAccordionState(!accordionState)} className="sync-icon" />
                 <CgClose onClick={() => dispatch(cleanCareer())} className="remove-career" />
@@ -73,28 +71,21 @@ export default function Header() {
         </div>
         <ThemeHandler />
         <BurgerBtn
-          menuState={menuState}
-          toggleMenu={toggleMenu}
-          submenu={submenu}
-          setSubmenu={setSubmenu}
+          MenuContext={{ menuState, toggleMenu }}
+          SubmenuContext={{ submenu, setSubmenu }}
         />
         <BurgerMenu
-          menuState={menuState}
-          toggleMenu={toggleMenu}
-          submenu={submenu}
-          toggleSubmenu={toggleSubmenu}
-          career={career.chosen}
+          MenuContext={{ menuState, toggleMenu }}
+          SubmenuContext={{ submenu, toggleSubmenu }}
+          career={career.info}
           handleCareer={handleCareer}
           periodoUdeC={periodoUdeC}
-          CgClose={CgClose}
         />
       </div>
       <Accordion
-        careerName={career.chosen.name}
-        setCareer={setCareer}
+        careerName={career.info.name}
         handler={handleCareer}
         accordionState={accordionState}
-        setAccordionState={setAccordionState}
       />
     </header>
   );

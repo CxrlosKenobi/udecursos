@@ -1,80 +1,72 @@
-import styled from "styled-components";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { FiChevronRight } from "react-icons/fi";
 import { IoIosArrowRoundBack } from "react-icons/io";
+import { CgClose } from 'react-icons/cg';
+import styled from "styled-components";
 //
+import { cleanCareer } from "../../../redux/careerSlice";
 import { SubmenuList } from "./CareerSelector";
 import "./BurgerMenu.scss";
 
 
-export function Menu({
-  menuState, toggleMenu, submenu, toggleSubmenu,
-  career, handleCareer, cleanCareer, periodoUdeC, CgClose }) {
+export default function BurgerMenu({
+  MenuContext, SubmenuContext,
+  career, handleCareer, periodoUdeC }) {
+  const dispatch = useDispatch();
+
+  const { menuState, toggleMenu } = MenuContext;
+  const { submenu, toggleSubmenu } = SubmenuContext;
 
   return (
     <>
       <StyledMenu id="BurgerMenu" menuState={menuState}>
         <Link to="/" onClick={toggleMenu}>Inicio</Link>
         <Link to="/Malla" onClick={toggleMenu}>Malla</Link>
-        <a className="locked">Horario</a>
-        <a className="locked">Utilidades</a>
         <div>
           <span onClick={toggleSubmenu}>Elegir Carrera</span>
-          <FiChevronRight className="icon"/>
+          <FiChevronRight className="icon" />
         </div>
         {career.name !== undefined ? (
-        <div className="career-info">
-          <a
-            href={career.link}
-            target="_blank"
-            rel="nostateer noreferrer"
-          >
-            {career.name}
-          </a>
-          <CgClose
-            onClick={cleanCareer}
-            className="remove-career"
-          />
-        </div>
-      ) : (
-        <p className='career-info void'>
-          (Elige una carrera)
-        </p>
-      )}
+          <div className="career-info">
+            <a
+              href={career.link}
+              target="_blank"
+              rel="nostateer noreferrer"
+            >
+              {career.name}
+            </a>
+            <CgClose
+              onClick={() => dispatch(cleanCareer())}
+              className="remove-career"
+            />
+          </div>
+        ) : (
+          <p className='career-info void'>
+            (Elige una carrera)
+          </p>
+        )}
       <h3>
-        <a
-          href="http://secad.ing.udec.cl/horarios"
-          target="_blank"
-          rel="nostateer noreferrer"
-        >
+        <a href="http://secad.ing.udec.cl/horarios" target="_blank" rel="nostateer noreferrer">
           {periodoUdeC}
         </a>
       </h3>
-
       </StyledMenu>
-      <SubMenu
-        submenu={submenu}
-        toggleSubmenu={toggleSubmenu}
-        careerName={career.name}
-        handleCareer={handleCareer}
-      />
+      <StyledSubmenu id="Submenu" submenu={submenu}>
+        <div onClick={toggleSubmenu}>
+          <IoIosArrowRoundBack className="icon" />
+          <span>Volver</span>
+        </div>
+        <SubmenuList careerName={career.name} handleCareer={handleCareer} />
+      </StyledSubmenu>
     </>
   );
 };
 
-function SubMenu({ submenu, toggleSubmenu, careerName, handleCareer }) {
-  return (
-    <StyledSubmenu id="Submenu" submenu={submenu}>
-      <div onClick={toggleSubmenu}>
-        <IoIosArrowRoundBack className="icon" />
-        <span>Volver</span>
-      </div>
-      <SubmenuList careerName={careerName} handleCareer={handleCareer} />
-    </StyledSubmenu>
-  );
-};
+export function BurgerBtn({ MenuContext, SubmenuContext }) {
+  const { menuState, toggleMenu } = MenuContext;
+  const { submenu, setSubmenu } = SubmenuContext;
 
-export function Burger({ menuState, toggleMenu, submenu, setSubmenu }) {
   function handleToggles() {
     if (submenu) setSubmenu(false);
     toggleMenu();
@@ -97,7 +89,7 @@ const StyledSubmenu = styled.section`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: white;
+    background-color: var(--secondary-color);
     transform: ${({ submenu }) => (submenu ? "translateX(0)" : "translateX(100%)")};
     height: 100vh;
     max-height: 100vh;
@@ -136,7 +128,7 @@ const StyledMenu = styled.nav`
     text-align: right;
     padding: 0 1.5rem 2rem 2rem;
     margin-top: 4.89rem;
-    border-left: 1px solid #10162F;
+    border-left: 1px solid var(--border-color);
     position: absolute;
     top: 0;
     right: 0;
@@ -146,10 +138,10 @@ const StyledMenu = styled.nav`
       padding: 1.5rem 0;
       font-weight: 400;
       letter-spacing: 0.1rem;
-      color: #0D0C1D;
+      color: var(--text-color);
       text-decoration: none;
       transition: color 0.3s linear;
-      border-bottom: 1px solid #090B13;
+      border-bottom: 1px solid var(--border-color);
       user-select: none;
 
       &:hover { color: #10162F; }
@@ -189,7 +181,7 @@ const StyledBurger = styled.button`
     div {
       width: 2rem;
       height: 0.25rem;
-      background: ${({ menuState }) => menuState ? '#0D0C1D' : '#090B13'};
+      background-color: var(--text-color);
       border-radius: 10px;
       transition: all 200ms linear;
       position: relative;

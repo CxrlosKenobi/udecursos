@@ -12,8 +12,8 @@ const localStorageMiddleware = ({ getState }) => {
 
     if (typeof window !== "undefined") {
       const udecursos = {
-        career: career,
-        metadata: { theme: "light" } // Workaround for persistent theme yet to be implemented
+        metadata: { theme: "light" }, // Workaround for persistent theme yet to be implemented
+        career: career
       };
       localStorage.setItem("udecursos_data", JSON.stringify(udecursos));
     }
@@ -30,8 +30,8 @@ const reHydrateStore = () => {
   const udecursos = JSON.parse(localStorage.getItem("udecursos_data"));
   if (udecursos) {
     return {
-      career: udecursos.career,
-      metadata: udecursos.metadata
+      metadata: udecursos.metadata,
+      career: udecursos.career
     };
   }  
 };
@@ -40,8 +40,8 @@ const reHydrateStore = () => {
 // Store configuration
 const store = configureStore({
   reducer: {
-    career: careerReducer,
-    metadata: metadataReducer
+    metadata: metadataReducer,
+    career: careerReducer
   },
   preloadedState: reHydrateStore(),
   middleware: (getDefaultMiddleware) => 

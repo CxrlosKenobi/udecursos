@@ -23,3 +23,11 @@ export function NavItem(props) {
     </li>
   );
 };
+
+export function parseDate(date) {
+  let y = date.split('T')[0].split('-')[0]
+  let m = date.split('T')[0].split('-')[1]
+  let d = date.split('T')[0].split('-')[2]
+
+  return `${d}/${m}/${y}`
+};

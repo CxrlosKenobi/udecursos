@@ -10,8 +10,8 @@ import store from "./redux/store";
 //
 import "@atlaskit/css-reset";
 
-export default function App() {
 
+export default function App() {
   return (
     <Provider store={store}>
       <div id="UdeCursos">
