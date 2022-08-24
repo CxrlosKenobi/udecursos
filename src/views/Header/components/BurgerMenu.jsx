@@ -6,7 +6,7 @@ import { CgClose } from 'react-icons/cg';
 import styled from "styled-components";
 //
 import { cleanCareer } from "../../../redux/careerSlice";
-import { SubmenuList } from "./CareerSelector";
+import { SubmenuList } from "./CareerHandler";
 import "./BurgerMenu.scss";
 
 

@@ -1,12 +1,10 @@
-import { useRef, useEffect, useCallback } from 'react';
+import { useRef, useCallback } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 import { useDispatch, useSelector } from "react-redux";
 //
-import { getCareer, getCareerTasks } from "../../APIs/MongoDB";
 import { mallaSelector, careerSelector, stateMalla } from "../../redux/careerSlice";
 import { Kickstart } from './Kickstart';
 import Semester from './components/Semester';
-//
 import './index.scss';
 
 export function Malla() {
@@ -14,16 +12,6 @@ export function Malla() {
   const career = useSelector(careerSelector);
   const malla = useSelector(mallaSelector);
   const mallaRef = useRef(null);
-
-  useEffect(() => {
-    async function careerData() {
-      const _career = await getCareer("INF");
-      const _tasks = await getCareerTasks("INF");
-      const _malla = buildMalla(_career, _tasks);
-      dispatch(stateMalla(_malla));
-    }
-    careerData();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleDragEnd = useCallback(
     function handleDragEnd(result) {
@@ -115,19 +103,4 @@ export function Malla() {
       )}
     </main>
   );
-};
-
-function buildMalla(career, _tasks) {
-  let malla = { semesters: {} };
-  Object.values(career.semesters).map((semester) => {
-    const builtSemester = {
-      ...semester,
-      tasks: _tasks.filter((task) => semester.tasksCodes.includes(task.code))
-    };
-
-    delete builtSemester.tasksCodes;
-    return malla.semesters[semester.id] = builtSemester;
-  });
-  
-  return malla;
 };

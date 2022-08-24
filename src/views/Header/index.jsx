@@ -6,9 +6,9 @@ import { CgClose } from 'react-icons/cg';
 //
 import ThemeHandler from './components/ThemeHandler';
 import BurgerMenu, { BurgerBtn } from './components/BurgerMenu';
-import { Accordion } from './components/CareerSelector';
+import Selector from './components/CareerHandler';
 import { NavItem } from '../../utils/helpers';
-import { setCareerInfo, cleanCareer, careerSelector } from '../../redux/careerSlice';
+import { cleanCareer, careerSelector } from '../../redux/careerSlice';
 import logo from '../../assets/logo.png';
 import './index.scss';
 
@@ -25,11 +25,6 @@ export default function Header() {
   const toggleSubmenu = () => setSubmenu(!submenu);
 
   const periodoUdeC = `UdeC ${new Date().getFullYear()}-2`;
-
-  function handleCareer(chosenCareer) {
-    dispatch(setCareerInfo(chosenCareer));
-    setAccordionState(false);
-  };
 
   return (
     <header>
@@ -74,18 +69,17 @@ export default function Header() {
           MenuContext={{ menuState, toggleMenu }}
           SubmenuContext={{ submenu, setSubmenu }}
         />
-        <BurgerMenu
+        {/* <BurgerMenu
           MenuContext={{ menuState, toggleMenu }}
           SubmenuContext={{ submenu, toggleSubmenu }}
           career={career.info}
           handleCareer={handleCareer}
           periodoUdeC={periodoUdeC}
-        />
+        /> */}
       </div>
-      <Accordion
+      <Selector
         careerName={career.info.name}
-        handler={handleCareer}
-        accordionState={accordionState}
+        accordionContext={{ accordionState, setAccordionState }}
       />
     </header>
   );

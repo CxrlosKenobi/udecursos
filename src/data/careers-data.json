@@ -2,33 +2,27 @@
 	"carreras": [
 		{
 			"code": "INF",
-			"name": "Ing. Civil Informática",
-			"link": "https://fi.udec.cl/departamentos/informatica-y-cs-de-la-computacion/"
+			"name": "Ing. Civil Informática"
 		},
 		{
 			"code": "CFIS",
-			"name": "Ciencias Físicas",
-			"link": "https://admision.udec.cl/ciencias-fisicas/"
+			"name": "Ciencias Físicas"
 		},
 		{
 			"code": "IFIS",
-			"name": "Ing. Física",
-			"link": "https://admision.udec.cl/ciencias-fisicas/"
+			"name": "Ing. Física"
 		},
 		{
 			"code": "AERO",
-			"name": "Ing. Civil Aeroespacial",
-			"link": "https://fi.udec.cl/pregrado/ingenieria-civil-aeroespacial/"
+			"name": "Ing. Civil Aeroespacial"
 		},
 		{
 			"code": "ASTRO",
-			"name": "Astronomía",
-			"link": "https://admision.udec.cl/astronomia/"
+			"name": "Astronomía"
 		},
 		{
 			"code": "ELEC",
-			"name": "Ing. Civil Electrónica",	
-			"link": "https://fi.udec.cl/pregrado/ingenieria-civil-electronica/"
+			"name": "Ing. Civil Electrónica"
 		}
 	]
 }

@@ -1,18 +1,32 @@
+import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 //
+import { setCareerInfo, stateMalla } from '../../../redux/careerSlice';
+import { getCareer, getCareerTasks } from '../../../APIs/MongoDB';
 import data from '../../../data/careers-data';
-import "./CareerSelector.scss";
+import "./CareerHandler.scss";
 
+export default function Selector({ careerName, accordionContext }) {
+  const { accordionState, setAccordionState } = accordionContext;
+  const dispatch = useDispatch();
+  
+  function careerHandler(chosen) {
+    dispatch(setCareerInfo(chosen));
+    setAccordionState(false);
 
-const carreras = data.carreras;
+    mallaBuilder(chosen.code).then((malla) => {
+      dispatch(stateMalla(malla));
+    }).catch((err) => {
+      console.log("Error on building malla: ", err);
+    });
+  };
 
-export function Accordion({ careerName, handler, accordionState }) {
   return (
     <StyledAccordion id='Accordion' accordionState={accordionState}>
       <ul>
         {carreras.map((option) => (
           <li key={option.code}
-              onClick={(() => handler(option))}
+              onClick={(() => careerHandler(option))}
               className={option.name === careerName ? 'chosen' : ''}
           >
             {option.name}
@@ -23,6 +37,27 @@ export function Accordion({ careerName, handler, accordionState }) {
   );
 };
 
+async function mallaBuilder(code) {
+  const career = await getCareer(code);
+  const _tasks = await getCareerTasks(code);
+
+  let malla = { semesters: {} };
+  Object.values(career.semesters).map((semester) => {
+    const builtSemester = {
+      ...semester,
+      tasks: _tasks.filter((task) => semester.tasksCodes.includes(task.code))
+    };
+
+    delete builtSemester.tasksCodes;
+    return malla.semesters[semester.id] = builtSemester;
+  });
+  
+  return malla;
+};
+
+//
+
+const carreras = data.carreras;
 export function SubmenuList({ careerName, handleCareer }) {
   return (
     <section id="Career-list-wrapper">
@@ -39,7 +74,6 @@ export function SubmenuList({ careerName, handleCareer }) {
     </section>
   );
 };
-
 
 const StyledAccordion = styled.section`
   background-color: #FFF;
