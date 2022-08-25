@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 //
+import { pushProcess, updateProcess } from '../../../redux/processesSlice';
 import { setCareerInfo, stateMalla } from '../../../redux/careerSlice';
 import { getCareer, getCareerTasks } from '../../../APIs/MongoDB';
 import data from '../../../data/careers-data';
@@ -14,11 +15,15 @@ export default function Selector({ careerName, accordionContext }) {
     dispatch(setCareerInfo(chosen));
     setAccordionState(false);
 
+    dispatch(pushProcess({ id: "malla" }));
     mallaBuilder(chosen.code).then((malla) => {
       dispatch(stateMalla(malla));
+      dispatch(updateProcess({ id: "malla", status: "success" }));
     }).catch((err) => {
-      console.log("Error on building malla: ", err);
+      console.error("Error on building malla: ", err);
+      dispatch(updateProcess({ id: "malla", status: "error" }));
     });
+    
   };
 
   return (

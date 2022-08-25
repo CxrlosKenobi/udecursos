@@ -1,6 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 //
 import metadataReducer from "./metadataSlice";
+import processesReducer from "./processesSlice";
 import careerReducer from "./careerSlice";
 
 // Middleware
@@ -13,6 +14,7 @@ const localStorageMiddleware = ({ getState }) => {
     if (typeof window !== "undefined") {
       const udecursos = {
         metadata: { theme: "light" }, // Workaround for persistent theme yet to be implemented
+        processes: { queue: [] },
         career: career
       };
       localStorage.setItem("udecursos_data", JSON.stringify(udecursos));
@@ -31,6 +33,7 @@ const reHydrateStore = () => {
   if (udecursos) {
     return {
       metadata: udecursos.metadata,
+      processes: udecursos.processes,
       career: udecursos.career
     };
   }  
@@ -41,6 +44,7 @@ const reHydrateStore = () => {
 const store = configureStore({
   reducer: {
     metadata: metadataReducer,
+    processes: processesReducer,
     career: careerReducer
   },
   preloadedState: reHydrateStore(),
