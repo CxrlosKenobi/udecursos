@@ -69,13 +69,12 @@ export default function Header() {
           MenuContext={{ menuState, toggleMenu }}
           SubmenuContext={{ submenu, setSubmenu }}
         />
-        {/* <BurgerMenu
+        <BurgerMenu
           MenuContext={{ menuState, toggleMenu }}
           SubmenuContext={{ submenu, toggleSubmenu }}
-          career={career.info}
-          handleCareer={handleCareer}
+          career={career}
           periodoUdeC={periodoUdeC}
-        /> */}
+        />
       </div>
       <Selector
         careerName={career.info.name}

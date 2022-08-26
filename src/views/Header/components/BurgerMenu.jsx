@@ -5,18 +5,34 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import { CgClose } from 'react-icons/cg';
 import styled from "styled-components";
 //
-import { cleanCareer } from "../../../redux/careerSlice";
-import { SubmenuList } from "./CareerHandler";
+import { pushProcess, updateProcess } from "../../../redux/processesSlice";
+import { cleanCareer, setCareerInfo, stateMalla } from "../../../redux/careerSlice";
+import { mallaBuilder, SubmenuList } from "./CareerHandler";
 import "./BurgerMenu.scss";
 
 
 export default function BurgerMenu({
   MenuContext, SubmenuContext,
-  career, handleCareer, periodoUdeC }) {
+  career, periodoUdeC }) {
   const dispatch = useDispatch();
 
   const { menuState, toggleMenu } = MenuContext;
   const { submenu, toggleSubmenu } = SubmenuContext;
+
+  function careerHandler(chosen) {
+    dispatch(setCareerInfo(chosen));
+    toggleSubmenu();
+    setTimeout(() => toggleMenu(), 200);
+
+    dispatch(pushProcess({ id: "malla" }));
+    mallaBuilder(chosen.code).then((malla) => {
+      dispatch(stateMalla(malla));
+      dispatch(updateProcess({ id: "malla", status: "success" }));
+    }).catch((err) => {
+      console.error("Error on building malla: ", err);
+      dispatch(updateProcess({ id: "malla", status: "error" }));
+    });
+  }
 
   return (
     <>
@@ -27,14 +43,14 @@ export default function BurgerMenu({
           <span onClick={toggleSubmenu}>Elegir Carrera</span>
           <FiChevronRight className="icon" />
         </div>
-        {career.name !== undefined ? (
+        {career.info.name !== undefined ? (
           <div className="career-info">
             <a
               href={career.link}
               target="_blank"
               rel="nostateer noreferrer"
             >
-              {career.name}
+              {career.info.name}
             </a>
             <CgClose
               onClick={() => dispatch(cleanCareer())}
@@ -57,7 +73,7 @@ export default function BurgerMenu({
           <IoIosArrowRoundBack className="icon" />
           <span>Volver</span>
         </div>
-        <SubmenuList careerName={career.name} handleCareer={handleCareer} />
+        <SubmenuList careerName={career.info.name} careerHandler={careerHandler} />
       </StyledSubmenu>
     </>
   );
@@ -84,7 +100,7 @@ export function BurgerBtn({ MenuContext, SubmenuContext }) {
 const StyledSubmenu = styled.section`
   display: none;
 
-  @media only screen and (max-width: 846px) {
+  @media only screen and (max-width: 930px) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -114,7 +130,7 @@ const StyledSubmenu = styled.section`
 
 const StyledMenu = styled.nav`
   display: none;
-  @media only screen and (max-width: 846px) {
+  @media only screen and (max-width: 930px) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -159,7 +175,7 @@ const StyledMenu = styled.nav`
 const StyledBurger = styled.button`
   display: none;
 
-  @media only screen and (max-width: 846px) {
+  @media only screen and (max-width: 930px) {
     position: relative;
     top: 25%;
     right: 1rem;
@@ -175,6 +191,7 @@ const StyledBurger = styled.button`
     z-index: 10;
     transform: scale(0.9);
     z-index: 3;
+    order: 3;
     &:focus {
       outline: none;
     }

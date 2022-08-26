@@ -1,4 +1,14 @@
 .theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 .4rem;
+
+  @media only screen and (max-width: 930px) {
+    order: 1;
+    margin-left: 2.5%;
+  }
+
   button {
     background: none;
     border: none;
@@ -6,6 +16,7 @@
     svg {
       color: var(--theme-icon-color);
       cursor: pointer;
+      font-size: 1rem;
     }
   }
 }

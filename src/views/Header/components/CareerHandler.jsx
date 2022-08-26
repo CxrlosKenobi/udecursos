@@ -42,7 +42,7 @@ export default function Selector({ careerName, accordionContext }) {
   );
 };
 
-async function mallaBuilder(code) {
+export async function mallaBuilder(code) {
   const career = await getCareer(code);
   const _tasks = await getCareerTasks(code);
 
@@ -63,13 +63,13 @@ async function mallaBuilder(code) {
 //
 
 const carreras = data.carreras;
-export function SubmenuList({ careerName, handleCareer }) {
+export function SubmenuList({ careerName, careerHandler }) {
   return (
     <section id="Career-list-wrapper">
       <ul>
         {carreras.map((option) => (
           <li key={option.code}
-              onClick={(() => handleCareer(option))}
+              onClick={(() => careerHandler(option))}
               className={option.name === careerName ? 'chosen' : ''}
           >
             {option.name}
