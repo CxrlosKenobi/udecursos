@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { FiChevronRight } from "react-icons/fi";
@@ -11,9 +12,7 @@ import { mallaBuilder, SubmenuList } from "./CareerHandler";
 import "./BurgerMenu.scss";
 
 
-export default function BurgerMenu({
-  MenuContext, SubmenuContext,
-  career, periodoUdeC }) {
+const BurgerMenu = forwardRef(({ MenuContext, SubmenuContext, career, periodoUdeC }, ref) => {
   const dispatch = useDispatch();
 
   const { menuState, toggleMenu } = MenuContext;
@@ -36,11 +35,11 @@ export default function BurgerMenu({
 
   return (
     <>
-      <StyledMenu id="BurgerMenu" menuState={menuState}>
+      <StyledMenu ref={ref} id="BurgerMenu" menuState={menuState}>
         <Link to="/" onClick={toggleMenu}>Inicio</Link>
         <Link to="/Malla" onClick={toggleMenu}>Malla</Link>
-        <div>
-          <span onClick={toggleSubmenu}>Elegir Carrera</span>
+        <div onClick={toggleSubmenu}>
+          <span>Elegir Carrera</span>
           <FiChevronRight className="icon" />
         </div>
         {career.info.name !== undefined ? (
@@ -77,7 +76,9 @@ export default function BurgerMenu({
       </StyledSubmenu>
     </>
   );
-};
+});
+
+export default BurgerMenu;
 
 export function BurgerBtn({ MenuContext, SubmenuContext }) {
   const { menuState, toggleMenu } = MenuContext;
@@ -89,7 +90,7 @@ export function BurgerBtn({ MenuContext, SubmenuContext }) {
   };
 
   return (
-    <StyledBurger menuState={menuState} onClick={handleToggles}>
+    <StyledBurger id="BurgerBtn" menuState={menuState} onClick={handleToggles}>
       <div />
       <div />
       <div />
@@ -183,7 +184,7 @@ const StyledBurger = styled.button`
     flex-direction: column;
     justify-content: space-around;
     width: 2.6rem;
-    height: 2.6rem;
+    height: 2.7rem;
     background: transparent;
     border: none;
     padding: 5px;

@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 //
@@ -7,13 +8,14 @@ import { getCareer, getCareerTasks } from '../../../APIs/MongoDB';
 import data from '../../../data/careers-data';
 import "./CareerHandler.scss";
 
-export default function Selector({ careerName, accordionContext }) {
-  const { accordionState, setAccordionState } = accordionContext;
+
+const Selector = forwardRef(({ careerName, selectorContext }, ref) => {
+  const { selectorState, setSelectorState } = selectorContext;
   const dispatch = useDispatch();
   
   function careerHandler(chosen) {
     dispatch(setCareerInfo(chosen));
-    setAccordionState(false);
+    setSelectorState(false);
 
     dispatch(pushProcess({ id: "malla" }));
     mallaBuilder(chosen.code).then((malla) => {
@@ -23,11 +25,10 @@ export default function Selector({ careerName, accordionContext }) {
       console.error("Error on building malla: ", err);
       dispatch(updateProcess({ id: "malla", status: "error" }));
     });
-    
   };
 
   return (
-    <StyledAccordion id='Accordion' accordionState={accordionState}>
+    <StyledAccordion ref={ref} id='Accordion' selectorState={selectorState}>
       <ul>
         {carreras.map((option) => (
           <li key={option.code}
@@ -40,7 +41,9 @@ export default function Selector({ careerName, accordionContext }) {
       </ul>
     </StyledAccordion>
   );
-};
+});
+export default Selector;
+
 
 export async function mallaBuilder(code) {
   const career = await getCareer(code);
@@ -92,7 +95,7 @@ const StyledAccordion = styled.section`
   border: 1px solid #10162f;
   position: relative;
   top: 0;
-  transform: ${({ accordionState }) => accordionState ? 'translateY(0)' : 'translateY(-110%)'};
+  transform: ${({ selectorState }) => selectorState ? 'translateY(0)' : 'translateY(-110%)'};
   transition: transform 200ms ease-in-out;
   z-index: -1;
 

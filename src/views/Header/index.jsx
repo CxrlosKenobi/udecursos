@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { GoSync } from 'react-icons/go';
@@ -7,8 +7,8 @@ import { CgClose } from 'react-icons/cg';
 import ThemeHandler from './components/ThemeHandler';
 import BurgerMenu, { BurgerBtn } from './components/BurgerMenu';
 import Selector from './components/CareerHandler';
-import { NavItem } from '../../utils/helpers';
 import { cleanCareer, careerSelector } from '../../redux/careerSlice';
+import { useOutsideClick, NavItem } from '../../utils/helpers';
 import logo from '../../assets/logo.png';
 import './index.scss';
 
@@ -16,15 +16,20 @@ import './index.scss';
 export default function Header() {
   const dispatch = useDispatch();
   const career = useSelector(careerSelector);
-
+  
+  const selectorNode = useRef(null);
+  const menuNode = useRef(null);
+  const [selectorState, setSelectorState] = useOutsideClick(selectorNode, false, "toggle-selector");
+  // const [menuState, setMenuState] = useOutsideClick(menuNode, false, "BurgerBtn");
   const [menuState, setMenuState] = useState(false);
   const [submenu, setSubmenu] = useState(false);
-  const [accordionState, setAccordionState] = useState(false);
-
+  
+  const toggleSelector = () => setSelectorState(!selectorState);
   const toggleMenu = () => setMenuState(!menuState);
   const toggleSubmenu = () => setSubmenu(!submenu);
 
   const periodoUdeC = `UdeC ${new Date().getFullYear()}-2`;
+
 
   return (
     <header>
@@ -49,11 +54,11 @@ export default function Header() {
                 <a href={career.info.link} target="_blank" rel="nostateer noreferrer">
                   {career.info.name}
                 </a>
-                <GoSync onClick={() => setAccordionState(!accordionState)} className="sync-icon" />
+                <GoSync id="toggle-selector" onClick={toggleSelector} className="sync-icon" />
                 <CgClose onClick={() => dispatch(cleanCareer())} className="remove-career" />
               </div>
             ) : (
-              <p onClick={() => setAccordionState(!accordionState)} className='career void'>
+              <p onClick={toggleSelector} className='career void'>
                 (Click para elegir carrera)
               </p>
             )}
@@ -70,6 +75,7 @@ export default function Header() {
           SubmenuContext={{ submenu, setSubmenu }}
         />
         <BurgerMenu
+          ref={menuNode}
           MenuContext={{ menuState, toggleMenu }}
           SubmenuContext={{ submenu, toggleSubmenu }}
           career={career}
@@ -77,8 +83,9 @@ export default function Header() {
         />
       </div>
       <Selector
+        ref={selectorNode}
         careerName={career.info.name}
-        accordionContext={{ accordionState, setAccordionState }}
+        selectorContext={{ selectorState, setSelectorState }}
       />
     </header>
   );

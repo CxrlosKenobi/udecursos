@@ -1,19 +1,29 @@
-import { useRef, useCallback } from 'react';
-import { DragDropContext } from 'react-beautiful-dnd';
+import { useEffect, useRef, useCallback } from "react";
+import { DragDropContext } from "react-beautiful-dnd";
 import { useDispatch, useSelector } from "react-redux";
+import { gsap } from "gsap";
 //
-import { selectProcesses } from '../../redux/processesSlice';
+import SkeletonLoader from "./components/SkeletonLoader";
+import { selectProcesses } from "../../redux/processesSlice";
 import { careerSelector, stateMalla } from "../../redux/careerSlice";
-import { Kickstart } from './Kickstart';
-import Semester from './components/Semester';
-import './index.scss';
+import { Kickstart } from "./Kickstart";
+import Semester from "./components/Semester";
+import "./index.scss";
 
 export function Malla() {
   const dispatch = useDispatch();
   const career = useSelector(careerSelector);
   const mallaRef = useRef(null);
   const processes = useSelector(selectProcesses);
-  const mallaLoad = processes.find(p => p.id === 'malla');
+  const mallaLoad = processes.find(p => p.id === "malla");
+
+  useEffect(() => {
+    career.info.name &&
+      gsap.fromTo(mallaRef.current,
+        { opacity: 0, duration: 0.35 },
+        { opacity: 1, duration: 0.6 }
+      )
+  }, [career.info.name, mallaLoad.status])
 
   const handleDragEnd = useCallback(
     function handleDragEnd(result) {
@@ -87,23 +97,24 @@ export function Malla() {
   );
 
   return (
-    <main id="body-malla">
-      {mallaLoad && mallaLoad.status === "pending" && (
-        <h2>Cargando malla...</h2>
-      )}
-      {career.info.name
-        ? (
-        <DragDropContext onDragEnd={handleDragEnd}>
-          <div id='container-malla' ref={mallaRef}>
-            {career.malla.semesters && Object.values(career.malla.semesters).map((semester) => {
-              return (
-                <Semester key={semester.id} content={semester} tasks={semester.tasks} />
-              );
-            })}
-          </div>
-        </DragDropContext>
-        ) : (
-        <Kickstart />
+    <main id="body-malla" ref={mallaRef}>
+      {mallaLoad && mallaLoad.status === "pending" ? (
+        <SkeletonLoader />
+      ) : (
+        career.info.name
+          ? (
+          <DragDropContext onDragEnd={handleDragEnd}>
+            <div id="container-malla">
+              {Object.values(career.malla.semesters).map((semester) => {
+                return (
+                  <Semester key={semester.id} content={semester} tasks={semester.tasks} />
+                );
+              })}
+            </div>
+          </DragDropContext>
+          ) : (
+          <Kickstart />
+        )
       )}
     </main>
   );
