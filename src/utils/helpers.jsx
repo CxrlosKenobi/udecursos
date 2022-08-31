@@ -7,7 +7,6 @@ export const useOutsideClick = (ref, initialState, exceptionID) => {
   const [isActive, setIsActive] = useState(initialState);
   
   useEffect(() => {
-    console.log("Clicked on the: ", ref);
     const onClick = (e) => {
       if (ref.current !== null && !ref.current.contains(e.target) && !exceptionID.includes(e.target.id)) {
         setIsActive(!isActive);

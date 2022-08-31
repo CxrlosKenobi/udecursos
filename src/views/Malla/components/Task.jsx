@@ -8,6 +8,7 @@ const Container = styled.div`
   
   height: 80px;
   width: 90px;
+
   padding: 5px;
   margin-bottom: 10px;
 
@@ -38,7 +39,7 @@ const Code = styled.div`
 `;
 const Content = styled.div`
   font-family: "Apercu Pro", sans-serif black;
-  font-size: ${(props) => (props.shrink ? "10px" : "12px")};
+  font-size: ${(props) => (props.shrink) ? "10px" : "12px"};
   font-color: #10162F;
   font-weight: bold;
   line-height: 1.2;
@@ -70,7 +71,7 @@ export default function Task({ index, content }) {
           isDragging={snapshot.isDragging}
         >
           <Code>{content.code}</Code>
-          <Content shrink={content.shrink ? true : false}>
+          <Content shrink={content.properties.shrink}>
             {content.name}
           </Content>
           <Credits>{content.credits}</Credits>
