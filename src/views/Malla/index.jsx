@@ -15,7 +15,8 @@ export function Malla() {
   const career = useSelector(careerSelector);
   const mallaRef = useRef(null);
   const processes = useSelector(selectProcesses);
-  const mallaLoad = processes.find(p => p.id === "malla");
+  let mallaLoad = processes.find(p => p.id === "malla");
+  if (!mallaLoad) mallaLoad = { status: "" };
 
   useEffect(() => {
     career.info.name &&
