@@ -18,6 +18,10 @@ export const careerSlice = createSlice({
     stateMalla: (state, action) => {
       state.malla = action.payload;
     },
+    passTask: (state, action) => {
+      const { col, index, passed } = action.payload;
+      state.malla.semesters[col].tasks[index].properties.done = passed;
+    },
     cleanCareer: (state) => {
       state.info = {};
       state.malla = {};
@@ -25,7 +29,12 @@ export const careerSlice = createSlice({
   }
 });
 
-export const { setCareerInfo, cleanCareer, stateMalla } = careerSlice.actions;
+export const {
+  setCareerInfo,
+  stateMalla,
+  passTask,
+  cleanCareer,
+} = careerSlice.actions;
 export const careerSelector = state => state.career;
 export const mallaSelector = state => state.career.malla;
 export default careerSlice.reducer;

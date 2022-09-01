@@ -25,13 +25,6 @@ const Title = styled.h3`
   padding: 8px;
   user-select: none;
 `;
-const Credits = styled.h4`
-  font-family: "Suisse Int\'l Mono", monospace;
-  color: var(--children-color);
-  font-size: 12px;
-  user-select: none;
-  margin-top: 0px;
-`;
 const TaskList = styled.div`
   margin: 4px;
   padding: 4px 4px 0 4px;
@@ -45,11 +38,9 @@ const TaskList = styled.div`
 `;
 
 export default function Semester({ content, tasks }) {
-  // const credits = props.tasks.reduce((acc, task) => acc + parseInt(task.credits), 0);
   return (
     <Container>
       <Title>{content.name}</Title>
-      {/* <Credits id={`column-credits-${props.column.id}`}>{credits}</Credits> */}
       <Droppable droppableId={content.id}>
         {(provided, snapshot) => (
           <TaskList
@@ -58,7 +49,11 @@ export default function Semester({ content, tasks }) {
             isDraggingOver={snapshot.isDraggingOver}
           >
             {tasks.map((task, index) => (
-              <Task key={task.code} index={index} content={task} />
+              <Task
+                key={task.code}
+                index={index}
+                content={{ col: content.id, ...task }}
+              />
             ))}
             {provided.placeholder}
           </TaskList>
