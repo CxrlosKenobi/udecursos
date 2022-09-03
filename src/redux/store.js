@@ -9,11 +9,11 @@ const localStorageMiddleware = ({ getState }) => {
   return (next) => (action) => {
     const result = next(action);
     const career = getState().career;
-    // const metadata = getState().metadata;
+    const metadata = getState().metadata;
 
     if (typeof window !== "undefined") {
       const udecursos = {
-        metadata: { theme: "light" }, // Workaround for persistent theme yet to be implemented
+        metadata: metadata,
         processes: { queue: [] },
         career: career
       };
