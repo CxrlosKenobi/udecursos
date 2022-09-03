@@ -37,4 +37,5 @@ export const {
 } = careerSlice.actions;
 export const careerSelector = state => state.career;
 export const mallaSelector = state => state.career.malla;
+export const semestersSelector = state => state.career.malla.semesters;
 export default careerSlice.reducer;

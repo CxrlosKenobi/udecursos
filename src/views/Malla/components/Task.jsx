@@ -1,8 +1,9 @@
-import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Draggable } from 'react-beautiful-dnd';
 import styled from 'styled-components';
 //
+import { semestersSelector } from '../../../redux/careerSlice';
 import { passTask } from '../../../redux/careerSlice';
 import _passed from "../../../assets/passed.png";
 
@@ -70,9 +71,9 @@ const ShadeLayer = styled.div`
   top: 0px;
   left: 0px;
   border-radius: 9px;
-  background: ${props => (props.reqs.length > 0) ? "rgba(0, 0, 0, 0.45)" : "none"};
+  background: ${props => (props.passedReqs) ? "none" : "rgba(0, 0, 0, 0.45)"};
+  transition: background 0.5s ease-in-out;
 `;
-
 const Passed = styled.img`
   height: 100%;
   width: 100%;
@@ -80,23 +81,55 @@ const Passed = styled.img`
   top: 0;
   left: 0;
   z-index: 2;
-  opacity: ${props => (props.passed) ? "1" : "0"};
+  opacity: ${(props) => (props.passed) ? "1" : "0"};
   transition: opacity 130ms linear;
 `;
 
 export default function Task({ index, content }) {
   const dispatch = useDispatch();
-  const [passed, setPassed] = useState(content.properties.done || false);
+  const semesters = useSelector(semestersSelector);
+  const [passedReqs, setPassedReqs] = useState(false);
+
+  function taskFinder(code) { // NOTE: Yup, pending to optimize
+    let _task;
+    Object.values(semesters).forEach((semester) => {
+      semester.tasks.forEach((task) => {
+        if (task.code === code) {
+          _task = task;
+        }
+      });
+    });
+    if (!_task) {
+      console.warn(`There is no such task with code ${code}`)
+      return null;
+    } else return _task;
+  };
 
   function onClick() {
-    setPassed(!passed);
     dispatch(passTask({
       col: content.col,
       index: index,
-      passed: !passed,
+      passed: !content.properties.done
     }));
   };
-  
+
+  useEffect(() => {
+    if (content.prerequisites.length > 0) {
+      let passedReqs = 0;
+      content.prerequisites.forEach((prerequisite) => {
+        const prereq = taskFinder(prerequisite);
+        if (!prereq) {
+          passedReqs ++;
+          return;
+        }
+        if (prereq.properties.done) passedReqs++;
+      });
+      setPassedReqs(passedReqs === content.prerequisites.length);
+    } else {
+      setPassedReqs(true);
+    }
+  }, [semesters]); // eslint-disable-line react-hooks/exhaustive-deps
+
   return (
     <Draggable draggableId={content.code} index={index}>
       {(provided, snapshot) => (
@@ -108,11 +141,10 @@ export default function Task({ index, content }) {
         >
           <Passed
             src={_passed}
-            alt="passed"
-            passed={passed}
+            passed={content.properties.done}
             onClick={onClick}
           />
-          <ShadeLayer reqs={content.prerequisites} />
+          <ShadeLayer passedReqs={passedReqs} />
           <Code>{content.code}</Code>
           <Content shrink={content.properties.shrink}>
             {content.name}

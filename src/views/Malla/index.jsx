@@ -108,7 +108,11 @@ export function Malla() {
             <div id="container-malla">
               {Object.values(career.malla.semesters).map((semester) => {
                 return (
-                  <Semester key={semester.id} content={semester} tasks={semester.tasks} />
+                  <Semester
+                    key={semester.id}
+                    content={semester}
+                    tasks={semester.tasks}
+                  />
                 );
               })}
             </div>
