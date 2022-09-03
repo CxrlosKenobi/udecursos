@@ -5,24 +5,8 @@
 			"name": "Ing. Civil Informática"
 		},
 		{
-			"code": "CFIS",
-			"name": "Ciencias Físicas"
-		},
-		{
-			"code": "IFIS",
-			"name": "Ing. Física"
-		},
-		{
 			"code": "AERO",
 			"name": "Ing. Civil Aeroespacial"
-		},
-		{
-			"code": "ASTRO",
-			"name": "Astronomía"
-		},
-		{
-			"code": "ELEC",
-			"name": "Ing. Civil Electrónica"
 		}
 	]
 }
