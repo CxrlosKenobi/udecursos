@@ -1,6 +1,12 @@
 <p align="center">
   <h1 align="center">UdeCursos</h1>
   <p align="center">
+      <a href="https://www.mongodb.com/">
+      <img
+        src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+        target="_blank" rel="noopener noreferrer"
+      />
+    </a>
     <a href="https://reactjs.org/">
       <img 
         src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
@@ -24,18 +30,6 @@
         src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white"
         target="_blank" rel="noopener noreferrer"
        />
-    </a>
-    <a href="https://www.mongodb.com/">
-      <img
-        src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
-        target="_blank" rel="noopener noreferrer"
-      />
-    </a>
-    <a href="https://www.python.org/">
-      <img
-        src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
-        target="_blank" rel="noopener noreferrer"
-      />
     </a>
   </p>
 </p>
