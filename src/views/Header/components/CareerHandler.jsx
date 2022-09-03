@@ -4,7 +4,7 @@ import styled from 'styled-components';
 //
 import { pushProcess, updateProcess } from '../../../redux/processesSlice';
 import { setCareerInfo, stateMalla } from '../../../redux/careerSlice';
-import { getCareer, getCareerTasks } from '../../../APIs/MongoDB';
+import { getCareer, getCareerTasks } from '../../../APIs/Realm';
 import data from '../../../data/careers-data';
 import "./CareerHandler.scss";
 
@@ -49,6 +49,11 @@ export async function mallaBuilder(code) {
   const career = await getCareer(code);
   const _tasks = await getCareerTasks(code);
 
+  let orderedSemesters = Object.values(career.semesters).sort((a, b) => {
+    return a.id.localeCompare(b.id);
+  });
+  career.semesters = orderedSemesters;
+  
   let malla = { semesters: {} };
   Object.values(career.semesters).map((semester) => {
     const builtSemester = {
