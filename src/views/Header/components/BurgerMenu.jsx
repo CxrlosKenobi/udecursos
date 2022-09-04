@@ -8,6 +8,7 @@ import styled from "styled-components";
 //
 import { pushProcess, updateProcess } from "../../../redux/processesSlice";
 import { cleanCareer, setCareerInfo, stateMalla } from "../../../redux/careerSlice";
+import { ShadeLayer } from "../../../utils/helpers";
 import { mallaBuilder, SubmenuList } from "./CareerHandler";
 import "./BurgerMenu.scss";
 
@@ -35,6 +36,7 @@ const BurgerMenu = forwardRef(({ MenuContext, SubmenuContext, career, periodoUde
 
   return (
     <>
+      <ShadeLayer state={menuState} onClick={toggleMenu} />
       <StyledMenu ref={ref} id="BurgerMenu" menuState={menuState}>
         <Link to="/" onClick={toggleMenu}>Inicio</Link>
         <Link to="/Malla" onClick={toggleMenu}>Malla</Link>

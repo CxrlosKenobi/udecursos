@@ -1,9 +1,9 @@
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 //
 import { MoonIcon, SunIcon } from './ThemeIcons';
 import { setTheme, metadataSelector } from "../../../redux/metadataSlice";
 import "./ThemeHandler.scss";
-import { useEffect } from 'react';
 
 export default function ThemeHandler() {
   const dispatch = useDispatch();

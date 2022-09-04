@@ -1,5 +1,6 @@
 import { useState, useEffect, useLayoutEffect } from  "react";
 import { Link, useLocation } from "react-router-dom";
+import styled from "styled-components";
 //
 import "./helpers.scss";
 
@@ -34,6 +35,21 @@ export function ScrollWrapper({ children }){
   return children;
 };
 
+export const ShadeLayer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, .4); 
+  transition: opacity 0.3s ease-in-out;
+  opacity: ${props => props.state ? '1' : '0'};
+  pointer-events: ${props => props.state ? 'auto' : 'none'};
+  cursor: ${props => props.state ? 'pointer' : 'default'};
+`;
 
 export function NavItem(props) {
   return (

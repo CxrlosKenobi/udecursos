@@ -28,6 +28,7 @@ html {
   --theme-icon-color: #10162F;
   --highlight-color: #4C2BEE;
   --highlight-color2: #FFD300;
+  --shade-layer-color: rgba(0, 0, 0, 0.35);
 }
 
 html.dark {
@@ -39,6 +40,7 @@ html.dark {
   --theme-icon-color: white;
   --highlight-color: #FFD300;
   --highlight-color2: #4C2BEE;
+  --shade-layer-color: rgba(0, 0, 0, 0.45);
 }
 
 html.theming, html.theming * {

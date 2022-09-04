@@ -24,7 +24,6 @@ const Container = styled.div`
   align-content: center;
   position: relative;
   user-select: none;
-
   background-color: ${props => (props.isDragging ? 'var(--highlight-color2)' : "var(--secondary-color)")};
   &:focus {
     outline: 2.2px solid #4C2BEE;
@@ -70,8 +69,8 @@ const ShadeLayer = styled.div`
   z-index: 1;
   top: 0px;
   left: 0px;
-  border-radius: 9px;
-  background: ${props => (props.passedReqs) ? "none" : "rgba(0, 0, 0, 0.45)"};
+  border-radius: 8px;
+  background: ${props => (props.passedReqs) ? "none" : "var(--shade-layer-color)"};
   transition: background 0.5s ease-in-out;
 `;
 const Passed = styled.img`
