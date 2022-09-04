@@ -19,6 +19,8 @@ const BurgerMenu = forwardRef(({ MenuContext, SubmenuContext, career, periodoUde
   const { menuState, toggleMenu } = MenuContext;
   const { submenu, toggleSubmenu } = SubmenuContext;
 
+  if (!menuState && submenu) toggleSubmenu();
+
   function careerHandler(chosen) {
     dispatch(setCareerInfo(chosen));
     toggleSubmenu();
