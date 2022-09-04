@@ -29,6 +29,8 @@ html {
   --highlight-color: #4C2BEE;
   --highlight-color2: #FFD300;
   --shade-layer-color: rgba(0, 0, 0, 0.35);
+  --skeleton-initial-color: hsl(0, 0%, 77%);
+  --skeleton-final-color: hsl(0, 0%, 90%);
 }
 
 html.dark {
@@ -41,6 +43,8 @@ html.dark {
   --highlight-color: #FFD300;
   --highlight-color2: #4C2BEE;
   --shade-layer-color: rgba(0, 0, 0, 0.45);
+  --skeleton-initial-color: hsl(0, 0%, 15%);
+  --skeleton-final-color: hsl(0, 0%, 30%);
 }
 
 html.theming, html.theming * {
