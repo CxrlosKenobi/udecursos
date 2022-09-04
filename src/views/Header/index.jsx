@@ -18,9 +18,7 @@ export default function Header() {
   const career = useSelector(careerSelector);
   
   const selectorNode = useRef(null);
-  const menuNode = useRef(null);
   const [selectorState, setSelectorState] = useOutsideClick(selectorNode, false, "toggle-selector");
-  // const [menuState, setMenuState] = useOutsideClick(menuNode, false, "BurgerBtn");
   const [menuState, setMenuState] = useState(false);
   const [submenu, setSubmenu] = useState(false);
   
@@ -29,7 +27,6 @@ export default function Header() {
   const toggleSubmenu = () => setSubmenu(!submenu);
 
   const periodoUdeC = `UdeC ${new Date().getFullYear()}-2`;
-
 
   return (
     <header>
@@ -72,10 +69,9 @@ export default function Header() {
         <ThemeHandler />
         <BurgerBtn
           MenuContext={{ menuState, toggleMenu }}
-          SubmenuContext={{ submenu, setSubmenu }}
+          SubmenuContext={{ submenu, toggleSubmenu }}
         />
         <BurgerMenu
-          ref={menuNode}
           MenuContext={{ menuState, toggleMenu }}
           SubmenuContext={{ submenu, toggleSubmenu }}
           career={career}

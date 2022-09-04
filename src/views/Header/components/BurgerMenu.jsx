@@ -1,4 +1,3 @@
-import { forwardRef } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { FiChevronRight } from "react-icons/fi";
@@ -8,12 +7,12 @@ import styled from "styled-components";
 //
 import { pushProcess, updateProcess } from "../../../redux/processesSlice";
 import { cleanCareer, setCareerInfo, stateMalla } from "../../../redux/careerSlice";
-import { ShadeLayer } from "../../../utils/helpers";
 import { mallaBuilder, SubmenuList } from "./CareerHandler";
+import { ShadeLayer } from "../../../utils/helpers";
 import "./BurgerMenu.scss";
 
 
-const BurgerMenu = forwardRef(({ MenuContext, SubmenuContext, career, periodoUdeC }, ref) => {
+export default function BurgerMenu ({ MenuContext, SubmenuContext, career, periodoUdeC }) {
   const dispatch = useDispatch();
 
   const { menuState, toggleMenu } = MenuContext;
@@ -39,7 +38,7 @@ const BurgerMenu = forwardRef(({ MenuContext, SubmenuContext, career, periodoUde
   return (
     <>
       <ShadeLayer state={menuState} onClick={toggleMenu} />
-      <StyledMenu ref={ref} id="BurgerMenu" menuState={menuState}>
+      <StyledMenu id="BurgerMenu" menuState={menuState}>
         <Link to="/" onClick={toggleMenu}>Inicio</Link>
         <Link to="/Malla" onClick={toggleMenu}>Malla</Link>
         <div onClick={toggleSubmenu}>
@@ -80,9 +79,7 @@ const BurgerMenu = forwardRef(({ MenuContext, SubmenuContext, career, periodoUde
       </StyledSubmenu>
     </>
   );
-});
-
-export default BurgerMenu;
+};
 
 export function BurgerBtn({ MenuContext, SubmenuContext }) {
   const { menuState, toggleMenu } = MenuContext;
