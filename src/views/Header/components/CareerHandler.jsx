@@ -4,7 +4,7 @@ import styled from 'styled-components';
 //
 import { pushProcess, updateProcess } from '../../../redux/processesSlice';
 import { setCareerInfo, stateMalla } from '../../../redux/careerSlice';
-import { getCareer, getCareerTasks } from '../../../APIs/Realm';
+import { getCareer, getCareerTasks } from '../../../APIs/Careers';
 import data from '../../../data/careers-data';
 import "./CareerHandler.scss";
 
