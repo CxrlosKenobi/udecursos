@@ -5,7 +5,11 @@ const endpoint = "http://udecursos-backend.vercel.app/api";
 export async function getCareer(code) {
   let request = {
     method: "GET",
-    url: `${endpoint}/careers/${code}`,
+    baseURL: endpoint,
+    url: "/careers",
+    params: {
+      code: code
+    }
   };
   const response = await axios(request);
 
@@ -15,7 +19,11 @@ export async function getCareer(code) {
 export async function getCareerTasks(code) {
   let request = {
     method: "GET",
-    url: `${endpoint}/careers/${code}/tasks`,
+    baseURL: endpoint,
+    url: "/tasks",
+    params: {
+      code: code
+    }
   };
 
   const response = await axios(request);
