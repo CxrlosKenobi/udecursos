@@ -77,14 +77,6 @@ Don't forget to star the repo and submit your pull requests!
 
 ---
 
-#### Built as my final project in my Front-End Engineer Path at:
-
-<a href="https://codecademy.com/">
-  <img 
-    src="https://img.shields.io/badge/Codecademy-FFF0E5?style=for-the-badge&logo=codecademy&logoColor=303347"
-    target="_blank" rel="noopener noreferrer"
-  />
-</a>
 
 ## License
 [MIT](LICENSE)
