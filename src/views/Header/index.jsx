@@ -42,7 +42,6 @@ export default function Header() {
         <ul id="NavBar">
           <NavItem to="/">Inicio</NavItem>
           <NavItem to="/Malla">Malla</NavItem>
-          <NavItem to="/Utilidades">Utilidades</NavItem>
         </ul>
         <div className="right-header">
           <h3>
