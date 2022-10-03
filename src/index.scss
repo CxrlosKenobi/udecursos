@@ -1,0 +1,67 @@
+* {
+  scrollbar-color: var(--border-color) var(--secondary-color);
+  scrollbar-width: thin;
+  
+  &::-webkit-scrollbar {
+    height: 2px;
+    width: 3px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 10px;
+    border: transparent;
+  }
+}
+
+// Root design pattern
+html {
+  --bg-color: #FFF0E5;
+  --secondary-color: white;
+  --text-color: #10162F;
+  --border-color: #10162F;
+  --children-color: #10162F;
+  --theme-icon-color: #10162F;
+  --highlight-color: #4C2BEE;
+  --highlight-color2: #FFD300;
+  --shade-layer-color: rgba(0, 0, 0, 0.35);
+  --skeleton-initial-color: hsl(0, 0%, 77%);
+  --skeleton-final-color: hsl(0, 0%, 90%);
+}
+
+html.dark {
+  --bg-color: #161616;
+  --secondary-color: #2C2E43;
+  --text-color: #F4F6FC;
+  --border-color: #595260;
+  --children-color: #B2B1B9;
+  --theme-icon-color: white;
+  --highlight-color: #FFD300;
+  --highlight-color2: #4C2BEE;
+  --shade-layer-color: rgba(0, 0, 0, 0.45);
+  --skeleton-initial-color: hsl(0, 0%, 15%);
+  --skeleton-final-color: hsl(0, 0%, 30%);
+}
+
+html.theming, html.theming * {
+  transition: all 200ms linear;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  h1, h2, h3, h4 {
+    color: var(--text-color);
+  }
+}
+
+main {
+  margin-top: 78px !important;
+}

@@ -1,49 +1,12 @@
 {
 	"carreras": [
 		{
-			"id": 1,
-			"name": "Ing. Civil Informática",
-			"link": "https://fi.udec.cl/departamentos/informatica-y-cs-de-la-computacion/"
+			"code": "INF",
+			"name": "Ing. Civil Informática"
 		},
 		{
-			"id": 2,
-			"name": "Ciencias Físicas",
-			"link": "https://admision.udec.cl/ciencias-fisicas/"
-		},
-		{
-			"id": 3,
-			"name": "Ing. Física",
-			"link": "https://admision.udec.cl/ciencias-fisicas/"
-		},
-		{
-			"id": 4,
-			"name": "Ing. Civil Aeroespacial",
-			"link": "https://fi.udec.cl/pregrado/ingenieria-civil-aeroespacial/"
-		},
-		{
-			"id": 5,
-			"name": "Astronomía",
-			"link": "https://admision.udec.cl/astronomia/"
-		},
-		{
-			"id": 6,
-			"name": "Ing. Civil Electrónica",	
-			"link": "https://fi.udec.cl/pregrado/ingenieria-civil-electronica/"
-		},
-		{
-			"id": 7,
-			"name": "Ing. Civil Industrial",
-			"link": "https://fi.udec.cl/pregrado/ingenieria-civil-industrial/malla/"
-		},
-		{
-			"id": 8,
-			"name": "Ing. Civil Biomédica",
-			"link": "https://fi.udec.cl/pregrado/ingenieria-civil-biomedica/"
-		},
-		{
-			"id": 9,
-			"name": "Ing. Estadística",
-			"link": "https://admision.udec.cl/ingenieria-estadistica/"
+			"code": "AERO",
+			"name": "Ing. Civil Aeroespacial"
 		}
 	]
 }

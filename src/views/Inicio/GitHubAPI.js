@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Octokit } from '@octokit/core';
 //
 import token from '../../data/octok.json';
+import { parseDate } from "../../utils/helpers";
 //
 import "./GitHubAPI.scss";
 
@@ -35,14 +36,6 @@ export function CommitList() {
 		fetchAPI()
 	}, [])
 	
-	// Aux function for this case.
-	function parseDate(date) {
-		let y = date.split('T')[0].split('-')[0]
-		let m = date.split('T')[0].split('-')[1]
-		let d = date.split('T')[0].split('-')[2]
-
-		return `${d}/${m}/${y}`
-	}
 
 	useEffect(() => {
 		if (received) {
