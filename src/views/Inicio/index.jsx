@@ -1,5 +1,3 @@
-import React from 'react';
-//
 import { CommitList } from './GitHubAPI';
 import { SectionsGrid } from './Grid';
 import gitBranch from '../../assets/gitBranch.png';

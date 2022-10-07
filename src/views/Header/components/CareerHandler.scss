@@ -1,0 +1,72 @@
+#Accordion {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+
+  & ul {
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 5px 15px;
+  }
+
+  & li, & .chosen {
+    margin: 5px 8px;
+    padding: 4px;
+    user-select: none;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline var(--highlight-color);
+      font-style: none;
+    }
+  }
+
+  & .chosen {
+    font-weight: bold;
+    text-decoration: underline var(--highlight-color);
+    font-style: none;
+  }
+
+}
+
+#Career-list-wrapper {
+  width: 100%;
+  height: 75vh;
+  max-width: 75vh;
+  overflow-y: scroll;
+
+  & ul {
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+    
+
+    & li, & .chosen {
+      margin: 0;
+      padding: 6.5px 0;
+      font-size: .95rem;
+
+      &:hover, &:active, &:focus {
+        cursor: pointer;
+        text-decoration-line: underline;
+        text-decoration-color: var(--highlight-color);
+        text-decoration-thickness: 2px;
+        font-style: none;
+      }
+    }
+
+    & .chosen {
+      font-weight: bold;
+      list-style: disc;
+      text-decoration-line: underline;
+      text-decoration-color: var(--highlight-color);
+      text-decoration-thickness: 2px;
+    }
+  }
+}

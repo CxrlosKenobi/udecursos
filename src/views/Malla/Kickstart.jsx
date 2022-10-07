@@ -1,5 +1,3 @@
-import React from "react";
-//
 import taskdemo from "../../assets/task-demo.png"
 //
 import "./Kickstart.scss";

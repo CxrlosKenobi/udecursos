@@ -18,6 +18,7 @@ octok.json
 /coverage
 
 # production
+.env
 /build
 
 # misc

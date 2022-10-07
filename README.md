@@ -1,6 +1,12 @@
 <p align="center">
   <h1 align="center">UdeCursos</h1>
   <p align="center">
+      <a href="https://www.mongodb.com/">
+      <img
+        src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+        target="_blank" rel="noopener noreferrer"
+      />
+    </a>
     <a href="https://reactjs.org/">
       <img 
         src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
