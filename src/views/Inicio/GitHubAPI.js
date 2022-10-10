@@ -1,19 +1,20 @@
 import { useState, useEffect } from "react";
 import { Octokit } from '@octokit/core';
 //
-import token from '../../data/octok.json';
 import { parseDate } from "../../utils/helpers";
 //
 import "./GitHubAPI.scss";
 
 
 export function CommitList() {
+	const token = process.env.REACT_APP_GH_API_TOKEN;
+
 	const [received, setReceived] = useState(false);
 	const [changelogs, setChangelogs] = useState(null);
 	const [commits, setCommits] = useState([]);
 	
 	useEffect(() => {
-		const octokit = new Octokit({ auth: token.token })
+		const octokit = new Octokit({ auth: token });
 		async function fetchAPI() {
 			const owner = 'CxrlosKenobi', repo = 'udecursos'
 
@@ -34,7 +35,7 @@ export function CommitList() {
 			}
 		}
 		fetchAPI()
-	}, [])
+	}, []) // eslint-disable-line react-hooks/exhaustive-deps
 	
 
 	useEffect(() => {

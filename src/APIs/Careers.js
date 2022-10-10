@@ -1,4 +1,4 @@
-var axios = require("axios");
+import axios from "axios";
 
 const endpoint = "http://udecursos-backend.vercel.app/api";
 

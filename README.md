@@ -36,36 +36,21 @@
 
 
 ![image](assets/banner.png)
----
 
-<div align="center">
-  <p>
-    <i>
-      <h4 href="https://www.mozilla.org/" target="_blank" rel="noopener noreferrer" style="font-family: cursive">
-        Optimized for the latest version of  
-        <img src="assets/firefox.png" alt="Firefox" width="16" height="16" />
-         but you can also use it in other browsers.
-      </h4>
-    </i>
-  </p>
-</div>
+🎒 Visual designed platform, bringing a modern and intuitive way to the courses management, for and by the students of the [Universidad de 
+Concepción](https://admision.udec.cl/).
+
+Students can drag, drop and cross off their courses, visualizing their progress at their degree of choice.
 
 
-> Check out the [beta here](https://udecursos.study/) or the **[latest build here!](http://build.udecursos.study/)** directly from the *dev branch*
+## Latest views
+> Check out the responsive design as well! 📲👀
 
-🎒 Visual designed platform, bringing a modern and intuitive way to the courses management, for and by the students of the [Universidad de Concepción](https://admision.udec.cl/). Students can drag & drop their courses, visualize schedules and manage their grades.
-
+![Malla UdeCursos](assets/demo.gif)
 
 ---
-## Screenshots
-> Check out the responsive design as well! 👀
-> Pre-release views 
 
-![Inicio UdeCursos](assets/latest-build.png)
-
-![Malla UdeCursos](assets/malla.gif)
-
-## Getting started for devs!
+## Getting started for devs
 1. Fork or clone the repo and install node modules:
 ```bash
 yarn install
@@ -76,13 +61,13 @@ yarn install
 yarn start
 ```
 
-3. Open the browser and go to http://localhost:3000/
+3. Check the [_CONTRIBUTING_](CONTRIBUTING.md) guide and check the current issues to start contributing!
 
 4. Happy coding!
 Don't forget to star the repo and submit your pull requests!
 
 ---
 
-
 ## License
 [MIT](LICENSE)
+
