@@ -51,6 +51,9 @@ Students can drag, drop and cross off their courses, visualizing their progress 
 ---
 
 ## Getting started for devs
+
+> This is the frontend of the project, the backend can be found [here](https://github.com/CxrlosKenobi/udecursos_backend) if you want to check it out and contribute as well!
+
 1. Fork or clone the repo and install node modules:
 ```bash
 yarn install
