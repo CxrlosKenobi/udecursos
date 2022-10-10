@@ -10,6 +10,7 @@
 # dependencies
 /node_modules
 /.pnp
+.env
 .pnp.js
 data/octok.json
 octok.json
@@ -18,7 +19,6 @@ octok.json
 /coverage
 
 # production
-.env
 /build
 
 # misc
