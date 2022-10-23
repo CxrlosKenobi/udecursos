@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 //
 import { pushProcess, updateProcess } from '../../../redux/processesSlice';
-import { setCareerInfo, stateMalla } from '../../../redux/careerSlice';
+import { setCareerInfo, stateMalla, cleanApprovedCredits } from '../../../redux/careerSlice';
 import { getCareer, getCareerTasks } from '../../../APIs/Careers';
 import data from '../../../data/careers-data';
 import "./CareerHandler.scss";
@@ -14,6 +14,7 @@ const Selector = forwardRef(({ careerName, selectorContext }, ref) => {
   const dispatch = useDispatch();
   
   function careerHandler(chosen) {
+    dispatch(cleanApprovedCredits());
     dispatch(setCareerInfo(chosen));
     setSelectorState(false);
 
