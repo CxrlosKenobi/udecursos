@@ -135,7 +135,6 @@ export default function Task({ index, content }) {
     } else if (content.properties.required_credits !== undefined) {
       try {
         if (content.properties.required_credits[career.info.code] !== undefined) {
-          console.log(career, content.properties.required_credits[career.info.code])
           if (career.approved_credits >= content.properties.required_credits[career.info.code])
             status = true;
           else
@@ -144,7 +143,7 @@ export default function Task({ index, content }) {
         } else status = true;
 
       } catch (error) {
-        console.warn(error); console.log(content)
+        console.warn(error);
       }
     } else {
       status = true;
