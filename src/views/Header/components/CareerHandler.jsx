@@ -53,12 +53,20 @@ export async function mallaBuilder(code) {
     return a.id.localeCompare(b.id);
   });
   career.semesters = orderedSemesters;
+
+  function tasksFilter(semester, tasks) {
+    let orderedTasks = semester.tasksCodes.map((code) => {
+      return tasks.find((task) => task.code === code);
+    });
+
+    return orderedTasks;
+  }
   
   let malla = { semesters: {} };
   Object.values(career.semesters).map((semester) => {
     const builtSemester = {
       ...semester,
-      tasks: _tasks.filter((task) => semester.tasksCodes.includes(task.code))
+      tasks: tasksFilter(semester, _tasks)
     };
 
     delete builtSemester.tasksCodes;
