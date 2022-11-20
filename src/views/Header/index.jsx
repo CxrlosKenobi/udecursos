@@ -37,6 +37,7 @@ export default function Header() {
           </div>
           <div className="heading-container">
             <h1>UdeCursos</h1>
+            <p>(alpha)</p>
           </div>
         </Link>
         <ul id="NavBar">

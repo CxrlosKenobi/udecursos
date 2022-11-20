@@ -33,6 +33,10 @@ header {
         order: 2;
       }
 
+      @media only screen and (max-width: 430px) {
+        padding-right: 28px;
+      }
+
       & #img-container {
         height: inherit;
         float: left;
@@ -45,7 +49,7 @@ header {
           margin: 4px auto;
         }
 
-        @media only screen and (max-width: 415px) {
+        @media only screen and (max-width: 430px) {
           & img {
             display: none;
           }
@@ -67,6 +71,16 @@ header {
           align-self: center;
           justify-content: center;
         }
+
+        & p {
+          height: fit-content;
+          align-self: center;
+          padding-top: 6px;
+          padding-left: 3px;
+          color: lightgray;
+          font-size: .8rem;
+        }
+
         &:hover, &:active, &:focus { text-decoration: none; }
 
         @media only screen and (max-width: 930px) {

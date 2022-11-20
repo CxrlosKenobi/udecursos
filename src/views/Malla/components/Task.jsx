@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Draggable } from 'react-beautiful-dnd';
 import styled from 'styled-components';
 //
-import { semestersSelector } from '../../../redux/careerSlice';
+import { careerSelector } from '../../../redux/careerSlice';
 import { passTask } from '../../../redux/careerSlice';
 import _passed from "../../../assets/passed.png";
 
@@ -86,12 +86,14 @@ const Passed = styled.img`
 
 export default function Task({ index, content }) {
   const dispatch = useDispatch();
-  const semesters = useSelector(semestersSelector);
+  const career = useSelector(careerSelector);
+  // const semesters = useSelector(semestersSelector);
+  // const aprovedCredits = useSelector(creditsSelector);
   const [passedReqs, setPassedReqs] = useState(false);
 
   function taskFinder(code) { // NOTE: Yup, pending to optimize
     let _task;
-    Object.values(semesters).forEach((semester) => {
+    Object.values(career.malla.semesters).forEach((semester) => {
       semester.tasks.forEach((task) => {
         if (task.code === code) {
           _task = task;
@@ -108,11 +110,14 @@ export default function Task({ index, content }) {
     dispatch(passTask({
       col: content.col,
       index: index,
-      passed: !content.properties.done
+      passed: !content.properties.done,
+      credits: Number(content.credits),
     }));
   };
 
   useEffect(() => {
+    let status = false;
+
     if (content.prerequisites.length > 0) {
       let passedReqs = 0;
       content.prerequisites.forEach((prerequisite) => {
@@ -123,11 +128,30 @@ export default function Task({ index, content }) {
         }
         if (prereq.properties.done) passedReqs++;
       });
-      setPassedReqs(passedReqs === content.prerequisites.length);
+      status = (passedReqs === content.prerequisites.length);
+
+
+    // Pending case to solve is when the task has both, prerequisites and approved credits (i.e. 580412)
+    } else if (content.properties.required_credits !== undefined) {
+      try {
+        if (content.properties.required_credits[career.info.code] !== undefined) {
+          if (career.approved_credits >= content.properties.required_credits[career.info.code])
+            status = true;
+          else
+            status = false;
+
+        } else status = true;
+
+      } catch (error) {
+        console.warn(error);
+      }
     } else {
-      setPassedReqs(true);
+      status = true;
     }
-  }, [semesters]); // eslint-disable-line react-hooks/exhaustive-deps
+
+    setPassedReqs(status);
+
+  }, [career.malla.semesters]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <Draggable draggableId={content.code} index={index}>

@@ -6,7 +6,7 @@ import { CgClose } from 'react-icons/cg';
 import styled from "styled-components";
 //
 import { pushProcess, updateProcess } from "../../../redux/processesSlice";
-import { cleanCareer, setCareerInfo, stateMalla } from "../../../redux/careerSlice";
+import { cleanCareer, setCareerInfo, stateMalla, cleanApprovedCredits } from "../../../redux/careerSlice";
 import { mallaBuilder, SubmenuList } from "./CareerHandler";
 import { ShadeLayer } from "../../../utils/helpers";
 import "./BurgerMenu.scss";
@@ -21,6 +21,7 @@ export default function BurgerMenu ({ MenuContext, SubmenuContext, career, perio
   if (!menuState && submenu) toggleSubmenu();
 
   function careerHandler(chosen) {
+    dispatch(cleanApprovedCredits());
     dispatch(setCareerInfo(chosen));
     toggleSubmenu();
     setTimeout(() => toggleMenu(), 200);

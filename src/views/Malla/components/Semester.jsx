@@ -58,7 +58,8 @@ export default function Semester({ content, tasks }) {
       dispatch(passTask({
         col: content.id,
         index: index,
-        passed: !task.properties.done
+        passed: !task.properties.done,
+        credits: Number(task.credits),
       }));
     })
   };
