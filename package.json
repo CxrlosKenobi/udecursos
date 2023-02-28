@@ -1,24 +1,24 @@
 {
   "name": "udecursos-app",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "private": true,
-  "homepage": "http://udecursos.study/",
+  "homepage": "/",
   "dependencies": {
-    "@atlaskit/css-reset": "^6.3.15",
-    "@octokit/core": "^4.0.5",
-    "@reduxjs/toolkit": "^1.8.6",
-    "axios": "^1.1.2",
-    "framer-motion": "^7.5.3",
-    "gsap": "^3.11.3",
+    "@atlaskit/css-reset": "^6.3.20",
+    "@octokit/core": "^4.2.0",
+    "@reduxjs/toolkit": "^1.9.3",
+    "axios": "^1.3.4",
+    "framer-motion": "^10.0.1",
+    "gsap": "^3.11.4",
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
-    "react-redux": "^8.0.4",
-    "react-router-dom": "^6.4.2",
+    "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
-    "redux": "^4.2.0",
-    "sass": "^1.55.0",
+    "redux": "^4.2.1",
+    "sass": "^1.58.3",
     "styled-components": "^5.3.6"
   },
   "scripts": {
@@ -46,5 +46,5 @@
       "last 1 safari version"
     ]
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.4.1"
 }
