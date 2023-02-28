@@ -26,7 +26,8 @@ export const useOutsideClick = (ref, initialState, exceptionID) => {
 };
 
 
-export function ScrollWrapper({ children }){
+// TODO: Check if this is still needed
+export function ScrollWrapper({ children }) {
   const location = useLocation();
   useLayoutEffect(() => {
     window.scrollTo(0, 0);

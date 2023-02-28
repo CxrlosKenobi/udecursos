@@ -5,7 +5,7 @@ import gitBranch from '../../assets/gitBranch.png';
 import './index.scss';
 
 
-export function Inicio() {
+export default function Inicio() {
 	return (
 		<main id='Inicio'>
 			<div id='Main-body'>

@@ -10,7 +10,7 @@ import { Kickstart } from "./Kickstart";
 import Semester from "./components/Semester";
 import "./index.scss";
 
-export function Malla() {
+export default function Malla() {
   const dispatch = useDispatch();
   const career = useSelector(careerSelector);
   const mallaRef = useRef(null);
