@@ -41,7 +41,7 @@ export default function BurgerMenu ({ MenuContext, SubmenuContext, career, perio
       <ShadeLayer state={menuState} onClick={toggleMenu} />
       <StyledMenu id="BurgerMenu" menuState={menuState}>
         <Link to="/" onClick={toggleMenu}>Inicio</Link>
-        <Link to="/Malla" onClick={toggleMenu}>Malla</Link>
+        <Link to="/malla" onClick={toggleMenu}>Malla</Link>
         <div onClick={toggleSubmenu}>
           <span>Elegir Carrera</span>
           <FiChevronRight className="icon" />

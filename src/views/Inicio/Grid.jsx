@@ -10,7 +10,7 @@ export function SectionsGrid() {
   return (
     <div id="SectionsGrid">
       <section>
-        <Link to="/Malla">
+        <Link to="/malla">
           <img src={malla} alt="Malla" />
           <div>
             <h2>Malla curricular</h2>

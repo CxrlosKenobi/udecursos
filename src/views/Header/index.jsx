@@ -42,7 +42,7 @@ export default function Header() {
         </Link>
         <ul id="NavBar">
           <NavItem to="/">Inicio</NavItem>
-          <NavItem to="/Malla">Malla</NavItem>
+          <NavItem to="/malla">Malla</NavItem>
         </ul>
         <div className="right-header">
           <h3>

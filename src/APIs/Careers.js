@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const endpoint = "http://udecursos-backend.vercel.app/api";
+const endpoint = "https://udecursos-backend.vercel.app/api";
 
 export async function getCareer(code) {
   let request = {
@@ -12,7 +12,6 @@ export async function getCareer(code) {
     }
   };
   const response = await axios(request);
-
   return response.data;
 };
 

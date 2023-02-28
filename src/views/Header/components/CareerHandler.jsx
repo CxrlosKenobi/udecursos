@@ -45,7 +45,7 @@ const Selector = forwardRef(({ careerName, selectorContext }, ref) => {
 });
 export default Selector;
 
-
+// TODO: Is not the backend's responsability to order the semesters and tasks?
 export async function mallaBuilder(code) {
   const career = await getCareer(code);
   const _tasks = await getCareerTasks(code);

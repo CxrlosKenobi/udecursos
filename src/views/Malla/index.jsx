@@ -96,7 +96,7 @@ export default function Malla() {
       dispatch(stateMalla(updatedMalla));
     }, [career.malla] // eslint-disable-line react-hooks/exhaustive-deps
   );
-
+  
   return (
     <main id="body-malla" ref={mallaRef}>
       {mallaLoad && mallaLoad.status === "pending" ? (
