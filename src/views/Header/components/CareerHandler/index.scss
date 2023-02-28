@@ -1,6 +1,21 @@
 #Accordion {
+  border-radius: 5px;
+  height: fit-content;
+  width: 95%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #10162f;
+  position: relative;
+  top: 0;
+  z-index: -1;
   background-color: var(--secondary-color);
   border: 1px solid var(--border-color);
+
+  @media only screen and (max-width: 846px) {
+    display: none;
+  }
 
   & ul {
     width: 100%;

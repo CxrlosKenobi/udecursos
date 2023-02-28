@@ -1,22 +1,28 @@
+import { useContext } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { FiChevronRight } from "react-icons/fi";
 import { IoIosArrowRoundBack } from "react-icons/io";
-import { CgClose } from 'react-icons/cg';
+import { CgClose } from "react-icons/cg";
 import styled from "styled-components";
 //
-import { pushProcess, updateProcess } from "../../../redux/slices/processes";
-import { cleanCareer, setCareerInfo, stateMalla, cleanApprovedCredits } from "../../../redux/slices/career";
-import { mallaBuilder, SubmenuList } from "./CareerHandler";
-import { ShadeLayer } from "../../../utils/helpers";
-import "./BurgerMenu.scss";
+import { HeaderContext } from "../../index";
+import { pushProcess, updateProcess } from "../../../../redux/slices/processes";
+import {
+  cleanCareer,
+  setCareerInfo,
+  stateMalla,
+  cleanApprovedCredits
+} from "../../../../redux/slices/career";
+import { mallaBuilder, SubmenuList } from "../CareerHandler";
+import { ShadeLayer } from "../../../../utils/helpers";
+import "./index.scss";
 
 
-export default function BurgerMenu ({ MenuContext, SubmenuContext, career, periodoUdeC }) {
+export default function BurgerMenu ({ career, periodoUdeC }) {
+  const { menuState, toggleMenu } = useContext(HeaderContext)[0];
+  const { submenu, toggleSubmenu } = useContext(HeaderContext)[1];
   const dispatch = useDispatch();
-
-  const { menuState, toggleMenu } = MenuContext;
-  const { submenu, toggleSubmenu } = SubmenuContext;
 
   if (!menuState && submenu) toggleSubmenu();
 
@@ -40,8 +46,12 @@ export default function BurgerMenu ({ MenuContext, SubmenuContext, career, perio
     <>
       <ShadeLayer state={menuState} onClick={toggleMenu} />
       <StyledMenu id="BurgerMenu" menuState={menuState}>
-        <Link to="/" onClick={toggleMenu}>Inicio</Link>
-        <Link to="/malla" onClick={toggleMenu}>Malla</Link>
+        <Link to="/" onClick={toggleMenu}>
+          Inicio
+        </Link>
+        <Link to="/malla" onClick={toggleMenu}>
+          Malla
+        </Link>
         <div onClick={toggleSubmenu}>
           <span>Elegir Carrera</span>
           <FiChevronRight className="icon" />
@@ -61,7 +71,7 @@ export default function BurgerMenu ({ MenuContext, SubmenuContext, career, perio
             />
           </div>
         ) : (
-          <p className='career-info void'>
+          <p className="career-info void">
             (Elige una carrera)
           </p>
         )}
@@ -82,9 +92,9 @@ export default function BurgerMenu ({ MenuContext, SubmenuContext, career, perio
   );
 };
 
-export function BurgerBtn({ MenuContext, SubmenuContext }) {
-  const { menuState, toggleMenu } = MenuContext;
-  const { submenu, setSubmenu } = SubmenuContext;
+export function BurgerBtn() {
+  const { menuState, toggleMenu } = useContext(HeaderContext)[0];
+  const { submenu, setSubmenu } = useContext(HeaderContext)[1];
 
   function handleToggles() {
     if (submenu) setSubmenu(false);
@@ -138,7 +148,7 @@ const StyledMenu = styled.nav`
     flex-direction: column;
     justify-content: flex-start;
     background-color: #FFF;
-    transform: ${({ menuState }) => menuState ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ menuState }) => menuState ? "translateX(0)" : "translateX(100%)"};
     height: 100vh;
     max-height: 100vh;
     overflow-y: scroll;
@@ -207,14 +217,14 @@ const StyledBurger = styled.button`
       position: relative;
       transform-origin: 1px;
       :first-child {
-        transform: ${({ menuState }) => menuState ? 'rotate(45deg)' : 'rotate(0)'};
+        transform: ${({ menuState }) => menuState ? "rotate(45deg)" : "rotate(0)"};
       }
       :nth-child(2) {
-        opacity: ${({ menuState }) => menuState ? '0' : '1'};
-        transform: ${({ menuState }) => menuState ? 'translateX(20px)' : 'translateX(0)'};
+        opacity: ${({ menuState }) => menuState ? "0" : "1"};
+        transform: ${({ menuState }) => menuState ? "translateX(20px)" : "translateX(0)"};
       }
       :nth-child(3) {
-        transform: ${({ menuState }) => menuState ? 'rotate(-45deg)' : 'rotate(0)'};
+        transform: ${({ menuState }) => menuState ? "rotate(-45deg)" : "rotate(0)"};
       }
     }
   }

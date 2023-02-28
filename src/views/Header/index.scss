@@ -17,7 +17,7 @@ header {
     border-bottom: 1px solid var(--border-color);
     justify-content: space-between;
 
-    & .logo-heading {
+    .logo-heading {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
@@ -111,18 +111,41 @@ header {
       margin: 0;
       padding: 0;
 
-      & li {
-        list-style: none;
+      li {
+        list-style: none; 
         margin: 0;
       }
 
-      & a {
+      & a, .careers-dropdown {
         margin-right: 35px !important;
         text-decoration: none ;
         color: var(--text-color);
         user-select: none;
         cursor: pointer;
         &:hover { color: var(--highlight-color) !important; }
+      }
+
+      .careers-dropdown {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+      
+        svg {
+          position: relative;
+          font-size: 1.3rem;
+          margin-left: 2px;
+        }
+
+        .hidden {
+          transform: rotate(0deg);
+          transition: transform 200ms ease-in-out;
+        }
+        
+        .unhidden {
+          transform: rotate(-180deg);
+          transition: transform 200ms ease-in-out;
+        }
       }
 
       & .aux-li {
@@ -200,13 +223,6 @@ header {
 
       & .void { 
         color: gray; 
-        @keyframes glow {
-          0% { color: gray; }
-          50% { color: var(--highlight-color); }
-          100% { color: gray; }
-        }
-
-        animation: glow 1s ease-in-out infinite alternate;
         &:active { color: #10162f; }
       }
 

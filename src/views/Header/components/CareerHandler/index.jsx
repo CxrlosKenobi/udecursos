@@ -1,12 +1,12 @@
 import { forwardRef } from "react";
-import { useDispatch } from 'react-redux';
-import styled from 'styled-components';
+import { useDispatch } from "react-redux";
+import { motion } from "framer-motion";
 //
-import { pushProcess, updateProcess } from '../../../redux/slices/processes';
-import { setCareerInfo, stateMalla, cleanApprovedCredits } from '../../../redux/slices/career';
-import { getCareer, getCareerTasks } from '../../../APIs/Careers';
-import data from '../../../data/careers-data';
-import "./CareerHandler.scss";
+import { pushProcess, updateProcess } from "../../../../redux/slices/processes";
+import { setCareerInfo, stateMalla, cleanApprovedCredits } from "../../../../redux/slices/career";
+import { getCareer, getCareerTasks } from "../../../../APIs/Careers";
+import data from "../../../../data/careers-data";
+import "./index.scss";
 
 
 const Selector = forwardRef(({ careerName, selectorContext }, ref) => {
@@ -29,23 +29,35 @@ const Selector = forwardRef(({ careerName, selectorContext }, ref) => {
   };
 
   return (
-    <StyledAccordion ref={ref} id='Accordion' selectorState={selectorState}>
+    <motion.section
+      ref={ref}
+      id="Accordion"
+      initial={{
+        transform: "translateY(-110%)",
+      }}
+      animate={{
+        transform: selectorState ? "translateY(0)" : "translateY(-110%)",
+      }}
+      transition={{
+        duration: 0.2
+      }}
+    >
       <ul>
         {carreras.map((option) => (
           <li key={option.code}
               onClick={(() => careerHandler(option))}
-              className={option.name === careerName ? 'chosen' : ''}
+              className={option.name === careerName ? "chosen" : ""}
           >
             {option.name}
           </li>
         ))}
       </ul>
-    </StyledAccordion>
+    </motion.section>
   );
 });
 export default Selector;
 
-// TODO: Is not the backend's responsability to order the semesters and tasks?
+// TODO: Is not the backend"s responsability to order the semesters and tasks?
 export async function mallaBuilder(code) {
   const career = await getCareer(code);
   const _tasks = await getCareerTasks(code);
@@ -87,7 +99,7 @@ export function SubmenuList({ careerName, careerHandler }) {
         {carreras.map((option) => (
           <li key={option.code}
               onClick={(() => careerHandler(option))}
-              className={option.name === careerName ? 'chosen' : ''}
+              className={option.name === careerName ? "chosen" : ""}
           >
             {option.name}
           </li>
@@ -96,24 +108,3 @@ export function SubmenuList({ careerName, careerHandler }) {
     </section>
   );
 };
-
-const StyledAccordion = styled.section`
-  background-color: #FFF;
-  border-radius: 5px;
-  height: fit-content;
-  width: 95%;
-  margin: 5px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #10162f;
-  position: relative;
-  top: 0;
-  transform: ${({ selectorState }) => selectorState ? 'translateY(0)' : 'translateY(-110%)'};
-  transition: transform 200ms ease-in-out;
-  z-index: -1;
-
-  @media only screen and (max-width: 846px) {
-    display: none;
-  }
-`;

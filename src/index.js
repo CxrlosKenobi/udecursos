@@ -7,6 +7,7 @@ import UdeCursosRouter from "./UdeCursos";
 import store from "./redux/store";
 import "./index.scss";
 
+// TODO: Change every '' to ""
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>

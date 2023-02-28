@@ -52,15 +52,6 @@ export const ShadeLayer = styled.div`
   cursor: ${props => props.state ? 'pointer' : 'default'};
 `;
 
-export function NavItem(props) {
-  return (
-    <li>
-      <Link to={props.to}>
-        {props.children}
-      </Link>
-    </li>
-  );
-};
 
 export function parseDate(date) {
   let y = date.split("T")[0].split("-")[0]
