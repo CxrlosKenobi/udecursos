@@ -7,7 +7,7 @@ import { CgClose } from 'react-icons/cg';
 import ThemeHandler from './components/ThemeHandler';
 import BurgerMenu, { BurgerBtn } from './components/BurgerMenu';
 import Selector from './components/CareerHandler';
-import { cleanCareer, careerSelector } from '../../redux/careerSlice';
+import { cleanCareer, careerSelector } from '../../redux/slices/career';
 import { useOutsideClick, NavItem } from '../../utils/helpers';
 import logo from '../../assets/logo.png';
 import './index.scss';

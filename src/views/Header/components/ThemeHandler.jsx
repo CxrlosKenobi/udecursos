@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 //
 import { MoonIcon, SunIcon } from './ThemeIcons';
-import { setTheme, metadataSelector } from "../../../redux/metadataSlice";
+import { setTheme, metadataSelector } from "../../../redux/slices/metadata";
 import "./ThemeHandler.scss";
 
 export default function ThemeHandler() {

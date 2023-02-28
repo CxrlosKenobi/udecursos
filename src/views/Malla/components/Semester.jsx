@@ -2,8 +2,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Droppable } from 'react-beautiful-dnd';
 import styled from 'styled-components';
 //
-import { semestersSelector } from "../../../redux/careerSlice";
-import { passTask } from "../../../redux/careerSlice";
+import { semestersSelector } from "../../../redux/slices/career";
+import { passTask } from "../../../redux/slices/career";
 import Task from './Task';
 
 

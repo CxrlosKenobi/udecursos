@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Draggable } from 'react-beautiful-dnd';
 import styled from 'styled-components';
 //
-import { careerSelector } from '../../../redux/careerSlice';
-import { passTask } from '../../../redux/careerSlice';
+import { careerSelector } from '../../../redux/slices/career';
+import { passTask } from '../../../redux/slices/career';
 import _passed from "../../../assets/passed.png";
 
 

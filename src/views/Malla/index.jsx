@@ -4,8 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { gsap } from "gsap";
 //
 import SkeletonLoader from "./components/SkeletonLoader";
-import { selectProcesses } from "../../redux/processesSlice";
-import { careerSelector, stateMalla } from "../../redux/careerSlice";
+import { selectProcesses } from "../../redux/slices/processes";
+import { careerSelector, stateMalla } from "../../redux/slices/career";
 import { Kickstart } from "./Kickstart";
 import Semester from "./components/Semester";
 import "./index.scss";

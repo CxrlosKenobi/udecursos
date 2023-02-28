@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
 //
-import metadataReducer from "./metadataSlice";
-import processesReducer from "./processesSlice";
-import careerReducer from "./careerSlice";
+import metadataReducer from "./slices/metadata";
+import processesReducer from "./slices/processes";
+import careerReducer from "./slices/career";
 
 // Middleware
 const localStorageMiddleware = ({ getState }) => {

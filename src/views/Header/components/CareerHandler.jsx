@@ -2,8 +2,8 @@ import { forwardRef } from "react";
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 //
-import { pushProcess, updateProcess } from '../../../redux/processesSlice';
-import { setCareerInfo, stateMalla, cleanApprovedCredits } from '../../../redux/careerSlice';
+import { pushProcess, updateProcess } from '../../../redux/slices/processes';
+import { setCareerInfo, stateMalla, cleanApprovedCredits } from '../../../redux/slices/career';
 import { getCareer, getCareerTasks } from '../../../APIs/Careers';
 import data from '../../../data/careers-data';
 import "./CareerHandler.scss";

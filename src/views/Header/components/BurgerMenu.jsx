@@ -5,8 +5,8 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import { CgClose } from 'react-icons/cg';
 import styled from "styled-components";
 //
-import { pushProcess, updateProcess } from "../../../redux/processesSlice";
-import { cleanCareer, setCareerInfo, stateMalla, cleanApprovedCredits } from "../../../redux/careerSlice";
+import { pushProcess, updateProcess } from "../../../redux/slices/processes";
+import { cleanCareer, setCareerInfo, stateMalla, cleanApprovedCredits } from "../../../redux/slices/career";
 import { mallaBuilder, SubmenuList } from "./CareerHandler";
 import { ShadeLayer } from "../../../utils/helpers";
 import "./BurgerMenu.scss";
